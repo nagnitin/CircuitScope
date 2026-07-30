@@ -1,4 +1,4 @@
-# CircuitScope 🔬
+﻿# CircuitScope 🔬
 ### Mechanistic Interpretability of GPT-2 Small — Reverse Engineering the Circuit Behind Indirect Object Identification
 
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
@@ -40,11 +40,11 @@ CircuitScope applies these ideas to one specific, well-defined task — the **In
 
 **Indirect Object Identification (IOI)** is the task of identifying who receives something in a sentence.
 
-`
+```text
 "When John and Mary went to the park, John gave the book to ___"
-                                                               
+                                                               ↑
                                                            Answer: Mary
-`
+```
 
 In this sentence:
 - **IO (Indirect Object)** = Mary — the person who *receives* the book
@@ -135,7 +135,7 @@ We find that the **same late-layer heads** (layers 9–11) are important for bot
 
 ## 📁 Project Structure
 
-```
+```text
 CircuitScope/
 │
 ├── config/
@@ -207,14 +207,14 @@ CircuitScope/
 
 ### Step 1: Clone the Repository
 
-`ash
+```bash
 git clone https://github.com/nagnitin/CircuitScope.git
 cd CircuitScope
-`
+```
 
 ### Step 2: Create a Virtual Environment
 
-`ash
+```bash
 # Create environment
 python -m venv .venv
 
@@ -223,30 +223,30 @@ python -m venv .venv
 .venv\Scripts\activate
 # On macOS / Linux:
 source .venv/bin/activate
-`
+```
 
 ### Step 3: Install Dependencies
 
-`ash
+```bash
 pip install -r requirements.txt
-`
+```
 
 > **Note:** This installs PyTorch, TransformerLens, Plotly, pandas, and all other required packages. Takes ~2–5 minutes.
 
 ### Step 4: Verify Setup
 
-`ash
+```bash
 python -c "import transformer_lens; import torch; print('Setup complete')"
-`
+```
 
 ---
 
 ## 🚀 How to Run
 
-All experiments are run from the **project root directory** (the CircuitScope/ folder).
+All experiments are run from the **project root directory** (the `CircuitScope/` folder).
 
 > **Windows users:** If you see encoding errors, run this first in PowerShell:
-> $env:PYTHONIOENCODING="utf-8"
+> `$env:PYTHONIOENCODING="utf-8"`
 
 ---
 
@@ -255,78 +255,78 @@ All experiments are run from the **project root directory** (the CircuitScope/ f
 Run them in order for the best understanding.
 
 #### Experiment 01 — Baseline Evaluation
-*Loads GPT-2, generates 1,000 IOI prompts, measures accuracy and logit difference.*
-*Output:* outputs/01_baseline/ | *Runtime:* ~3 min
+*Loads GPT-2, generates 1,000 IOI prompts, measures accuracy and logit difference.*  
+*Output:* `outputs/01_baseline/` | *Runtime:* ~3 min
 
-`ash
+```bash
 python experiments/baseline_ioi.py
-`
+```
 
 #### Experiment 02 — Logit Lens
-*Projects each layer's residual stream to vocab space. Shows when IO preference emerges.*
-*Output:* outputs/02_logit_lens/ | *Runtime:* ~5 min
+*Projects each layer's residual stream to vocab space. Shows when IO preference emerges.*  
+*Output:* `outputs/02_logit_lens/` | *Runtime:* ~5 min
 
-`ash
+```bash
 python experiments/02_logit_lens.py --n-samples 200
-`
+```
 
 #### Experiment 03 — Layer Ablation
-*Mean-ablates attention, MLP, and full layers. Ranks which layers matter.*
-*Output:* outputs/03_layer_ablation/ | *Runtime:* ~10 min
+*Mean-ablates attention, MLP, and full layers. Ranks which layers matter.*  
+*Output:* `outputs/03_layer_ablation/` | *Runtime:* ~10 min
 
-`ash
+```bash
 python experiments/03_layer_ablation.py --n-samples 200
-`
+```
 
 #### Experiment 04 — Head Ablation
-*Mean-ablates each of the 144 attention heads. Builds ranked importance list.*
-*Output:* outputs/04_head_ablation/ | *Runtime:* ~20–60 min
+*Mean-ablates each of the 144 attention heads. Builds ranked importance list.*  
+*Output:* `outputs/04_head_ablation/` | *Runtime:* ~20–60 min
 
-`ash
+```bash
 python experiments/04_head_ablation.py --n-samples 200
 # Quick test:
 python experiments/04_head_ablation.py --n-samples 50
-`
+```
 
 #### Experiment 05 — Activation Patching
-*Patches activations from clean runs into corrupted runs. Maps the circuit spatially.*
-*Output:* outputs/05_activation_patching/ | *Runtime:* ~15–30 min
+*Patches activations from clean runs into corrupted runs. Maps the circuit spatially.*  
+*Output:* `outputs/05_activation_patching/` | *Runtime:* ~15–30 min
 
-`ash
+```bash
 python experiments/05_activation_patching.py --n-samples 50
-`
+```
 
 #### Experiment 06 — Path Patching & Circuit Graph
-*Builds a directed graph of which heads send information to which others.*
-*Output:* outputs/06_path_patching/ | *Runtime:* ~15 min
+*Builds a directed graph of which heads send information to which others.*  
+*Output:* `outputs/06_path_patching/` | *Runtime:* ~15 min
 
-`ash
+```bash
 python experiments/06_path_patching.py --n-samples 50
-`
+```
 
 #### Experiment 08 — Circuit Validation
-*Tests necessity, sufficiency, and generalization of the discovered circuit.*
-*Output:* outputs/08_circuit_validation/ | *Runtime:* ~10 min
+*Tests necessity, sufficiency, and generalization of the discovered circuit.*  
+*Output:* `outputs/08_circuit_validation/` | *Runtime:* ~10 min
 
-`ash
+```bash
 python experiments/08_circuit_validation.py --threshold 0.05
-`
+```
 
 #### Experiment 09 — Pronoun Resolution (Novel Extension)
-*Applies same pipeline to pronoun resolution. Tests circuit generalization.*
-*Output:* outputs/09_novel_extension/ | *Runtime:* ~20 min
+*Applies same pipeline to pronoun resolution. Tests circuit generalization.*  
+*Output:* `outputs/09_novel_extension/` | *Runtime:* ~20 min
 
-`ash
+```bash
 python experiments/09_novel_extension.py --n-prompts 500
-`
+```
 
 #### Experiment 10 — Statistical Analysis
-*Bootstrap CIs, Cohen's d, Spearman correlations, permutation tests.*
-*Output:* outputs/10_statistical_analysis/ | *Runtime:* ~10 min
+*Bootstrap CIs, Cohen's d, Spearman correlations, permutation tests.*  
+*Output:* `outputs/10_statistical_analysis/` | *Runtime:* ~10 min
 
-`ash
+```bash
 python experiments/10_statistical_analysis.py --n-bootstrap 2000
-`
+```
 
 ---
 
@@ -334,7 +334,7 @@ python experiments/10_statistical_analysis.py --n-bootstrap 2000
 
 Loads GPT-2 once and runs all experiments sequentially.
 
-`ash
+```bash
 # Quick mode (~20 minutes, reduced sample sizes)
 python experiments/07_full_pipeline.py --quick
 
@@ -343,28 +343,28 @@ python experiments/07_full_pipeline.py --full-patching
 
 # Skip specific parts (e.g. skip parts 5 and 6)
 python experiments/07_full_pipeline.py --skip 5 6
-`
+```
 
-*Output:* outputs/07_full_pipeline/
+*Output:* `outputs/07_full_pipeline/`
 
 ---
 
 ### Option C: Google Colab
 
-`python
+```python
 !git clone https://github.com/nagnitin/CircuitScope.git
 %cd CircuitScope
 !pip install -r requirements.txt
 !python experiments/07_full_pipeline.py --quick
-`
+```
 
 ---
 
 ## 📂 Understanding the Outputs
 
-Each experiment saves results to its own subfolder inside outputs/:
+Each experiment saves results to its own subfolder inside `outputs/`:
 
-`
+```text
 outputs/
 ├── 01_baseline/
 │   ├── figures/
@@ -384,9 +384,9 @@ outputs/
 │       └── logit_lens_per_token.csv
 └── logs/
     └── circuitscope_YYYYMMDD_HHMMSS.log  <- Detailed timestamped run log
-`
+```
 
-> **Tip:** Open the .html files in any browser for fully **interactive** Plotly visualizations — zoom, pan, and hover for exact values.
+> **Tip:** Open the `.html` files in any browser for fully **interactive** Plotly visualizations — zoom, pan, and hover for exact values.
 
 ---
 
@@ -409,7 +409,7 @@ outputs/
 
 ## 📄 Research Paper
 
-A full IEEE-style research paper is available at [paper/research_paper.md](paper/research_paper.md), covering:
+A full IEEE-style research paper is available at [`paper/research_paper.md`](paper/research_paper.md), covering:
 
 1. Introduction & motivation
 2. Background (GPT-2 architecture, TransformerLens, IOI metric)
@@ -438,7 +438,7 @@ A full IEEE-style research paper is available at [paper/research_paper.md](paper
 
 ## 📜 Citation
 
-`ibtex
+```bibtex
 @article{nitin2026circuitscope,
   title   = {Mechanistic Interpretability of GPT-2 Small: Reverse Engineering
              the Circuit Behind Indirect Object Identification},
@@ -447,7 +447,7 @@ A full IEEE-style research paper is available at [paper/research_paper.md](paper
   year    = {2026},
   url     = {https://github.com/nagnitin/CircuitScope}
 }
-`
+```
 
 ---
 
@@ -464,4 +464,4 @@ A full IEEE-style research paper is available at [paper/research_paper.md](paper
 
 ## 📜 License
 
-Distributed under the **MIT License**. See LICENSE for details.
+Distributed under the **MIT License**. See `LICENSE` for details.
