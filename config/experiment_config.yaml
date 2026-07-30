@@ -1,0 +1,62 @@
+# ============================================================
+# CircuitScope — Experiment Configuration
+# ============================================================
+# All tuneable parameters for the baseline IOI experiment.
+# Change values here; code reads from this file at runtime.
+
+# ── Reproducibility ─────────────────────────────────────────
+seed: 42
+
+# ── Model ───────────────────────────────────────────────────
+model:
+  name: "gpt2"                 # HuggingFace / TransformerLens model identifier
+  device: "auto"               # "auto" | "cpu" | "cuda" | "mps"
+  dtype: "float32"             # "float32" | "float16" | "bfloat16"
+  cache_dir: null              # null = use HuggingFace default cache
+
+# ── Dataset ─────────────────────────────────────────────────
+dataset:
+  n_prompts: 1000              # Total number of IOI prompts to generate
+  # Template types: "ABB" | "BAB" (position of repeated name)
+  # We generate equal proportions of each.
+  templates:
+    - "ABB"
+    - "BAB"
+  # Corruption strategy for patching experiments
+  corruption:
+    type: "name_swap"          # Replace S name with a random distractor
+  # Names pool size (we provide 30+ in code; this is just documentation)
+  min_names: 30
+
+# ── Evaluation ──────────────────────────────────────────────
+evaluation:
+  batch_size: 32               # Prompts processed per forward pass
+  top_k: 5                     # Top-k predictions to record
+
+# ── Output Paths ────────────────────────────────────────────
+paths:
+  outputs_dir: "outputs"
+  figures_dir: "outputs/figures"
+  results_dir: "outputs/results"
+  logs_dir:    "outputs/logs"
+  results_csv: "outputs/results/ioi_results.csv"
+  dataset_csv: "outputs/results/ioi_dataset.csv"
+
+# ── Plotting ────────────────────────────────────────────────
+plotting:
+  theme: "plotly_dark"         # Plotly template
+  width: 900
+  height: 550
+  color_correct: "#00C9A7"     # Teal  — correct-token bars
+  color_incorrect: "#FF6B6B"   # Coral — incorrect-token bars
+  color_logit_diff: "#845EC2"  # Purple — logit-diff histogram
+  color_confidence: "#FFC75F"  # Amber  — confidence histogram
+  export_formats:
+    - "html"                   # Interactive (always)
+    - "png"                    # Static (requires kaleido)
+
+# ── Logging ─────────────────────────────────────────────────
+logging:
+  level: "INFO"                # DEBUG | INFO | WARNING | ERROR
+  console: true
+  file: true
