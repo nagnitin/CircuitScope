@@ -1,4 +1,4 @@
-﻿# CircuitScope 🔬
+# CircuitScope 🔬
 ### Mechanistic Interpretability of GPT-2 Small — Reverse Engineering the Circuit Behind Indirect Object Identification
 
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
@@ -135,7 +135,7 @@ We find that the **same late-layer heads** (layers 9–11) are important for bot
 
 ## 📁 Project Structure
 
-`
+```
 CircuitScope/
 │
 ├── config/
@@ -194,7 +194,7 @@ CircuitScope/
 │   └── portfolio.md                  # LinkedIn/resume/application materials
 │
 └── requirements.txt                  # All Python dependencies
-`
+```
 
 ---
 
