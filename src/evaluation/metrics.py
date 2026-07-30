@@ -253,7 +253,15 @@ class IOIEvaluator:
         self.dataset = dataset
         self.batch_size = batch_size
         self.top_k = top_k
-        self.device = next(model.parameters()).device
+        if hasattr(model, "cfg") and hasattr(model.cfg, "device"):
+            self.device = model.cfg.device
+        elif hasattr(model, "parameters"):
+            try:
+                self.device = next(model.parameters()).device
+            except (StopIteration, TypeError, AttributeError):
+                self.device = "cpu"
+        else:
+            self.device = getattr(model, "device", "cpu")
 
         logger.info(
             f"[IOIEvaluator] Initialized: {len(dataset)} prompts, "

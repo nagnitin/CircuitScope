@@ -391,3 +391,31 @@ class TestErrorHandling:
             names=["Alice", "Bob", "Carol"]
         ).generate()
         assert len(ds) == 10
+
+
+# ── Test: PronounDataset ───────────────────────────────────────────────────
+
+class TestPronounDataset:
+    """Tests for src/data/pronoun_dataset.py."""
+
+    def test_pronoun_dataset_generation(self, mock_model: MockModel):
+        from src.data.pronoun_dataset import PronounDataset
+        ds = PronounDataset(model=mock_model, n_prompts=20, seed=42).generate()
+        assert len(ds) == 20
+        clean_prompts = ds.get_clean_prompts()
+        corr_prompts = ds.get_corrupted_prompts()
+        assert len(clean_prompts) == 20
+        assert len(corr_prompts) == 20
+        assert len(ds.get_io_token_ids()) == 20
+        assert len(ds.get_s_token_ids()) == 20
+
+        # Clean and corrupted prompts should differ
+        for clean, corr in zip(clean_prompts, corr_prompts):
+            assert clean != corr
+
+    def test_pronoun_dataset_reproducibility(self, mock_model: MockModel):
+        from src.data.pronoun_dataset import PronounDataset
+        ds1 = PronounDataset(model=mock_model, n_prompts=15, seed=123).generate()
+        ds2 = PronounDataset(model=mock_model, n_prompts=15, seed=123).generate()
+        assert ds1.get_clean_prompts() == ds2.get_clean_prompts()
+        assert ds1.get_corrupted_prompts() == ds2.get_corrupted_prompts()

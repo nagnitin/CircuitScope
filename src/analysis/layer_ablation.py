@@ -421,42 +421,142 @@ class LayerAblationAnalyzer:
         return total_ld / self.n_samples
 
     @torch.no_grad()
+    def compute_clean_cache(self) -> dict[str, torch.Tensor]:
+        """
+        Cache clean activations across all n_samples clean prompts for resample ablation.
+
+        Returns
+        -------
+        dict[str, torch.Tensor]
+            Mapping: hook_name → Tensor of shape [n_samples, max_seq_len, d_model].
+        """
+        logger.info(
+            f"[LayerAblationAnalyzer.compute_clean_cache] "
+            f"Caching clean activations over {self.n_samples} prompts…"
+        )
+        hook_names = (
+            [f"blocks.{l}.hook_attn_out" for l in range(self.n_layers)]
+            + [f"blocks.{l}.hook_mlp_out" for l in range(self.n_layers)]
+        )
+        prompts = self.dataset.get_clean_prompts()[:self.n_samples]
+
+        clean_cache_lists: dict[str, list[torch.Tensor]] = {h: [] for h in hook_names}
+
+        for batch_start in range(0, self.n_samples, self.batch_size):
+            batch_end = min(batch_start + self.batch_size, self.n_samples)
+            batch_prompts = prompts[batch_start:batch_end]
+            tokens, seq_lengths = self._tokenize_batch(batch_prompts)
+
+            _, cache = self.model.run_with_cache(tokens, names_filter=hook_names)
+
+            for hook_name in hook_names:
+                if hook_name in cache.cache_dict:
+                    act = cache[hook_name]  # [batch, seq_len, d_model]
+                    for i in range(len(batch_prompts)):
+                        clean_cache_lists[hook_name].append(act[i].detach().clone())
+
+            del cache
+            torch.cuda.empty_cache() if torch.cuda.is_available() else None
+
+        result_cache: dict[str, torch.Tensor] = {}
+        for hook_name, tensor_list in clean_cache_lists.items():
+            if not tensor_list:
+                continue
+            max_seq = max(t.shape[0] for t in tensor_list)
+            padded_list = []
+            for t in tensor_list:
+                if t.shape[0] < max_seq:
+                    pad = torch.zeros(
+                        max_seq - t.shape[0], t.shape[1],
+                        device=t.device, dtype=t.dtype
+                    )
+                    t_padded = torch.cat([t, pad], dim=0)
+                else:
+                    t_padded = t[:max_seq, :]
+                padded_list.append(t_padded)
+            result_cache[hook_name] = torch.stack(padded_list, dim=0)
+
+        logger.info(
+            f"[LayerAblationAnalyzer.compute_clean_cache] ✓ Clean cache stored "
+            f"for {len(result_cache)} hook points."
+        )
+        return result_cache
+
+    @torch.no_grad()
+    def ablate_component_resample(
+        self,
+        hook_names_to_ablate: list[str],
+        clean_cache: dict[str, torch.Tensor],
+    ) -> float:
+        """
+        Run the model with specified components resample-ablated.
+
+        Resample ablation replaces the activation of target component at prompt i
+        with the clean activation of prompt (i + 1) % n_samples from clean_cache.
+        This preserves valid activation geometry while breaking prompt-specific signal.
+        """
+        prompts = self.dataset.get_clean_prompts()[:self.n_samples]
+        io_ids = self.dataset.get_io_token_ids()[:self.n_samples]
+        s_ids = self.dataset.get_s_token_ids()[:self.n_samples]
+
+        total_ld = 0.0
+
+        for batch_start in range(0, self.n_samples, self.batch_size):
+            batch_end = min(batch_start + self.batch_size, self.n_samples)
+            batch_prompts = prompts[batch_start:batch_end]
+            batch_io = io_ids[batch_start:batch_end]
+            batch_s = s_ids[batch_start:batch_end]
+            tokens, seq_lengths = self._tokenize_batch(batch_prompts)
+
+            fwd_hooks = []
+            for hook_name in hook_names_to_ablate:
+                if hook_name not in clean_cache:
+                    continue
+
+                full_cache = clean_cache[hook_name]
+
+                def make_resample_hook(b_start: int, b_end: int, cache_tensor: torch.Tensor):
+                    def hook_fn(value: torch.Tensor, hook) -> torch.Tensor:
+                        cur_seq = value.shape[1]
+                        indices = [(k + 1) % self.n_samples for k in range(b_start, b_end)]
+                        resample_batch = cache_tensor[indices, :cur_seq, :]
+                        return resample_batch.to(value.device, dtype=value.dtype)
+                    return hook_fn
+
+                fwd_hooks.append((hook_name, make_resample_hook(batch_start, batch_end, full_cache)))
+
+            logits = self.model.run_with_hooks(tokens, fwd_hooks=fwd_hooks)
+
+            for i, (io_id, s_id, seq_len) in enumerate(zip(batch_io, batch_s, seq_lengths)):
+                final_logits = logits[i, seq_len - 1, :]
+                ld = compute_logit_diff(final_logits, io_id, s_id)
+                total_ld += ld
+
+        return total_ld / self.n_samples
+
+    @torch.no_grad()
     def run_full_sweep(
         self,
         mean_cache: Optional[dict[str, torch.Tensor]] = None,
+        ablation_mode: str = "mean",
+        clean_cache: Optional[dict[str, torch.Tensor]] = None,
     ) -> pd.DataFrame:
         """
         Run layer ablation sweep over all 12 layers × 3 component types.
 
-        For each layer, ablates: attn only, MLP only, and both simultaneously.
-        Reports the logit_diff under each ablation and the drop from baseline.
-
         Parameters
         ----------
         mean_cache : dict, optional
-            Pre-computed mean cache from `compute_mean_cache()`.
-            If None, it is computed automatically.
-
-        Returns
-        -------
-        pd.DataFrame
-            36 rows (12 layers × 3 component types) with columns:
-            - layer         : int (0–11)
-            - component     : str ("attn", "mlp", "full_layer")
-            - ablated_ld    : float (mean logit diff after ablation)
-            - baseline_ld   : float (baseline logit diff)
-            - ld_drop       : float (baseline - ablated; positive = ablation hurts)
-            - ld_drop_norm  : float (ld_drop / |baseline|; fractional importance)
-            - is_critical   : bool (ld_drop_norm > 0.1)
-
-        Examples
-        --------
-        >>> results = analyzer.run_full_sweep()
-        >>> critical = results[results["is_critical"]]
-        >>> print(critical[["layer", "component", "ld_drop_norm"]])
+            Pre-computed mean cache for mean ablation.
+        ablation_mode : str ("mean" or "resample")
+            Mode of ablation to apply.
+        clean_cache : dict, optional
+            Pre-computed clean cache for resample ablation.
         """
-        if mean_cache is None:
+        if ablation_mode == "mean" and mean_cache is None:
             mean_cache = self.compute_mean_cache()
+        elif ablation_mode == "resample" and clean_cache is None:
+            clean_cache = self.compute_clean_cache()
 
         baseline_ld = self._compute_baseline_logit_diff()
 
@@ -476,13 +576,18 @@ class LayerAblationAnalyzer:
                         f"blocks.{layer}.hook_mlp_out",
                     ]
 
-                ablated_ld = self.ablate_component(hooks, mean_cache)
+                if ablation_mode == "resample":
+                    ablated_ld = self.ablate_component_resample(hooks, clean_cache)
+                else:
+                    ablated_ld = self.ablate_component(hooks, mean_cache)
+
                 ld_drop = baseline_ld - ablated_ld
                 ld_drop_norm = ld_drop / abs(baseline_ld) if baseline_ld != 0 else 0.0
 
                 rows.append({
                     "layer": layer,
                     "component": component,
+                    "ablation_mode": ablation_mode,
                     "ablated_ld": round(ablated_ld, 6),
                     "baseline_ld": round(baseline_ld, 6),
                     "ld_drop": round(ld_drop, 6),
@@ -492,31 +597,12 @@ class LayerAblationAnalyzer:
 
                 done += 1
                 logger.info(
-                    f"[LayerAblation] [{done}/{total_ablations}] "
+                    f"[LayerAblation] [{ablation_mode}] [{done}/{total_ablations}] "
                     f"Layer {layer} {component}: "
                     f"LD={ablated_ld:+.4f} (drop={ld_drop:+.4f}, "
                     f"norm={ld_drop_norm:+.3f})"
                 )
 
         df = pd.DataFrame(rows)
-
-        n_critical = df["is_critical"].sum()
-        attn_df = df[df["component"] == "attn"]
-        mlp_df  = df[df["component"] == "mlp"]
-        top_attn_layer = (
-            int(attn_df.loc[attn_df["ld_drop_norm"].idxmax(), "layer"])
-            if not attn_df.empty else -1
-        )
-        top_mlp_layer = (
-            int(mlp_df.loc[mlp_df["ld_drop_norm"].idxmax(), "layer"])
-            if not mlp_df.empty else -1
-        )
-        logger.info(
-            f"[LayerAblationAnalyzer.run_full_sweep] ✓ Sweep complete.\n"
-            f"  Baseline logit diff : {baseline_ld:+.4f}\n"
-            f"  Critical components : {n_critical} / {len(df)}\n"
-            f"  Most important attn : Layer {top_attn_layer}\n"
-            f"  Most important MLP  : Layer {top_mlp_layer}"
-        )
-
         return df
+

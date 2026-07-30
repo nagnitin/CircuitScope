@@ -82,35 +82,41 @@ def main() -> None:
         batch_size=args.batch_size,
     )
 
-    # Step 1: Compute mean cache (run once, reuse for all ablations)
-    logger.info("Computing mean activation cache…")
+    # Step 1: Compute mean cache and clean cache
+    logger.info("Computing mean activation cache for mean ablation…")
     mean_cache = analyzer.compute_mean_cache()
 
-    # Step 2: Run full sweep (12 layers × 3 components = 36 ablations)
-    logger.info("Running 36-ablation sweep…")
-    results_df = analyzer.run_full_sweep(mean_cache)
+    logger.info("Computing clean activation cache for resample ablation control…")
+    clean_cache = analyzer.compute_clean_cache()
+
+    # Step 2: Run full sweep for both ablation modes (36 ablations each)
+    logger.info("Running 36-ablation sweep (mean ablation)…")
+    results_df = analyzer.run_full_sweep(mean_cache, ablation_mode="mean")
+
+    logger.info("Running 36-ablation sweep (resample ablation control)…")
+    resample_df = analyzer.run_full_sweep(ablation_mode="resample", clean_cache=clean_cache)
 
     elapsed = time.time() - t0
     logger.info(f"Layer ablation complete in {elapsed:.1f}s")
 
     # ── Report ────────────────────────────────────────────────────────────
-    print("\n── Layer Ablation Results ─────────────────────────────────────")
+    print("\n── Mean Layer Ablation Results ─────────────────────────────────────")
     critical = results_df[results_df["is_critical"]].sort_values(
         "ld_drop_norm", ascending=False
     )
     print(f"Critical components ({len(critical)} total):")
     print(critical[["layer", "component", "ld_drop_norm", "ablated_ld"]].to_string(index=False))
 
-    # Most important attn and MLP layers
-    attn_df = results_df[results_df["component"] == "attn"]
-    mlp_df  = results_df[results_df["component"] == "mlp"]
-    top_attn = attn_df.nlargest(3, "ld_drop_norm")
-    top_mlp  = mlp_df.nlargest(3, "ld_drop_norm")
-    print(f"\nTop 3 Attention layers: {top_attn['layer'].tolist()}")
-    print(f"Top 3 MLP layers:       {top_mlp['layer'].tolist()}")
+    print("\n── Resample Layer Ablation Control Results ─────────────────────────")
+    res_critical = resample_df[resample_df["is_critical"]].sort_values(
+        "ld_drop_norm", ascending=False
+    )
+    print(f"Critical components ({len(res_critical)} total):")
+    print(res_critical[["layer", "component", "ld_drop_norm", "ablated_ld"]].to_string(index=False))
 
     # ── Save ──────────────────────────────────────────────────────────────
     save_csv(results_df, paths["results_dir"] + "/layer_ablation.csv")
+    save_csv(resample_df, paths["results_dir"] + "/layer_ablation_resample.csv")
 
     # ── Plots ─────────────────────────────────────────────────────────────
     formats = config.get("plotting", {}).get("export_formats", ["html", "png"])
