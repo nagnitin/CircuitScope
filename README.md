@@ -42,7 +42,7 @@ CircuitScope applies these ideas to one specific, well-defined task — the **In
 
 `
 "When John and Mary went to the park, John gave the book to ___"
-                                                               ↑
+                                                               
                                                            Answer: Mary
 `
 
