@@ -443,6 +443,7 @@ def compute_comprehensive_stats(
     >>> print(stats)
     """
     def _stats_for_group(data: np.ndarray, group_label: str = "all") -> dict:
+        data = np.asarray(data, dtype=float)
         obs, lo, hi = bootstrap_ci(data, statistic=np.mean,
                                    n_bootstrap=n_bootstrap, seed=seed)
         return {

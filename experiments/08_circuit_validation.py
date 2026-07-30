@@ -85,7 +85,7 @@ def main() -> None:
     ).generate()
 
     # ── Load or compute head ablation results ─────────────────────────────
-    head_csv = Path(paths["results_dir"]) / "head_ablation.csv"
+    head_csv = Path(paths["outputs_dir"]) / "04_head_ablation" / "results" / "head_ablation.csv"
     if head_csv.exists():
         logger.info(f"Loading head ablation results from {head_csv}…")
         head_df = pd.read_csv(head_csv)
@@ -197,6 +197,9 @@ def main() -> None:
     fig1.add_hline(y=0.5, line_dash="dash", line_color="rgba(255,255,255,0.4)",
                    annotation_text=" 0.5 threshold")
 
+    max_score = max([r.score for r in validation_results] + [1.1])
+    y_upper = max(1.35, float(max_score * 1.15))
+
     fig1.update_layout(
         title={"text": f"Circuit Validation Results — {circuit.name} ({len(circuit)} heads)",
                "x": 0.5, "xanchor": "center",
@@ -204,10 +207,10 @@ def main() -> None:
         template="plotly_dark",
         plot_bgcolor=_BG_PLOT, paper_bgcolor=_BG_PAPER,
         font={"family": _FONT},
-        yaxis={"title": "Score", "range": [0, 1.1], "tickformat": ".0%"},
+        yaxis={"title": "Score", "range": [0, y_upper], "tickformat": ".0%"},
         xaxis={"title": "Validation Test"},
         barmode="group", showlegend=False,
-        width=900, height=500,
+        width=900, height=520,
     )
     save_figure(fig1, paths["figures_dir"] + "/23_circuit_validation_scores",
                 formats=formats, width=900, height=500)

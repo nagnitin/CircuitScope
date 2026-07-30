@@ -200,8 +200,8 @@ def main() -> None:
         save_csv(pronoun_head_df, paths["results_dir"] + "/pronoun_head_ablation.csv")
 
     # -- Load IOI results for comparison ----------------------------------
-    ioi_csv = Path(paths["results_csv"])
-    ioi_head_csv = Path(paths["results_dir"]) / "head_ablation.csv"
+    ioi_csv = Path(paths["outputs_dir"]) / "01_baseline" / "results" / "ioi_results.csv"
+    ioi_head_csv = Path(paths["outputs_dir"]) / "04_head_ablation" / "results" / "head_ablation.csv"
     ioi_eval_df = None
     ioi_head_df = None
 

@@ -829,9 +829,11 @@ def plot_circuit_graph(
         x1 = float(node_info[tgt]["layer"])
         y1 = float(node_info[tgt]["head"])
 
-        weight = edge["estimated_edge_weight"]
-        opacity = min(0.9, 0.2 + 0.7 * weight / max(max_weight, 1e-8))
-        width = 1 + 4 * weight / max(max_weight, 1e-8)
+        weight = float(edge["estimated_edge_weight"])
+        abs_weight = abs(weight)
+        abs_max = max(abs(float(max_weight)), 1e-8)
+        opacity = min(0.9, max(0.1, 0.2 + 0.7 * abs_weight / abs_max))
+        width = max(0.5, float(1.0 + 4.0 * abs_weight / abs_max))
 
         edge_traces.append(
             go.Scatter(

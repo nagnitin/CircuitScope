@@ -163,19 +163,23 @@ class PathPatchingAnalyzer:
 
         tc = self.model.to_tokens(prompt.prompt_clean, prepend_bos=True)
         tu = self.model.to_tokens(prompt.prompt_corrupted, prepend_bos=True)
-        seq_len = tc.shape[1]
+        seq_len_c = tc.shape[1]
+        seq_len_u = tu.shape[1]
+
+        if seq_len_c != seq_len_u:
+            return None, None, 0.0, 0.0, 0
 
         lc, cache_c = self.model.run_with_cache(tc, names_filter=hook_names)
         lu, cache_u = self.model.run_with_cache(tu, names_filter=hook_names)
 
-        clean_ld = compute_logit_diff(lc[0, seq_len - 1, :], io_id, s_id)
-        corrupted_ld = compute_logit_diff(lu[0, seq_len - 1, :], io_id, s_id)
+        clean_ld = compute_logit_diff(lc[0, seq_len_c - 1, :], io_id, s_id)
+        corrupted_ld = compute_logit_diff(lu[0, seq_len_u - 1, :], io_id, s_id)
 
         # Convert caches to plain dicts for memory efficiency
         cache_clean_dict = {k: v.clone() for k, v in cache_c.cache_dict.items()}
         cache_corrupted_dict = {k: v.clone() for k, v in cache_u.cache_dict.items()}
 
-        return cache_clean_dict, cache_corrupted_dict, clean_ld, corrupted_ld, seq_len
+        return cache_clean_dict, cache_corrupted_dict, clean_ld, corrupted_ld, seq_len_c
 
     @torch.no_grad()
     def run_sender_patching(self) -> pd.DataFrame:
@@ -227,6 +231,9 @@ class PathPatchingAnalyzer:
             (cache_clean_dict, cache_corrupted_dict,
              clean_ld, corrupted_ld, seq_len) = self._run_caches(i, hook_names)
 
+            if cache_clean_dict is None:
+                continue
+
             clean_lds_global.append(clean_ld)
             corrupted_lds_global.append(corrupted_ld)
 
@@ -238,6 +245,7 @@ class PathPatchingAnalyzer:
             tokens_corrupted = self.model.to_tokens(
                 prompt.prompt_corrupted, prepend_bos=True
             )
+            seq_len_u = tokens_corrupted.shape[1]
 
             # Patch each head
             for l in range(self.n_layers):
@@ -266,10 +274,10 @@ class PathPatchingAnalyzer:
 
                     logits_patched = self.model.run_with_hooks(
                         tokens_corrupted,
-                        fwd_hooks=[(hook_name, make_patch_hook(clean_z, h, seq_len))],
+                        fwd_hooks=[(hook_name, make_patch_hook(clean_z, h, seq_len_u))],
                     )
                     patched_ld = compute_logit_diff(
-                        logits_patched[0, seq_len - 1, :], io_id, s_id
+                        logits_patched[0, seq_len_u - 1, :], io_id, s_id
                     )
                     restoration = (patched_ld - corrupted_ld) / ld_gap
                     head_patched_lds[(l, h)].append(restoration)

@@ -87,13 +87,22 @@ def main() -> None:
         sys.stderr.reconfigure(encoding="utf-8")
 
     # -- Load results files ------------------------------------------------
+    outputs_dir = Path(paths["outputs_dir"])
     results_dir = Path(paths["results_dir"])
 
     def load_if_exists(fname: str) -> pd.DataFrame | None:
-        p = results_dir / fname
-        if p.exists():
-            return pd.read_csv(p)
-        logger.warning(f"File not found: {p}. Run the corresponding experiment first.")
+        subfolder_map = {
+            "ioi_results.csv": outputs_dir / "01_baseline" / "results" / fname,
+            "head_ablation.csv": outputs_dir / "04_head_ablation" / "results" / fname,
+            "layer_ablation.csv": outputs_dir / "03_layer_ablation" / "results" / fname,
+            "pronoun_baseline.csv": outputs_dir / "09_novel_extension" / "results" / fname,
+        }
+        target = subfolder_map.get(fname, results_dir / fname)
+        if target.exists():
+            return pd.read_csv(target)
+        if (results_dir / fname).exists():
+            return pd.read_csv(results_dir / fname)
+        logger.warning(f"File not found: {target}. Run the corresponding experiment first.")
         return None
 
     ioi_df      = load_if_exists("ioi_results.csv")
