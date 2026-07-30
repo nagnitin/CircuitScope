@@ -1,0 +1,501 @@
+prompt,speaker,recipient,pronoun,logit_diff,prob_io,prob_s,is_correct,rank_io,template_idx
+Clara met Henry at the store. She bought a gift for,Clara,Henry,She,3.5953521728515625,0.18909592926502228,0.005190875381231308,True,2,0
+Bob visited Gina at home. He brought flowers for,Bob,Gina,He,1.5806293487548828,0.1646384298801422,0.03389008343219757,True,2,1
+Kate called Paul on the phone. She left a message for,Kate,Paul,She,5.0569610595703125,0.21202613413333893,0.0013495193561539054,True,2,2
+Paul helped Grace move. He carried the boxes for,Paul,Grace,He,2.6483259201049805,0.06806114315986633,0.004816658794879913,True,3,3
+Gina thanked Henry warmly. She wrote a letter for,Gina,Henry,She,7.7633771896362305,0.18549321591854095,7.883810030762106e-05,True,2,4
+Frank surprised Amy at the party. He baked a cake for,Frank,Amy,He,3.017971992492676,0.1301836520433426,0.0063660177402198315,True,2,5
+Olivia recommended David for the job. She wrote a reference for,Olivia,David,She,1.941476821899414,0.055272176861763,0.007931108586490154,True,4,6
+Bob met Emma at the store. He bought a gift for,Bob,Emma,He,1.5478267669677734,0.06251250952482224,0.013297019526362419,True,2,0
+Iris visited Paul at home. She brought flowers for,Iris,Paul,She,4.339027404785156,0.13001888990402222,0.001696644234471023,True,2,1
+Bob called Tara on the phone. He left a message for,Bob,Tara,He,1.8236589431762695,0.13496889173984528,0.021788565441966057,True,2,2
+Iris helped Derek move. She carried the boxes for,Iris,Derek,She,4.921095848083496,0.07117542624473572,0.0005189497023820877,True,3,3
+Paul thanked Rose warmly. He wrote a letter for,Paul,Rose,He,2.041684150695801,0.06660840660333633,0.00864643044769764,True,3,4
+Amy surprised Sam at the party. She baked a cake for,Amy,Sam,She,2.186124801635742,0.17844343185424805,0.0200483500957489,True,2,5
+Bob recommended Grace for the job. He wrote a reference for,Bob,Grace,He,0.3200874328613281,0.05779876932501793,0.04196684807538986,True,5,6
+Gina met Derek at the store. She bought a gift for,Gina,Derek,She,3.630615234375,0.06155839562416077,0.0016312898369506001,True,3,0
+Xander visited Kate at home. He brought flowers for,Xander,Kate,He,7.034289360046387,0.14878152310848236,0.00013109795690979809,True,2,1
+Grace called Noah on the phone. She left a message for,Grace,Noah,She,4.673340797424316,0.093752920627594,0.0008757470641285181,True,3,2
+Xander helped Emma move. He carried the boxes for,Xander,Emma,He,6.26961612701416,0.1745501607656479,0.000330415612552315,True,2,3
+Emma thanked Brian warmly. She wrote a letter for,Emma,Brian,She,2.332000732421875,0.07421219348907471,0.007206099107861519,True,4,4
+Henry surprised Mia at the party. He baked a cake for,Henry,Mia,He,0.6232433319091797,0.04952378198504448,0.0265547763556242,True,3,5
+Mia recommended Sam for the job. She wrote a reference for,Mia,Sam,She,6.171780586242676,0.15529680252075195,0.00032418451155535877,True,2,6
+David met Gina at the store. He bought a gift for,David,Gina,He,2.496530532836914,0.09582723677158356,0.007893317379057407,True,2,0
+Rose visited Henry at home. She brought flowers for,Rose,Henry,She,3.3728551864624023,0.4529114365577698,0.015531051903963089,True,1,1
+Brian called Emma on the phone. He left a message for,Brian,Emma,He,3.4194326400756836,0.08061996102333069,0.0026387718971818686,True,2,2
+Tara helped Victor move. She carried the boxes for,Tara,Victor,She,8.368690490722656,0.21824505925178528,5.0637037929845974e-05,True,2,3
+Zach thanked Amy warmly. He wrote a letter for,Zach,Amy,He,4.757627487182617,0.2140679657459259,0.0018379780231043696,True,2,4
+Iris surprised Frank at the party. She baked a cake for,Iris,Frank,She,3.9961910247802734,0.036256346851587296,0.0006665923865512013,True,4,5
+David recommended Clara for the job. He wrote a reference for,David,Clara,He,1.8472843170166016,0.07535987347364426,0.01188159640878439,True,3,6
+Iris met Victor at the store. She bought a gift for,Iris,Victor,She,-0.5332202911376953,0.008568788878619671,0.014604748226702213,False,9,0
+Frank visited Iris at home. He brought flowers for,Frank,Iris,He,4.570050239562988,0.15272961556911469,0.0015818877145648003,True,2,1
+Emma called Brian on the phone. She left a message for,Emma,Brian,She,3.4695816040039062,0.10994847863912582,0.0034227019641548395,True,3,2
+Sam helped Rose move. He carried the boxes for,Sam,Rose,He,1.7222681045532227,0.12713778018951416,0.02271449565887451,True,3,3
+Clara thanked Zach warmly. She wrote a letter for,Clara,Zach,She,7.084089279174805,0.11078261584043503,9.28732770262286e-05,True,2,4
+Liam surprised Mia at the party. He baked a cake for,Liam,Mia,He,3.4402055740356445,0.06851574033498764,0.002196484012529254,True,2,5
+Mia recommended Noah for the job. She wrote a reference for,Mia,Noah,She,6.8870744705200195,0.22692634165287018,0.00023166822211351246,True,1,6
+Sam met Gina at the store. He bought a gift for,Sam,Gina,He,-0.45282745361328125,0.044227730482816696,0.06955928355455399,False,3,0
+Clara visited Frank at home. She brought flowers for,Clara,Frank,She,4.485376358032227,0.1367451548576355,0.0015414794906973839,True,2,1
+Liam called Tara on the phone. He left a message for,Liam,Tara,He,3.511166572570801,0.10821542888879776,0.0032315352000296116,True,2,2
+Gina helped Paul move. She carried the boxes for,Gina,Paul,She,7.526576042175293,0.2101958692073822,0.00011320711928419769,True,2,3
+Liam thanked Rose warmly. He wrote a letter for,Liam,Rose,He,3.279184341430664,0.05334373936057091,0.002008869545534253,True,3,4
+Olivia surprised Sam at the party. She baked a cake for,Olivia,Sam,She,3.9735469818115234,0.05896012485027313,0.0011088399915024638,True,3,5
+Paul recommended Clara for the job. He wrote a reference for,Paul,Clara,He,2.1966333389282227,0.10056551545858383,0.011180554516613483,True,3,6
+Mia met David at the store. She bought a gift for,Mia,David,She,2.2952499389648438,0.0998590737581253,0.010059425607323647,True,3,0
+Paul visited Alice at home. He brought flowers for,Paul,Alice,He,4.608321189880371,0.21198515594005585,0.00211318233050406,True,2,1
+Mia called Brian on the phone. She left a message for,Mia,Brian,She,5.572551727294922,0.1087973564863205,0.00041351368417963386,True,2,2
+Sam helped Emma move. He carried the boxes for,Sam,Emma,He,2.6415700912475586,0.2282530814409256,0.016262874007225037,True,2,3
+Iris thanked Xander warmly. She wrote a letter for,Iris,Xander,She,2.164142608642578,0.059482641518116,0.006831483915448189,True,5,4
+Noah surprised Clara at the party. He baked a cake for,Noah,Clara,He,1.8593292236328125,0.005237567238509655,0.0008158929995261133,True,8,5
+Rose recommended Brian for the job. She wrote a reference for,Rose,Brian,She,1.751199722290039,0.1489666998386383,0.025855490937829018,True,2,6
+Fred met Grace at the store. He bought a gift for,Fred,Grace,He,-0.07379150390625,0.034999072551727295,0.03767938166856766,False,4,0
+Kate visited Jack at home. She brought flowers for,Kate,Jack,She,2.178338050842285,0.25546735525131226,0.028926456347107887,True,2,1
+Paul called Gina on the phone. He left a message for,Paul,Gina,He,1.4901447296142578,0.07782308012247086,0.01753665693104267,True,2,2
+Tara helped Sam move. She carried the boxes for,Tara,Sam,She,5.886861801147461,0.3634742498397827,0.0010088859125971794,True,1,3
+Derek thanked Amy warmly. He wrote a letter for,Derek,Amy,He,5.014396667480469,0.17684930562973022,0.0011745690135285258,True,2,4
+Olivia surprised Zach at the party. She baked a cake for,Olivia,Zach,She,1.9037342071533203,0.03917164355516434,0.0058370111510157585,True,4,5
+Paul recommended Grace for the job. He wrote a reference for,Paul,Grace,He,1.7128686904907227,0.058419063687324524,0.010535743087530136,True,3,6
+Tara met Harry at the store. She bought a gift for,Tara,Harry,She,3.3846683502197266,0.052039168775081635,0.0017635489348322153,True,3,0
+Frank visited Alice at home. He brought flowers for,Frank,Alice,He,4.916656494140625,0.1698729693889618,0.001244077691808343,True,2,1
+Emma called Jack on the phone. She left a message for,Emma,Jack,She,1.6518440246582031,0.05834275111556053,0.01118407677859068,True,3,2
+Liam helped Clara move. He carried the boxes for,Liam,Clara,He,4.064914703369141,0.10081533342599869,0.0017304399516433477,True,3,3
+Olivia thanked Frank warmly. She wrote a letter for,Olivia,Frank,She,2.1868486404418945,0.017156103625893593,0.0019261157140135765,True,6,4
+Brian surprised Olivia at the party. He baked a cake for,Brian,Olivia,He,2.8657684326171875,0.0765271782875061,0.004357408732175827,True,2,5
+Amy recommended Fred for the job. She wrote a reference for,Amy,Fred,She,3.0160274505615234,0.151609405875206,0.007428173907101154,True,2,6
+Sam met Tara at the store. He bought a gift for,Sam,Tara,He,0.3174009323120117,0.07375112175941467,0.05369367450475693,True,2,0
+Alice visited Henry at home. She brought flowers for,Alice,Henry,She,2.234579086303711,0.2867552638053894,0.030693473294377327,True,2,1
+Sam called Clara on the phone. He left a message for,Sam,Clara,He,0.7627792358398438,0.033415742218494415,0.015584048815071583,True,4,2
+Mia helped Henry move. She carried the boxes for,Mia,Henry,She,7.445380210876465,0.4087193012237549,0.00023874682665336877,True,1,3
+Victor thanked Olivia warmly. He wrote a letter for,Victor,Olivia,He,3.814065933227539,0.0903778076171875,0.0019935816526412964,True,2,4
+Grace surprised Fred at the party. She baked a cake for,Grace,Fred,She,3.5717010498046875,0.07099281251430511,0.001995465951040387,True,2,5
+Bob recommended Gina for the job. He wrote a reference for,Bob,Gina,He,0.4758138656616211,0.16905398666858673,0.10504661500453949,True,2,6
+Gina met Sam at the store. She bought a gift for,Gina,Sam,She,2.799020767211914,0.15722034871578217,0.009569945745170116,True,3,0
+Liam visited Tara at home. He brought flowers for,Liam,Tara,He,5.016568183898926,0.21588139235973358,0.0014306958764791489,True,2,1
+Emma called Victor on the phone. She left a message for,Emma,Victor,She,3.216938018798828,0.19505219161510468,0.0078172218054533,True,2,2
+Noah helped Grace move. He carried the boxes for,Noah,Grace,He,2.439011573791504,0.03971266746520996,0.0034648128785192966,True,3,3
+Mia thanked Liam warmly. She wrote a letter for,Mia,Liam,She,5.5809831619262695,0.1087588518857956,0.0004098967183381319,True,2,4
+Bob surprised Amy at the party. He baked a cake for,Bob,Amy,He,3.5224227905273438,0.15427125990390778,0.0045552924275398254,True,2,5
+Mia recommended Harry for the job. She wrote a reference for,Mia,Harry,She,6.616867542266846,0.10971643030643463,0.00014675829152110964,True,3,6
+Bob met Emma at the store. He bought a gift for,Bob,Emma,He,1.5478248596191406,0.06251250207424164,0.013297042809426785,True,2,0
+Mia visited Victor at home. She brought flowers for,Mia,Victor,She,2.5135536193847656,0.05392772704362869,0.004367065150290728,True,5,1
+Paul called Alice on the phone. He left a message for,Paul,Alice,He,2.442037582397461,0.07644404470920563,0.006649365648627281,True,2,2
+Iris helped Frank move. She carried the boxes for,Iris,Frank,She,5.445199012756348,0.11885344237089157,0.0005130880163051188,True,3,3
+Frank thanked Gina warmly. He wrote a letter for,Frank,Gina,He,3.273013114929199,0.09124087542295456,0.0034573066513985395,True,3,4
+Rose surprised Frank at the party. She baked a cake for,Rose,Frank,She,0.7890434265136719,0.057918183505535126,0.02631102316081524,True,2,5
+Jack recommended Grace for the job. He wrote a reference for,Jack,Grace,He,1.466552734375,0.10502661019563675,0.02423168160021305,True,3,6
+Clara met Harry at the store. She bought a gift for,Clara,Harry,She,5.3460893630981445,0.05022568628191948,0.00023941356630530208,True,3,0
+Liam visited Kate at home. He brought flowers for,Liam,Kate,He,2.8428640365600586,0.10805030167102814,0.006294856779277325,True,3,1
+Tara called Derek on the phone. She left a message for,Tara,Derek,She,5.065874099731445,0.09209828823804855,0.000580992316827178,True,3,2
+Noah helped Tara move. He carried the boxes for,Noah,Tara,He,4.5242462158203125,0.09851790964603424,0.0010682183783501387,True,3,3
+Gina thanked Noah warmly. She wrote a letter for,Gina,Noah,She,7.319709777832031,0.17666730284690857,0.00011701636685756966,True,1,4
+Victor surprised Olivia at the party. He baked a cake for,Victor,Olivia,He,1.9213638305664062,0.04286077991127968,0.006275124382227659,True,2,5
+Clara recommended Zach for the job. She wrote a reference for,Clara,Zach,She,6.174915313720703,0.13609082996845245,0.0002832025638781488,True,2,6
+Fred met Tara at the store. He bought a gift for,Fred,Tara,He,1.9597597122192383,0.12288319319486618,0.017313292250037193,True,2,0
+Rose visited Henry at home. She brought flowers for,Rose,Henry,She,3.3728551864624023,0.4529114365577698,0.015531051903963089,True,1,1
+Paul called Iris on the phone. He left a message for,Paul,Iris,He,2.032679557800293,0.08771581202745438,0.011489374563097954,True,2,2
+Emma helped Xander move. She carried the boxes for,Emma,Xander,She,2.2378921508789062,0.11254757642745972,0.012006929144263268,True,3,3
+Bob thanked Amy warmly. He wrote a letter for,Bob,Amy,He,3.4447202682495117,0.15971308946609497,0.0050970339216291904,True,2,4
+Tara surprised Paul at the party. She baked a cake for,Tara,Paul,She,6.423295021057129,0.19580402970314026,0.0003178484330419451,True,2,5
+Paul recommended Alice for the job. He wrote a reference for,Paul,Alice,He,3.1010513305664062,0.1450059413909912,0.006525537930428982,True,2,6
+Emma met David at the store. She bought a gift for,Emma,David,She,1.1177120208740234,0.05494638532400131,0.017968960106372833,True,3,0
+Paul visited Emma at home. He brought flowers for,Paul,Emma,He,4.733707427978516,0.1630658507347107,0.001433969708159566,True,2,1
+Alice called Xander on the phone. She left a message for,Alice,Xander,She,2.098435401916504,0.06088586896657944,0.007467539981007576,True,3,2
+Frank helped Tara move. He carried the boxes for,Frank,Tara,He,4.072345733642578,0.19790369272232056,0.003371759783476591,True,2,3
+Iris thanked Sam warmly. She wrote a letter for,Iris,Sam,She,4.015227317810059,0.02009468898177147,0.0003624851524364203,True,6,4
+Harry surprised Iris at the party. He baked a cake for,Harry,Iris,He,0.49950504302978516,0.0381014421582222,0.02312113530933857,True,4,5
+Tara recommended Jack for the job. She wrote a reference for,Tara,Jack,She,5.50852108001709,0.23956574499607086,0.0009707433055154979,True,1,6
+Harry met Iris at the store. He bought a gift for,Harry,Iris,He,1.475961685180664,0.04451915621757507,0.010175246745347977,True,2,0
+Rose visited Derek at home. She brought flowers for,Rose,Derek,She,2.9718990325927734,0.2263384610414505,0.011589881964027882,True,2,1
+Noah called Emma on the phone. He left a message for,Noah,Emma,He,5.264800071716309,0.11905670911073685,0.0006155739538371563,True,2,2
+Emma helped Derek move. She carried the boxes for,Emma,Derek,She,3.2849435806274414,0.15551772713661194,0.005823003593832254,True,2,3
+Zach thanked Olivia warmly. He wrote a letter for,Zach,Olivia,He,3.7666893005371094,0.17496974766254425,0.004046788904815912,True,2,4
+Olivia surprised Fred at the party. She baked a cake for,Olivia,Fred,She,3.5971860885620117,0.10397908091545105,0.0028491015546023846,True,2,5
+David recommended Clara for the job. He wrote a reference for,David,Clara,He,1.8472833633422852,0.07535980641841888,0.01188159640878439,True,3,6
+Clara met Henry at the store. She bought a gift for,Clara,Henry,She,3.5953521728515625,0.18909592926502228,0.005190875381231308,True,2,0
+David visited Olivia at home. He brought flowers for,David,Olivia,He,3.759577751159668,0.1212955191731453,0.0028254061471670866,True,2,1
+Gina called Xander on the phone. She left a message for,Gina,Xander,She,6.149985313415527,0.08697090297937393,0.0001855535665526986,True,3,2
+Henry helped Iris move. He carried the boxes for,Henry,Iris,He,3.196310043334961,0.11459527909755707,0.0046884240582585335,True,3,3
+Iris thanked Noah warmly. She wrote a letter for,Iris,Noah,She,7.3375935554504395,0.10345656424760818,6.731032044626772e-05,True,4,4
+Fred surprised Grace at the party. He baked a cake for,Fred,Grace,He,0.09862327575683594,0.039021216332912445,0.03535649925470352,True,3,5
+Olivia recommended Liam for the job. She wrote a reference for,Olivia,Liam,She,3.125338554382324,0.2276955246925354,0.010000855661928654,True,2,6
+Sam met Rose at the store. He bought a gift for,Sam,Rose,He,-1.4544696807861328,0.03279123827815056,0.14041903614997864,False,5,0
+Iris visited Frank at home. She brought flowers for,Iris,Frank,She,2.2692270278930664,0.03374951332807541,0.003489432157948613,True,6,1
+Fred called Tara on the phone. He left a message for,Fred,Tara,He,1.9417438507080078,0.14983907341957092,0.021494951099157333,True,2,2
+Emma helped David move. She carried the boxes for,Emma,David,She,2.9308767318725586,0.07759174704551697,0.004139538388699293,True,2,3
+Bob thanked Emma warmly. He wrote a letter for,Bob,Emma,He,3.976470947265625,0.18622776865959167,0.003492086660116911,True,2,4
+Iris surprised Liam at the party. She baked a cake for,Iris,Liam,She,3.72507381439209,0.02958863042294979,0.0007134209154173732,True,5,5
+Derek recommended Rose for the job. He wrote a reference for,Derek,Rose,He,1.9441947937011719,0.06310240924358368,0.009030106477439404,True,4,6
+Rose met Noah at the store. She bought a gift for,Rose,Noah,She,1.460984230041504,0.11478956043720245,0.026632074266672134,True,3,0
+Brian visited Alice at home. He brought flowers for,Brian,Alice,He,4.608114242553711,0.1864113062620163,0.0018586330115795135,True,2,1
+Grace called Brian on the phone. She left a message for,Grace,Brian,She,2.871816635131836,0.07894346117973328,0.0044678859412670135,True,2,2
+Bob helped Olivia move. He carried the boxes for,Bob,Olivia,He,4.091970443725586,0.2203035056591034,0.003680452238768339,True,2,3
+Kate thanked Fred warmly. She wrote a letter for,Kate,Fred,She,1.693399429321289,0.09772545844316483,0.017971059307456017,True,2,4
+Victor surprised Olivia at the party. He baked a cake for,Victor,Olivia,He,1.9213638305664062,0.04286077991127968,0.006275124382227659,True,2,5
+Gina recommended Harry for the job. She wrote a reference for,Gina,Harry,She,7.448861122131348,0.16708233952522278,9.725933341542259e-05,True,2,6
+Jack met Iris at the store. He bought a gift for,Jack,Iris,He,1.2889957427978516,0.10490266978740692,0.028905650600790977,True,2,0
+Kate visited Noah at home. She brought flowers for,Kate,Noah,She,4.006008148193359,0.2846088111400604,0.005181566812098026,True,1,1
+David called Amy on the phone. He left a message for,David,Amy,He,3.106011390686035,0.07061075419187546,0.0031618934590369463,True,2,2
+Gina helped David move. She carried the boxes for,Gina,David,She,6.586435317993164,0.08444724977016449,0.00011644826008705422,True,3,3
+Xander thanked Alice warmly. He wrote a letter for,Xander,Alice,He,8.002530097961426,0.19354009628295898,6.476140697486699e-05,True,2,4
+Alice surprised Harry at the party. She baked a cake for,Alice,Harry,She,3.3832759857177734,0.05383783206343651,0.0018270459258928895,True,3,5
+Liam recommended Alice for the job. He wrote a reference for,Liam,Alice,He,4.029757499694824,0.09943348169326782,0.0017677920404821634,True,3,6
+Tara met Frank at the store. She bought a gift for,Tara,Frank,She,0.49666595458984375,0.03796162083745003,0.02310178056359291,True,3,0
+Liam visited Emma at home. He brought flowers for,Liam,Emma,He,5.540083885192871,0.24910125136375427,0.0009780207183212042,True,2,1
+Amy called Frank on the phone. She left a message for,Amy,Frank,She,1.852381706237793,0.08736389875411987,0.01370417419821024,True,3,2
+Paul helped Olivia move. He carried the boxes for,Paul,Olivia,He,4.139304161071777,0.23227559030056,0.003701064269989729,True,2,3
+Emma thanked Paul warmly. She wrote a letter for,Emma,Paul,She,2.377687454223633,0.11988072097301483,0.011120717972517014,True,3,4
+David surprised Amy at the party. He baked a cake for,David,Amy,He,4.063642501831055,0.10878748446702957,0.0018696546321734786,True,2,5
+Emma recommended Derek for the job. She wrote a reference for,Emma,Derek,She,1.6526241302490234,0.10140042006969452,0.019422905519604683,True,4,6
+Xander met Kate at the store. He bought a gift for,Xander,Kate,He,6.138261795043945,0.161974236369133,0.00034964934457093477,True,2,0
+Iris visited Xander at home. She brought flowers for,Iris,Xander,She,3.0869407653808594,0.08923632651567459,0.004072868265211582,True,3,1
+Paul called Kate on the phone. He left a message for,Paul,Kate,He,0.3545694351196289,0.031217822805047035,0.021898537874221802,True,3,2
+Olivia helped Jack move. She carried the boxes for,Olivia,Jack,She,2.7387351989746094,0.12375742197036743,0.008001172915101051,True,2,3
+Victor thanked Rose warmly. He wrote a letter for,Victor,Rose,He,3.7609024047851562,0.08256761729717255,0.001920748851262033,True,3,4
+Mia surprised Frank at the party. She baked a cake for,Mia,Frank,She,2.937765121459961,0.0506024993956089,0.00268112332560122,True,4,5
+Bob recommended Rose for the job. He wrote a reference for,Bob,Rose,He,0.1372976303100586,0.07347048074007034,0.0640450119972229,True,4,6
+Amy met Henry at the store. She bought a gift for,Amy,Henry,She,0.6472434997558594,0.11517856270074844,0.06029445677995682,True,3,0
+Frank visited Tara at home. He brought flowers for,Frank,Tara,He,5.054512977600098,0.20729468762874603,0.0013226382434368134,True,2,1
+Iris called Sam on the phone. She left a message for,Iris,Sam,She,2.679595947265625,0.016044650226831436,0.001100516295991838,True,7,2
+Jack helped Mia move. He carried the boxes for,Jack,Mia,He,2.3313751220703125,0.05517943575978279,0.005361346527934074,True,3,3
+Emma thanked Paul warmly. She wrote a letter for,Emma,Paul,She,2.377687454223633,0.11988072097301483,0.011120717972517014,True,3,4
+Zach surprised Kate at the party. He baked a cake for,Zach,Kate,He,3.9094161987304688,0.10668829828500748,0.002139335498213768,True,2,5
+Grace recommended Fred for the job. She wrote a reference for,Grace,Fred,She,3.63124942779541,0.1370633840560913,0.0036298600025475025,True,2,6
+Victor met Amy at the store. He bought a gift for,Victor,Amy,He,2.4939050674438477,0.0487576499581337,0.00402673939242959,True,2,0
+Clara visited Bob at home. She brought flowers for,Clara,Bob,She,4.8854522705078125,0.3660765588283539,0.0027659668121486902,True,1,1
+Victor called Clara on the phone. He left a message for,Victor,Clara,He,1.6994237899780273,0.06563639640808105,0.011997598223388195,True,2,2
+Emma helped Jack move. She carried the boxes for,Emma,Jack,She,2.3189496994018555,0.1471802294254303,0.014479128643870354,True,2,3
+Sam thanked Emma warmly. He wrote a letter for,Sam,Emma,He,2.7560157775878906,0.24046684801578522,0.015280330553650856,True,2,4
+Emma surprised Jack at the party. She baked a cake for,Emma,Jack,She,1.827223777770996,0.13724598288536072,0.022077323868870735,True,2,5
+Sam recommended Kate for the job. He wrote a reference for,Sam,Kate,He,0.7181863784790039,0.12813325226306915,0.06248236075043678,True,2,6
+Amy met Noah at the store. She bought a gift for,Amy,Noah,She,2.3813838958740234,0.15011686086654663,0.01387418806552887,True,3,0
+Xander visited Iris at home. He brought flowers for,Xander,Iris,He,6.066474914550781,0.15856151282787323,0.00036775722401216626,True,2,1
+Clara called Sam on the phone. She left a message for,Clara,Sam,She,6.159646987915039,0.06412812322378159,0.00013550267613027245,True,3,2
+Harry helped Kate move. He carried the boxes for,Harry,Kate,He,0.6243877410888672,0.04663481563329697,0.024977104738354683,True,4,3
+Alice thanked Frank warmly. She wrote a letter for,Alice,Frank,She,1.184967041015625,0.02678409218788147,0.008189404383301735,True,5,4
+Derek surprised Kate at the party. He baked a cake for,Derek,Kate,He,1.6654138565063477,0.047653064131736755,0.009011784568428993,True,3,5
+Alice recommended Bob for the job. She wrote a reference for,Alice,Bob,She,2.1859169006347656,0.3243265748023987,0.03644608333706856,True,1,6
+Xander met Grace at the store. He bought a gift for,Xander,Grace,He,2.91831111907959,0.02191775292158127,0.00118410331197083,True,6,0
+Clara visited Sam at home. She brought flowers for,Clara,Sam,She,4.4978132247924805,0.17471067607402802,0.0019451091066002846,True,2,1
+Liam called Gina on the phone. He left a message for,Liam,Gina,He,2.983811378479004,0.028630506247282028,0.0014486925210803747,True,3,2
+Rose helped Derek move. She carried the boxes for,Rose,Derek,She,3.5430116653442383,0.13980907201766968,0.004044128581881523,True,2,3
+Bob thanked Emma warmly. He wrote a letter for,Bob,Emma,He,3.976470947265625,0.18622776865959167,0.003492086660116911,True,2,4
+Emma surprised Jack at the party. She baked a cake for,Emma,Jack,She,1.827223777770996,0.13724598288536072,0.022077323868870735,True,2,5
+David recommended Mia for the job. He wrote a reference for,David,Mia,He,1.1403284072875977,0.0324183814227581,0.010364611633121967,True,6,6
+Amy met Jack at the store. She bought a gift for,Amy,Jack,She,0.6866722106933594,0.13166135549545288,0.06625831872224808,True,3,0
+Derek visited Grace at home. He brought flowers for,Derek,Grace,He,4.277989387512207,0.07765409350395203,0.0010771028464660048,True,3,1
+Alice called Victor on the phone. She left a message for,Alice,Victor,She,4.1342878341674805,0.16079162061214447,0.002574927406385541,True,2,2
+Zach helped Alice move. He carried the boxes for,Zach,Alice,He,5.781700134277344,0.27040019631385803,0.0008337704930454493,True,2,3
+Mia thanked Noah warmly. She wrote a letter for,Mia,Noah,She,6.90342903137207,0.16872262954711914,0.00016945414245128632,True,2,4
+Paul surprised Clara at the party. He baked a cake for,Paul,Clara,He,2.345447540283203,0.06447623670101166,0.006177102215588093,True,2,5
+Emma recommended Zach for the job. She wrote a reference for,Emma,Zach,She,1.3833684921264648,0.14129342138767242,0.03542685881257057,True,2,6
+Derek met Amy at the store. He bought a gift for,Derek,Amy,He,3.702779769897461,0.08997999876737595,0.0022184476256370544,True,2,0
+Gina visited Jack at home. She brought flowers for,Gina,Jack,She,6.2093000411987305,0.24807633459568024,0.0004987932625226676,True,2,1
+Paul called Grace on the phone. He left a message for,Paul,Grace,He,2.093700408935547,0.08217975497245789,0.010127034969627857,True,2,2
+Grace helped Derek move. She carried the boxes for,Grace,Derek,She,4.668363571166992,0.04049747809767723,0.0003801749262493104,True,5,3
+Bob thanked Grace warmly. He wrote a letter for,Bob,Grace,He,1.6404809951782227,0.03346150740981102,0.006487743463367224,True,3,4
+Gina surprised Xander at the party. She baked a cake for,Gina,Xander,She,6.684242248535156,0.07735384255647659,9.67280357144773e-05,True,3,5
+Derek recommended Clara for the job. He wrote a reference for,Derek,Clara,He,2.6201934814453125,0.07949933409690857,0.005786659196019173,True,3,6
+Gina met Paul at the store. She bought a gift for,Gina,Paul,She,3.236724853515625,0.13578179478645325,0.0053351884707808495,True,3,0
+Sam visited Grace at home. He brought flowers for,Sam,Grace,He,2.308286666870117,0.09860210865736008,0.009804151952266693,True,3,1
+Gina called Henry on the phone. She left a message for,Gina,Henry,She,6.954078197479248,0.12621814012527466,0.000120504766528029,True,2,2
+Brian helped Alice move. He carried the boxes for,Brian,Alice,He,5.349854469299316,0.21811416745185852,0.0010357896098867059,True,2,3
+Rose thanked Paul warmly. She wrote a letter for,Rose,Paul,She,3.004672050476074,0.14297696948051453,0.007085224147886038,True,2,4
+Noah surprised Rose at the party. He baked a cake for,Noah,Rose,He,-0.03032398223876953,0.004272326361387968,0.004403864499181509,False,13,5
+Mia recommended Victor for the job. She wrote a reference for,Mia,Victor,She,4.567652702331543,0.09229417890310287,0.0009582258644513786,True,4,6
+Paul met Iris at the store. He bought a gift for,Paul,Iris,He,2.9678077697753906,0.10324087738990784,0.005308222956955433,True,2,0
+Alice visited Noah at home. She brought flowers for,Alice,Noah,She,4.174756050109863,0.3032449185848236,0.004663586150854826,True,1,1
+Brian called Mia on the phone. He left a message for,Brian,Mia,He,0.8484601974487305,0.0240040086209774,0.010275481268763542,True,5,2
+Kate helped Frank move. She carried the boxes for,Kate,Frank,She,2.3883657455444336,0.12194778025150299,0.011192313395440578,True,2,3
+Sam thanked Mia warmly. He wrote a letter for,Sam,Mia,He,1.3761587142944336,0.054460782557725906,0.013753896579146385,True,3,4
+Clara surprised Brian at the party. She baked a cake for,Clara,Brian,She,6.182039260864258,0.1162513867020607,0.0002401997771812603,True,2,5
+Xander recommended Alice for the job. He wrote a reference for,Xander,Alice,He,7.515864372253418,0.17820388078689575,9.701049566501752e-05,True,2,6
+Emma met Sam at the store. She bought a gift for,Emma,Sam,She,1.8755083084106445,0.1399337351322174,0.02144862897694111,True,3,0
+Liam visited Amy at home. He brought flowers for,Liam,Amy,He,6.497931480407715,0.4473660886287689,0.0006739804521203041,True,1,1
+Kate called David on the phone. She left a message for,Kate,David,She,3.1720399856567383,0.07496523857116699,0.0031423927284777164,True,3,2
+Henry helped Amy move. He carried the boxes for,Henry,Amy,He,3.6624832153320312,0.3526241183280945,0.009051400236785412,True,1,3
+Olivia thanked Zach warmly. She wrote a letter for,Olivia,Zach,She,3.6126956939697266,0.11730632930994034,0.0031648098956793547,True,2,4
+Xander surprised Olivia at the party. He baked a cake for,Xander,Olivia,He,4.579034805297852,0.07033069431781769,0.0007219304097816348,True,2,5
+Amy recommended Henry for the job. She wrote a reference for,Amy,Henry,She,3.079463005065918,0.2376905381679535,0.010929948650300503,True,1,6
+Brian met Amy at the store. He bought a gift for,Brian,Amy,He,3.328932762145996,0.13494786620140076,0.004835360683500767,True,2,0
+Iris visited Sam at home. She brought flowers for,Iris,Sam,She,1.5808839797973633,0.014612438157200813,0.003007139079272747,True,9,1
+David called Gina on the phone. He left a message for,David,Gina,He,2.566390037536621,0.07589199393987656,0.005829441361129284,True,2,2
+Olivia helped Bob move. She carried the boxes for,Olivia,Bob,She,2.8847761154174805,0.07327316701412201,0.004093573894351721,True,4,3
+Noah thanked Mia warmly. He wrote a letter for,Noah,Mia,He,4.419162750244141,0.05152265354990959,0.0006205548997968435,True,3,4
+Olivia surprised Frank at the party. She baked a cake for,Olivia,Frank,She,0.9075632095336914,0.02345925010740757,0.009465955197811127,True,5,5
+Xander recommended Amy for the job. He wrote a reference for,Xander,Amy,He,5.51589298248291,0.12580342590808868,0.0005060233525000513,True,2,6
+Mia met Henry at the store. She bought a gift for,Mia,Henry,She,2.2678709030151367,0.09054958820343018,0.009374813176691532,True,3,0
+Victor visited Tara at home. He brought flowers for,Victor,Tara,He,5.05640983581543,0.277374267578125,0.0017664252081885934,True,1,1
+Kate called Derek on the phone. She left a message for,Kate,Derek,She,3.4610910415649414,0.05156121402978897,0.0016187895089387894,True,4,2
+Xander helped Olivia move. He carried the boxes for,Xander,Olivia,He,5.004044532775879,0.21158860623836517,0.001419918262399733,True,2,3
+Gina thanked Victor warmly. She wrote a letter for,Gina,Victor,She,5.999570846557617,0.13603271543979645,0.0003373360959812999,True,2,4
+Jack surprised Iris at the party. He baked a cake for,Jack,Iris,He,0.9662618637084961,0.08670346438884735,0.03299090638756752,True,2,5
+Olivia recommended Brian for the job. She wrote a reference for,Olivia,Brian,She,2.345057487487793,0.09948358684778214,0.009534675627946854,True,4,6
+Liam met Amy at the store. He bought a gift for,Liam,Amy,He,3.378390312194824,0.09044790267944336,0.0030844821594655514,True,2,0
+Amy visited Victor at home. She brought flowers for,Amy,Victor,She,1.454543113708496,0.1242775171995163,0.029019670560956,True,3,1
+Brian called Tara on the phone. He left a message for,Brian,Tara,He,1.8048934936523438,0.10246749967336655,0.016855081543326378,True,2,2
+Alice helped Victor move. She carried the boxes for,Alice,Victor,She,2.7964134216308594,0.15222027897834778,0.009289784356951714,True,2,3
+Victor thanked Iris warmly. He wrote a letter for,Victor,Iris,He,4.332139015197754,0.22618325054645538,0.002971914829686284,True,2,4
+Olivia surprised Xander at the party. She baked a cake for,Olivia,Xander,She,2.7221336364746094,0.052361056208610535,0.0034419200383126736,True,4,5
+Fred recommended Rose for the job. He wrote a reference for,Fred,Rose,He,2.2765588760375977,0.0934564545750618,0.009592069312930107,True,4,6
+Rose met Noah at the store. She bought a gift for,Rose,Noah,She,1.460984230041504,0.11478956043720245,0.026632074266672134,True,3,0
+Harry visited Gina at home. He brought flowers for,Harry,Gina,He,2.4176435470581055,0.09414088726043701,0.008390909992158413,True,3,1
+Grace called Frank on the phone. She left a message for,Grace,Frank,She,2.6271791458129883,0.04923104867339134,0.0035585223231464624,True,4,2
+Victor helped Tara move. He carried the boxes for,Victor,Tara,He,3.9904565811157227,0.1356959342956543,0.0025091900024563074,True,2,3
+Clara thanked Xander warmly. She wrote a letter for,Clara,Xander,She,6.714972496032715,0.16489620506763458,0.00019995631009805948,True,2,4
+Frank surprised Iris at the party. He baked a cake for,Frank,Iris,He,1.7382030487060547,0.09666650742292404,0.016997460275888443,True,2,5
+Clara recommended Victor for the job. She wrote a reference for,Clara,Victor,She,3.786953926086426,0.21125684678554535,0.004788038320839405,True,1,6
+Paul met Iris at the store. He bought a gift for,Paul,Iris,He,2.9678115844726562,0.10324088484048843,0.005308202933520079,True,2,0
+Grace visited Bob at home. She brought flowers for,Grace,Bob,She,4.4329633712768555,0.23279692232608795,0.0027654494624584913,True,2,1
+David called Iris on the phone. He left a message for,David,Iris,He,2.288938522338867,0.09699713438749313,0.009832988493144512,True,2,2
+Rose helped Frank move. She carried the boxes for,Rose,Frank,She,2.7860183715820312,0.14352227747440338,0.008850482292473316,True,2,3
+Fred thanked Olivia warmly. He wrote a letter for,Fred,Olivia,He,2.4874954223632812,0.11667051911354065,0.009697405621409416,True,2,4
+Clara surprised Noah at the party. She baked a cake for,Clara,Noah,She,7.811217308044434,0.15516728162765503,6.286828283919021e-05,True,2,5
+Brian recommended Rose for the job. He wrote a reference for,Brian,Rose,He,2.087249755859375,0.0829327329993248,0.010285962373018265,True,4,6
+Olivia met Paul at the store. She bought a gift for,Olivia,Paul,She,0.19007492065429688,0.05405430123209953,0.0446973517537117,True,3,0
+Jack visited Clara at home. He brought flowers for,Jack,Clara,He,2.8163585662841797,0.14088216423988342,0.008428049273788929,True,3,1
+Gina called Bob on the phone. She left a message for,Gina,Bob,She,6.112090110778809,0.20234368741512299,0.0004483763186726719,True,2,2
+Henry helped Olivia move. He carried the boxes for,Henry,Olivia,He,1.774068832397461,0.29164206981658936,0.049474552273750305,True,2,3
+Iris thanked Liam warmly. She wrote a letter for,Iris,Liam,She,4.0585479736328125,0.04905279353260994,0.0008473420166410506,True,4,4
+Fred surprised Alice at the party. He baked a cake for,Fred,Alice,He,2.4973983764648438,0.07810542732477188,0.006427985616028309,True,2,5
+Tara recommended Paul for the job. She wrote a reference for,Tara,Paul,She,4.966978073120117,0.15032236278057098,0.001046869088895619,True,2,6
+Henry met Rose at the store. He bought a gift for,Henry,Rose,He,0.12435245513916016,0.10562396794557571,0.09327320009469986,True,2,0
+Grace visited Fred at home. She brought flowers for,Grace,Fred,She,3.1295013427734375,0.17657823860645294,0.007723462767899036,True,2,1
+Xander called Rose on the phone. He left a message for,Xander,Rose,He,6.873266220092773,0.11359331756830215,0.00011757938773371279,True,2,2
+Amy helped Derek move. She carried the boxes for,Amy,Derek,She,1.760824203491211,0.08548477292060852,0.014695098623633385,True,2,3
+Fred thanked Grace warmly. He wrote a letter for,Fred,Grace,He,1.0651140213012695,0.03250204026699066,0.011203081347048283,True,3,4
+Gina surprised Harry at the party. She baked a cake for,Gina,Harry,She,7.90155029296875,0.07130619138479233,2.639535887283273e-05,True,2,5
+Fred recommended Kate for the job. He wrote a reference for,Fred,Kate,He,2.1761112213134766,0.21814104914665222,0.024755079299211502,True,2,6
+Iris met Sam at the store. She bought a gift for,Iris,Sam,She,1.8561391830444336,0.01920383609831333,0.003001075703650713,True,6,0
+Harry visited Clara at home. He brought flowers for,Harry,Clara,He,2.69113826751709,0.10419031232595444,0.007064490113407373,True,3,1
+Iris called Sam on the phone. She left a message for,Iris,Sam,She,2.679595947265625,0.016044650226831436,0.001100516295991838,True,7,2
+Fred helped Emma move. He carried the boxes for,Fred,Emma,He,4.977108955383301,0.20797604322433472,0.0014337793691083789,True,2,3
+Gina thanked Victor warmly. She wrote a letter for,Gina,Victor,She,5.999571800231934,0.13603299856185913,0.00033733650343492627,True,2,4
+Paul surprised Kate at the party. He baked a cake for,Paul,Kate,He,1.6677656173706055,0.06481552869081497,0.012228626757860184,True,2,5
+Mia recommended Xander for the job. She wrote a reference for,Mia,Xander,She,6.186775207519531,0.25908517837524414,0.0005327951512299478,True,1,6
+Frank met Grace at the store. He bought a gift for,Frank,Grace,He,1.9671268463134766,0.07693120092153549,0.010759452357888222,True,2,0
+Grace visited Paul at home. She brought flowers for,Grace,Paul,She,3.1328887939453125,0.2283138930797577,0.009952588006854057,True,2,1
+Brian called Gina on the phone. He left a message for,Brian,Gina,He,2.067472457885742,0.06128601357340813,0.007752995006740093,True,2,2
+Grace helped Noah move. She carried the boxes for,Grace,Noah,She,5.568548202514648,0.17606371641159058,0.0006718620425090194,True,2,3
+Frank thanked Olivia warmly. He wrote a letter for,Frank,Olivia,He,3.23288631439209,0.08297722786664963,0.0032729110680520535,True,2,4
+Olivia surprised Xander at the party. She baked a cake for,Olivia,Xander,She,2.7221336364746094,0.052361056208610535,0.0034419200383126736,True,4,5
+Fred recommended Olivia for the job. He wrote a reference for,Fred,Olivia,He,2.3167428970336914,0.1875779926776886,0.018494101241230965,True,2,6
+Alice met Noah at the store. She bought a gift for,Alice,Noah,She,2.7681045532226562,0.1280449777841568,0.008038777858018875,True,3,0
+Derek visited Olivia at home. He brought flowers for,Derek,Olivia,He,4.37135124206543,0.12858542799949646,0.0016245683655142784,True,2,1
+Amy called Bob on the phone. She left a message for,Amy,Bob,She,2.707119941711426,0.16046816110610962,0.010707833804190159,True,2,2
+Brian helped Rose move. He carried the boxes for,Brian,Rose,He,3.9264564514160156,0.12195684015750885,0.0024041845463216305,True,3,3
+Alice thanked Zach warmly. She wrote a letter for,Alice,Zach,She,2.3440723419189453,0.09663534164428711,0.009270823560655117,True,3,4
+Victor surprised Olivia at the party. He baked a cake for,Victor,Olivia,He,1.9213666915893555,0.04286081716418266,0.006275112275034189,True,2,5
+Olivia recommended Paul for the job. She wrote a reference for,Olivia,Paul,She,3.6819725036621094,0.12424244731664658,0.0031275886576622725,True,3,6
+Harry met Iris at the store. He bought a gift for,Harry,Iris,He,1.475961685180664,0.04451915621757507,0.010175246745347977,True,2,0
+Kate visited Derek at home. She brought flowers for,Kate,Derek,She,2.440988540649414,0.12445957213640213,0.010837282985448837,True,2,1
+Harry called Alice on the phone. He left a message for,Harry,Alice,He,3.5495071411132812,0.09776926785707474,0.002809771103784442,True,2,2
+Olivia helped Xander move. She carried the boxes for,Olivia,Xander,She,2.2417211532592773,0.08365269005298615,0.008890225552022457,True,4,3
+Brian thanked Gina warmly. He wrote a letter for,Brian,Gina,He,2.824357032775879,0.09258253872394562,0.005494477692991495,True,3,4
+Grace surprised Fred at the party. She baked a cake for,Grace,Fred,She,3.5717010498046875,0.07099281251430511,0.001995465951040387,True,2,5
+Jack recommended Amy for the job. He wrote a reference for,Jack,Amy,He,0.35436534881591797,0.08491668850183487,0.05957912653684616,True,3,6
+Tara met Bob at the store. She bought a gift for,Tara,Bob,She,2.3061437606811523,0.13286449015140533,0.01323925144970417,True,2,0
+Brian visited Amy at home. He brought flowers for,Brian,Amy,He,5.867937088012695,0.4138088524341583,0.0011705422075465322,True,1,1
+Amy called Bob on the phone. She left a message for,Amy,Bob,She,2.7071218490600586,0.1604684293270111,0.01070783194154501,True,2,2
+Frank helped Clara move. He carried the boxes for,Frank,Clara,He,3.081423759460449,0.11707601696252823,0.005373070947825909,True,3,3
+Olivia thanked Jack warmly. She wrote a letter for,Olivia,Jack,She,3.0264625549316406,0.0629541352391243,0.0030524476896971464,True,4,4
+Fred surprised Grace at the party. He baked a cake for,Fred,Grace,He,0.09862327575683594,0.03902123123407364,0.035356514155864716,True,3,5
+Alice recommended Sam for the job. She wrote a reference for,Alice,Sam,She,1.76611328125,0.13534311950206757,0.02314317412674427,True,2,6
+Brian met Mia at the store. He bought a gift for,Brian,Mia,He,1.484832763671875,0.034034084528684616,0.0077100894413888454,True,4,0
+Iris visited Fred at home. She brought flowers for,Iris,Fred,She,1.5997276306152344,0.028536731377243996,0.005763036198914051,True,8,1
+Xander called Mia on the phone. He left a message for,Xander,Mia,He,5.793956756591797,0.0296780988574028,9.03967084013857e-05,True,5,2
+Olivia helped Sam move. She carried the boxes for,Olivia,Sam,She,4.164040565490723,0.1633567214012146,0.002539318287745118,True,2,3
+Derek thanked Kate warmly. He wrote a letter for,Derek,Kate,He,3.5472774505615234,0.13820531964302063,0.00398072088137269,True,2,4
+Emma surprised Harry at the party. She baked a cake for,Emma,Harry,She,2.8014354705810547,0.05276111885905266,0.0032038046047091484,True,3,5
+Bob recommended Gina for the job. He wrote a reference for,Bob,Gina,He,0.4758138656616211,0.16905398666858673,0.10504661500453949,True,2,6
+Tara met David at the store. She bought a gift for,Tara,David,She,1.9371728897094727,0.06366517394781113,0.009174838662147522,True,3,0
+Zach visited Iris at home. He brought flowers for,Zach,Iris,He,5.379756927490234,0.14405310153961182,0.0006639324710704386,True,2,1
+Clara called Frank on the phone. She left a message for,Clara,Frank,She,7.1558732986450195,0.10061817616224289,7.850913243601099e-05,True,3,2
+David helped Alice move. He carried the boxes for,David,Alice,He,4.4145660400390625,0.1829020231962204,0.00221307878382504,True,2,3
+Iris thanked Noah warmly. She wrote a letter for,Iris,Noah,She,7.337593078613281,0.10345657914876938,6.731036410201341e-05,True,4,4
+Bob surprised Amy at the party. He baked a cake for,Bob,Amy,He,3.5224227905273438,0.15427125990390778,0.0045552924275398254,True,2,5
+Grace recommended Paul for the job. She wrote a reference for,Grace,Paul,She,3.2461776733398438,0.14044500887393951,0.005466498900204897,True,2,6
+Jack met Rose at the store. He bought a gift for,Jack,Rose,He,0.5935049057006836,0.09844814985990524,0.05438155680894852,True,2,0
+Clara visited Henry at home. She brought flowers for,Clara,Henry,She,5.811130523681641,0.453277587890625,0.0013571326853707433,True,1,1
+Noah called Rose on the phone. He left a message for,Noah,Rose,He,1.5800647735595703,0.04386872798204422,0.009035279974341393,True,5,2
+Gina helped Sam move. She carried the boxes for,Gina,Sam,She,7.609060287475586,0.33713048696517944,0.000167195699759759,True,1,3
+Zach thanked Grace warmly. He wrote a letter for,Zach,Grace,He,2.8400659561157227,0.05906561762094498,0.003450720338150859,True,3,4
+Amy surprised Henry at the party. She baked a cake for,Amy,Henry,She,1.8878889083862305,0.10769378393888474,0.016303876414895058,True,2,5
+Liam recommended Kate for the job. He wrote a reference for,Liam,Kate,He,1.5344066619873047,0.07882089167833328,0.016992488875985146,True,3,6
+Emma met Bob at the store. She bought a gift for,Emma,Bob,She,2.0329837799072266,0.1158251166343689,0.015166631899774075,True,3,0
+Victor visited Amy at home. He brought flowers for,Victor,Amy,He,5.396551132202148,0.301776260137558,0.0013677057577297091,True,2,1
+Clara called Brian on the phone. She left a message for,Clara,Brian,She,7.962913513183594,0.1165427565574646,4.057288606418297e-05,True,3,2
+Brian helped Gina move. He carried the boxes for,Brian,Gina,He,3.44216251373291,0.11486927419900894,0.00367529084905982,True,3,3
+Iris thanked Frank warmly. She wrote a letter for,Iris,Frank,She,3.7712178230285645,0.008947078138589859,0.0002059975959127769,True,9,4
+Paul surprised Emma at the party. He baked a cake for,Paul,Emma,He,3.876723289489746,0.1103956401348114,0.0022872432600706816,True,2,5
+Gina recommended Victor for the job. She wrote a reference for,Gina,Victor,She,4.90634822845459,0.15853333473205566,0.0011730610858649015,True,2,6
+Henry met Amy at the store. He bought a gift for,Henry,Amy,He,1.8460712432861328,0.16512180864810944,0.026065489277243614,True,2,0
+Alice visited Zach at home. She brought flowers for,Alice,Zach,She,3.211549758911133,0.3587553799152374,0.014455731958150864,True,1,1
+Derek called Clara on the phone. He left a message for,Derek,Clara,He,3.1376876831054688,0.0364224910736084,0.001580116688273847,True,4,2
+Mia helped Frank move. She carried the boxes for,Mia,Frank,She,5.234880447387695,0.10351626574993134,0.0005514788790605962,True,2,3
+Xander thanked Alice warmly. He wrote a letter for,Xander,Alice,He,8.002532958984375,0.19354021549224854,6.476132693933323e-05,True,2,4
+Olivia surprised Harry at the party. She baked a cake for,Olivia,Harry,She,5.055049896240234,0.036207377910614014,0.00023089621390681714,True,4,5
+Henry recommended Olivia for the job. He wrote a reference for,Henry,Olivia,He,0.6111993789672852,0.15289148688316345,0.0829741358757019,True,2,6
+Mia met Fred at the store. She bought a gift for,Mia,Fred,She,2.3913440704345703,0.10347700119018555,0.00946882925927639,True,3,0
+Jack visited Olivia at home. He brought flowers for,Jack,Olivia,He,2.6710739135742188,0.1616409569978714,0.011181981302797794,True,2,1
+Grace called Sam on the phone. She left a message for,Grace,Sam,She,1.8546733856201172,0.030136452987790108,0.004716476891189814,True,5,2
+Harry helped Rose move. He carried the boxes for,Harry,Rose,He,0.8004646301269531,0.0549965538084507,0.024700062349438667,True,5,3
+Olivia thanked Sam warmly. She wrote a letter for,Olivia,Sam,She,3.63055419921875,0.054495975375175476,0.0014442247338593006,True,4,4
+Xander surprised Iris at the party. He baked a cake for,Xander,Iris,He,6.019899368286133,0.15215998888015747,0.00036973567330278456,True,2,5
+Emma recommended Sam for the job. She wrote a reference for,Emma,Sam,She,2.8015851974487305,0.19705730676651,0.011964086443185806,True,1,6
+Fred met Iris at the store. He bought a gift for,Fred,Iris,He,2.0358963012695312,0.08080688863992691,0.0105504235252738,True,2,0
+Rose visited Brian at home. She brought flowers for,Rose,Brian,She,2.689483642578125,0.25144854187965393,0.017077380791306496,True,2,1
+Xander called Alice on the phone. He left a message for,Xander,Alice,He,7.910791397094727,0.07140254974365234,2.618789949337952e-05,True,2,2
+Rose helped Xander move. She carried the boxes for,Rose,Xander,She,3.5264291763305664,0.12253029644489288,0.003603584598749876,True,2,3
+Liam thanked Rose warmly. He wrote a letter for,Liam,Rose,He,3.2791833877563477,0.0533437617123127,0.0020088728051632643,True,3,4
+Iris surprised Zach at the party. She baked a cake for,Iris,Zach,She,2.3113698959350586,0.010520326904952526,0.0010428312234580517,True,8,5
+Sam recommended Mia for the job. He wrote a reference for,Sam,Mia,He,0.0469818115234375,0.028173767030239105,0.026880724355578423,True,6,6
+Kate met Sam at the store. She bought a gift for,Kate,Sam,She,1.2559986114501953,0.12350583076477051,0.035173386335372925,True,3,0
+Bob visited Tara at home. He brought flowers for,Bob,Tara,He,3.483247756958008,0.24222645163536072,0.007438173051923513,True,2,1
+Iris called Frank on the phone. She left a message for,Iris,Frank,She,4.382475852966309,0.04400794208049774,0.0005498522659763694,True,4,2
+Paul helped Gina move. He carried the boxes for,Paul,Gina,He,2.4537391662597656,0.0806979313492775,0.006937724072486162,True,3,3
+Olivia thanked Harry warmly. She wrote a letter for,Olivia,Harry,She,5.558380126953125,0.07358289510011673,0.00028366324841044843,True,4,4
+Paul surprised Gina at the party. He baked a cake for,Paul,Gina,He,2.410493850708008,0.09052786976099014,0.008126772940158844,True,2,5
+Rose recommended Harry for the job. She wrote a reference for,Rose,Harry,She,3.562297821044922,0.20049284398555756,0.005688694305717945,True,2,6
+Fred met Alice at the store. He bought a gift for,Fred,Alice,He,1.9212350845336914,0.12098994106054306,0.017716074362397194,True,2,0
+Emma visited Victor at home. She brought flowers for,Emma,Victor,She,2.128758430480957,0.10165652632713318,0.01209559477865696,True,4,1
+Paul called Olivia on the phone. He left a message for,Paul,Olivia,He,1.8508539199829102,0.06730113178491592,0.010573205538094044,True,2,2
+Gina helped Paul move. She carried the boxes for,Gina,Paul,She,7.526576042175293,0.2101958692073822,0.00011320711928419769,True,2,3
+Victor thanked Clara warmly. He wrote a letter for,Victor,Clara,He,2.930758476257324,0.22210419178009033,0.011850712820887566,True,2,4
+Amy surprised Zach at the party. She baked a cake for,Amy,Zach,She,-0.1658153533935547,0.04889244586229324,0.057710446417331696,False,5,5
+Harry recommended Tara for the job. He wrote a reference for,Harry,Tara,He,0.9804019927978516,0.12604762613773346,0.04728806018829346,True,2,6
+Tara met Zach at the store. She bought a gift for,Tara,Zach,She,1.3200654983520508,0.07428787648677826,0.01984361559152603,True,3,0
+Derek visited Gina at home. He brought flowers for,Derek,Gina,He,3.7733049392700195,0.09537345170974731,0.0021913007367402315,True,3,1
+Tara called Xander on the phone. She left a message for,Tara,Xander,She,2.6248273849487305,0.09077376127243042,0.0065767643973231316,True,3,2
+Zach helped Gina move. He carried the boxes for,Zach,Gina,He,2.796977996826172,0.10235261172056198,0.006242906209081411,True,3,3
+Rose thanked Sam warmly. She wrote a letter for,Rose,Sam,She,2.8014049530029297,0.08652462065219879,0.005254180636256933,True,4,4
+Victor surprised Kate at the party. He baked a cake for,Victor,Kate,He,1.070012092590332,0.022026311606168747,0.007555121555924416,True,4,5
+Iris recommended Henry for the job. She wrote a reference for,Iris,Henry,She,5.054496765136719,0.08178415894508362,0.0005218301666900516,True,4,6
+Noah met Mia at the store. He bought a gift for,Noah,Mia,He,3.600142478942871,0.025417111814022064,0.0006943911430425942,True,3,0
+Emma visited Liam at home. She brought flowers for,Emma,Liam,She,2.11309814453125,0.24190016090869904,0.02923676371574402,True,2,1
+Noah called Iris on the phone. He left a message for,Noah,Iris,He,4.243448257446289,0.04256749525666237,0.0006111839320510626,True,3,2
+Gina helped Harry move. She carried the boxes for,Gina,Harry,She,9.629536628723145,0.1404229998588562,9.233866876456887e-06,True,2,3
+Sam thanked Gina warmly. He wrote a letter for,Sam,Gina,He,1.4184627532958984,0.0688072070479393,0.016657251864671707,True,3,4
+Amy surprised Victor at the party. She baked a cake for,Amy,Victor,She,2.164069175720215,0.053415048867464066,0.00613508140668273,True,3,5
+Henry recommended Iris for the job. He wrote a reference for,Henry,Iris,He,2.4820423126220703,0.14098739624023438,0.011782650835812092,True,3,6
+Kate met Paul at the store. She bought a gift for,Kate,Paul,She,0.7872028350830078,0.0821332186460495,0.037380144000053406,True,3,0
+Zach visited Grace at home. He brought flowers for,Zach,Grace,He,3.6800537109375,0.1978982836008072,0.004991315305233002,True,2,1
+Kate called Bob on the phone. She left a message for,Kate,Bob,She,4.868300437927246,0.17817309498786926,0.0013695128727704287,True,2,2
+Jack helped Kate move. He carried the boxes for,Jack,Kate,He,1.9853601455688477,0.08925268054008484,0.012257173657417297,True,3,3
+Alice thanked David warmly. She wrote a letter for,Alice,David,She,2.1893367767333984,0.05351095646619797,0.005992745514959097,True,4,4
+Victor surprised Gina at the party. He baked a cake for,Victor,Gina,He,1.3943500518798828,0.05641983449459076,0.013991789892315865,True,2,5
+Grace recommended Harry for the job. She wrote a reference for,Grace,Harry,She,6.160464286804199,0.15071816742420197,0.0003182071668561548,True,2,6
+Henry met Alice at the store. He bought a gift for,Henry,Alice,He,2.450315475463867,0.1984001100063324,0.017115255817770958,True,2,0
+Amy visited Victor at home. She brought flowers for,Amy,Victor,She,1.454543113708496,0.1242775171995163,0.029019670560956,True,3,1
+Harry called Rose on the phone. He left a message for,Harry,Rose,He,1.271122932434082,0.08533348888158798,0.023937446996569633,True,2,2
+Rose helped Xander move. She carried the boxes for,Rose,Xander,She,3.5264291763305664,0.12253029644489288,0.003603584598749876,True,2,3
+Liam thanked Alice warmly. He wrote a letter for,Liam,Alice,He,4.196595191955566,0.12592586874961853,0.0018947714706882834,True,2,4
+Kate surprised Harry at the party. She baked a cake for,Kate,Harry,She,3.697704315185547,0.05732978135347366,0.00142065214458853,True,4,5
+Henry recommended Emma for the job. He wrote a reference for,Henry,Emma,He,1.7746105194091797,0.28042730689048767,0.047546301037073135,True,1,6
+Olivia met Harry at the store. She bought a gift for,Olivia,Harry,She,1.7196826934814453,0.021860497072339058,0.003915716893970966,True,5,0
+Frank visited Amy at home. He brought flowers for,Frank,Amy,He,4.918790817260742,0.36796605587005615,0.0026890819426625967,True,1,1
+Clara called David on the phone. She left a message for,Clara,David,She,7.494540214538574,0.13012273609638214,7.236285455292091e-05,True,2,2
+Jack helped Grace move. He carried the boxes for,Jack,Grace,He,2.494563102722168,0.09673774987459183,0.007984008640050888,True,3,3
+Amy thanked Victor warmly. She wrote a letter for,Amy,Victor,She,3.6249303817749023,0.12596775591373444,0.003357160370796919,True,2,4
+Frank surprised Iris at the party. He baked a cake for,Frank,Iris,He,1.7382030487060547,0.09666650742292404,0.016997460275888443,True,2,5
+Emma recommended Derek for the job. She wrote a reference for,Emma,Derek,She,1.6526260375976562,0.10140067338943481,0.01942291669547558,True,4,6
+Paul met Tara at the store. He bought a gift for,Paul,Tara,He,4.209772109985352,0.11588039249181747,0.0017207951750606298,True,2,0
+Olivia visited Fred at home. She brought flowers for,Olivia,Fred,She,2.7532262802124023,0.18786437809467316,0.011971082538366318,True,2,1
+Fred called Kate on the phone. He left a message for,Fred,Kate,He,1.3291864395141602,0.045276984572410583,0.011984478682279587,True,3,2
+Amy helped Derek move. She carried the boxes for,Amy,Derek,She,1.760824203491211,0.08548477292060852,0.014695098623633385,True,2,3
+Victor thanked Amy warmly. He wrote a letter for,Victor,Amy,He,5.117486953735352,0.0971980020403862,0.0005823190440423787,True,2,4
+Amy surprised David at the party. She baked a cake for,Amy,David,She,1.990159034729004,0.14917926490306854,0.020388880744576454,True,2,5
+Henry recommended Iris for the job. He wrote a reference for,Henry,Iris,He,2.482044219970703,0.14098742604255676,0.011782631278038025,True,3,6
+Clara met Noah at the store. She bought a gift for,Clara,Noah,She,5.113126754760742,0.09144052118062973,0.0005502194981090724,True,3,0
+Sam visited Clara at home. He brought flowers for,Sam,Clara,He,1.8792495727539062,0.0893777385354042,0.013648396357893944,True,3,1
+Emma called Liam on the phone. She left a message for,Emma,Liam,She,1.341796875,0.11777742207050323,0.03078414313495159,True,2,2
+Paul helped Grace move. He carried the boxes for,Paul,Grace,He,2.6483259201049805,0.06806114315986633,0.004816658794879913,True,3,3
+Tara thanked Frank warmly. She wrote a letter for,Tara,Frank,She,3.85776424407959,0.026986833661794662,0.0005698311142623425,True,5,4
+Liam surprised Alice at the party. He baked a cake for,Liam,Alice,He,3.6752424240112305,0.043822575360536575,0.001110606943257153,True,3,5
+Olivia recommended Fred for the job. She wrote a reference for,Olivia,Fred,She,3.674610137939453,0.14393973350524902,0.0036502096336334944,True,2,6
+Harry met Kate at the store. He bought a gift for,Harry,Kate,He,1.1717777252197266,0.10315099358558655,0.03195779770612717,True,2,0
+Alice visited Paul at home. She brought flowers for,Alice,Paul,She,2.0792112350463867,0.19713732600212097,0.024647843092679977,True,2,1
+Victor called Gina on the phone. He left a message for,Victor,Gina,He,2.278445243835449,0.05122211202979088,0.005247365217655897,True,2,2
+Kate helped Fred move. She carried the boxes for,Kate,Fred,She,3.0039634704589844,0.18293410539627075,0.009071726351976395,True,2,3
+Frank thanked Clara warmly. He wrote a letter for,Frank,Clara,He,2.808755874633789,0.12135669589042664,0.007315374910831451,True,2,4
+Iris surprised Sam at the party. She baked a cake for,Iris,Sam,She,4.834394454956055,0.03408267721533775,0.0002710084954742342,True,5,5
+Noah recommended Olivia for the job. He wrote a reference for,Noah,Olivia,He,3.094036102294922,0.0749054029583931,0.0033946135081350803,True,4,6
+Emma met Paul at the store. She bought a gift for,Emma,Paul,She,0.6785106658935547,0.06163706257939339,0.031272921711206436,True,3,0
+Jack visited Kate at home. He brought flowers for,Jack,Kate,He,2.2954177856445312,0.15741555392742157,0.015854785218834877,True,2,1
+Grace called Frank on the phone. She left a message for,Grace,Frank,She,2.627176284790039,0.049231018871068954,0.0035585304722189903,True,4,2
+David helped Grace move. He carried the boxes for,David,Grace,He,2.4443254470825195,0.05823434889316559,0.005053847562521696,True,3,3
+Kate thanked Victor warmly. She wrote a letter for,Kate,Victor,She,3.05596923828125,0.08912351727485657,0.004195673856884241,True,4,4
+Fred surprised Emma at the party. He baked a cake for,Fred,Emma,He,3.90023136138916,0.09667164087295532,0.0019563662353903055,True,2,5
+Rose recommended Victor for the job. She wrote a reference for,Rose,Victor,She,1.8148937225341797,0.14836719632148743,0.024162372574210167,True,2,6
+Brian met Kate at the store. He bought a gift for,Brian,Kate,He,1.6706161499023438,0.09464146196842194,0.017805002629756927,True,2,0
+Tara visited Harry at home. She brought flowers for,Tara,Harry,She,5.212911605834961,0.11144579201936722,0.000606910849455744,True,2,1
+Fred called Emma on the phone. He left a message for,Fred,Emma,He,3.778407096862793,0.13417591154575348,0.003067136975005269,True,2,2
+Amy helped David move. She carried the boxes for,Amy,David,She,2.432074546813965,0.11292725056409836,0.009921154007315636,True,2,3
+Derek thanked Gina warmly. He wrote a letter for,Derek,Gina,He,2.8695974349975586,0.06945712864398956,0.003939730115234852,True,3,4
+Mia surprised Sam at the party. She baked a cake for,Mia,Sam,She,6.771210670471191,0.13588929176330566,0.00015577071462757885,True,2,5
+Bob recommended Emma for the job. He wrote a reference for,Bob,Emma,He,1.7432432174682617,0.16449715197086334,0.02877911925315857,True,2,6
+Iris met Bob at the store. She bought a gift for,Iris,Bob,She,2.961711883544922,0.03080492839217186,0.0015935476403683424,True,4,0
+Sam visited Amy at home. He brought flowers for,Sam,Amy,He,2.534543991088867,0.31219393014907837,0.02475631609559059,True,2,1
+Alice called Liam on the phone. She left a message for,Alice,Liam,She,2.5334396362304688,0.0629456639289856,0.004996973089873791,True,3,2
+Harry helped Tara move. He carried the boxes for,Harry,Tara,He,1.2976770401000977,0.09448868781328201,0.025811059400439262,True,3,3
+Clara thanked Fred warmly. She wrote a letter for,Clara,Fred,She,5.551394462585449,0.1054571345448494,0.00040938882739283144,True,2,4
+Sam surprised Grace at the party. He baked a cake for,Sam,Grace,He,-0.7644138336181641,0.028267500922083855,0.060711100697517395,False,5,5
+Amy recommended Derek for the job. She wrote a reference for,Amy,Derek,She,1.1078643798828125,0.05982067808508873,0.019756587222218513,True,4,6
+Harry met Emma at the store. He bought a gift for,Harry,Emma,He,1.75732421875,0.05501118674874306,0.009489750489592552,True,2,0
+Rose visited Zach at home. She brought flowers for,Rose,Zach,She,2.13836669921875,0.28781455755233765,0.03391813114285469,True,1,1
+Derek called Mia on the phone. He left a message for,Derek,Mia,He,2.6255760192871094,0.03019035793840885,0.0021857228130102158,True,5,2
+Mia helped Henry move. She carried the boxes for,Mia,Henry,She,7.445380210876465,0.4087193012237549,0.00023874682665336877,True,1,3
+Liam thanked Mia warmly. He wrote a letter for,Liam,Mia,He,3.090158462524414,0.08937392383813858,0.0040660435333848,True,3,4
+Olivia surprised Harry at the party. She baked a cake for,Olivia,Harry,She,5.055049896240234,0.036207377910614014,0.00023089621390681714,True,4,5
+Victor recommended Clara for the job. He wrote a reference for,Victor,Clara,He,1.7912883758544922,0.14688093960285187,0.0244916919618845,True,2,6
+Olivia met David at the store. She bought a gift for,Olivia,David,She,-0.42859554290771484,0.037773024290800095,0.057985369116067886,False,4,0
+Fred visited Emma at home. He brought flowers for,Fred,Emma,He,5.6339006423950195,0.18322880566120148,0.0006549705285578966,True,2,1
+Mia called Sam on the phone. She left a message for,Mia,Sam,She,5.143599510192871,0.061791256070137024,0.0003606535028666258,True,4,2
+Xander helped Emma move. He carried the boxes for,Xander,Emma,He,6.26961612701416,0.1745501607656479,0.000330415612552315,True,2,3
+Olivia thanked Bob warmly. She wrote a letter for,Olivia,Bob,She,2.989163398742676,0.04978492110967636,0.0025056512095034122,True,4,4
+Fred surprised Olivia at the party. He baked a cake for,Fred,Olivia,He,2.3718137741088867,0.11216580867767334,0.010466339997947216,True,2,5
+Alice recommended Noah for the job. She wrote a reference for,Alice,Noah,She,3.2706613540649414,0.1701793372631073,0.006463632453233004,True,2,6
+Zach met Amy at the store. He bought a gift for,Zach,Amy,He,3.621417999267578,0.13046078383922577,0.0034891378600150347,True,2,0
+Rose visited Fred at home. She brought flowers for,Rose,Fred,She,1.456984519958496,0.1632322371006012,0.038022927939891815,True,2,1
+David called Iris on the phone. He left a message for,David,Iris,He,2.288938522338867,0.09699713438749313,0.009832988493144512,True,2,2
+Kate helped Jack move. She carried the boxes for,Kate,Jack,She,2.509455680847168,0.21566955745220184,0.017536628991365433,True,2,3
+Victor thanked Rose warmly. He wrote a letter for,Victor,Rose,He,3.7609004974365234,0.08256755769252777,0.0019207510631531477,True,3,4
+Gina surprised Harry at the party. She baked a cake for,Gina,Harry,She,7.901551246643066,0.0713060274720192,2.6395273380330764e-05,True,2,5
+Henry recommended Alice for the job. He wrote a reference for,Henry,Alice,He,2.028024673461914,0.19167982041835785,0.025224145501852036,True,2,6
+Clara met Paul at the store. She bought a gift for,Clara,Paul,She,2.829486846923828,0.06303780525922775,0.0037219503428786993,True,3,0
+Liam visited Kate at home. He brought flowers for,Liam,Kate,He,2.8428640365600586,0.10805030167102814,0.006294856779277325,True,3,1
+Tara called Bob on the phone. She left a message for,Tara,Bob,She,5.030596733093262,0.16911903023719788,0.0011051776818931103,True,2,2
+Derek helped Emma move. He carried the boxes for,Derek,Emma,He,5.145846366882324,0.19488723576068878,0.0011349342530593276,True,2,3
+Iris thanked Henry warmly. She wrote a letter for,Iris,Henry,She,3.657965660095215,0.029695622622966766,0.0007656990783289075,True,5,4
+Fred surprised Emma at the party. He baked a cake for,Fred,Emma,He,3.9002323150634766,0.09667180478572845,0.0019563676323741674,True,2,5
+Clara recommended Jack for the job. She wrote a reference for,Clara,Jack,She,5.227046966552734,0.20470887422561646,0.0010991551680490375,True,1,6
+Harry met Gina at the store. He bought a gift for,Harry,Gina,He,0.8382673263549805,0.03967364877462387,0.017157234251499176,True,2,0
+Kate visited Sam at home. She brought flowers for,Kate,Sam,She,1.9698867797851562,0.17086367309093475,0.023830808699131012,True,2,1
+Derek called Rose on the phone. He left a message for,Derek,Rose,He,3.034745216369629,0.12236613035202026,0.005884209647774696,True,2,2
+Rose helped Paul move. She carried the boxes for,Rose,Paul,She,3.784609794616699,0.2044566124677658,0.004644789267331362,True,2,3
+Fred thanked Tara warmly. He wrote a letter for,Fred,Tara,He,2.7119531631469727,0.141401469707489,0.009390043094754219,True,2,4
+Grace surprised Brian at the party. She baked a cake for,Grace,Brian,She,2.9123897552490234,0.09261663258075714,0.005033315625041723,True,2,5
+Noah recommended Amy for the job. He wrote a reference for,Noah,Amy,He,2.3497419357299805,0.06512295454740524,0.0062123253010213375,True,4,6
+Tara met Jack at the store. She bought a gift for,Tara,Jack,She,3.0983142852783203,0.10838763415813446,0.004891014192253351,True,3,0
+Frank visited Kate at home. He brought flowers for,Frank,Kate,He,2.9657392501831055,0.11916171759366989,0.006139494013041258,True,3,1
+Olivia called Xander on the phone. She left a message for,Olivia,Xander,She,2.9657039642333984,0.0775829628109932,0.003997398540377617,True,3,2
+Sam helped Alice move. He carried the boxes for,Sam,Alice,He,3.047724723815918,0.2456011027097702,0.011657899245619774,True,2,3
+Kate thanked Victor warmly. She wrote a letter for,Kate,Victor,She,3.05596923828125,0.08912351727485657,0.004195673856884241,True,4,4
+Harry surprised Grace at the party. He baked a cake for,Harry,Grace,He,-2.1857223510742188,0.009842142462730408,0.08756626397371292,False,7,5
+Rose recommended Harry for the job. She wrote a reference for,Rose,Harry,She,3.5622987747192383,0.20049242675304413,0.005688677076250315,True,2,6
+Zach met Mia at the store. He bought a gift for,Zach,Mia,He,2.583622932434082,0.033069413155317307,0.002496739849448204,True,3,0
+Tara visited Brian at home. She brought flowers for,Tara,Brian,She,4.4224348068237305,0.2634047567844391,0.003162165405228734,True,2,1
+Fred called Mia on the phone. He left a message for,Fred,Mia,He,1.3069038391113281,0.04438931122422218,0.012014267966151237,True,4,2
+Iris helped Paul move. She carried the boxes for,Iris,Paul,She,5.091124534606934,0.08407957851886749,0.0005171818193048239,True,3,3
+Brian thanked Iris warmly. He wrote a letter for,Brian,Iris,He,3.8150081634521484,0.16979490220546722,0.0037418610882014036,True,2,4
+Olivia surprised David at the party. She baked a cake for,Olivia,David,She,3.554060935974121,0.11306140571832657,0.0032344863284379244,True,2,5
+Xander recommended Gina for the job. He wrote a reference for,Xander,Gina,He,7.0318450927734375,0.34559324383735657,0.0003052626852877438,True,1,6
+Rose met Brian at the store. She bought a gift for,Rose,Brian,She,1.2522621154785156,0.07763643562793732,0.022192951291799545,True,3,0
+Brian visited Clara at home. He brought flowers for,Brian,Clara,He,3.8325424194335938,0.10713968425989151,0.0023200553841888905,True,3,1
+Clara called Jack on the phone. She left a message for,Clara,Jack,She,5.639919281005859,0.05978536978363991,0.00021242669026833028,True,3,2
+Harry helped Alice move. He carried the boxes for,Harry,Alice,He,2.46225643157959,0.1470530927181244,0.0125351557508111,True,2,3
+Grace thanked Xander warmly. She wrote a letter for,Grace,Xander,She,3.565540313720703,0.07253217697143555,0.002051333198323846,True,4,4
+Henry surprised Rose at the party. He baked a cake for,Henry,Rose,He,0.5196161270141602,0.05642971396446228,0.03356150537729263,True,4,5
+Emma recommended Fred for the job. She wrote a reference for,Emma,Fred,She,3.2853097915649414,0.1715666502714157,0.006421566940844059,True,2,6
+Bob met Gina at the store. He bought a gift for,Bob,Gina,He,0.8152914047241211,0.09244256466627121,0.040906794369220734,True,2,0
+Grace visited Derek at home. She brought flowers for,Grace,Derek,She,4.039533615112305,0.09644581377506256,0.0016979944193735719,True,3,1
+Jack called Emma on the phone. He left a message for,Jack,Emma,He,3.4098434448242188,0.11199774593114853,0.0037011192180216312,True,2,2

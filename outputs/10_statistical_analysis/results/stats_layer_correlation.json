@@ -1,0 +1,7 @@
+{
+  "spearman_r": 0.10985631041696774,
+  "p_value": 0.18993974892095408,
+  "significance": "p = 0.1899 (not significant)",
+  "interpretation": "No strong linear trend between layer depth and importance.",
+  "n_heads": 144
+}

@@ -1,0 +1,72 @@
+{
+  "n_circuit_nodes": 18,
+  "n_early_heads": 2,
+  "n_middle_heads": 2,
+  "n_late_heads": 14,
+  "top_heads": [
+    {
+      "head": "L10H0",
+      "score": 0.2121
+    },
+    {
+      "head": "L11H2",
+      "score": 0.1963
+    },
+    {
+      "head": "L9H8",
+      "score": 0.1745
+    },
+    {
+      "head": "L9H6",
+      "score": 0.1254
+    },
+    {
+      "head": "L10H2",
+      "score": 0.1145
+    },
+    {
+      "head": "L9H9",
+      "score": 0.1072
+    },
+    {
+      "head": "L4H11",
+      "score": 0.0985
+    },
+    {
+      "head": "L10H10",
+      "score": 0.0886
+    },
+    {
+      "head": "L11H6",
+      "score": 0.0803
+    },
+    {
+      "head": "L11H3",
+      "score": 0.0748
+    }
+  ],
+  "early_circuit_heads": [
+    "L4H11",
+    "L0H1"
+  ],
+  "middle_circuit_heads": [
+    "L7H9",
+    "L8H10"
+  ],
+  "late_circuit_heads": [
+    "L10H0",
+    "L11H2",
+    "L9H8",
+    "L9H6",
+    "L10H2",
+    "L9H9",
+    "L10H10",
+    "L11H6",
+    "L11H3",
+    "L10H6",
+    "L11H1",
+    "L9H7",
+    "L11H10",
+    "L10H7"
+  ]
+}

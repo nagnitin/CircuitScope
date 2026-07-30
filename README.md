@@ -1,4 +1,4 @@
-﻿# CircuitScope 🔬
+# CircuitScope 🔬
 ### Mechanistic Interpretability of GPT-2 Small — Reverse Engineering the Circuit Behind Indirect Object Identification
 
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
@@ -247,6 +247,16 @@ All experiments are run from the **project root directory** (the `CircuitScope/`
 
 > **Windows users:** If you see encoding errors, run this first in PowerShell:
 > `$env:PYTHONIOENCODING="utf-8"`
+
+---
+
+### 🌐 Option 0: Launch Interactive Streamlit Web App (Recommended)
+
+Launch the interactive web application to explore all 10 experiment views, interactive Plotly heatmaps, circuit graphs, and run live model inference on custom prompts:
+
+```bash
+streamlit run app.py
+```
 
 ---
 

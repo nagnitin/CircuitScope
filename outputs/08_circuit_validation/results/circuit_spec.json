@@ -1,0 +1,63 @@
+{
+  "name": "IOI Circuit",
+  "threshold": 0.05,
+  "n_heads": 14,
+  "heads": [
+    {
+      "layer": 8,
+      "head": 6
+    },
+    {
+      "layer": 8,
+      "head": 10
+    },
+    {
+      "layer": 5,
+      "head": 5
+    },
+    {
+      "layer": 7,
+      "head": 9
+    },
+    {
+      "layer": 6,
+      "head": 9
+    },
+    {
+      "layer": 3,
+      "head": 0
+    },
+    {
+      "layer": 0,
+      "head": 10
+    },
+    {
+      "layer": 1,
+      "head": 10
+    },
+    {
+      "layer": 5,
+      "head": 9
+    },
+    {
+      "layer": 9,
+      "head": 7
+    },
+    {
+      "layer": 7,
+      "head": 3
+    },
+    {
+      "layer": 10,
+      "head": 0
+    },
+    {
+      "layer": 9,
+      "head": 9
+    },
+    {
+      "layer": 4,
+      "head": 11
+    }
+  ]
+}

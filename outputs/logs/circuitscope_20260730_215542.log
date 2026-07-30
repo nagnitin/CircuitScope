@@ -1,0 +1,46 @@
+21:55:42 | INFO     | circuitscope.experiment | get_logger:126 | [get_logger] Log file: C:\Users\nitin\OneDrive\Desktop\CircuitScope\outputs\logs\circuitscope_20260730_215542.log
+21:55:42 | INFO     | circuitscope.experiment | run_experiment:212 | ============================================================
+21:55:42 | INFO     | circuitscope.experiment | run_experiment:213 | CircuitScope: IOI Baseline Experiment
+21:55:42 | INFO     | circuitscope.experiment | run_experiment:214 | Started at: 2026-07-30 21:55:42
+21:55:42 | INFO     | circuitscope.experiment | run_experiment:215 | ============================================================
+21:55:42 | INFO     | circuitscope.experiment | run_experiment:224 | [Setup] Output directories created under: outputs/
+21:55:42 | INFO     | circuitscope.experiment | run_experiment:231 | [Reproducibility] Seed=42, state={'torch_version': '2.12.1+cpu', 'numpy_version': '2.5.1', 'cuda_available': False, 'cuda_version': None, 'cudnn_deterministic': True, 'use_deterministic_algorithms': True, 'python_hash_seed': '42'}
+21:55:42 | INFO     | circuitscope.experiment | run_experiment:234 | [Model] Loading GPT-2 Small via TransformerLens…
+21:56:24 | INFO     | circuitscope.experiment | run_experiment:246 | [Model] ✓ Loaded in 42.0s
+21:56:24 | INFO     | circuitscope.experiment | run_experiment:249 | [Tokenizer] Metadata: {'vocab_size': 50257, 'bos_token': '<|endoftext|>', 'bos_token_id': 50256, 'eos_token': '<|endoftext|>', 'pad_token_id': 50256, 'prepend_bos': True}
+21:56:24 | INFO     | circuitscope.experiment | run_experiment:252 | [Dataset] Generating IOI dataset…
+21:56:24 | INFO     | circuitscope.experiment | run_experiment:266 | [Dataset] ✓ Generated 1,000 prompts in 0.6s
+21:56:24 | INFO     | circuitscope.experiment | run_experiment:271 | [Dataset] ✓ Saved to C:\Users\nitin\OneDrive\Desktop\CircuitScope\outputs\results\ioi_dataset.csv
+21:56:24 | INFO     | circuitscope.experiment | run_experiment:274 | [Evaluation] Running IOI evaluation on clean prompts…
+21:57:24 | INFO     | circuitscope.experiment | run_experiment:288 | [Evaluation] ✓ Complete in 59.4s
+  Shape: (1000, 22)
+  Columns: ['prompt_clean', 'prompt_corrupted', 'io_name', 's_name', 'distractor_name', 'template_type', 'template_idx', 'place', 'object_noun', 'io_token_id', 's_token_id', 'prompt_type', 'logit_io', 'logit_s', 'logit_diff', 'prob_io', 'prob_s', 'is_correct', 'rank_io', 'top_1_prediction', 'top_k_predictions', 'top_k_logits']
+21:57:24 | INFO     | circuitscope.experiment | run_experiment:295 | [Evaluation] Running IOI evaluation on corrupted prompts…
+21:57:43 | INFO     | circuitscope.experiment | run_experiment:303 | [Evaluation] ✓ Results saved to C:\Users\nitin\OneDrive\Desktop\CircuitScope\outputs\results\ioi_results.csv
+21:57:43 | INFO     | circuitscope.experiment | run_experiment:312 | [Stats] Computing aggregate statistics…
+21:57:43 | INFO     | circuitscope.experiment | run_experiment:315 | 
+============================================================
+BASELINE RESULTS SUMMARY
+============================================================
+  Model               : GPT-2 Small
+  Dataset size        : 1,000 prompts
+  ─────────────────────────────────────
+  Overall Accuracy    : 96.6%
+  ABB Accuracy        : 0.956
+  BAB Accuracy        : 0.976
+  ─────────────────────────────────────
+  Mean Logit Diff     : +3.1293
+  Std Logit Diff      : 1.7937
+  Median Logit Diff   : +3.1110
+  ─────────────────────────────────────
+  Mean P(IO)          : 0.3617
+  Mean IO Rank        : 1.8 / 50,257
+============================================================
+21:57:43 | INFO     | circuitscope.experiment | run_experiment:359 | [Plots] Generating all baseline plots…
+21:58:42 | INFO     | circuitscope.experiment | run_experiment:370 | [Plots] ✓ All plots saved in 58.3s
+21:58:42 | INFO     | circuitscope.experiment | run_experiment:376 | 
+✓ Experiment complete in 180.1s.
+  Results CSV    : C:\Users\nitin\OneDrive\Desktop\CircuitScope\outputs\results\ioi_results.csv
+  Dataset CSV    : C:\Users\nitin\OneDrive\Desktop\CircuitScope\outputs\results\ioi_dataset.csv
+  Metadata JSON  : C:\Users\nitin\OneDrive\Desktop\CircuitScope\outputs\results\experiment_metadata.json
+  Figures dir    : C:\Users\nitin\OneDrive\Desktop\CircuitScope\outputs\figures

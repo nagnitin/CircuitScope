@@ -1,0 +1,501 @@
+prompt,speaker_name,recipient_name,pronoun,template_idx,target_token_id,foil_token_id,speaker_gender
+Clara met Henry at the store. She bought a gift for,Clara,Henry,She,0,8616,27443,F
+Bob visited Gina at home. He brought flowers for,Bob,Gina,He,1,43002,5811,M
+Kate called Paul on the phone. She left a message for,Kate,Paul,She,2,3362,16693,F
+Paul helped Grace move. He carried the boxes for,Paul,Grace,He,3,16156,3362,M
+Gina thanked Henry warmly. She wrote a letter for,Gina,Henry,She,4,8616,43002,F
+Frank surprised Amy at the party. He baked a cake for,Frank,Amy,He,5,14235,5278,M
+Olivia recommended David for the job. She wrote a reference for,Olivia,David,She,6,3271,33911,F
+Bob met Emma at the store. He bought a gift for,Bob,Emma,He,0,18966,5811,M
+Iris visited Paul at home. She brought flowers for,Iris,Paul,She,1,3362,34230,F
+Bob called Tara on the phone. He left a message for,Bob,Tara,He,2,37723,5811,M
+Iris helped Derek move. She carried the boxes for,Iris,Derek,She,3,20893,34230,F
+Paul thanked Rose warmly. He wrote a letter for,Paul,Rose,He,4,8049,3362,M
+Amy surprised Sam at the party. She baked a cake for,Amy,Sam,She,5,3409,14235,F
+Bob recommended Grace for the job. He wrote a reference for,Bob,Grace,He,6,16156,5811,M
+Gina met Derek at the store. She bought a gift for,Gina,Derek,She,0,20893,43002,F
+Xander visited Kate at home. He brought flowers for,Xander,Kate,He,1,16693,46122,M
+Grace called Noah on the phone. She left a message for,Grace,Noah,She,2,18394,16156,F
+Xander helped Emma move. He carried the boxes for,Xander,Emma,He,3,18966,46122,M
+Emma thanked Brian warmly. She wrote a letter for,Emma,Brian,She,4,8403,18966,F
+Henry surprised Mia at the party. He baked a cake for,Henry,Mia,He,5,32189,8616,M
+Mia recommended Sam for the job. She wrote a reference for,Mia,Sam,She,6,3409,32189,F
+David met Gina at the store. He bought a gift for,David,Gina,He,0,43002,3271,M
+Rose visited Henry at home. She brought flowers for,Rose,Henry,She,1,8616,8049,F
+Brian called Emma on the phone. He left a message for,Brian,Emma,He,2,18966,8403,M
+Tara helped Victor move. She carried the boxes for,Tara,Victor,She,3,12622,37723,F
+Zach thanked Amy warmly. He wrote a letter for,Zach,Amy,He,4,14235,18825,M
+Iris surprised Frank at the party. She baked a cake for,Iris,Frank,She,5,5278,34230,F
+David recommended Clara for the job. He wrote a reference for,David,Clara,He,6,27443,3271,M
+Iris met Victor at the store. She bought a gift for,Iris,Victor,She,0,12622,34230,F
+Frank visited Iris at home. He brought flowers for,Frank,Iris,He,1,34230,5278,M
+Emma called Brian on the phone. She left a message for,Emma,Brian,She,2,8403,18966,F
+Sam helped Rose move. He carried the boxes for,Sam,Rose,He,3,8049,3409,M
+Clara thanked Zach warmly. She wrote a letter for,Clara,Zach,She,4,18825,27443,F
+Liam surprised Mia at the party. He baked a cake for,Liam,Mia,He,5,32189,31684,M
+Mia recommended Noah for the job. She wrote a reference for,Mia,Noah,She,6,18394,32189,F
+Sam met Gina at the store. He bought a gift for,Sam,Gina,He,0,43002,3409,M
+Clara visited Frank at home. She brought flowers for,Clara,Frank,She,1,5278,27443,F
+Liam called Tara on the phone. He left a message for,Liam,Tara,He,2,37723,31684,M
+Gina helped Paul move. She carried the boxes for,Gina,Paul,She,3,3362,43002,F
+Liam thanked Rose warmly. He wrote a letter for,Liam,Rose,He,4,8049,31684,M
+Olivia surprised Sam at the party. She baked a cake for,Olivia,Sam,She,5,3409,33911,F
+Paul recommended Clara for the job. He wrote a reference for,Paul,Clara,He,6,27443,3362,M
+Mia met David at the store. She bought a gift for,Mia,David,She,0,3271,32189,F
+Paul visited Alice at home. He brought flowers for,Paul,Alice,He,1,14862,3362,M
+Mia called Brian on the phone. She left a message for,Mia,Brian,She,2,8403,32189,F
+Sam helped Emma move. He carried the boxes for,Sam,Emma,He,3,18966,3409,M
+Iris thanked Xander warmly. She wrote a letter for,Iris,Xander,She,4,46122,34230,F
+Noah surprised Clara at the party. He baked a cake for,Noah,Clara,He,5,27443,18394,M
+Rose recommended Brian for the job. She wrote a reference for,Rose,Brian,She,6,8403,8049,F
+Fred met Grace at the store. He bought a gift for,Fred,Grace,He,0,16156,8559,M
+Kate visited Jack at home. She brought flowers for,Kate,Jack,She,1,3619,16693,F
+Paul called Gina on the phone. He left a message for,Paul,Gina,He,2,43002,3362,M
+Tara helped Sam move. She carried the boxes for,Tara,Sam,She,3,3409,37723,F
+Derek thanked Amy warmly. He wrote a letter for,Derek,Amy,He,4,14235,20893,M
+Olivia surprised Zach at the party. She baked a cake for,Olivia,Zach,She,5,18825,33911,F
+Paul recommended Grace for the job. He wrote a reference for,Paul,Grace,He,6,16156,3362,M
+Tara met Harry at the store. She bought a gift for,Tara,Harry,She,0,5850,37723,F
+Frank visited Alice at home. He brought flowers for,Frank,Alice,He,1,14862,5278,M
+Emma called Jack on the phone. She left a message for,Emma,Jack,She,2,3619,18966,F
+Liam helped Clara move. He carried the boxes for,Liam,Clara,He,3,27443,31684,M
+Olivia thanked Frank warmly. She wrote a letter for,Olivia,Frank,She,4,5278,33911,F
+Brian surprised Olivia at the party. He baked a cake for,Brian,Olivia,He,5,33911,8403,M
+Amy recommended Fred for the job. She wrote a reference for,Amy,Fred,She,6,8559,14235,F
+Sam met Tara at the store. He bought a gift for,Sam,Tara,He,0,37723,3409,M
+Alice visited Henry at home. She brought flowers for,Alice,Henry,She,1,8616,14862,F
+Sam called Clara on the phone. He left a message for,Sam,Clara,He,2,27443,3409,M
+Mia helped Henry move. She carried the boxes for,Mia,Henry,She,3,8616,32189,F
+Victor thanked Olivia warmly. He wrote a letter for,Victor,Olivia,He,4,33911,12622,M
+Grace surprised Fred at the party. She baked a cake for,Grace,Fred,She,5,8559,16156,F
+Bob recommended Gina for the job. He wrote a reference for,Bob,Gina,He,6,43002,5811,M
+Gina met Sam at the store. She bought a gift for,Gina,Sam,She,0,3409,43002,F
+Liam visited Tara at home. He brought flowers for,Liam,Tara,He,1,37723,31684,M
+Emma called Victor on the phone. She left a message for,Emma,Victor,She,2,12622,18966,F
+Noah helped Grace move. He carried the boxes for,Noah,Grace,He,3,16156,18394,M
+Mia thanked Liam warmly. She wrote a letter for,Mia,Liam,She,4,31684,32189,F
+Bob surprised Amy at the party. He baked a cake for,Bob,Amy,He,5,14235,5811,M
+Mia recommended Harry for the job. She wrote a reference for,Mia,Harry,She,6,5850,32189,F
+Bob met Emma at the store. He bought a gift for,Bob,Emma,He,0,18966,5811,M
+Mia visited Victor at home. She brought flowers for,Mia,Victor,She,1,12622,32189,F
+Paul called Alice on the phone. He left a message for,Paul,Alice,He,2,14862,3362,M
+Iris helped Frank move. She carried the boxes for,Iris,Frank,She,3,5278,34230,F
+Frank thanked Gina warmly. He wrote a letter for,Frank,Gina,He,4,43002,5278,M
+Rose surprised Frank at the party. She baked a cake for,Rose,Frank,She,5,5278,8049,F
+Jack recommended Grace for the job. He wrote a reference for,Jack,Grace,He,6,16156,3619,M
+Clara met Harry at the store. She bought a gift for,Clara,Harry,She,0,5850,27443,F
+Liam visited Kate at home. He brought flowers for,Liam,Kate,He,1,16693,31684,M
+Tara called Derek on the phone. She left a message for,Tara,Derek,She,2,20893,37723,F
+Noah helped Tara move. He carried the boxes for,Noah,Tara,He,3,37723,18394,M
+Gina thanked Noah warmly. She wrote a letter for,Gina,Noah,She,4,18394,43002,F
+Victor surprised Olivia at the party. He baked a cake for,Victor,Olivia,He,5,33911,12622,M
+Clara recommended Zach for the job. She wrote a reference for,Clara,Zach,She,6,18825,27443,F
+Fred met Tara at the store. He bought a gift for,Fred,Tara,He,0,37723,8559,M
+Rose visited Henry at home. She brought flowers for,Rose,Henry,She,1,8616,8049,F
+Paul called Iris on the phone. He left a message for,Paul,Iris,He,2,34230,3362,M
+Emma helped Xander move. She carried the boxes for,Emma,Xander,She,3,46122,18966,F
+Bob thanked Amy warmly. He wrote a letter for,Bob,Amy,He,4,14235,5811,M
+Tara surprised Paul at the party. She baked a cake for,Tara,Paul,She,5,3362,37723,F
+Paul recommended Alice for the job. He wrote a reference for,Paul,Alice,He,6,14862,3362,M
+Emma met David at the store. She bought a gift for,Emma,David,She,0,3271,18966,F
+Paul visited Emma at home. He brought flowers for,Paul,Emma,He,1,18966,3362,M
+Alice called Xander on the phone. She left a message for,Alice,Xander,She,2,46122,14862,F
+Frank helped Tara move. He carried the boxes for,Frank,Tara,He,3,37723,5278,M
+Iris thanked Sam warmly. She wrote a letter for,Iris,Sam,She,4,3409,34230,F
+Harry surprised Iris at the party. He baked a cake for,Harry,Iris,He,5,34230,5850,M
+Tara recommended Jack for the job. She wrote a reference for,Tara,Jack,She,6,3619,37723,F
+Harry met Iris at the store. He bought a gift for,Harry,Iris,He,0,34230,5850,M
+Rose visited Derek at home. She brought flowers for,Rose,Derek,She,1,20893,8049,F
+Noah called Emma on the phone. He left a message for,Noah,Emma,He,2,18966,18394,M
+Emma helped Derek move. She carried the boxes for,Emma,Derek,She,3,20893,18966,F
+Zach thanked Olivia warmly. He wrote a letter for,Zach,Olivia,He,4,33911,18825,M
+Olivia surprised Fred at the party. She baked a cake for,Olivia,Fred,She,5,8559,33911,F
+David recommended Clara for the job. He wrote a reference for,David,Clara,He,6,27443,3271,M
+Clara met Henry at the store. She bought a gift for,Clara,Henry,She,0,8616,27443,F
+David visited Olivia at home. He brought flowers for,David,Olivia,He,1,33911,3271,M
+Gina called Xander on the phone. She left a message for,Gina,Xander,She,2,46122,43002,F
+Henry helped Iris move. He carried the boxes for,Henry,Iris,He,3,34230,8616,M
+Iris thanked Noah warmly. She wrote a letter for,Iris,Noah,She,4,18394,34230,F
+Fred surprised Grace at the party. He baked a cake for,Fred,Grace,He,5,16156,8559,M
+Olivia recommended Liam for the job. She wrote a reference for,Olivia,Liam,She,6,31684,33911,F
+Sam met Rose at the store. He bought a gift for,Sam,Rose,He,0,8049,3409,M
+Iris visited Frank at home. She brought flowers for,Iris,Frank,She,1,5278,34230,F
+Fred called Tara on the phone. He left a message for,Fred,Tara,He,2,37723,8559,M
+Emma helped David move. She carried the boxes for,Emma,David,She,3,3271,18966,F
+Bob thanked Emma warmly. He wrote a letter for,Bob,Emma,He,4,18966,5811,M
+Iris surprised Liam at the party. She baked a cake for,Iris,Liam,She,5,31684,34230,F
+Derek recommended Rose for the job. He wrote a reference for,Derek,Rose,He,6,8049,20893,M
+Rose met Noah at the store. She bought a gift for,Rose,Noah,She,0,18394,8049,F
+Brian visited Alice at home. He brought flowers for,Brian,Alice,He,1,14862,8403,M
+Grace called Brian on the phone. She left a message for,Grace,Brian,She,2,8403,16156,F
+Bob helped Olivia move. He carried the boxes for,Bob,Olivia,He,3,33911,5811,M
+Kate thanked Fred warmly. She wrote a letter for,Kate,Fred,She,4,8559,16693,F
+Victor surprised Olivia at the party. He baked a cake for,Victor,Olivia,He,5,33911,12622,M
+Gina recommended Harry for the job. She wrote a reference for,Gina,Harry,She,6,5850,43002,F
+Jack met Iris at the store. He bought a gift for,Jack,Iris,He,0,34230,3619,M
+Kate visited Noah at home. She brought flowers for,Kate,Noah,She,1,18394,16693,F
+David called Amy on the phone. He left a message for,David,Amy,He,2,14235,3271,M
+Gina helped David move. She carried the boxes for,Gina,David,She,3,3271,43002,F
+Xander thanked Alice warmly. He wrote a letter for,Xander,Alice,He,4,14862,46122,M
+Alice surprised Harry at the party. She baked a cake for,Alice,Harry,She,5,5850,14862,F
+Liam recommended Alice for the job. He wrote a reference for,Liam,Alice,He,6,14862,31684,M
+Tara met Frank at the store. She bought a gift for,Tara,Frank,She,0,5278,37723,F
+Liam visited Emma at home. He brought flowers for,Liam,Emma,He,1,18966,31684,M
+Amy called Frank on the phone. She left a message for,Amy,Frank,She,2,5278,14235,F
+Paul helped Olivia move. He carried the boxes for,Paul,Olivia,He,3,33911,3362,M
+Emma thanked Paul warmly. She wrote a letter for,Emma,Paul,She,4,3362,18966,F
+David surprised Amy at the party. He baked a cake for,David,Amy,He,5,14235,3271,M
+Emma recommended Derek for the job. She wrote a reference for,Emma,Derek,She,6,20893,18966,F
+Xander met Kate at the store. He bought a gift for,Xander,Kate,He,0,16693,46122,M
+Iris visited Xander at home. She brought flowers for,Iris,Xander,She,1,46122,34230,F
+Paul called Kate on the phone. He left a message for,Paul,Kate,He,2,16693,3362,M
+Olivia helped Jack move. She carried the boxes for,Olivia,Jack,She,3,3619,33911,F
+Victor thanked Rose warmly. He wrote a letter for,Victor,Rose,He,4,8049,12622,M
+Mia surprised Frank at the party. She baked a cake for,Mia,Frank,She,5,5278,32189,F
+Bob recommended Rose for the job. He wrote a reference for,Bob,Rose,He,6,8049,5811,M
+Amy met Henry at the store. She bought a gift for,Amy,Henry,She,0,8616,14235,F
+Frank visited Tara at home. He brought flowers for,Frank,Tara,He,1,37723,5278,M
+Iris called Sam on the phone. She left a message for,Iris,Sam,She,2,3409,34230,F
+Jack helped Mia move. He carried the boxes for,Jack,Mia,He,3,32189,3619,M
+Emma thanked Paul warmly. She wrote a letter for,Emma,Paul,She,4,3362,18966,F
+Zach surprised Kate at the party. He baked a cake for,Zach,Kate,He,5,16693,18825,M
+Grace recommended Fred for the job. She wrote a reference for,Grace,Fred,She,6,8559,16156,F
+Victor met Amy at the store. He bought a gift for,Victor,Amy,He,0,14235,12622,M
+Clara visited Bob at home. She brought flowers for,Clara,Bob,She,1,5811,27443,F
+Victor called Clara on the phone. He left a message for,Victor,Clara,He,2,27443,12622,M
+Emma helped Jack move. She carried the boxes for,Emma,Jack,She,3,3619,18966,F
+Sam thanked Emma warmly. He wrote a letter for,Sam,Emma,He,4,18966,3409,M
+Emma surprised Jack at the party. She baked a cake for,Emma,Jack,She,5,3619,18966,F
+Sam recommended Kate for the job. He wrote a reference for,Sam,Kate,He,6,16693,3409,M
+Amy met Noah at the store. She bought a gift for,Amy,Noah,She,0,18394,14235,F
+Xander visited Iris at home. He brought flowers for,Xander,Iris,He,1,34230,46122,M
+Clara called Sam on the phone. She left a message for,Clara,Sam,She,2,3409,27443,F
+Harry helped Kate move. He carried the boxes for,Harry,Kate,He,3,16693,5850,M
+Alice thanked Frank warmly. She wrote a letter for,Alice,Frank,She,4,5278,14862,F
+Derek surprised Kate at the party. He baked a cake for,Derek,Kate,He,5,16693,20893,M
+Alice recommended Bob for the job. She wrote a reference for,Alice,Bob,She,6,5811,14862,F
+Xander met Grace at the store. He bought a gift for,Xander,Grace,He,0,16156,46122,M
+Clara visited Sam at home. She brought flowers for,Clara,Sam,She,1,3409,27443,F
+Liam called Gina on the phone. He left a message for,Liam,Gina,He,2,43002,31684,M
+Rose helped Derek move. She carried the boxes for,Rose,Derek,She,3,20893,8049,F
+Bob thanked Emma warmly. He wrote a letter for,Bob,Emma,He,4,18966,5811,M
+Emma surprised Jack at the party. She baked a cake for,Emma,Jack,She,5,3619,18966,F
+David recommended Mia for the job. He wrote a reference for,David,Mia,He,6,32189,3271,M
+Amy met Jack at the store. She bought a gift for,Amy,Jack,She,0,3619,14235,F
+Derek visited Grace at home. He brought flowers for,Derek,Grace,He,1,16156,20893,M
+Alice called Victor on the phone. She left a message for,Alice,Victor,She,2,12622,14862,F
+Zach helped Alice move. He carried the boxes for,Zach,Alice,He,3,14862,18825,M
+Mia thanked Noah warmly. She wrote a letter for,Mia,Noah,She,4,18394,32189,F
+Paul surprised Clara at the party. He baked a cake for,Paul,Clara,He,5,27443,3362,M
+Emma recommended Zach for the job. She wrote a reference for,Emma,Zach,She,6,18825,18966,F
+Derek met Amy at the store. He bought a gift for,Derek,Amy,He,0,14235,20893,M
+Gina visited Jack at home. She brought flowers for,Gina,Jack,She,1,3619,43002,F
+Paul called Grace on the phone. He left a message for,Paul,Grace,He,2,16156,3362,M
+Grace helped Derek move. She carried the boxes for,Grace,Derek,She,3,20893,16156,F
+Bob thanked Grace warmly. He wrote a letter for,Bob,Grace,He,4,16156,5811,M
+Gina surprised Xander at the party. She baked a cake for,Gina,Xander,She,5,46122,43002,F
+Derek recommended Clara for the job. He wrote a reference for,Derek,Clara,He,6,27443,20893,M
+Gina met Paul at the store. She bought a gift for,Gina,Paul,She,0,3362,43002,F
+Sam visited Grace at home. He brought flowers for,Sam,Grace,He,1,16156,3409,M
+Gina called Henry on the phone. She left a message for,Gina,Henry,She,2,8616,43002,F
+Brian helped Alice move. He carried the boxes for,Brian,Alice,He,3,14862,8403,M
+Rose thanked Paul warmly. She wrote a letter for,Rose,Paul,She,4,3362,8049,F
+Noah surprised Rose at the party. He baked a cake for,Noah,Rose,He,5,8049,18394,M
+Mia recommended Victor for the job. She wrote a reference for,Mia,Victor,She,6,12622,32189,F
+Paul met Iris at the store. He bought a gift for,Paul,Iris,He,0,34230,3362,M
+Alice visited Noah at home. She brought flowers for,Alice,Noah,She,1,18394,14862,F
+Brian called Mia on the phone. He left a message for,Brian,Mia,He,2,32189,8403,M
+Kate helped Frank move. She carried the boxes for,Kate,Frank,She,3,5278,16693,F
+Sam thanked Mia warmly. He wrote a letter for,Sam,Mia,He,4,32189,3409,M
+Clara surprised Brian at the party. She baked a cake for,Clara,Brian,She,5,8403,27443,F
+Xander recommended Alice for the job. He wrote a reference for,Xander,Alice,He,6,14862,46122,M
+Emma met Sam at the store. She bought a gift for,Emma,Sam,She,0,3409,18966,F
+Liam visited Amy at home. He brought flowers for,Liam,Amy,He,1,14235,31684,M
+Kate called David on the phone. She left a message for,Kate,David,She,2,3271,16693,F
+Henry helped Amy move. He carried the boxes for,Henry,Amy,He,3,14235,8616,M
+Olivia thanked Zach warmly. She wrote a letter for,Olivia,Zach,She,4,18825,33911,F
+Xander surprised Olivia at the party. He baked a cake for,Xander,Olivia,He,5,33911,46122,M
+Amy recommended Henry for the job. She wrote a reference for,Amy,Henry,She,6,8616,14235,F
+Brian met Amy at the store. He bought a gift for,Brian,Amy,He,0,14235,8403,M
+Iris visited Sam at home. She brought flowers for,Iris,Sam,She,1,3409,34230,F
+David called Gina on the phone. He left a message for,David,Gina,He,2,43002,3271,M
+Olivia helped Bob move. She carried the boxes for,Olivia,Bob,She,3,5811,33911,F
+Noah thanked Mia warmly. He wrote a letter for,Noah,Mia,He,4,32189,18394,M
+Olivia surprised Frank at the party. She baked a cake for,Olivia,Frank,She,5,5278,33911,F
+Xander recommended Amy for the job. He wrote a reference for,Xander,Amy,He,6,14235,46122,M
+Mia met Henry at the store. She bought a gift for,Mia,Henry,She,0,8616,32189,F
+Victor visited Tara at home. He brought flowers for,Victor,Tara,He,1,37723,12622,M
+Kate called Derek on the phone. She left a message for,Kate,Derek,She,2,20893,16693,F
+Xander helped Olivia move. He carried the boxes for,Xander,Olivia,He,3,33911,46122,M
+Gina thanked Victor warmly. She wrote a letter for,Gina,Victor,She,4,12622,43002,F
+Jack surprised Iris at the party. He baked a cake for,Jack,Iris,He,5,34230,3619,M
+Olivia recommended Brian for the job. She wrote a reference for,Olivia,Brian,She,6,8403,33911,F
+Liam met Amy at the store. He bought a gift for,Liam,Amy,He,0,14235,31684,M
+Amy visited Victor at home. She brought flowers for,Amy,Victor,She,1,12622,14235,F
+Brian called Tara on the phone. He left a message for,Brian,Tara,He,2,37723,8403,M
+Alice helped Victor move. She carried the boxes for,Alice,Victor,She,3,12622,14862,F
+Victor thanked Iris warmly. He wrote a letter for,Victor,Iris,He,4,34230,12622,M
+Olivia surprised Xander at the party. She baked a cake for,Olivia,Xander,She,5,46122,33911,F
+Fred recommended Rose for the job. He wrote a reference for,Fred,Rose,He,6,8049,8559,M
+Rose met Noah at the store. She bought a gift for,Rose,Noah,She,0,18394,8049,F
+Harry visited Gina at home. He brought flowers for,Harry,Gina,He,1,43002,5850,M
+Grace called Frank on the phone. She left a message for,Grace,Frank,She,2,5278,16156,F
+Victor helped Tara move. He carried the boxes for,Victor,Tara,He,3,37723,12622,M
+Clara thanked Xander warmly. She wrote a letter for,Clara,Xander,She,4,46122,27443,F
+Frank surprised Iris at the party. He baked a cake for,Frank,Iris,He,5,34230,5278,M
+Clara recommended Victor for the job. She wrote a reference for,Clara,Victor,She,6,12622,27443,F
+Paul met Iris at the store. He bought a gift for,Paul,Iris,He,0,34230,3362,M
+Grace visited Bob at home. She brought flowers for,Grace,Bob,She,1,5811,16156,F
+David called Iris on the phone. He left a message for,David,Iris,He,2,34230,3271,M
+Rose helped Frank move. She carried the boxes for,Rose,Frank,She,3,5278,8049,F
+Fred thanked Olivia warmly. He wrote a letter for,Fred,Olivia,He,4,33911,8559,M
+Clara surprised Noah at the party. She baked a cake for,Clara,Noah,She,5,18394,27443,F
+Brian recommended Rose for the job. He wrote a reference for,Brian,Rose,He,6,8049,8403,M
+Olivia met Paul at the store. She bought a gift for,Olivia,Paul,She,0,3362,33911,F
+Jack visited Clara at home. He brought flowers for,Jack,Clara,He,1,27443,3619,M
+Gina called Bob on the phone. She left a message for,Gina,Bob,She,2,5811,43002,F
+Henry helped Olivia move. He carried the boxes for,Henry,Olivia,He,3,33911,8616,M
+Iris thanked Liam warmly. She wrote a letter for,Iris,Liam,She,4,31684,34230,F
+Fred surprised Alice at the party. He baked a cake for,Fred,Alice,He,5,14862,8559,M
+Tara recommended Paul for the job. She wrote a reference for,Tara,Paul,She,6,3362,37723,F
+Henry met Rose at the store. He bought a gift for,Henry,Rose,He,0,8049,8616,M
+Grace visited Fred at home. She brought flowers for,Grace,Fred,She,1,8559,16156,F
+Xander called Rose on the phone. He left a message for,Xander,Rose,He,2,8049,46122,M
+Amy helped Derek move. She carried the boxes for,Amy,Derek,She,3,20893,14235,F
+Fred thanked Grace warmly. He wrote a letter for,Fred,Grace,He,4,16156,8559,M
+Gina surprised Harry at the party. She baked a cake for,Gina,Harry,She,5,5850,43002,F
+Fred recommended Kate for the job. He wrote a reference for,Fred,Kate,He,6,16693,8559,M
+Iris met Sam at the store. She bought a gift for,Iris,Sam,She,0,3409,34230,F
+Harry visited Clara at home. He brought flowers for,Harry,Clara,He,1,27443,5850,M
+Iris called Sam on the phone. She left a message for,Iris,Sam,She,2,3409,34230,F
+Fred helped Emma move. He carried the boxes for,Fred,Emma,He,3,18966,8559,M
+Gina thanked Victor warmly. She wrote a letter for,Gina,Victor,She,4,12622,43002,F
+Paul surprised Kate at the party. He baked a cake for,Paul,Kate,He,5,16693,3362,M
+Mia recommended Xander for the job. She wrote a reference for,Mia,Xander,She,6,46122,32189,F
+Frank met Grace at the store. He bought a gift for,Frank,Grace,He,0,16156,5278,M
+Grace visited Paul at home. She brought flowers for,Grace,Paul,She,1,3362,16156,F
+Brian called Gina on the phone. He left a message for,Brian,Gina,He,2,43002,8403,M
+Grace helped Noah move. She carried the boxes for,Grace,Noah,She,3,18394,16156,F
+Frank thanked Olivia warmly. He wrote a letter for,Frank,Olivia,He,4,33911,5278,M
+Olivia surprised Xander at the party. She baked a cake for,Olivia,Xander,She,5,46122,33911,F
+Fred recommended Olivia for the job. He wrote a reference for,Fred,Olivia,He,6,33911,8559,M
+Alice met Noah at the store. She bought a gift for,Alice,Noah,She,0,18394,14862,F
+Derek visited Olivia at home. He brought flowers for,Derek,Olivia,He,1,33911,20893,M
+Amy called Bob on the phone. She left a message for,Amy,Bob,She,2,5811,14235,F
+Brian helped Rose move. He carried the boxes for,Brian,Rose,He,3,8049,8403,M
+Alice thanked Zach warmly. She wrote a letter for,Alice,Zach,She,4,18825,14862,F
+Victor surprised Olivia at the party. He baked a cake for,Victor,Olivia,He,5,33911,12622,M
+Olivia recommended Paul for the job. She wrote a reference for,Olivia,Paul,She,6,3362,33911,F
+Harry met Iris at the store. He bought a gift for,Harry,Iris,He,0,34230,5850,M
+Kate visited Derek at home. She brought flowers for,Kate,Derek,She,1,20893,16693,F
+Harry called Alice on the phone. He left a message for,Harry,Alice,He,2,14862,5850,M
+Olivia helped Xander move. She carried the boxes for,Olivia,Xander,She,3,46122,33911,F
+Brian thanked Gina warmly. He wrote a letter for,Brian,Gina,He,4,43002,8403,M
+Grace surprised Fred at the party. She baked a cake for,Grace,Fred,She,5,8559,16156,F
+Jack recommended Amy for the job. He wrote a reference for,Jack,Amy,He,6,14235,3619,M
+Tara met Bob at the store. She bought a gift for,Tara,Bob,She,0,5811,37723,F
+Brian visited Amy at home. He brought flowers for,Brian,Amy,He,1,14235,8403,M
+Amy called Bob on the phone. She left a message for,Amy,Bob,She,2,5811,14235,F
+Frank helped Clara move. He carried the boxes for,Frank,Clara,He,3,27443,5278,M
+Olivia thanked Jack warmly. She wrote a letter for,Olivia,Jack,She,4,3619,33911,F
+Fred surprised Grace at the party. He baked a cake for,Fred,Grace,He,5,16156,8559,M
+Alice recommended Sam for the job. She wrote a reference for,Alice,Sam,She,6,3409,14862,F
+Brian met Mia at the store. He bought a gift for,Brian,Mia,He,0,32189,8403,M
+Iris visited Fred at home. She brought flowers for,Iris,Fred,She,1,8559,34230,F
+Xander called Mia on the phone. He left a message for,Xander,Mia,He,2,32189,46122,M
+Olivia helped Sam move. She carried the boxes for,Olivia,Sam,She,3,3409,33911,F
+Derek thanked Kate warmly. He wrote a letter for,Derek,Kate,He,4,16693,20893,M
+Emma surprised Harry at the party. She baked a cake for,Emma,Harry,She,5,5850,18966,F
+Bob recommended Gina for the job. He wrote a reference for,Bob,Gina,He,6,43002,5811,M
+Tara met David at the store. She bought a gift for,Tara,David,She,0,3271,37723,F
+Zach visited Iris at home. He brought flowers for,Zach,Iris,He,1,34230,18825,M
+Clara called Frank on the phone. She left a message for,Clara,Frank,She,2,5278,27443,F
+David helped Alice move. He carried the boxes for,David,Alice,He,3,14862,3271,M
+Iris thanked Noah warmly. She wrote a letter for,Iris,Noah,She,4,18394,34230,F
+Bob surprised Amy at the party. He baked a cake for,Bob,Amy,He,5,14235,5811,M
+Grace recommended Paul for the job. She wrote a reference for,Grace,Paul,She,6,3362,16156,F
+Jack met Rose at the store. He bought a gift for,Jack,Rose,He,0,8049,3619,M
+Clara visited Henry at home. She brought flowers for,Clara,Henry,She,1,8616,27443,F
+Noah called Rose on the phone. He left a message for,Noah,Rose,He,2,8049,18394,M
+Gina helped Sam move. She carried the boxes for,Gina,Sam,She,3,3409,43002,F
+Zach thanked Grace warmly. He wrote a letter for,Zach,Grace,He,4,16156,18825,M
+Amy surprised Henry at the party. She baked a cake for,Amy,Henry,She,5,8616,14235,F
+Liam recommended Kate for the job. He wrote a reference for,Liam,Kate,He,6,16693,31684,M
+Emma met Bob at the store. She bought a gift for,Emma,Bob,She,0,5811,18966,F
+Victor visited Amy at home. He brought flowers for,Victor,Amy,He,1,14235,12622,M
+Clara called Brian on the phone. She left a message for,Clara,Brian,She,2,8403,27443,F
+Brian helped Gina move. He carried the boxes for,Brian,Gina,He,3,43002,8403,M
+Iris thanked Frank warmly. She wrote a letter for,Iris,Frank,She,4,5278,34230,F
+Paul surprised Emma at the party. He baked a cake for,Paul,Emma,He,5,18966,3362,M
+Gina recommended Victor for the job. She wrote a reference for,Gina,Victor,She,6,12622,43002,F
+Henry met Amy at the store. He bought a gift for,Henry,Amy,He,0,14235,8616,M
+Alice visited Zach at home. She brought flowers for,Alice,Zach,She,1,18825,14862,F
+Derek called Clara on the phone. He left a message for,Derek,Clara,He,2,27443,20893,M
+Mia helped Frank move. She carried the boxes for,Mia,Frank,She,3,5278,32189,F
+Xander thanked Alice warmly. He wrote a letter for,Xander,Alice,He,4,14862,46122,M
+Olivia surprised Harry at the party. She baked a cake for,Olivia,Harry,She,5,5850,33911,F
+Henry recommended Olivia for the job. He wrote a reference for,Henry,Olivia,He,6,33911,8616,M
+Mia met Fred at the store. She bought a gift for,Mia,Fred,She,0,8559,32189,F
+Jack visited Olivia at home. He brought flowers for,Jack,Olivia,He,1,33911,3619,M
+Grace called Sam on the phone. She left a message for,Grace,Sam,She,2,3409,16156,F
+Harry helped Rose move. He carried the boxes for,Harry,Rose,He,3,8049,5850,M
+Olivia thanked Sam warmly. She wrote a letter for,Olivia,Sam,She,4,3409,33911,F
+Xander surprised Iris at the party. He baked a cake for,Xander,Iris,He,5,34230,46122,M
+Emma recommended Sam for the job. She wrote a reference for,Emma,Sam,She,6,3409,18966,F
+Fred met Iris at the store. He bought a gift for,Fred,Iris,He,0,34230,8559,M
+Rose visited Brian at home. She brought flowers for,Rose,Brian,She,1,8403,8049,F
+Xander called Alice on the phone. He left a message for,Xander,Alice,He,2,14862,46122,M
+Rose helped Xander move. She carried the boxes for,Rose,Xander,She,3,46122,8049,F
+Liam thanked Rose warmly. He wrote a letter for,Liam,Rose,He,4,8049,31684,M
+Iris surprised Zach at the party. She baked a cake for,Iris,Zach,She,5,18825,34230,F
+Sam recommended Mia for the job. He wrote a reference for,Sam,Mia,He,6,32189,3409,M
+Kate met Sam at the store. She bought a gift for,Kate,Sam,She,0,3409,16693,F
+Bob visited Tara at home. He brought flowers for,Bob,Tara,He,1,37723,5811,M
+Iris called Frank on the phone. She left a message for,Iris,Frank,She,2,5278,34230,F
+Paul helped Gina move. He carried the boxes for,Paul,Gina,He,3,43002,3362,M
+Olivia thanked Harry warmly. She wrote a letter for,Olivia,Harry,She,4,5850,33911,F
+Paul surprised Gina at the party. He baked a cake for,Paul,Gina,He,5,43002,3362,M
+Rose recommended Harry for the job. She wrote a reference for,Rose,Harry,She,6,5850,8049,F
+Fred met Alice at the store. He bought a gift for,Fred,Alice,He,0,14862,8559,M
+Emma visited Victor at home. She brought flowers for,Emma,Victor,She,1,12622,18966,F
+Paul called Olivia on the phone. He left a message for,Paul,Olivia,He,2,33911,3362,M
+Gina helped Paul move. She carried the boxes for,Gina,Paul,She,3,3362,43002,F
+Victor thanked Clara warmly. He wrote a letter for,Victor,Clara,He,4,27443,12622,M
+Amy surprised Zach at the party. She baked a cake for,Amy,Zach,She,5,18825,14235,F
+Harry recommended Tara for the job. He wrote a reference for,Harry,Tara,He,6,37723,5850,M
+Tara met Zach at the store. She bought a gift for,Tara,Zach,She,0,18825,37723,F
+Derek visited Gina at home. He brought flowers for,Derek,Gina,He,1,43002,20893,M
+Tara called Xander on the phone. She left a message for,Tara,Xander,She,2,46122,37723,F
+Zach helped Gina move. He carried the boxes for,Zach,Gina,He,3,43002,18825,M
+Rose thanked Sam warmly. She wrote a letter for,Rose,Sam,She,4,3409,8049,F
+Victor surprised Kate at the party. He baked a cake for,Victor,Kate,He,5,16693,12622,M
+Iris recommended Henry for the job. She wrote a reference for,Iris,Henry,She,6,8616,34230,F
+Noah met Mia at the store. He bought a gift for,Noah,Mia,He,0,32189,18394,M
+Emma visited Liam at home. She brought flowers for,Emma,Liam,She,1,31684,18966,F
+Noah called Iris on the phone. He left a message for,Noah,Iris,He,2,34230,18394,M
+Gina helped Harry move. She carried the boxes for,Gina,Harry,She,3,5850,43002,F
+Sam thanked Gina warmly. He wrote a letter for,Sam,Gina,He,4,43002,3409,M
+Amy surprised Victor at the party. She baked a cake for,Amy,Victor,She,5,12622,14235,F
+Henry recommended Iris for the job. He wrote a reference for,Henry,Iris,He,6,34230,8616,M
+Kate met Paul at the store. She bought a gift for,Kate,Paul,She,0,3362,16693,F
+Zach visited Grace at home. He brought flowers for,Zach,Grace,He,1,16156,18825,M
+Kate called Bob on the phone. She left a message for,Kate,Bob,She,2,5811,16693,F
+Jack helped Kate move. He carried the boxes for,Jack,Kate,He,3,16693,3619,M
+Alice thanked David warmly. She wrote a letter for,Alice,David,She,4,3271,14862,F
+Victor surprised Gina at the party. He baked a cake for,Victor,Gina,He,5,43002,12622,M
+Grace recommended Harry for the job. She wrote a reference for,Grace,Harry,She,6,5850,16156,F
+Henry met Alice at the store. He bought a gift for,Henry,Alice,He,0,14862,8616,M
+Amy visited Victor at home. She brought flowers for,Amy,Victor,She,1,12622,14235,F
+Harry called Rose on the phone. He left a message for,Harry,Rose,He,2,8049,5850,M
+Rose helped Xander move. She carried the boxes for,Rose,Xander,She,3,46122,8049,F
+Liam thanked Alice warmly. He wrote a letter for,Liam,Alice,He,4,14862,31684,M
+Kate surprised Harry at the party. She baked a cake for,Kate,Harry,She,5,5850,16693,F
+Henry recommended Emma for the job. He wrote a reference for,Henry,Emma,He,6,18966,8616,M
+Olivia met Harry at the store. She bought a gift for,Olivia,Harry,She,0,5850,33911,F
+Frank visited Amy at home. He brought flowers for,Frank,Amy,He,1,14235,5278,M
+Clara called David on the phone. She left a message for,Clara,David,She,2,3271,27443,F
+Jack helped Grace move. He carried the boxes for,Jack,Grace,He,3,16156,3619,M
+Amy thanked Victor warmly. She wrote a letter for,Amy,Victor,She,4,12622,14235,F
+Frank surprised Iris at the party. He baked a cake for,Frank,Iris,He,5,34230,5278,M
+Emma recommended Derek for the job. She wrote a reference for,Emma,Derek,She,6,20893,18966,F
+Paul met Tara at the store. He bought a gift for,Paul,Tara,He,0,37723,3362,M
+Olivia visited Fred at home. She brought flowers for,Olivia,Fred,She,1,8559,33911,F
+Fred called Kate on the phone. He left a message for,Fred,Kate,He,2,16693,8559,M
+Amy helped Derek move. She carried the boxes for,Amy,Derek,She,3,20893,14235,F
+Victor thanked Amy warmly. He wrote a letter for,Victor,Amy,He,4,14235,12622,M
+Amy surprised David at the party. She baked a cake for,Amy,David,She,5,3271,14235,F
+Henry recommended Iris for the job. He wrote a reference for,Henry,Iris,He,6,34230,8616,M
+Clara met Noah at the store. She bought a gift for,Clara,Noah,She,0,18394,27443,F
+Sam visited Clara at home. He brought flowers for,Sam,Clara,He,1,27443,3409,M
+Emma called Liam on the phone. She left a message for,Emma,Liam,She,2,31684,18966,F
+Paul helped Grace move. He carried the boxes for,Paul,Grace,He,3,16156,3362,M
+Tara thanked Frank warmly. She wrote a letter for,Tara,Frank,She,4,5278,37723,F
+Liam surprised Alice at the party. He baked a cake for,Liam,Alice,He,5,14862,31684,M
+Olivia recommended Fred for the job. She wrote a reference for,Olivia,Fred,She,6,8559,33911,F
+Harry met Kate at the store. He bought a gift for,Harry,Kate,He,0,16693,5850,M
+Alice visited Paul at home. She brought flowers for,Alice,Paul,She,1,3362,14862,F
+Victor called Gina on the phone. He left a message for,Victor,Gina,He,2,43002,12622,M
+Kate helped Fred move. She carried the boxes for,Kate,Fred,She,3,8559,16693,F
+Frank thanked Clara warmly. He wrote a letter for,Frank,Clara,He,4,27443,5278,M
+Iris surprised Sam at the party. She baked a cake for,Iris,Sam,She,5,3409,34230,F
+Noah recommended Olivia for the job. He wrote a reference for,Noah,Olivia,He,6,33911,18394,M
+Emma met Paul at the store. She bought a gift for,Emma,Paul,She,0,3362,18966,F
+Jack visited Kate at home. He brought flowers for,Jack,Kate,He,1,16693,3619,M
+Grace called Frank on the phone. She left a message for,Grace,Frank,She,2,5278,16156,F
+David helped Grace move. He carried the boxes for,David,Grace,He,3,16156,3271,M
+Kate thanked Victor warmly. She wrote a letter for,Kate,Victor,She,4,12622,16693,F
+Fred surprised Emma at the party. He baked a cake for,Fred,Emma,He,5,18966,8559,M
+Rose recommended Victor for the job. She wrote a reference for,Rose,Victor,She,6,12622,8049,F
+Brian met Kate at the store. He bought a gift for,Brian,Kate,He,0,16693,8403,M
+Tara visited Harry at home. She brought flowers for,Tara,Harry,She,1,5850,37723,F
+Fred called Emma on the phone. He left a message for,Fred,Emma,He,2,18966,8559,M
+Amy helped David move. She carried the boxes for,Amy,David,She,3,3271,14235,F
+Derek thanked Gina warmly. He wrote a letter for,Derek,Gina,He,4,43002,20893,M
+Mia surprised Sam at the party. She baked a cake for,Mia,Sam,She,5,3409,32189,F
+Bob recommended Emma for the job. He wrote a reference for,Bob,Emma,He,6,18966,5811,M
+Iris met Bob at the store. She bought a gift for,Iris,Bob,She,0,5811,34230,F
+Sam visited Amy at home. He brought flowers for,Sam,Amy,He,1,14235,3409,M
+Alice called Liam on the phone. She left a message for,Alice,Liam,She,2,31684,14862,F
+Harry helped Tara move. He carried the boxes for,Harry,Tara,He,3,37723,5850,M
+Clara thanked Fred warmly. She wrote a letter for,Clara,Fred,She,4,8559,27443,F
+Sam surprised Grace at the party. He baked a cake for,Sam,Grace,He,5,16156,3409,M
+Amy recommended Derek for the job. She wrote a reference for,Amy,Derek,She,6,20893,14235,F
+Harry met Emma at the store. He bought a gift for,Harry,Emma,He,0,18966,5850,M
+Rose visited Zach at home. She brought flowers for,Rose,Zach,She,1,18825,8049,F
+Derek called Mia on the phone. He left a message for,Derek,Mia,He,2,32189,20893,M
+Mia helped Henry move. She carried the boxes for,Mia,Henry,She,3,8616,32189,F
+Liam thanked Mia warmly. He wrote a letter for,Liam,Mia,He,4,32189,31684,M
+Olivia surprised Harry at the party. She baked a cake for,Olivia,Harry,She,5,5850,33911,F
+Victor recommended Clara for the job. He wrote a reference for,Victor,Clara,He,6,27443,12622,M
+Olivia met David at the store. She bought a gift for,Olivia,David,She,0,3271,33911,F
+Fred visited Emma at home. He brought flowers for,Fred,Emma,He,1,18966,8559,M
+Mia called Sam on the phone. She left a message for,Mia,Sam,She,2,3409,32189,F
+Xander helped Emma move. He carried the boxes for,Xander,Emma,He,3,18966,46122,M
+Olivia thanked Bob warmly. She wrote a letter for,Olivia,Bob,She,4,5811,33911,F
+Fred surprised Olivia at the party. He baked a cake for,Fred,Olivia,He,5,33911,8559,M
+Alice recommended Noah for the job. She wrote a reference for,Alice,Noah,She,6,18394,14862,F
+Zach met Amy at the store. He bought a gift for,Zach,Amy,He,0,14235,18825,M
+Rose visited Fred at home. She brought flowers for,Rose,Fred,She,1,8559,8049,F
+David called Iris on the phone. He left a message for,David,Iris,He,2,34230,3271,M
+Kate helped Jack move. She carried the boxes for,Kate,Jack,She,3,3619,16693,F
+Victor thanked Rose warmly. He wrote a letter for,Victor,Rose,He,4,8049,12622,M
+Gina surprised Harry at the party. She baked a cake for,Gina,Harry,She,5,5850,43002,F
+Henry recommended Alice for the job. He wrote a reference for,Henry,Alice,He,6,14862,8616,M
+Clara met Paul at the store. She bought a gift for,Clara,Paul,She,0,3362,27443,F
+Liam visited Kate at home. He brought flowers for,Liam,Kate,He,1,16693,31684,M
+Tara called Bob on the phone. She left a message for,Tara,Bob,She,2,5811,37723,F
+Derek helped Emma move. He carried the boxes for,Derek,Emma,He,3,18966,20893,M
+Iris thanked Henry warmly. She wrote a letter for,Iris,Henry,She,4,8616,34230,F
+Fred surprised Emma at the party. He baked a cake for,Fred,Emma,He,5,18966,8559,M
+Clara recommended Jack for the job. She wrote a reference for,Clara,Jack,She,6,3619,27443,F
+Harry met Gina at the store. He bought a gift for,Harry,Gina,He,0,43002,5850,M
+Kate visited Sam at home. She brought flowers for,Kate,Sam,She,1,3409,16693,F
+Derek called Rose on the phone. He left a message for,Derek,Rose,He,2,8049,20893,M
+Rose helped Paul move. She carried the boxes for,Rose,Paul,She,3,3362,8049,F
+Fred thanked Tara warmly. He wrote a letter for,Fred,Tara,He,4,37723,8559,M
+Grace surprised Brian at the party. She baked a cake for,Grace,Brian,She,5,8403,16156,F
+Noah recommended Amy for the job. He wrote a reference for,Noah,Amy,He,6,14235,18394,M
+Tara met Jack at the store. She bought a gift for,Tara,Jack,She,0,3619,37723,F
+Frank visited Kate at home. He brought flowers for,Frank,Kate,He,1,16693,5278,M
+Olivia called Xander on the phone. She left a message for,Olivia,Xander,She,2,46122,33911,F
+Sam helped Alice move. He carried the boxes for,Sam,Alice,He,3,14862,3409,M
+Kate thanked Victor warmly. She wrote a letter for,Kate,Victor,She,4,12622,16693,F
+Harry surprised Grace at the party. He baked a cake for,Harry,Grace,He,5,16156,5850,M
+Rose recommended Harry for the job. She wrote a reference for,Rose,Harry,She,6,5850,8049,F
+Zach met Mia at the store. He bought a gift for,Zach,Mia,He,0,32189,18825,M
+Tara visited Brian at home. She brought flowers for,Tara,Brian,She,1,8403,37723,F
+Fred called Mia on the phone. He left a message for,Fred,Mia,He,2,32189,8559,M
+Iris helped Paul move. She carried the boxes for,Iris,Paul,She,3,3362,34230,F
+Brian thanked Iris warmly. He wrote a letter for,Brian,Iris,He,4,34230,8403,M
+Olivia surprised David at the party. She baked a cake for,Olivia,David,She,5,3271,33911,F
+Xander recommended Gina for the job. He wrote a reference for,Xander,Gina,He,6,43002,46122,M
+Rose met Brian at the store. She bought a gift for,Rose,Brian,She,0,8403,8049,F
+Brian visited Clara at home. He brought flowers for,Brian,Clara,He,1,27443,8403,M
+Clara called Jack on the phone. She left a message for,Clara,Jack,She,2,3619,27443,F
+Harry helped Alice move. He carried the boxes for,Harry,Alice,He,3,14862,5850,M
+Grace thanked Xander warmly. She wrote a letter for,Grace,Xander,She,4,46122,16156,F
+Henry surprised Rose at the party. He baked a cake for,Henry,Rose,He,5,8049,8616,M
+Emma recommended Fred for the job. She wrote a reference for,Emma,Fred,She,6,8559,18966,F
+Bob met Gina at the store. He bought a gift for,Bob,Gina,He,0,43002,5811,M
+Grace visited Derek at home. She brought flowers for,Grace,Derek,She,1,20893,16156,F
+Jack called Emma on the phone. He left a message for,Jack,Emma,He,2,18966,3619,M
