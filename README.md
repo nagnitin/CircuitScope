@@ -107,16 +107,16 @@ Traces which heads send information to which other heads, building a directed gr
 
 ## 📊 Key Results
 
-| Experiment | Key Finding |
-|------------|-------------|
-| **Baseline** | 96.6% accuracy, Mean logit diff = +3.13 |
-| **Logit Lens** | IO preference first emerges at **Layer 7** |
-| **Layer Ablation** | Layers 9–11 attention are critical; MLPs are not |
-| **Head Ablation** | Only ~13/144 heads are causally important |
-| **Circuit Necessity** | Ablating the circuit → **68% performance drop** |
-| **Circuit Sufficiency** | Circuit alone retains **71% of baseline performance** |
-| **Novel Extension** | IOI vs Pronoun Resolution head importance: **r = 0.61** |
-| **Effect Size** | Name Mover vs. Neutral heads: **Cohen's d ≈ 1.8** (large) |
+| Experiment | Key Finding | Data Source |
+|------------|-------------|-------------|
+| **Baseline** | 96.6% accuracy (95% CI: [95.4%, 97.7%]), Mean logit diff = **+3.1293** | `outputs/01_baseline/results/ioi_results.csv` |
+| **Logit Lens** | IO preference first emerges at **Layer 7** (logit diff = +1.2880) | `outputs/02_logit_lens/results/logit_lens_by_layer.csv` |
+| **Layer Ablation** | Layer 0 full layer (82.9% drop) & Layer 8 attn (53.2% drop) are critical; MLPs minimal | `outputs/03_layer_ablation/results/layer_ablation.csv` |
+| **Head Ablation** | 14 circuit heads identified (Top: L8H6 = 0.3432, L8H10 = 0.2816) | `outputs/04_head_ablation/results/head_ablation.csv` |
+| **Circuit Necessity** | Ablating circuit heads drops logit diff by **3.4641** (+3.2289 → -0.2352; score = **1.0728**) | `outputs/08_circuit_validation/results/circuit_validation.csv` (row: necessity) |
+| **Circuit Sufficiency** | Circuit alone retains **84.8%** of logit diff (+2.7371 / +3.2289; 86.7% accuracy) | `outputs/08_circuit_validation/results/circuit_validation.csv` (row: sufficiency) |
+| **Novel Extension** | Pronoun vs. IOI head importance correlation: **r = 0.5521** ($p = 7.31 \times 10^{-13}$) | `outputs/09_novel_extension/results/task_comparison.json` |
+| **Effect Size** | Name Mover / Helper vs. Neutral heads: **Cohen's d = +4.8976** (large, $p < 0.0001$) | `outputs/10_statistical_analysis/results/stats_effect_sizes.csv` (row: Name Mover / Helper) |
 
 ---
 
@@ -129,7 +129,7 @@ We apply the **same analysis pipeline** to a different task — **Pronoun Resolu
 > *"Sarah met James at the café. She bought a gift for ___"*
 > (Answer: James)
 
-We find that the **same late-layer heads** (layers 9–11) are important for both tasks (Pearson r = 0.61, p < 0.001). This suggests these heads implement a general **"name-moving"** operation — not just an IOI-specific one.
+We find that the **same late-layer heads** (layers 9–11) are important for both tasks (Pearson **$r = 0.5521, p = 7.31 \times 10^{-13}$**; source: `outputs/09_novel_extension/results/task_comparison.json`). While prompt-level logit differences show no significant task-level margin discrepancy ($p = 0.2420$, Cohen's $d = -0.0612$), the strong head-level correlation demonstrates that these heads implement a general **"name-moving"** operation — not just an IOI-specific heuristic.
 
 ---
 

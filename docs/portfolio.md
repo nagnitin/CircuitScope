@@ -1,4 +1,4 @@
-﻿# CircuitScope — Portfolio Materials
+# CircuitScope — Portfolio Materials
 
 This document contains ready-to-use professional materials for showcasing the CircuitScope project.
 
@@ -41,15 +41,15 @@ Conducted a systematic mechanistic interpretability analysis of GPT-2 Small's In
 - Extended the analysis to a novel pronoun resolution task as an original research contribution
 
 **Key Findings:**
-- Identified Name Mover Heads (layers 9–11) and S-Inhibition Heads (layers 7–8) as the primary circuit components
-- Circuit necessity score: 68% (ablating circuit causes 68% drop in task performance)
-- Circuit sufficiency score: 71% (circuit alone retains 71% of baseline performance)
-- Found r = 0.61 correlation between head importance scores across IOI and pronoun resolution tasks
+- Identified Name Mover Heads (layers 8–11) and S-Inhibition Heads (layers 7–8) as the primary circuit components
+- Circuit necessity score: 1.0728 (ablating circuit causes accuracy drop from 96.0% to 40.7%, a 55.3 percentage-point drop; source: `outputs/08_circuit_validation/results/circuit_validation.csv`)
+- Circuit sufficiency score: 0.8477 (circuit alone retains 84.8% of baseline logit diff and 86.7% accuracy)
+- Found Pearson r = 0.5521 (p = 7.31e-13) correlation between head importance scores across IOI and pronoun resolution tasks
 
 **Statistical Validation:**
 - Bootstrap 95% confidence intervals for all key metrics
-- Cohen's d effect sizes (Name Movers vs. neutral heads: d ≈ 1.8, "large" effect)
-- Spearman correlation between layer depth and head importance (ρ = 0.42, p < 0.001)
+- Cohen's d effect sizes (Name Mover / Helper vs. neutral heads: d = +4.90, "large" effect, p < 0.0001)
+- Spearman correlation between layer depth and head importance (ρ = 0.1099, p = 0.1899)
 
 **Technical Stack:** Python 3.11, PyTorch, TransformerLens, Plotly, pandas, numpy
 
@@ -64,9 +64,9 @@ Conducted a systematic mechanistic interpretability analysis of GPT-2 Small's In
 **CircuitScope: Mechanistic Interpretability of GPT-2 Small** *(Independent Research, 2026)*
 
 - Reverse-engineered the Indirect Object Identification (IOI) circuit in GPT-2 Small across 144 attention heads using 5 complementary analysis methods (logit lens, layer/head ablation, activation patching, path patching)
-- Validated discovered circuit with necessity (68%) and sufficiency (71%) tests, confirming it as the primary computational substrate for IOI behavior
-- Implemented novel pronoun resolution dataset and demonstrated partial circuit reuse with IOI (Pearson r = 0.61, p < 0.001), providing new evidence for modular name-tracking mechanisms
-- Produced publication-quality statistical analysis with bootstrap 95% CIs, Cohen's d effect sizes (d > 1.8 for Name Mover heads), and Spearman rank correlations
+- Validated discovered circuit with necessity (score = 1.0728, 55.3% accuracy drop) and sufficiency (score = 0.8477, 84.8% logit diff retained) tests, confirming it as the primary computational substrate for IOI behavior
+- Implemented novel pronoun resolution dataset and demonstrated partial circuit reuse with IOI (Pearson r = 0.5521, p < 10^-12), providing new evidence for modular name-tracking mechanisms
+- Produced publication-quality statistical analysis with bootstrap 95% CIs, Cohen's d effect sizes (d = +4.90 for Name Mover / Helper heads), and permutation tests
 - Built research-grade modular Python codebase (2,000+ lines) using TransformerLens, Plotly, and pandas — fully reproducible with documented setup for Google Colab and local execution
 
 ### Skills Section (add to relevant categories)
