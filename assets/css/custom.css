@@ -1,0 +1,181 @@
+/* CircuitScope — NeurIPS Research Style CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Base App Theme */
+.stApp {
+    background: linear-gradient(180deg, #0F172A 0%, #090D16 100%);
+    color: #F8FAFC;
+}
+
+/* Sidebar styling */
+[data-testid="stSidebar"] {
+    background-color: #1E293B !important;
+    border-right: 1px solid #334155 !important;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600 !important;
+    color: #F8FAFC !important;
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-size: 2.2rem !important;
+    background: linear-gradient(90deg, #38BDF8 0%, #818CF8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 0.2rem;
+}
+
+h2 {
+    font-size: 1.5rem !important;
+    color: #E2E8F0 !important;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 0.5rem;
+    margin-top: 1.5rem !important;
+}
+
+/* Research Metric Cards */
+.metric-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.metric-card {
+    background: #1E293B;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 1.25rem;
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-2px);
+    border-color: #6366F1;
+}
+
+.metric-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #38BDF8;
+    line-height: 1.2;
+    margin: 0.4rem 0;
+}
+
+.metric-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #94A3B8;
+}
+
+.metric-subtitle {
+    font-size: 0.75rem;
+    color: #64748B;
+    margin-top: 0.25rem;
+}
+
+/* Custom Alert / Callout Boxes */
+.callout-box {
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin: 1rem 0;
+    border-left: 4px solid #6366F1;
+    background: rgba(30, 41, 59, 0.7);
+}
+
+.callout-box.info {
+    border-left-color: #38BDF8;
+    background: rgba(56, 189, 248, 0.1);
+}
+
+.callout-box.success {
+    border-left-color: #10B981;
+    background: rgba(16, 185, 129, 0.1);
+}
+
+.callout-box.warning {
+    border-left-color: #F59E0B;
+    background: rgba(245, 158, 11, 0.1);
+}
+
+.callout-box.danger {
+    border-left-color: #F43F5E;
+    background: rgba(244, 63, 94, 0.1);
+}
+
+.callout-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+}
+
+/* Pill Tags for Head Roles */
+.pill-tag {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-right: 0.3rem;
+}
+
+.pill-name-mover { background: rgba(99, 102, 241, 0.25); color: #818CF8; border: 1px solid #6366F1; }
+.pill-s-inhibition { background: rgba(245, 158, 11, 0.25); color: #FBBF24; border: 1px solid #F59E0B; }
+.pill-helper { background: rgba(6, 182, 212, 0.25); color: #22D3EE; border: 1px solid #06B6D4; }
+.pill-suppressor { background: rgba(244, 63, 94, 0.25); color: #FB7185; border: 1px solid #F43F5E; }
+.pill-neutral { background: rgba(100, 116, 139, 0.25); color: #94A3B8; border: 1px solid #64748B; }
+
+/* Code Blocks */
+pre, code {
+    font-family: 'Fira Code', monospace !important;
+    background-color: #1E293B !important;
+    color: #E2E8F0 !important;
+    border-radius: 6px;
+}
+
+/* Tables */
+.dataframe {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    background: #1E293B !important;
+    color: #F8FAFC !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+}
+
+.dataframe th {
+    background-color: #0F172A !important;
+    color: #94A3B8 !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    font-size: 0.75rem !important;
+    padding: 10px !important;
+    border-bottom: 1px solid #334155 !important;
+}
+
+.dataframe td {
+    padding: 8px 10px !important;
+    border-bottom: 1px solid rgba(51, 65, 85, 0.5) !important;
+    font-size: 0.85rem !important;
+}
+
+/* Custom Card Container */
+.paper-card {
+    background: #1E293B;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
