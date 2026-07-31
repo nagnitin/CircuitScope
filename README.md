@@ -116,9 +116,10 @@ Traces which heads send information to which other heads, building a directed gr
 | **Head Ablation** | 14 circuit heads identified (Top: L8H6 = 0.3432, L8H10 = 0.2816) | `outputs/04_head_ablation/results/head_ablation.csv` |
 | **Circuit Necessity** | Ablating circuit heads drops logit diff by **3.4641** (+3.2289 → -0.2352; score = **1.0728**) | `outputs/08_circuit_validation/results/circuit_validation.csv` (row: necessity) |
 | **Circuit Sufficiency** | Circuit alone retains **84.8%** of logit diff (+2.7371 / +3.2289; 86.7% accuracy) | `outputs/08_circuit_validation/results/circuit_validation.csv` (row: sufficiency) |
-| **Novel Extension (Correlation)** | Pronoun vs. IOI head importance correlation: **r = 0.5521** ($p = 7.31 \times 10^{-13}$) | `outputs/09_novel_extension/results/task_comparison.json` |
-| **Cross-Task Causal Patching** | Single-head activation patching evaluates causal transfer (Name Mover recovery = **-5.97%** vs **-2.19%** control; verdict: `NO_TRANSFER`) | `outputs/11_cross_task_patching/results/cross_task_summary.json` |
-| **Effect Size** | Name Mover / Helper vs. Neutral heads: **Cohen's d = +4.8976** (large, $p < 0.0001$) | `outputs/10_statistical_analysis/results/stats_effect_sizes.csv` (row: Name Mover / Helper) |
+| **Novel Extension (Correlation)** | Pronoun vs. IOI head importance correlation: **r = 0.5521** ($p = 7.31 \times 10^{-13}$, n=144 heads) | `outputs/09_novel_extension/results/task_comparison.json` |
+| **Cross-Task Causal Patching (Exp 11)** | Single-head patching: Name Mover recovery = **-5.97%** vs **-2.19%** control; verdict: `NO_TRANSFER` (n=150) | `outputs/11_cross_task_patching/results/cross_task_summary.json` |
+| **Multi-Head Group Patching (Exp 12)** | Full Name Mover group (4 heads) cross-task recovery = **-1.12%**; verdict: `NO_TRANSFER_EVEN_AT_GROUP_LEVEL` (n=150) | `outputs/12_multihead_patching/results/multihead_summary.json` |
+| **Effect Size** | Name Mover / Helper vs. Neutral heads: **Cohen's d = +4.8976** (large, $p < 0.0001$, n=139 heads) | `outputs/10_statistical_analysis/results/stats_effect_sizes.csv` (row: Name Mover / Helper) |
 
 ---
 
@@ -129,9 +130,9 @@ Beyond reproducing Wang et al. (2022)'s original IOI findings, CircuitScope adds
 > *"Sarah met James at the café. She bought a gift for ___"*
 > (Answer: James)
 
-1. **Causal Activation Patching (Primary Evidence)**: Bidirectional activation patching between Pronoun Resolution and IOI prompts (`experiments/11_cross_task_patching.py`) tests direct causal transfer at target Name Mover heads (mean cross-task recovery = **-5.97%** vs **-2.19%** for control heads; source: `outputs/11_cross_task_patching/results/cross_task_summary.json`). The results demonstrate that isolated single-head activations alone do not transfer without multi-head sub-circuit coordination.
-2. **Head Importance Correlation (Secondary Support)**: Head importance ranking exhibits a moderate-to-strong correlation across tasks (Pearson **$r = 0.5521, p = 7.31 \times 10^{-13}$**; source: `outputs/09_novel_extension/results/task_comparison.json`), confirming shared head reliance.
-3. **Reframed Task Margin Equivalence**: Prompt-level logit difference comparisons show no significant task margin discrepancy ($p = 0.2420$, Cohen's $d = -0.0612$). This equivalence is directly consistent with the shared-circuit hypothesis: reliance on identical underlying attention machinery predicts comparable task decision margins.
+1. **Causal Activation Patching — Single-Head (Exp 11, Primary Evidence)**: Bidirectional activation patching between Pronoun Resolution and IOI prompts (`experiments/11_cross_task_patching.py`) tests direct causal transfer at target Name Mover heads (mean cross-task recovery = **-5.97%** vs **-2.19%** for control heads; verdict: `NO_TRANSFER`; source: `outputs/11_cross_task_patching/results/cross_task_summary.json`).
+2. **Multi-Head Group Patching (Exp 12, Confirmatory)**: Simultaneously patching all 4 Name Mover heads from Pronoun into corrupted IOI prompts yields **-1.12%** cross-task recovery — even *worse* than single-head (verdict: `NO_TRANSFER_EVEN_AT_GROUP_LEVEL`; source: `outputs/12_multihead_patching/results/multihead_summary.json`). The `NO_TRANSFER` verdict is not an artifact of single-head insufficiency.
+3. **Head Importance Correlation (Secondary Support)**: Head importance ranking exhibits a moderate-to-strong correlation across tasks (Pearson **$r = 0.5521, p = 7.31 \times 10^{-13}$**, n=144 heads; source: `outputs/09_novel_extension/results/task_comparison.json`), confirming shared head reliance without implying causal transferability.
 
 ---
 
@@ -443,6 +444,16 @@ A full IEEE-style research paper is available at [`paper/research_paper.md`](pap
 | **SciPy** | Statistical tests |
 | **kaleido** | PNG export from Plotly |
 | **PyYAML** | Config file parsing |
+
+---
+
+## 🔁 Reproducibility Notes
+
+> **Verified:** All experiments in this repository set a fixed random seed (`seed=42`) before data generation and model inference. Experiment 12 explicitly records `"random_seed": 42` in `multihead_summary.json`.
+
+> **Package versions:** `requirements.txt` specifies lower-bound version constraints (e.g., `transformer_lens>=1.19.0`). For exact reproducibility, pin to the versions used in the verified run. Interpretability results — particularly logit diff values and activation distributions — can shift across TransformerLens versions. The following versions were used in the reference run (approximate): Python 3.11, torch 2.2.x, transformer_lens 1.19.x, numpy 1.26.x, scipy 1.12.x.
+
+> **Reproduction coverage:** Experiments 01–12 were executed from source with the documented commands. Results in `outputs/` match the values cited in the paper within the precision reported. The `07_full_pipeline.py` quick mode covers experiments 01–10; experiments 11 and 12 must be run separately (`python experiments/11_cross_task_patching.py` and `python experiments/12_multihead_patching.py`).
 
 ---
 

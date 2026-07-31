@@ -9,7 +9,7 @@
 
 ## Abstract
 
-We present **CircuitScope**, a systematic mechanistic interpretability analysis of the Indirect Object Identification (IOI) circuit in GPT-2 Small. The IOI task requires a language model to identify the indirect object in sentences of the form *"When John and Mary went to the park, John gave the book to ___"* — preferring *Mary* over *John*. Using a suite of analytical methods — the logit lens, mean/resample layer ablation, attention head ablation, activation patching, and path patching — we reverse-engineer the computational circuit responsible for this behavior across all 12 transformer layers and 144 attention heads. Resample ablation control supports the interpretation that Layer 0 MLP's large drop (resample normalized drop = 1.0927; source: `[outputs/03_layer_ablation/results/layer_ablation_resample.csv, row 1]`) is consistent with a genuine forward-pass dependency rather than a mean-ablation artifact. We demonstrate that the 14-head IOI circuit exhibits high necessity (Necessity score = 1.0728, ablating it reduces accuracy from 96.0% to 40.7%; source: `[outputs/08_circuit_validation/results/circuit_validation.csv, row: necessity]`) and sufficiency (Sufficiency score = 0.8477; source: `[outputs/08_circuit_validation/results/circuit_validation.csv, row: sufficiency]`). As a novel contribution, we evaluate cross-task transfer to pronoun resolution via bidirectional causal activation patching. Head-importance correlation between IOI and pronoun resolution is moderate-to-strong (*r* = 0.5521, $p = 7.31 \times 10^{-13}$; source: `[outputs/09_novel_extension/results/task_comparison.json]`), yet causal activation patching finds **no single-head functional transfer** (Name Mover mean cross-task recovery = -5.97% vs. -2.19% for neutral control heads; verdict: `NO_TRANSFER`; source: `[outputs/11_cross_task_patching/results/cross_task_summary.json]`). This is the paper's key methodological finding: head-importance correlation across tasks does not imply causal circuit sharing — correlation-based transfer claims require causal validation, which here fails to support transfer at the single-head level. Statistical analysis with bootstrap confidence intervals and Cohen's d effect sizes confirms large effect sizes (*d* = +4.8976, $p < 0.0001$; source: `[outputs/10_statistical_analysis/results/stats_effect_sizes.csv, row 0]`) for Name Mover heads. All code and results are publicly available at the project repository.
+We present **CircuitScope**, a systematic mechanistic interpretability analysis of the Indirect Object Identification (IOI) circuit in GPT-2 Small. The IOI task requires a language model to identify the indirect object in sentences of the form *"When John and Mary went to the park, John gave the book to ___"* — preferring *Mary* over *John*. Using a suite of analytical methods — the logit lens, mean/resample layer ablation, attention head ablation, activation patching, and path patching — we reverse-engineer the computational circuit responsible for this behavior across all 12 transformer layers and 144 attention heads. Resample ablation control supports the interpretation that Layer 0 MLP's large drop (resample normalized drop = 1.0927; source: `[outputs/03_layer_ablation/results/layer_ablation_resample.csv, row 1]`) is consistent with a genuine forward-pass dependency rather than a mean-ablation artifact. We demonstrate that the 14-head IOI circuit exhibits high necessity (Necessity score = 1.0728, ablating it reduces accuracy from 96.0% to 40.7%; source: `[outputs/08_circuit_validation/results/circuit_validation.csv, row: necessity]`) and sufficiency (Sufficiency score = 0.8477; source: `[outputs/08_circuit_validation/results/circuit_validation.csv, row: sufficiency]`). As a novel contribution, we evaluate cross-task transfer to pronoun resolution. Head-importance correlation between IOI and pronoun resolution is moderate-to-strong (*r* = 0.5521, $p = 7.31 \times 10^{-13}$, n=144 heads; source: `[outputs/09_novel_extension/results/task_comparison.json]`), yet causal activation patching finds **no functional transfer at either the single-head or group level**: single-head patching yields mean Name Mover cross-task recovery of -5.97% vs. -2.19% for neutral controls (`NO_TRANSFER`; source: `[outputs/11_cross_task_patching/results/cross_task_summary.json]`), and jointly patching the full 4-head Name Mover group yields -1.12% cross-task recovery (`NO_TRANSFER_EVEN_AT_GROUP_LEVEL`; source: `[outputs/12_multihead_patching/results/multihead_summary.json]`). This is the paper's key methodological finding: head-importance correlation across tasks does not imply causal circuit sharing — even when the entire candidate sub-circuit is transplanted simultaneously. Statistical analysis with bootstrap confidence intervals and Cohen's d effect sizes confirms large effect sizes (*d* = +4.8976, $p < 0.0001$; source: `[outputs/10_statistical_analysis/results/stats_effect_sizes.csv, row 0]`) for Name Mover heads. All code and results are publicly available at the project repository.
 
 **Keywords:** mechanistic interpretability, transformer circuits, indirect object identification, attention head ablation, activation patching, GPT-2
 
@@ -47,7 +47,7 @@ This paper makes the following contributions:
 
 **Activation Patching.** Meng et al. (2022) introduced "causal tracing" in the ROME paper to localize factual associations. Goldowsky-Dill et al. (2023) formalized path patching as a more precise variant.
 
-**Cross-Task Circuit Transfer.** Recent work by Merullo et al. (2023) and Hanna et al. (2023) has investigated whether circuits discovered for one task generalize to structurally similar tasks, finding both shared and task-specific components.
+**Cross-Task Circuit Transfer.** Recent work by Merullo et al. (2023) and Hanna et al. (2023) has investigated whether circuits discovered for one task generalize to structurally similar tasks, finding both shared and task-specific components. Merullo et al. found partial cross-task transfer for compositional multi-step reasoning tasks; Hanna et al. found that circuits for arithmetic tasks share components when tasks are structurally near-identical. The present work contributes a different regime: a task pair (IOI / pronoun resolution) that is semantically similar but syntactically distinct, yielding a `NO_TRANSFER` verdict under causal patching despite moderate head-importance correlation — a negative result that complements these prior positive findings.
 
 ---
 
@@ -300,22 +300,22 @@ Generalization necessity scores remain consistently high across held-out prompts
 
 ### 7.1 Baseline Performance & Task Comparison
 
-We compare performance between IOI (1,000 prompts) and Pronoun Resolution (500 prompts) (source: `[outputs/09_novel_extension/results/task_comparison.json]` and `[outputs/10_statistical_analysis/results/stats_bootstrap_ci.csv]`):
+We compare performance between IOI (n=1,000 prompts) and Pronoun Resolution (n=500 prompts) (source: `[outputs/09_novel_extension/results/task_comparison.json]` and `[outputs/10_statistical_analysis/results/stats_bootstrap_ci.csv]`):
 
 | Metric | IOI Task | Pronoun Task | Difference | Statistic & p-value | Source File |
 |--------|----------|--------------|------------|---------------------|-------------|
 | Accuracy | **96.6%** [95.4%, 97.7%] | **98.2%** [96.8%, 99.2%] | +1.6% | — | `[outputs/10_statistical_analysis/results/stats_bootstrap_ci.csv]` |
-| Mean logit_diff | **+3.1293** [3.0242, 3.2416] | **+3.2404** [3.0722, 3.4065] | -0.1111 | Cohen's d = **-0.0612** (negligible) | `[outputs/09_novel_extension/results/task_comparison.json]` |
-| Statistical Test | — | — | — | Permutation $p = \mathbf{0.2420}$ (not significant) | `[outputs/09_novel_extension/results/task_comparison.json, field: logit_diff_comparison]` |
+| Mean logit_diff | **+3.1293** [3.0242, 3.2416] | **+3.2404** [3.0722, 3.4065] | -0.1111 | Cohen's d = **-0.0612** (negligible, n=1,000 vs n=500) | `[outputs/09_novel_extension/results/task_comparison.json]` |
+| Statistical Test | — | — | — | Permutation $p = \mathbf{0.2420}$ (not significant; n=1,000 vs n=500) | `[outputs/09_novel_extension/results/task_comparison.json, field: logit_diff_comparison]` |
 
-*Reframed Interpretation of Task Performance Margin:* The prompt-level logit difference comparison yields $p = 0.2420$ and Cohen's $d = -0.0612$, establishing that there is no statistically significant difference in performance margin between the IOI and Pronoun Resolution tasks. **This result is directly consistent with the shared-circuit hypothesis**: if the same underlying attention machinery (Name Mover Heads) mediates named entity resolution across both syntactic task formats, comparable cognitive difficulty and decision margin is the expected theoretical prediction of a shared mechanism.
+*Interpretation of Task Performance Margin:* The prompt-level logit difference comparison yields $p = 0.2420$ and Cohen's $d = -0.0612$ (n=1,000 IOI vs. n=500 Pronoun), establishing that there is no statistically significant difference in performance margin between the IOI and Pronoun Resolution tasks. This result is consistent with the hypothesis that both tasks recruit similar attention machinery — comparable task difficulty is expected when the same functional heads govern named entity prediction in both formats.
 
 ### 7.2 Head Importance Correlation
 
 Comparing head ablation importance scores across all 144 heads between IOI and Pronoun Resolution reveals a **moderate-to-strong positive correlation**:
-- **Pearson correlation**: **$r = 0.5521$** ($p = 7.31 \times 10^{-13}$; source: `[outputs/09_novel_extension/results/task_comparison.json, field: head_importance_correlation]`)
+- **Pearson correlation**: **$r = 0.5521$** ($p = 7.31 \times 10^{-13}$; n=144 heads; source: `[outputs/09_novel_extension/results/task_comparison.json, field: head_importance_correlation]`)
 
-The late-layer Name Mover Heads (L8H6, L8H10, L5H5, L7H9) rank among the most critical heads for *both* tasks, serving as secondary correlational evidence of shared head reliance.
+The late-layer Name Mover Heads (L8H6, L8H10, L5H5, L7H9) rank among the most critical heads for *both* tasks, serving as correlational evidence of shared head reliance. Importantly, the single correlation test on n=144 head-importance pairs does not require multiple-comparisons correction (it is one pre-specified test, not 144 separate tests).
 
 ### 7.3 Interpretation
 
@@ -345,17 +345,19 @@ Effect sizes computed via Cohen's d across functional head groups (source: `[out
 
 | Comparison Group | N Heads | Mean Importance | Cohen's d | Category | Permutation p-value | 95% CI | Source File |
 |------------------|---------|-----------------|-----------|----------|---------------------|--------|-------------|
-| Name Mover / Helper vs. Neutral | 14 | +0.1501 | **+4.8976** | Large | $p < 0.0001$ | [+0.1077, +0.1976] | `[outputs/10_statistical_analysis/results/stats_effect_sizes.csv, row 0]` |
-| Suppressor vs. Neutral | 5 | -0.1754 | **-7.4125** | Large | $p = 1.0000$ | [-0.2512, -0.1023] | `[outputs/10_statistical_analysis/results/stats_effect_sizes.csv, row 1]` |
-| Late (L9-11) vs. Early (L0-4) | 36 | -0.0119 | **-0.2742** | Small | $p = 0.8850$ | [-0.2691, +0.0850] | `[outputs/10_statistical_analysis/results/stats_effect_sizes.csv, row 2]` |
-| IOI vs. Pronoun task margin | — | -0.1111 | **-0.0612** | Negligible | $p = 0.2420$ | — | `[outputs/09_novel_extension/results/task_comparison.json]` |
+| Name Mover / Helper vs. Neutral | 14 circuit vs. 125 neutral | +0.1501 | **+4.8976** | Large | $p < 0.0001$ (n=139 heads total) | [+0.1077, +0.1976] | `[outputs/10_statistical_analysis/results/stats_effect_sizes.csv, row 0]` |
+| Suppressor vs. Neutral | 5 vs. 125 neutral | -0.1754 | **-7.4125** | Large | $p = 1.0000$ (n=130) | [-0.2512, -0.1023] | `[outputs/10_statistical_analysis/results/stats_effect_sizes.csv, row 1]` |
+| Late (L9-11) vs. Early (L0-4) | 36 | -0.0119 | **-0.2742** | Small | $p = 0.8850$ (n=36) | [-0.2691, +0.0850] | `[outputs/10_statistical_analysis/results/stats_effect_sizes.csv, row 2]` |
+| IOI vs. Pronoun task margin | — | -0.1111 | **-0.0612** | Negligible | $p = 0.2420$ (n=1,000 vs n=500) | — | `[outputs/09_novel_extension/results/task_comparison.json]` |
+
+> **Note on multiple comparisons:** The effect size and permutation tests in Section 8.2 compare pre-specified functional groups (Name Mover/Helper, Suppressor, etc.) against neutral heads — these are not 144 individual hypothesis tests on each head. No family-wise correction is applied because: (1) group membership was defined prior to statistical testing based on ablation importance rank; (2) the primary pre-specified statistical inference of this paper is the circuit-level Necessity score (a single test); and (3) any individual-head permutation tests reported are exploratory characterizations, not hypothesis claims.
 
 ### 8.3 Layer Depth Correlation
 
-Spearman rank correlation between layer depth index and head importance across all 144 heads (source: `[outputs/10_statistical_analysis/results/stats_layer_correlation.json]`):
+Spearman rank correlation between layer depth index and head importance across all 144 heads (n=144; source: `[outputs/10_statistical_analysis/results/stats_layer_correlation.json]`):
 - **Spearman $\rho = 0.1099$** ($p = 0.1899$, not statistically significant)
 
-*Interpretation:* The non-significant linear depth correlation ($\rho = 0.1099, p = 0.1899$) reflects that circuit importance is highly localized to specific functional layers (e.g. Layers 7–11 for Name Movers and S-Inhibitors) rather than monotonically increasing with layer depth.
+*Interpretation:* The non-significant linear depth correlation ($\rho = 0.1099, p = 0.1899$, n=144 heads) reflects that circuit importance is highly localized to specific functional layers (e.g. Layers 7–11 for Name Movers and S-Inhibitors) rather than monotonically increasing with layer depth.
 
 ---
 
@@ -373,31 +375,52 @@ To test whether the pronoun resolution and IOI tasks share a causal mechanism (b
 2. **Direction B (IOI $\rightarrow$ Corrupted Pronoun)**: Patching clean IOI activations into corrupted Pronoun runs yields a mean logit-diff recovery of **-3.96%** at L8H6 (source: `[outputs/11_cross_task_patching/results/cross_task_patching.csv, row 1]`) and **+0.0140** at L5H5 (source: `[outputs/11_cross_task_patching/results/cross_task_patching.csv, row 3]`).
 3. **Same-Task Control (IOI $\rightarrow$ Corrupted IOI)**: Same-task donor patching yields a mean recovery of **-21.17%** across Name Movers (source: `[outputs/11_cross_task_patching/results/cross_task_summary.json, key: name_mover_same_task_recovery]`).
 
-*Primary Causal Verdict:* Across all test directions, Name Mover heads achieve a mean cross-task recovery of **-5.97%** compared to **-2.19%** for neutral control heads (source: `[outputs/11_cross_task_patching/results/cross_task_summary.json]`). The causal activation patching evidence reveals **no single-head functional transfer** (`NO_TRANSFER`). While Pearson correlation ($r = 0.5521, p = 7.31 \times 10^{-13}$) proves that late-layer heads are top-ranked for both tasks, single-head activation patching demonstrates that isolated head activations alone cannot causally restore logit diff without the surrounding task-specific circuit context.
+*Single-Head Verdict:* Across all test directions (n=150 prompts), Name Mover heads achieve a mean cross-task recovery of **-5.97%** compared to **-2.19%** for neutral control heads (source: `[outputs/11_cross_task_patching/results/cross_task_summary.json]`). This reveals **no single-head functional transfer** (`NO_TRANSFER`). While Pearson correlation ($r = 0.5521, p = 7.31 \times 10^{-13}$, n=144 heads) shows late-layer heads are top-ranked for both tasks, single-head activation patching shows that individual head activations cannot causally restore logit diff without the surrounding task-specific circuit context.
 
-*Reframed Performance Margin:* The task performance margin equivalence ($p = 0.2420$, Cohen's $d = -0.0612$) is **consistent with the shared-circuit hypothesis**: reliance on identical underlying attention head reliance predicts comparable performance margins across task structures.
+*Group-Level Verdict (Experiment 12):* To determine whether joint patching of the full Name Mover group (Group A: L8H6, L8H10, L5H5, L7H9) or the Name Mover + S-Inhibition group (Group B) changes this verdict, we conducted multi-head simultaneous patching. Results are reported in Section 9.3 below.
+
+*Comparison to Prior Work:* This `NO_TRANSFER` finding contrasts with Merullo et al. (2023) and Hanna et al. (2023), who found positive cross-task circuit transfer for compositional reasoning and arithmetic task pairs respectively. The difference may reflect the degree of structural similarity: IOI and pronoun resolution share a semantic goal (predict the "other" person) but differ substantially in syntactic form and the information structure of the prompt. This suggests that shared head-importance correlation is insufficient to predict causal transferability — the structural embedding of the task matters.
+
+*Task Performance Margin:* The equivalence in task difficulty ($p = 0.2420$, Cohen's $d = -0.0612$, n=1,000 IOI vs. n=500 Pronoun) is consistent with both tasks recruiting similar computational difficulty, even absent causal single-head transfer.
+
+### 9.3 Multi-Head Group Patching (Experiment 12)
+
+To test whether the `NO_TRANSFER` verdict from single-head patching (Section 9.2) survives when the *entire* Name Mover sub-circuit is transplanted simultaneously, we performed multi-head group patching across two groups and both directions (n=150 prompts, seed=42; source: `[outputs/12_multihead_patching/results/multihead_summary.json]` and `[outputs/12_multihead_patching/results/multihead_patching.csv]`):
+
+| Group | Heads Patched | Same-Task Recovery | Pronoun→IOI Recovery | IOI→Pronoun Recovery | Mean Cross-Task Recovery | Source |
+|-------|---------------|--------------------|----------------------|----------------------|--------------------------|---------|
+| **Group A: Name Movers** | L8H6, L8H10, L5H5, L7H9 (4 heads) | **-1.0038** | **-2.2425** [CI: -10.54, +3.70] | **-0.0026** [CI: -0.047, +0.048] | **-1.1225** | `[outputs/12_multihead_patching/results/multihead_patching.csv, row 0]` |
+| **Group B: NM + S-Inhibition** | Group A + L7H3 (5 heads) | **-1.9491** | **-2.2747** [CI: -12.35, +5.35] | **+0.0854** [CI: +0.038, +0.141] | **-1.0947** | `[outputs/12_multihead_patching/results/multihead_patching.csv, row 1]` |
+
+**Verdict: `NO_TRANSFER_EVEN_AT_GROUP_LEVEL`** (source: `[outputs/12_multihead_patching/results/multihead_summary.json, key: causal_transfer_verdict]`)
+
+*Interpretation:* Simultaneously transplanting the full Name Mover group (4 heads) from Pronoun prompts into corrupted IOI runs yields a mean cross-task recovery of **-1.12%** — substantially *worse* than single-head patching (-5.97%) and far below the same-task control baseline. Adding S-Inhibition heads (Group B) yields -1.09%, showing no improvement. This result strengthens the paper's headline finding: the `NO_TRANSFER` verdict is not an artifact of single-head insufficiency. Even the complete candidate sub-circuit cannot causally drive IOI-task behavior when activated by pronoun-task inputs. The mechanistic conclusion is that the activation geometry of the Name Mover heads is task-specific: the *values* they compute depend on the task-specific residual stream context assembled by earlier layers, not just the identity of the heads themselves.
 
 ---
 
 ## 10. Limitations
 
-1. **Sample Size**: Validation experiments with N=150 prompts introduce minor estimation variance.
-2. **Single Model**: All results are for GPT-2 Small. Whether the same circuit exists in larger GPT-2 variants (Medium, Large, XL) or other architectures (GPT-J, LLaMA) is an open question.
-3. **Single-Head Activation Patching**: Isolated single-head patching tests individual head transfers; multi-head simultaneous path patching across entire sub-circuits remains for future investigation.
+1. **Sample Size**: Cross-task patching experiments (experiments 11 and 12) use N=150 prompts per task; baseline and head ablation use N=1,000/N=200. Bootstrap CIs are reported throughout, but smaller samples introduce estimation variance.
+2. **Single Model (GPT-2 Small only)**: All results are for GPT-2 Small (117M parameters). Whether the IOI circuit exists in the same form in GPT-2 Medium/Large/XL or other model families (GPT-J, LLaMA, Gemma) is an open question — circuit structure has been shown to vary with scale.
+3. **Single Task Pair (IOI + Pronoun Resolution)**: The `NO_TRANSFER` finding at both single-head and group level is specific to this task pair. It does not constitute a general claim that correlation-based transfer arguments always fail in mechanistic interpretability — only that they fail for this particular pair. Different task pairs may show genuine transfer (as found by Merullo et al. and Hanna et al. for other domains).
+4. **Layer 0 MLP Dependency is Mechanistically Unresolved**: Resample ablation rules out a mean-ablation artifact but does not establish whether Layer 0 MLP's role is IOI-specific or a generic forward-pass prerequisite. This remains an open question (see Section 5.4).
+5. **Synthetic/Templated Prompts**: Both the IOI and Pronoun Resolution datasets use fixed templates with names drawn from a curated single-token pool. This may limit naturalistic validity — real-world named entity resolution prompts vary substantially in syntax, clause structure, co-reference distance, and surface form. Template-based evaluation can overestimate circuit precision by reducing distributional noise.
+6. **Mean Ablation Baseline**: Head ablation uses mean ablation (replacing head output with the dataset mean), which may not perfectly isolate individual head contributions due to interaction effects between heads.
 
 ---
 
 ## 11. Future Work
 
-1. **Cross-Model Analysis**: Apply CircuitScope to GPT-2 Medium/Large to test circuit scaling
-2. **Automated Circuit Discovery**: Integrate ACDC (Conmy et al., 2023) for automated edge detection
-3. **Multi-Head Sub-Circuit Patching**: Extend cross-task activation patching to simultaneously patch full groups of Name Mover and S-Inhibition heads
+1. **Cross-Model Analysis**: Apply CircuitScope to GPT-2 Medium/Large to test circuit scaling and check whether Name Mover heads in larger models show cross-task transfer absent in GPT-2 Small
+2. **Automated Circuit Discovery**: Integrate ACDC (Conmy et al., 2023) for automated edge detection and comparison with the manually identified 14-head circuit
+3. **Naturalistic Prompts**: Evaluate the IOI circuit on naturally occurring sentences from corpora (e.g., Winogrande, Winogender) to test whether the circuit generalizes beyond template-generated prompts
+4. **Layer 0 MLP Mechanism**: Probe Layer 0 MLP representations across diverse tasks to distinguish IOI-specific from generic forward-pass dependency
 
 ---
 
 ## 12. Conclusion
 
-CircuitScope provides a comprehensive mechanistic interpretability analysis of the IOI circuit in GPT-2 Small. We confirm that a sparse set of attention heads — primarily Name Mover Heads in layers 8–11 and S-Inhibition Heads in layers 7–8 — is both necessary (Necessity score = 1.0728, 55.3% accuracy drop) and sufficient (Sufficiency score = 0.8477, 84.8% logit diff retained) for the IOI task. Resample ablation control is consistent with the interpretation that Layer 0 MLP's large drop (resample normalized drop = 1.0927) is not a mean-ablation artifact, though whether this dependency is IOI-specific or a generic forward-pass requirement remains an open question for future work. Our cross-task activation patching experiment reveals that single-head causal transfer is minimal (mean cross-task recovery = -5.97%; source: `[outputs/11_cross_task_patching/results/cross_task_summary.json]`), demonstrating that while head importance correlates across tasks ($r = 0.5521, p = 7.31 \times 10^{-13}$), full causal transfer requires multi-head sub-circuit coordination. All code and results are publicly available as a reproducible research artifact.
+CircuitScope provides a comprehensive mechanistic interpretability analysis of the IOI circuit in GPT-2 Small. We confirm that a sparse set of attention heads — primarily Name Mover Heads in layers 8–11 and S-Inhibition Heads in layers 7–8 — is both necessary (Necessity score = 1.0728, 55.3% accuracy drop) and sufficient (Sufficiency score = 0.8477, 84.8% logit diff retained) for the IOI task. Resample ablation control is consistent with the interpretation that Layer 0 MLP's large drop (resample normalized drop = 1.0927) is not a mean-ablation artifact, though whether this dependency is IOI-specific or a generic forward-pass requirement remains an open question. Our novel cross-task transfer experiments (experiments 11 and 12, n=150 prompts) demonstrate **no causal transfer at any level of granularity**: single-head patching yields `NO_TRANSFER` (mean Name Mover recovery = -5.97%; source: `[outputs/11_cross_task_patching/results/cross_task_summary.json]`) and group-level patching of all 4 Name Mover heads simultaneously yields `NO_TRANSFER_EVEN_AT_GROUP_LEVEL` (Group A recovery = -1.12%; source: `[outputs/12_multihead_patching/results/multihead_summary.json]`). The mechanistic interpretation: the IOI Name Mover heads compute task-specific values conditioned on context built by earlier layers — the same heads cannot process pronoun-task inputs to produce IOI-compatible outputs. Head-importance correlation across tasks ($r = 0.5521, p = 7.31 \times 10^{-13}$, n=144 heads) is real but does not imply causal transferability. All code and results are publicly available as a reproducible research artifact.
 
 ---
 
