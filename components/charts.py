@@ -83,8 +83,8 @@ def build_logit_lens_curve(df_lens: pd.DataFrame) -> go.Figure:
     fig.update_layout(
         title="Logit Lens: Residual Stream Accumulation Across Layers",
         xaxis_title="Transformer Layer",
-        yaxis=dict(title="Mean Logit Difference", titlefont=dict(color="#38BDF8")),
-        yaxis2=dict(title="P(IO Token)", titlefont=dict(color="#10B981"), overlaying="y", side="right", range=[0, 1]),
+        yaxis=dict(title="Mean Logit Difference", title_font=dict(color="#38BDF8")),
+        yaxis2=dict(title="P(IO Token)", title_font=dict(color="#10B981"), overlaying="y", side="right", range=[0, 1]),
         paper_bgcolor=THEME_DARK["paper_bgcolor"],
         plot_bgcolor=THEME_DARK["plot_bgcolor"],
         font=dict(color=THEME_DARK["font_color"], family="Inter"),

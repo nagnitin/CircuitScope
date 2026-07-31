@@ -101,8 +101,8 @@ fig.add_trace(go.Scatter(
 fig.update_layout(
     title=f"Logit Lens Curve for: '{user_prompt}'",
     xaxis_title="Transformer Layer",
-    yaxis=dict(title=f"Logit Diff ({target_io} vs {distractor_s})", titlefont=dict(color="#38BDF8")),
-    yaxis2=dict(title=f"P({target_io})", titlefont=dict(color="#10B981"), overlaying="y", side="right", range=[0, 1]),
+    yaxis=dict(title=f"Logit Diff ({target_io} vs {distractor_s})", title_font=dict(color="#38BDF8")),
+    yaxis2=dict(title=f"P({target_io})", title_font=dict(color="#10B981"), overlaying="y", side="right", range=[0, 1]),
     paper_bgcolor="rgba(0,0,0,0)",
     plot_bgcolor="rgba(15,23,42,0.6)",
     font=dict(color="#F8FAFC", family="Inter"),
