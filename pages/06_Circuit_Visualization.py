@@ -1,19 +1,19 @@
 """
 pages/06_Circuit_Visualization.py
 ==================================
-Interactive 14-Head IOI Sub-Circuit Visualization & Validation Dashboard.
+Interactive 14-Head IOI Sub-Circuit Graph, Node Inspector, and Validation Dashboard.
 """
 
 import streamlit as st
 import pandas as pd
 from components.charts import build_circuit_graph_figure
 from components.cards import render_callout, render_head_role_pill
-from components.utils import load_css, load_exp_csv, load_exp_json
+from components.utils import load_css, load_exp_csv
 
 load_css()
 
 st.title("🗺️ Discovered IOI Computational Sub-Circuit")
-st.markdown("### 14-Head Sparse Sub-Circuit Graph, Functional Roles, and Circuit Validation")
+st.markdown("### Interactive Circuit Graph, Node Inspector, and Quantitative Validation")
 
 # Load Circuit Validation Data
 df_val = load_exp_csv("08_circuit_validation", "circuit_validation.csv")
@@ -34,43 +34,101 @@ with c3:
 
 st.markdown("---")
 
-# Render Interactive Graph
-st.header("1. Sub-Circuit Architecture Graph")
+# 1. Interactive Graph Visualization
+st.header("1. Sub-Circuit Architecture Node Graph")
 st.plotly_chart(build_circuit_graph_figure(), use_container_width=True)
 
 st.markdown("---")
 
-# Functional Roles Table
-st.header("2. Functional Head Group Classification")
+# 2. Interactive Node Detail Inspector
+st.header("2. Clickable Node & Layer Detail Inspector")
+st.markdown("Select a component node from the discovered circuit to inspect its internal mechanics, importance score, and related experiments:")
 
-df_roles = pd.DataFrame([
-    {"Group": "Name Mover Heads", "Heads": "L8H6, L8H10, L5H5, L7H9", "Role": "Copy IO name to final token residual stream.", "Count": 4},
-    {"Group": "S-Inhibition Heads", "Heads": "L7H9, L8H10", "Role": "Inhibit attention to duplicate Subject token (S2).", "Count": 2},
-    {"Group": "Helper / Duplicate Token Heads", "Heads": "L0H10, L1H10, L3H0, L4H11", "Role": "Detect repeated tokens & signal position offsets.", "Count": 4},
-    {"Group": "Induction / Previous Token Heads", "Heads": "L5H9, L6H9, L9H7, L9H9", "Role": "Track token sequence continuity across layers.", "Count": 4},
-])
+selected_node = st.selectbox(
+    "Select Circuit Node:",
+    [
+        "L8H6 (Name Mover Head)",
+        "L8H10 (Name Mover Head)",
+        "L5H5 (Name Mover Head)",
+        "L7H9 (Name Mover & S-Inhibition)",
+        "L0H10 (Helper / Duplicate Token Head)",
+        "L1H10 (Helper / Duplicate Token Head)",
+        "L0 MLP (Early Layer Transformation)",
+        "L5 MLP (Mid Layer Non-Linearity)",
+        "Residual Stream (Memory Bus)",
+    ]
+)
 
-st.table(df_roles)
+st.markdown("<br>", unsafe_allow_html=True)
+
+if "L8H6" in selected_node:
+    st.markdown("""
+    <div class="paper-card">
+        <h3 style="color: #818CF8 !important;">★ L8H6 (Primary Name Mover Head)</h3>
+        <p><strong>Layer:</strong> 8 | <strong>Head Index:</strong> 6</p>
+        <p><strong>Functional Role:</strong> <span class="pill-tag pill-name-mover">Name Mover</span> Directly reads the Indirect Object (IO) name representation and writes its directional vector into the residual stream towards the unembedding target token.</p>
+        <p><strong>Ablation Importance:</strong> <code>0.3432</code> (Rank #1 out of 144 heads)</p>
+        <p><strong>Related Experiments:</strong> Exp 04 (Head Ablation), Exp 05 (Activation Patching), Exp 11 (Cross-Task Patching), Exp 12 (Group Patching).</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+elif "L8H10" in selected_node and "S-Inhibition" not in selected_node:
+    st.markdown("""
+    <div class="paper-card">
+        <h3 style="color: #818CF8 !important;">★ L8H10 (Name Mover Head)</h3>
+        <p><strong>Layer:</strong> 8 | <strong>Head Index:</strong> 10</p>
+        <p><strong>Functional Role:</strong> <span class="pill-tag pill-name-mover">Name Mover</span> Secondary Name Mover head operating in parallel with L8H6 to reinforce IO token projection.</p>
+        <p><strong>Ablation Importance:</strong> <code>0.2816</code> (Rank #2 out of 144 heads)</p>
+        <p><strong>Related Experiments:</strong> Exp 04, Exp 05, Exp 12.</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+elif "L7H9" in selected_node:
+    st.markdown("""
+    <div class="paper-card">
+        <h3 style="color: #FBBF24 !important;">L7H9 (S-Inhibition & Name Mover)</h3>
+        <p><strong>Layer:</strong> 7 | <strong>Head Index:</strong> 9</p>
+        <p><strong>Functional Role:</strong> <span class="pill-tag pill-s-inhibition">S-Inhibition</span> Suppresses attention to the duplicate Subject name (S2) so Name Movers attend selectively to IO.</p>
+        <p><strong>Ablation Importance:</strong> <code>0.2247</code> (Rank #4 out of 144 heads)</p>
+        <p><strong>Related Experiments:</strong> Exp 04, Exp 06 (Path Patching), Exp 12.</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+elif "L0H10" in selected_node or "L1H10" in selected_node:
+    st.markdown("""
+    <div class="paper-card">
+        <h3 style="color: #22D3EE !important;">L0H10 / L1H10 (Helper & Duplicate Token Heads)</h3>
+        <p><strong>Layer:</strong> 0 or 1 | <strong>Head Index:</strong> 10</p>
+        <p><strong>Functional Role:</strong> <span class="pill-tag pill-helper">Helper</span> Detects duplicated name tokens (S1 and S2) early in the sequence and passes positional signals downstream.</p>
+        <p><strong>Ablation Importance:</strong> <code>0.1216</code> (Rank #7 out of 144 heads)</p>
+        <p><strong>Related Experiments:</strong> Exp 04, Exp 06 (Path Patching).</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+elif "MLP" in selected_node:
+    st.markdown("""
+    <div class="paper-card">
+        <h3 style="color: #38BDF8 !important;">⚡ Layer MLP Blocks (L0 MLP & L5 MLP)</h3>
+        <p><strong>Functional Role:</strong> Computes key non-linear transformations required for signal propagation.</p>
+        <p><strong>Resample Control Verdict:</strong> Resample ablation (drop = <code>1.0927</code>) proves Layer 0 MLP is a genuine forward-pass requirement rather than a mean-ablation artifact.</p>
+        <p><strong>Related Experiments:</strong> Exp 03 (Layer Ablation), Exp 05 (Activation Patching).</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+else:
+    st.markdown("""
+    <div class="paper-card">
+        <h3 style="color: #38BDF8 !important;">🔄 Residual Stream Memory Bus</h3>
+        <p><strong>Dimension:</strong> $d_{model} = 768$</p>
+        <p><strong>Functional Role:</strong> Acts as the shared 768-dimensional communication backbone where attention heads and MLPs write linear updates.</p>
+        <p><strong>Related Experiments:</strong> Exp 02 (Logit Lens), Exp 05 (Residual Activation Patching).</p>
+    </div>
+    """, unsafe_allow_html=True)
 
 st.markdown("---")
 
-# Circuit Validation Table
+# 3. Quantitative Circuit Validation Results
 st.header("3. Quantitative Circuit Validation Results")
 
 if df_val is not None:
     st.dataframe(df_val, use_container_width=True)
-else:
-    st.markdown("""
-    | Test | Score | Accuracy Change | Logit Diff Change | Verdict |
-    |------|-------|-----------------|-------------------|---------|
-    | Necessity | **1.0728** | -55.3% | -3.4641 | **OK (Critical)** |
-    | Sufficiency | **0.8477** | -9.3% | -0.4918 | **OK (High Sufficiency)** |
-    | Held-out Generalization | **1.1833** | -59.0% | -3.6976 | **OK (Generalizes)** |
-    """)
-
-render_callout(
-    title="Circuit Validation Verdict",
-    text="The 14-head sub-circuit is both <strong>necessary</strong> (ablating it drops accuracy from 96.0% to 40.7%) and <strong>sufficient</strong> (running ONLY these 14 heads retains 84.8% of logit diff and 86.7% accuracy).",
-    category="success",
-    icon="✅"
-)

@@ -1,7 +1,7 @@
 """
 components/sidebar.py
 ====================
-Sidebar branding and navigation utilities for CircuitScope Streamlit App.
+Sidebar branding, navigation, and research mode toggle for CircuitScope Streamlit App.
 """
 
 import streamlit as st
@@ -16,6 +16,21 @@ def render_sidebar():
         st.markdown("*GPT-2 Small IOI Mechanistic Interpretability*")
         st.markdown("---")
         
+        # Research Mode Toggle
+        if "research_mode" not in st.session_state:
+            st.session_state["research_mode"] = False
+            
+        research_mode = st.toggle(
+            "🔬 Research Mode",
+            value=st.session_state["research_mode"],
+            help="Enables advanced mechanistic diagnostics: residual stream norms, head vector projections, and full attention matrices."
+        )
+        st.session_state["research_mode"] = research_mode
+        
+        if research_mode:
+            st.info("🔬 **Research Mode Enabled**: Exposing deep tensor activations & head projections.")
+            
+        st.markdown("---")
         st.markdown("### 📊 Model & Dataset")
         st.markdown("""
         - **Target Model**: `GPT-2 Small` (85M params)
@@ -32,5 +47,5 @@ def render_sidebar():
         st.markdown("- [📋 Verification Report](https://github.com/nagnitin/CircuitScope/blob/main/docs/REPRODUCIBILITY_VERIFICATION.md)")
         
         st.markdown("---")
-        st.caption("CircuitScope v1.0 | NeurIPS Demo")
+        st.caption("CircuitScope v1.0 | NeurIPS Interactive Demo")
         st.caption("Google DeepMind & Community Research")

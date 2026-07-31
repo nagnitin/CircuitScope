@@ -2,13 +2,14 @@
 components/charts.py
 ====================
 Interactive Plotly visualizations for CircuitScope Streamlit App.
+Includes Attention Heatmaps, Logit Lens Curves, Token Attribution Charts,
+Sub-Circuit Node Graphs, and What-If Comparisons.
 """
 
 import pandas as pd
 import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
-import streamlit as st
 
 THEME_DARK = {
     "paper_bgcolor": "rgba(0,0,0,0)",
@@ -32,7 +33,7 @@ def build_head_importance_heatmap(df_heads: pd.DataFrame) -> go.Figure:
         x=[f"H{h}" for h in range(12)],
         y=[f"L{l}" for l in range(12)],
         colorscale="Viridis",
-        colorbar=dict(title="Importance (Logit Diff Drop)", titleside="right"),
+        colorbar=dict(title="Importance (Logit Diff Drop)"),
         hovertemplate="Layer: %{y}<br>Head: %{x}<br>Importance: %{z:.4f}<extra></extra>"
     ))
     
@@ -56,25 +57,75 @@ def build_head_importance_heatmap(df_heads: pd.DataFrame) -> go.Figure:
     )
     return fig
 
+def build_attention_matrix_heatmap(attn_matrix: np.ndarray, str_tokens: list, title: str = "Attention Matrix") -> go.Figure:
+    """Builds interactive N_seq x N_seq attention pattern heatmap with token hover tooltips."""
+    fig = go.Figure(data=go.Heatmap(
+        z=attn_matrix,
+        x=str_tokens,
+        y=str_tokens,
+        colorscale="Cividis",
+        colorbar=dict(title="Attn Weight"),
+        hovertemplate="Source (Query): %{y}<br>Target (Key): %{x}<br>Attention Weight: %{z:.4f}<extra></extra>"
+    ))
+    
+    fig.update_layout(
+        title=title,
+        xaxis_title="Target Token (Key)",
+        yaxis_title="Source Token (Query)",
+        paper_bgcolor=THEME_DARK["paper_bgcolor"],
+        plot_bgcolor=THEME_DARK["plot_bgcolor"],
+        font=dict(color=THEME_DARK["font_color"], family="Inter"),
+        margin=dict(l=60, r=50, t=50, b=60),
+        height=480,
+    )
+    return fig
+
+def build_token_attribution_chart(token_attributions: list) -> go.Figure:
+    """Builds token attribution horizontal bar chart showing per-token contribution to target logit diff."""
+    tokens = [t[0] for t in token_attributions]
+    scores = [t[1] for t in token_attributions]
+    colors = ["#10B981" if s > 0 else "#F43F5E" for s in scores]
+    
+    fig = go.Figure(data=[go.Bar(
+        x=scores,
+        y=tokens,
+        orientation="h",
+        marker_color=colors,
+        text=[f"{s:+.2f}" for s in scores],
+        textposition="outside"
+    )])
+    
+    fig.update_layout(
+        title="Direct Token Attribution to Target Logit Difference",
+        xaxis_title="Direct Attribution Score (Unembedding Direction Projection)",
+        yaxis_title="Prompt Token Position",
+        paper_bgcolor=THEME_DARK["paper_bgcolor"],
+        plot_bgcolor=THEME_DARK["plot_bgcolor"],
+        font=dict(color=THEME_DARK["font_color"], family="Inter"),
+        margin=dict(l=80, r=50, t=50, b=50),
+        height=max(350, len(tokens) * 28),
+    )
+    return fig
+
 def build_logit_lens_curve(df_lens: pd.DataFrame) -> go.Figure:
     """Builds logit lens progression line chart across transformer layers."""
     fig = go.Figure()
     
     fig.add_trace(go.Scatter(
-        x=df_lens["layer_label"],
-        y=df_lens["logit_diff"],
+        x=df_lens["Layer"],
+        y=df_lens["Logit_Diff"],
         mode="lines+markers",
         name="Mean Logit Diff",
         line=dict(color="#38BDF8", width=3),
         marker=dict(size=8, color="#38BDF8")
     ))
     
-    if "prob_io" in df_lens.columns:
+    if "Prob_Float" in df_lens.columns:
         fig.add_trace(go.Scatter(
-            x=df_lens["layer_label"],
-            y=df_lens["prob_io"],
+            x=df_lens["Layer"],
+            y=df_lens["Prob_Float"],
             mode="lines+markers",
-            name="P(IO Token)",
+            name="P(Target IO Token)",
             yaxis="y2",
             line=dict(color="#10B981", width=2, dash="dash"),
             marker=dict(size=6, color="#10B981")
@@ -83,8 +134,8 @@ def build_logit_lens_curve(df_lens: pd.DataFrame) -> go.Figure:
     fig.update_layout(
         title="Logit Lens: Residual Stream Accumulation Across Layers",
         xaxis_title="Transformer Layer",
-        yaxis=dict(title="Mean Logit Difference", title_font=dict(color="#38BDF8")),
-        yaxis2=dict(title="P(IO Token)", title_font=dict(color="#10B981"), overlaying="y", side="right", range=[0, 1]),
+        yaxis=dict(title="Logit Difference", title_font=dict(color="#38BDF8")),
+        yaxis2=dict(title="P(Target)", title_font=dict(color="#10B981"), overlaying="y", side="right", range=[0, 1]),
         paper_bgcolor=THEME_DARK["paper_bgcolor"],
         plot_bgcolor=THEME_DARK["plot_bgcolor"],
         font=dict(color=THEME_DARK["font_color"], family="Inter"),
@@ -130,7 +181,6 @@ def build_causal_transfer_comparison_chart() -> go.Figure:
 
 def build_circuit_graph_figure() -> go.Figure:
     """Builds a Plotly node diagram representing the 14-head IOI sub-circuit graph."""
-    # Nodes: Early, Middle, Late heads
     nodes = {
         "S1/S2 Token Input": (0.1, 0.5, "#94A3B8"),
         "L0H10 (Helper)": (0.3, 0.8, "#06B6D4"),
@@ -146,7 +196,6 @@ def build_circuit_graph_figure() -> go.Figure:
     
     fig = go.Figure()
     
-    # Add Edges
     edges = [
         ("S1/S2 Token Input", "L0H10 (Helper)"),
         ("S1/S2 Token Input", "L1H10 (Helper)"),
@@ -171,7 +220,6 @@ def build_circuit_graph_figure() -> go.Figure:
             showlegend=False
         ))
         
-    # Add Nodes
     for label, (x, y, color) in nodes.items():
         fig.add_trace(go.Scatter(
             x=[x], y=[y],
