@@ -451,7 +451,7 @@ A full IEEE-style research paper is available at [`paper/research_paper.md`](pap
 
 > **Verified:** All experiments in this repository set a fixed random seed (`seed=42`) before data generation and model inference. Experiment 12 explicitly records `"random_seed": 42` in `multihead_summary.json`.
 
-> **Package versions:** `requirements.txt` specifies lower-bound version constraints (e.g., `transformer_lens>=1.19.0`). For exact reproducibility, pin to the versions used in the verified run. Interpretability results — particularly logit diff values and activation distributions — can shift across TransformerLens versions. The following versions were used in the reference run (approximate): Python 3.11, torch 2.2.x, transformer_lens 1.19.x, numpy 1.26.x, scipy 1.12.x.
+> **Package versions:** `requirements.txt` specifies exact pinned versions (e.g., `torch==2.12.1`, `transformer_lens==3.6.0`). For exact reproducibility, pin to the exact versions used in the verified run. Interpretability results — particularly logit diff values and activation distributions — can shift across TransformerLens versions. The exact verified environment uses Python 3.14, torch 2.12.1+cpu, transformer_lens 3.6.0, numpy 2.5.1, pandas 3.0.3, scipy 1.18.0, and plotly 6.9.0.
 
 > **Reproduction coverage:** Experiments 01–12 were executed from source with the documented commands. Results in `outputs/` match the values cited in the paper within the precision reported. The `07_full_pipeline.py` quick mode covers experiments 01–10; experiments 11 and 12 must be run separately (`python experiments/11_cross_task_patching.py` and `python experiments/12_multihead_patching.py`).
 
