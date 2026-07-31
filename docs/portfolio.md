@@ -42,7 +42,7 @@ Conducted a systematic mechanistic interpretability analysis of GPT-2 Small's In
 
 **Key Findings:**
 - Identified Name Mover Heads (layers 8–11) and S-Inhibition Heads (layers 7–8) as primary circuit components
-- Resample ablation control confirmed Layer 0 MLP's large drop (resample normalized drop = 1.0927; source: `outputs/03_layer_ablation/results/layer_ablation_resample.csv`) as a real mechanistic dependency for foundational representations
+- Resample ablation control is consistent with the interpretation that Layer 0 MLP's large drop (resample normalized drop = 1.0927; source: `outputs/03_layer_ablation/results/layer_ablation_resample.csv`) reflects a genuine forward-pass dependency rather than a mean-ablation artifact; whether this dependency is IOI-specific or generic remains an open question
 - Circuit necessity score: 1.0728 (ablating circuit causes accuracy drop from 96.0% to 40.7%, a 55.3 percentage-point drop; source: `outputs/08_circuit_validation/results/circuit_validation.csv`)
 - Circuit sufficiency score: 0.8477 (circuit alone retains 84.8% of baseline logit diff and 86.7% accuracy)
 - Evaluated causal transfer between IOI and Pronoun Resolution via bidirectional activation patching (mean cross-task recovery = -5.97% vs -2.19% control; source: `outputs/11_cross_task_patching/results/cross_task_summary.json`), supported by secondary head correlation (Pearson r = 0.5521, p = 7.31e-13)
