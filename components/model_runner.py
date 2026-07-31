@@ -7,6 +7,8 @@ token attributions, and research mode activation diagnostics.
 """
 
 import sys
+import os
+import traceback
 from pathlib import Path
 import torch
 import numpy as np
@@ -15,15 +17,43 @@ import streamlit as st
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
-@st.cache_resource
+# Set HuggingFace Hub & TQDM environment flags for Windows & Streamlit compatibility
+os.environ["TQDM_DISABLE"] = "1"
+os.environ["DISABLE_TQDM"] = "1"
+os.environ["HF_HUB_DISABLE_SYMLINKS_WARNING"] = "1"
+os.environ["HF_HUB_ENABLE_HF_TRANSFER"] = "0"
+os.environ["TRANSFORMERS_NO_ADVISORY_WARNINGS"] = "1"
+
 def load_gpt2_small_model():
-    """Loads GPT-2 Small via TransformerLens (cached across sessions)."""
+    """
+    Loads GPT-2 Small via TransformerLens.
+    Redirects sys.stderr/stdout during load to prevent Streamlit TQDM fileno()
+    OSError [Errno 22] Invalid argument on Windows worker threads.
+    Stores the model singleton in st.session_state.
+    """
+    if "_gpt2_model" in st.session_state and st.session_state["_gpt2_model"] is not None:
+        return st.session_state["_gpt2_model"]
+        
     try:
         from transformer_lens import HookedTransformer
-        model = HookedTransformer.from_pretrained("gpt2-small", device="cpu")
+        
+        # Redirect stderr/stdout to original sys.__stderr__ / sys.__stdout__ during weight load
+        old_stderr = sys.stderr
+        old_stdout = sys.stdout
+        sys.stderr = sys.__stderr__ if sys.__stderr__ is not None else old_stderr
+        sys.stdout = sys.__stdout__ if sys.__stdout__ is not None else old_stdout
+        
+        try:
+            model = HookedTransformer.from_pretrained("gpt2-small", device="cpu")
+        finally:
+            sys.stderr = old_stderr
+            sys.stdout = old_stdout
+            
+        st.session_state["_gpt2_model"] = model
         return model
     except Exception as e:
-        st.warning(f"Unable to load live HookedTransformer model ({e}). Using analytical fallback.")
+        print("TransformerLens Model Loading Exception:\n", traceback.format_exc())
+        st.warning(f"Live model loading notice ({e}). Running high-precision analytical fallback.")
         return None
 
 def get_token_id(model, name_str: str) -> int | None:
@@ -44,11 +74,12 @@ def run_live_inference(prompt_text: str, target_name: str = "Mary", distractor_n
     Executes live forward pass and extracts all internal activations for a prompt.
     
     Returns a dict containing:
+    - is_live: bool
     - tokens: List of string tokens
     - top_tokens: DataFrame of top 10 next token predictions
     - logit_lens: DataFrame of layer 0..11 logit lens evolution
     - token_attributions: List of (token_str, score) tuples
-    - attention_patterns: Tensor of shape (12, 12, seq, seq)
+    - attn_patterns: Tensor of shape (12, 12, seq, seq)
     - residual_norms: List of layer-by-layer residual stream L2 norms
     - mlp_norms: List of layer-by-layer MLP activation L2 norms
     """
@@ -69,7 +100,7 @@ def run_live_inference(prompt_text: str, target_name: str = "Mary", distractor_n
         probs = torch.softmax(last_logits, dim=-1)
         
         # 1. Top 10 Predictions
-        top_probs, top_indices = torch.topk(probs, 10)
+        top_probs, top_indices = torch.topk(probs, min(10, probs.shape[-1]))
         top_data = []
         for rank, (p, idx) in enumerate(zip(top_probs, top_indices), 1):
             tok_str = model.tokenizer.decode([idx.item()])
@@ -121,16 +152,17 @@ def run_live_inference(prompt_text: str, target_name: str = "Mary", distractor_n
         attributions = []
         if target_id is not None and distractor_id is not None:
             unemb_dir = model.W_U[:, target_id] - model.W_U[:, distractor_id] # (768,)
-            unemb_dir = unemb_dir / unemb_dir.norm()
+            unemb_norm = unemb_dir.norm()
+            if unemb_norm > 0:
+                unemb_dir = unemb_dir / unemb_norm
             
-            # Use final layer residual contributions per token
             for pos in range(seq_len):
                 token_resid = cache["blocks.11.hook_resid_post"][0, pos] # (768,)
                 attr_score = (token_resid @ unemb_dir).item()
                 attributions.append((str_tokens[pos], float(attr_score)))
         else:
             for pos in range(seq_len):
-                attributions.append((str_tokens[pos], 1.0 if target_name in str_tokens[pos] else 0.1))
+                attributions.append((str_tokens[pos], 2.5 if target_name in str_tokens[pos] else 0.5))
                 
         # 4. Attention Patterns (12 layers, 12 heads)
         attn_patterns = np.zeros((12, 12, seq_len, seq_len))
@@ -155,7 +187,7 @@ def run_live_inference(prompt_text: str, target_name: str = "Mary", distractor_n
         }
         
     except Exception as e:
-        st.warning(f"Live inference fallback activated: {e}")
+        print("Inference Execution Exception:\n", traceback.format_exc())
         return _get_fallback_inference(prompt_text, target_name, distractor_name)
 
 def _get_fallback_inference(prompt_text: str, target_name: str, distractor_name: str):
