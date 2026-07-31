@@ -45,7 +45,7 @@ Conducted a systematic mechanistic interpretability analysis of GPT-2 Small's In
 - Resample ablation control is consistent with the interpretation that Layer 0 MLP's large drop (resample normalized drop = 1.0927; source: `outputs/03_layer_ablation/results/layer_ablation_resample.csv`) reflects a genuine forward-pass dependency rather than a mean-ablation artifact; whether this dependency is IOI-specific or generic remains an open question
 - Circuit necessity score: 1.0728 (ablating circuit causes accuracy drop from 96.0% to 40.7%, a 55.3 percentage-point drop; source: `outputs/08_circuit_validation/results/circuit_validation.csv`)
 - Circuit sufficiency score: 0.8477 (circuit alone retains 84.8% of baseline logit diff and 86.7% accuracy)
-- Evaluated causal transfer between IOI and Pronoun Resolution via bidirectional activation patching (mean cross-task recovery = -5.97% vs -2.19% control; source: `outputs/11_cross_task_patching/results/cross_task_summary.json`), supported by secondary head correlation (Pearson r = 0.5521, p = 7.31e-13)
+- Evaluated causal transfer between IOI and Pronoun Resolution via bidirectional activation patching (mean cross-task recovery = -5.97% vs -2.19% control; source: `outputs/11_cross_task_patching/results/cross_task_summary.json`), supported by secondary head correlation (Pearson r = 0.5750, p = 4.78e-14)
 
 **Statistical Validation:**
 - Bootstrap 95% confidence intervals for all key metrics
@@ -66,7 +66,7 @@ Conducted a systematic mechanistic interpretability analysis of GPT-2 Small's In
 
 - Reverse-engineered the Indirect Object Identification (IOI) circuit in GPT-2 Small across 144 attention heads using complementary analysis methods (logit lens, mean/resample ablation, activation patching, path patching)
 - Validated discovered circuit with necessity (score = 1.0728, 55.3% accuracy drop) and sufficiency (score = 0.8477, 84.8% logit diff retained) tests, confirming it as the primary computational substrate for IOI behavior
-- Designed and ran two-stage causal transfer experiment to Pronoun Resolution: single-head patching (`NO_TRANSFER`, mean recovery = -5.97% vs -2.19% control, n=150) and group-level patching of all 4 Name Mover heads simultaneously (`NO_TRANSFER_EVEN_AT_GROUP_LEVEL`, Group A = -1.12%, n=150) — demonstrating that head-importance correlation ($r = 0.5521$, n=144 heads) does not imply causal circuit sharing
+- Designed and ran two-stage causal transfer experiment to Pronoun Resolution: single-head patching (`NO_TRANSFER`, mean recovery = -5.97% vs -2.19% control, n=150) and group-level patching of all 4 Name Mover heads simultaneously (`NO_TRANSFER_EVEN_AT_GROUP_LEVEL`, Group A = -1.12%, n=150) — demonstrating that head-importance correlation ($r = 0.5750$, n=144 heads) does not imply causal circuit sharing
 - Produced publication-quality statistical analysis with bootstrap 95% CIs, Cohen's d effect sizes (d = +4.90 for Name Mover / Helper heads), and permutation tests
 - Built research-grade modular Python codebase (2,000+ lines) using TransformerLens, Plotly, and pandas — fully reproducible with documented setup for Google Colab and local execution
 

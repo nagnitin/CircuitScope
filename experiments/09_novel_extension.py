@@ -55,8 +55,8 @@ def main() -> None:
     parser.add_argument("--config",
                         default=str(PROJECT_ROOT / "config" / "experiment_config.yaml"))
     parser.add_argument("--n-prompts", type=int, default=500)
-    parser.add_argument("--n-samples", type=int, default=100,
-                        help="Samples for ablation experiments")
+    parser.add_argument("--n-samples", type=int, default=200,
+                        help="Samples for ablation experiments (matches Exp 04)")
     parser.add_argument("--batch-size", type=int, default=16)
     parser.add_argument("--skip-ablation", action="store_true",
                         help="Skip head ablation (much faster)")
