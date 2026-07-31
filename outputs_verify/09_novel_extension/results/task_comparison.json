@@ -1,0 +1,21 @@
+{
+  "logit_diff_comparison": {
+    "ioi_mean": 3.129324,
+    "ioi_ci_lower": 3.024172,
+    "ioi_ci_upper": 3.241559,
+    "pronoun_mean": 3.215065,
+    "pronoun_ci_lower": 3.056062,
+    "pronoun_ci_upper": 3.382027,
+    "mean_difference": -0.08574,
+    "cohens_d": -0.047319,
+    "effect_category": "negligible",
+    "permutation_stat": -0.08574,
+    "p_value": 0.353,
+    "significant_at_05": false,
+    "interpretation": "No statistically significant difference between tasks."
+  },
+  "head_importance_correlation": {
+    "pearson_r": 0.5750438035055181,
+    "p_value": 4.782299648300498e-14
+  }
+}

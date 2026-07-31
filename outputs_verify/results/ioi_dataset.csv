@@ -1,0 +1,1001 @@
+prompt_clean,prompt_corrupted,io_name,s_name,distractor_name,template_type,template_idx,place,object_noun,io_token_id,s_token_id
+"When David and Henry visited the restaurant, Henry handed the letter to","When David and Harry visited the restaurant, Harry handed the letter to",David,Henry,Harry,ABB,1,the restaurant,letter,3271,8616
+"While Bob and Kate were at the gym, Bob delivered the map to","While Carol and Kate were at the gym, Carol delivered the map to",Kate,Bob,Carol,BAB,5,the gym,map,16693,5811
+"When Isla and Ella arrived at the hospital, Ella passed the wallet to","When Isla and Wendy arrived at the hospital, Wendy passed the wallet to",Isla,Ella,Wendy,ABB,2,the hospital,wallet,1148,7122
+"When Clara and Kate went to the museum, Clara gave the package to","When Derek and Kate went to the museum, Derek gave the package to",Kate,Clara,Derek,BAB,0,the museum,package,16693,27443
+"After Grace and Victor left the school, Victor sent the card to","After Grace and Sam left the school, Sam sent the card to",Grace,Victor,Sam,ABB,3,the school,card,16156,12622
+"When Kate and Clara went to the hospital, Kate gave the phone to","When Olivia and Clara went to the hospital, Olivia gave the phone to",Clara,Kate,Olivia,BAB,0,the hospital,phone,27443,16693
+"As Xander and Isla walked through the station, Xander offered the ticket to","As Carol and Isla walked through the station, Carol offered the ticket to",Isla,Xander,Carol,BAB,6,the station,ticket,1148,46122
+"After Emma and Victor left the gym, Emma sent the bag to","After Liam and Victor left the gym, Liam sent the bag to",Victor,Emma,Liam,BAB,3,the gym,bag,12622,18966
+"When Isla and Liam visited the station, Liam handed the ticket to","When Isla and Mia visited the station, Mia handed the ticket to",Isla,Liam,Mia,ABB,1,the station,ticket,1148,31684
+"When Noah and Emma arrived at the theater, Emma passed the letter to","When Noah and Olivia arrived at the theater, Olivia passed the letter to",Noah,Emma,Olivia,ABB,2,the theater,letter,18394,18966
+"When Victor and Emma visited the restaurant, Emma handed the phone to","When Victor and Gina visited the restaurant, Gina handed the phone to",Victor,Emma,Gina,ABB,1,the restaurant,phone,12622,18966
+"Once Carol and Ella were at the theater, Carol brought the gift to","Once Isla and Ella were at the theater, Isla brought the gift to",Ella,Carol,Isla,BAB,4,the theater,gift,7122,5074
+"When Bob and David visited the library, David handed the wallet to","When Bob and Victor visited the library, Victor handed the wallet to",Bob,David,Victor,ABB,1,the library,wallet,5811,3271
+"After Mia and Yara left the office, Yara sent the letter to","After Mia and Fred left the office, Fred sent the letter to",Mia,Yara,Fred,ABB,3,the office,letter,32189,575
+"When Clara and Carol went to the office, Carol gave the wallet to","When Clara and Iris went to the office, Iris gave the wallet to",Clara,Carol,Iris,ABB,0,the office,wallet,27443,5074
+"When Grace and Iris visited the hospital, Grace handed the map to","When Bob and Iris visited the hospital, Bob handed the map to",Iris,Grace,Bob,BAB,1,the hospital,map,34230,16156
+"While Fred and Mia were at the office, Fred delivered the map to","While Paul and Mia were at the office, Paul delivered the map to",Mia,Fred,Paul,BAB,5,the office,map,32189,8559
+"After Sam and Olivia left the park, Olivia sent the wallet to","After Sam and Frank left the park, Frank sent the wallet to",Sam,Olivia,Frank,ABB,3,the park,wallet,3409,33911
+"When Alice and Fred went to the cafe, Alice gave the ticket to","When Isla and Fred went to the cafe, Isla gave the ticket to",Fred,Alice,Isla,BAB,0,the cafe,ticket,8559,14862
+"After David and Sam left the museum, David sent the wallet to","After Yara and Sam left the museum, Yara sent the wallet to",Sam,David,Yara,BAB,3,the museum,wallet,3409,3271
+"As Isla and Rose walked through the office, Isla offered the pen to","As David and Rose walked through the office, David offered the pen to",Rose,Isla,David,BAB,6,the office,pen,8049,1148
+"After Liam and David left the gym, David sent the package to","After Liam and Quinn left the gym, Quinn sent the package to",Liam,David,Quinn,ABB,3,the gym,package,31684,3271
+"When Ella and Noah visited the store, Ella handed the book to","When Victor and Noah visited the store, Victor handed the book to",Noah,Ella,Victor,BAB,1,the store,book,18394,7122
+"While Liam and Isla were at the market, Liam delivered the jacket to","While Bob and Isla were at the market, Bob delivered the jacket to",Isla,Liam,Bob,BAB,5,the market,jacket,1148,31684
+"When Quinn and Rose visited the library, Quinn handed the card to","When Tara and Rose visited the library, Tara handed the card to",Rose,Quinn,Tara,BAB,1,the library,card,8049,16109
+"After Amy and Wendy left the school, Amy sent the ticket to","After Quinn and Wendy left the school, Quinn sent the ticket to",Wendy,Amy,Quinn,BAB,3,the school,ticket,28314,14235
+"When Jack and Zach visited the station, Zach handed the phone to","When Jack and Emma visited the station, Emma handed the phone to",Jack,Zach,Emma,ABB,1,the station,phone,3619,18825
+"When Xander and Olivia arrived at the mall, Olivia passed the gift to","When Xander and Bob arrived at the mall, Bob passed the gift to",Xander,Olivia,Bob,ABB,2,the mall,gift,46122,33911
+"While Wendy and Victor were at the school, Wendy delivered the package to","While Iris and Victor were at the school, Iris delivered the package to",Victor,Wendy,Iris,BAB,5,the school,package,12622,28314
+"Once Tara and Iris were at the station, Tara brought the package to","Once Uma and Iris were at the station, Uma brought the package to",Iris,Tara,Uma,BAB,4,the station,package,34230,37723
+"Once Emma and Gina were at the hospital, Gina brought the package to","Once Emma and Henry were at the hospital, Henry brought the package to",Emma,Gina,Henry,ABB,4,the hospital,package,18966,43002
+"After Uma and Derek left the school, Derek sent the package to","After Uma and Clara left the school, Clara sent the package to",Uma,Derek,Clara,ABB,3,the school,package,471,20893
+"After Gina and Liam left the store, Gina sent the note to","After Henry and Liam left the store, Henry sent the note to",Liam,Gina,Henry,BAB,3,the store,note,31684,43002
+"As Mia and David walked through the theater, Mia offered the letter to","As Rose and David walked through the theater, Rose offered the letter to",David,Mia,Rose,BAB,6,the theater,letter,3271,32189
+"Once Jack and Derek were at the museum, Derek brought the note to","Once Jack and David were at the museum, David brought the note to",Jack,Derek,David,ABB,4,the museum,note,3619,20893
+"When Derek and Victor arrived at the restaurant, Victor passed the jacket to","When Derek and Kate arrived at the restaurant, Kate passed the jacket to",Derek,Victor,Kate,ABB,2,the restaurant,jacket,20893,12622
+"When Clara and Wendy went to the station, Clara gave the note to","When Mia and Wendy went to the station, Mia gave the note to",Wendy,Clara,Mia,BAB,0,the station,note,28314,27443
+"When Olivia and Grace arrived at the station, Olivia passed the ticket to","When Iris and Grace arrived at the station, Iris passed the ticket to",Grace,Olivia,Iris,BAB,2,the station,ticket,16156,33911
+"When Uma and Isla visited the library, Isla handed the package to","When Uma and Frank visited the library, Frank handed the package to",Uma,Isla,Frank,ABB,1,the library,package,471,1148
+"When Amy and Sam went to the cafe, Amy gave the jacket to","When Frank and Sam went to the cafe, Frank gave the jacket to",Sam,Amy,Frank,BAB,0,the cafe,jacket,3409,14235
+"When Harry and Carol arrived at the market, Harry passed the phone to","When Henry and Carol arrived at the market, Henry passed the phone to",Carol,Harry,Henry,BAB,2,the market,phone,5074,5850
+"While Rose and Harry were at the office, Harry delivered the key to","While Rose and Fred were at the office, Fred delivered the key to",Rose,Harry,Fred,ABB,5,the office,key,8049,5850
+"After Victor and Isla left the store, Isla sent the package to","After Victor and Derek left the store, Derek sent the package to",Victor,Isla,Derek,ABB,3,the store,package,12622,1148
+"When Frank and Yara went to the gym, Frank gave the bag to","When Grace and Yara went to the gym, Grace gave the bag to",Yara,Frank,Grace,BAB,0,the gym,bag,575,5278
+"When Olivia and Alice visited the store, Olivia handed the ticket to","When Frank and Alice visited the store, Frank handed the ticket to",Alice,Olivia,Frank,BAB,1,the store,ticket,14862,33911
+"While Isla and Gina were at the park, Isla delivered the wallet to","While Uma and Gina were at the park, Uma delivered the wallet to",Gina,Isla,Uma,BAB,5,the park,wallet,43002,1148
+"After Yara and Victor left the cafe, Victor sent the bag to","After Yara and Bob left the cafe, Bob sent the bag to",Yara,Victor,Bob,ABB,3,the cafe,bag,575,12622
+"After Zach and Rose left the hospital, Zach sent the wallet to","After Noah and Rose left the hospital, Noah sent the wallet to",Rose,Zach,Noah,BAB,3,the hospital,wallet,8049,18825
+"When Noah and Victor visited the office, Victor handed the letter to","When Noah and Fred visited the office, Fred handed the letter to",Noah,Victor,Fred,ABB,1,the office,letter,18394,12622
+"When Wendy and Frank visited the school, Wendy handed the bag to","When Olivia and Frank visited the school, Olivia handed the bag to",Frank,Wendy,Olivia,BAB,1,the school,bag,5278,28314
+"While Sam and Xander were at the park, Sam delivered the ticket to","While Tara and Xander were at the park, Tara delivered the ticket to",Xander,Sam,Tara,BAB,5,the park,ticket,46122,3409
+"When Gina and Yara visited the park, Gina handed the map to","When Tara and Yara visited the park, Tara handed the map to",Yara,Gina,Tara,BAB,1,the park,map,575,43002
+"As Jack and Emma walked through the restaurant, Emma offered the bag to","As Jack and Ella walked through the restaurant, Ella offered the bag to",Jack,Emma,Ella,ABB,6,the restaurant,bag,3619,18966
+"After Frank and Quinn left the library, Frank sent the bag to","After Isla and Quinn left the library, Isla sent the bag to",Quinn,Frank,Isla,BAB,3,the library,bag,16109,5278
+"After Alice and Iris left the gym, Alice sent the card to","After Kate and Iris left the gym, Kate sent the card to",Iris,Alice,Kate,BAB,3,the gym,card,34230,14862
+"After David and Kate left the market, Kate sent the ticket to","After David and Clara left the market, Clara sent the ticket to",David,Kate,Clara,ABB,3,the market,ticket,3271,16693
+"When Rose and Ella went to the gym, Rose gave the map to","When Xander and Ella went to the gym, Xander gave the map to",Ella,Rose,Xander,BAB,0,the gym,map,7122,8049
+"Once Frank and Rose were at the beach, Frank brought the pen to","Once Paul and Rose were at the beach, Paul brought the pen to",Rose,Frank,Paul,BAB,4,the beach,pen,8049,5278
+"Once Tara and Quinn were at the mall, Quinn brought the ticket to","Once Tara and Xander were at the mall, Xander brought the ticket to",Tara,Quinn,Xander,ABB,4,the mall,ticket,37723,16109
+"As Victor and Uma walked through the library, Uma offered the bag to","As Victor and Grace walked through the library, Grace offered the bag to",Victor,Uma,Grace,ABB,6,the library,bag,12622,471
+"As Grace and Jack walked through the hospital, Grace offered the trophy to","As Sam and Jack walked through the hospital, Sam offered the trophy to",Jack,Grace,Sam,BAB,6,the hospital,trophy,3619,16156
+"While Rose and Noah were at the school, Rose delivered the trophy to","While Liam and Noah were at the school, Liam delivered the trophy to",Noah,Rose,Liam,BAB,5,the school,trophy,18394,8049
+"Once Brian and Frank were at the restaurant, Frank brought the bag to","Once Brian and Liam were at the restaurant, Liam brought the bag to",Brian,Frank,Liam,ABB,4,the restaurant,bag,8403,5278
+"As Sam and Frank walked through the park, Frank offered the note to","As Sam and Olivia walked through the park, Olivia offered the note to",Sam,Frank,Olivia,ABB,6,the park,note,3409,5278
+"As Yara and Zach walked through the theater, Zach offered the letter to","As Yara and Wendy walked through the theater, Wendy offered the letter to",Yara,Zach,Wendy,ABB,6,the theater,letter,575,18825
+"As Jack and Yara walked through the store, Jack offered the card to","As Liam and Yara walked through the store, Liam offered the card to",Yara,Jack,Liam,BAB,6,the store,card,575,3619
+"After Iris and Mia left the park, Iris sent the phone to","After Carol and Mia left the park, Carol sent the phone to",Mia,Iris,Carol,BAB,3,the park,phone,32189,34230
+"When Liam and Jack arrived at the library, Liam passed the jacket to","When Gina and Jack arrived at the library, Gina passed the jacket to",Jack,Liam,Gina,BAB,2,the library,jacket,3619,31684
+"Once Rose and Uma were at the school, Rose brought the gift to","Once Amy and Uma were at the school, Amy brought the gift to",Uma,Rose,Amy,BAB,4,the school,gift,471,8049
+"When Sam and Iris went to the cafe, Iris gave the book to","When Sam and Fred went to the cafe, Fred gave the book to",Sam,Iris,Fred,ABB,0,the cafe,book,3409,34230
+"While Fred and Frank were at the library, Fred delivered the bag to","While Victor and Frank were at the library, Victor delivered the bag to",Frank,Fred,Victor,BAB,5,the library,bag,5278,8559
+"As Gina and Carol walked through the beach, Gina offered the phone to","As Harry and Carol walked through the beach, Harry offered the phone to",Carol,Gina,Harry,BAB,6,the beach,phone,5074,43002
+"When Mia and Gina arrived at the school, Mia passed the book to","When Zach and Gina arrived at the school, Zach passed the book to",Gina,Mia,Zach,BAB,2,the school,book,43002,32189
+"When Ella and David arrived at the theater, Ella passed the pen to","When Harry and David arrived at the theater, Harry passed the pen to",David,Ella,Harry,BAB,2,the theater,pen,3271,7122
+"Once Ella and Clara were at the beach, Clara brought the gift to","Once Ella and Xander were at the beach, Xander brought the gift to",Ella,Clara,Xander,ABB,4,the beach,gift,7122,27443
+"While David and Kate were at the restaurant, David delivered the jacket to","While Zach and Kate were at the restaurant, Zach delivered the jacket to",Kate,David,Zach,BAB,5,the restaurant,jacket,16693,3271
+"While Kate and Wendy were at the cafe, Kate delivered the jacket to","While Quinn and Wendy were at the cafe, Quinn delivered the jacket to",Wendy,Kate,Quinn,BAB,5,the cafe,jacket,28314,16693
+"When Iris and Quinn arrived at the park, Quinn passed the book to","When Iris and Sam arrived at the park, Sam passed the book to",Iris,Quinn,Sam,ABB,2,the park,book,34230,16109
+"As Olivia and Henry walked through the library, Henry offered the package to","As Olivia and Mia walked through the library, Mia offered the package to",Olivia,Henry,Mia,ABB,6,the library,package,33911,8616
+"As Zach and Harry walked through the cafe, Zach offered the bag to","As Wendy and Harry walked through the cafe, Wendy offered the bag to",Harry,Zach,Wendy,BAB,6,the cafe,bag,5850,18825
+"When Ella and Fred went to the theater, Ella gave the note to","When Tara and Fred went to the theater, Tara gave the note to",Fred,Ella,Tara,BAB,0,the theater,note,8559,7122
+"Once Xander and Zach were at the office, Xander brought the pen to","Once Henry and Zach were at the office, Henry brought the pen to",Zach,Xander,Henry,BAB,4,the office,pen,18825,46122
+"While Xander and Emma were at the gym, Emma delivered the book to","While Xander and Gina were at the gym, Gina delivered the book to",Xander,Emma,Gina,ABB,5,the gym,book,46122,18966
+"Once Wendy and Henry were at the museum, Henry brought the card to","Once Wendy and Liam were at the museum, Liam brought the card to",Wendy,Henry,Liam,ABB,4,the museum,card,28314,8616
+"Once Fred and Iris were at the station, Fred brought the book to","Once Alice and Iris were at the station, Alice brought the book to",Iris,Fred,Alice,BAB,4,the station,book,34230,8559
+"While Ella and Xander were at the cafe, Xander delivered the card to","While Ella and Grace were at the cafe, Grace delivered the card to",Ella,Xander,Grace,ABB,5,the cafe,card,7122,46122
+"When Isla and Liam arrived at the station, Isla passed the ticket to","When Wendy and Liam arrived at the station, Wendy passed the ticket to",Liam,Isla,Wendy,BAB,2,the station,ticket,31684,1148
+"When Paul and Mia arrived at the cafe, Mia passed the bag to","When Paul and Harry arrived at the cafe, Harry passed the bag to",Paul,Mia,Harry,ABB,2,the cafe,bag,3362,32189
+"When Iris and Ella arrived at the hospital, Ella passed the map to","When Iris and Kate arrived at the hospital, Kate passed the map to",Iris,Ella,Kate,ABB,2,the hospital,map,34230,7122
+"When David and Rose visited the hospital, David handed the phone to","When Gina and Rose visited the hospital, Gina handed the phone to",Rose,David,Gina,BAB,1,the hospital,phone,8049,3271
+"When Emma and Carol visited the office, Carol handed the map to","When Emma and Bob visited the office, Bob handed the map to",Emma,Carol,Bob,ABB,1,the office,map,18966,5074
+"After Bob and Fred left the museum, Bob sent the book to","After Grace and Fred left the museum, Grace sent the book to",Fred,Bob,Grace,BAB,3,the museum,book,8559,5811
+"When Zach and Paul visited the beach, Zach handed the phone to","When Fred and Paul visited the beach, Fred handed the phone to",Paul,Zach,Fred,BAB,1,the beach,phone,3362,18825
+"When Olivia and Paul arrived at the library, Paul passed the key to","When Olivia and Derek arrived at the library, Derek passed the key to",Olivia,Paul,Derek,ABB,2,the library,key,33911,3362
+"After Iris and Amy left the market, Amy sent the map to","After Iris and Xander left the market, Xander sent the map to",Iris,Amy,Xander,ABB,3,the market,map,34230,14235
+"Once Grace and Wendy were at the station, Wendy brought the letter to","Once Grace and Amy were at the station, Amy brought the letter to",Grace,Wendy,Amy,ABB,4,the station,letter,16156,28314
+"When Ella and Bob arrived at the park, Ella passed the note to","When Henry and Bob arrived at the park, Henry passed the note to",Bob,Ella,Henry,BAB,2,the park,note,5811,7122
+"When Wendy and Yara visited the office, Wendy handed the pen to","When Liam and Yara visited the office, Liam handed the pen to",Yara,Wendy,Liam,BAB,1,the office,pen,575,28314
+"When Tara and Grace arrived at the beach, Grace passed the phone to","When Tara and Bob arrived at the beach, Bob passed the phone to",Tara,Grace,Bob,ABB,2,the beach,phone,37723,16156
+"While Zach and David were at the library, Zach delivered the book to","While Grace and David were at the library, Grace delivered the book to",David,Zach,Grace,BAB,5,the library,book,3271,18825
+"While Fred and Amy were at the restaurant, Fred delivered the package to","While Iris and Amy were at the restaurant, Iris delivered the package to",Amy,Fred,Iris,BAB,5,the restaurant,package,14235,8559
+"When Henry and Derek visited the theater, Derek handed the package to","When Henry and Emma visited the theater, Emma handed the package to",Henry,Derek,Emma,ABB,1,the theater,package,8616,20893
+"After Kate and David left the mall, Kate sent the pen to","After Grace and David left the mall, Grace sent the pen to",David,Kate,Grace,BAB,3,the mall,pen,3271,16693
+"While Mia and Harry were at the store, Mia delivered the phone to","While Bob and Harry were at the store, Bob delivered the phone to",Harry,Mia,Bob,BAB,5,the store,phone,5850,32189
+"When Grace and Derek arrived at the store, Grace passed the note to","When Iris and Derek arrived at the store, Iris passed the note to",Derek,Grace,Iris,BAB,2,the store,note,20893,16156
+"As Gina and Bob walked through the market, Bob offered the book to","As Gina and Yara walked through the market, Yara offered the book to",Gina,Bob,Yara,ABB,6,the market,book,43002,5811
+"After Emma and David left the library, David sent the map to","After Emma and Alice left the library, Alice sent the map to",Emma,David,Alice,ABB,3,the library,map,18966,3271
+"When Fred and Liam visited the museum, Fred handed the jacket to","When Brian and Liam visited the museum, Brian handed the jacket to",Liam,Fred,Brian,BAB,1,the museum,jacket,31684,8559
+"When Uma and Mia went to the park, Uma gave the letter to","When Gina and Mia went to the park, Gina gave the letter to",Mia,Uma,Gina,BAB,0,the park,letter,32189,471
+"When Wendy and Jack arrived at the market, Wendy passed the wallet to","When Tara and Jack arrived at the market, Tara passed the wallet to",Jack,Wendy,Tara,BAB,2,the market,wallet,3619,28314
+"When Liam and Fred arrived at the theater, Fred passed the key to","When Liam and Noah arrived at the theater, Noah passed the key to",Liam,Fred,Noah,ABB,2,the theater,key,31684,8559
+"As Tara and Derek walked through the mall, Derek offered the gift to","As Tara and Uma walked through the mall, Uma offered the gift to",Tara,Derek,Uma,ABB,6,the mall,gift,37723,20893
+"When David and Jack went to the library, David gave the gift to","When Isla and Jack went to the library, Isla gave the gift to",Jack,David,Isla,BAB,0,the library,gift,3619,3271
+"As Ella and Harry walked through the museum, Harry offered the map to","As Ella and Amy walked through the museum, Amy offered the map to",Ella,Harry,Amy,ABB,6,the museum,map,7122,5850
+"When Victor and Frank went to the restaurant, Victor gave the package to","When Clara and Frank went to the restaurant, Clara gave the package to",Frank,Victor,Clara,BAB,0,the restaurant,package,5278,12622
+"After Zach and Yara left the library, Zach sent the card to","After Bob and Yara left the library, Bob sent the card to",Yara,Zach,Bob,BAB,3,the library,card,575,18825
+"When Sam and Paul went to the restaurant, Paul gave the letter to","When Sam and Emma went to the restaurant, Emma gave the letter to",Sam,Paul,Emma,ABB,0,the restaurant,letter,3409,3362
+"Once Amy and Gina were at the park, Amy brought the letter to","Once Jack and Gina were at the park, Jack brought the letter to",Gina,Amy,Jack,BAB,4,the park,letter,43002,14235
+"When Noah and Uma visited the beach, Noah handed the jacket to","When Mia and Uma visited the beach, Mia handed the jacket to",Uma,Noah,Mia,BAB,1,the beach,jacket,471,18394
+"While Victor and Paul were at the market, Victor delivered the trophy to","While Derek and Paul were at the market, Derek delivered the trophy to",Paul,Victor,Derek,BAB,5,the market,trophy,3362,12622
+"When Frank and Bob visited the cafe, Bob handed the letter to","When Frank and Quinn visited the cafe, Quinn handed the letter to",Frank,Bob,Quinn,ABB,1,the cafe,letter,5278,5811
+"As Rose and Amy walked through the park, Amy offered the ticket to","As Rose and Quinn walked through the park, Quinn offered the ticket to",Rose,Amy,Quinn,ABB,6,the park,ticket,8049,14235
+"While Victor and Quinn were at the school, Quinn delivered the jacket to","While Victor and Fred were at the school, Fred delivered the jacket to",Victor,Quinn,Fred,ABB,5,the school,jacket,12622,16109
+"When David and Alice arrived at the office, Alice passed the wallet to","When David and Noah arrived at the office, Noah passed the wallet to",David,Alice,Noah,ABB,2,the office,wallet,3271,14862
+"When Isla and Zach arrived at the office, Isla passed the jacket to","When Frank and Zach arrived at the office, Frank passed the jacket to",Zach,Isla,Frank,BAB,2,the office,jacket,18825,1148
+"After Sam and Frank left the store, Sam sent the letter to","After Bob and Frank left the store, Bob sent the letter to",Frank,Sam,Bob,BAB,3,the store,letter,5278,3409
+"While Fred and Isla were at the restaurant, Isla delivered the ticket to","While Fred and Sam were at the restaurant, Sam delivered the ticket to",Fred,Isla,Sam,ABB,5,the restaurant,ticket,8559,1148
+"As Harry and Fred walked through the store, Harry offered the card to","As Xander and Fred walked through the store, Xander offered the card to",Fred,Harry,Xander,BAB,6,the store,card,8559,5850
+"When Jack and Wendy went to the mall, Jack gave the gift to","When Grace and Wendy went to the mall, Grace gave the gift to",Wendy,Jack,Grace,BAB,0,the mall,gift,28314,3619
+"After Tara and Brian left the cafe, Brian sent the key to","After Tara and Quinn left the cafe, Quinn sent the key to",Tara,Brian,Quinn,ABB,3,the cafe,key,37723,8403
+"When Amy and Henry went to the park, Amy gave the key to","When Clara and Henry went to the park, Clara gave the key to",Henry,Amy,Clara,BAB,0,the park,key,8616,14235
+"When Bob and Noah visited the park, Bob handed the bag to","When Gina and Noah visited the park, Gina handed the bag to",Noah,Bob,Gina,BAB,1,the park,bag,18394,5811
+"When Clara and Amy went to the hospital, Clara gave the key to","When Yara and Amy went to the hospital, Yara gave the key to",Amy,Clara,Yara,BAB,0,the hospital,key,14235,27443
+"When Uma and Noah arrived at the park, Uma passed the letter to","When Amy and Noah arrived at the park, Amy passed the letter to",Noah,Uma,Amy,BAB,2,the park,letter,18394,471
+"After David and Victor left the gym, Victor sent the map to","After David and Henry left the gym, Henry sent the map to",David,Victor,Henry,ABB,3,the gym,map,3271,12622
+"As Kate and Mia walked through the restaurant, Mia offered the book to","As Kate and Iris walked through the restaurant, Iris offered the book to",Kate,Mia,Iris,ABB,6,the restaurant,book,16693,32189
+"While Zach and Gina were at the store, Zach delivered the package to","While Henry and Gina were at the store, Henry delivered the package to",Gina,Zach,Henry,BAB,5,the store,package,43002,18825
+"When Clara and Frank arrived at the museum, Clara passed the key to","When Tara and Frank arrived at the museum, Tara passed the key to",Frank,Clara,Tara,BAB,2,the museum,key,5278,27443
+"When Clara and Rose went to the beach, Clara gave the pen to","When Jack and Rose went to the beach, Jack gave the pen to",Rose,Clara,Jack,BAB,0,the beach,pen,8049,27443
+"While Emma and Derek were at the museum, Derek delivered the gift to","While Emma and Tara were at the museum, Tara delivered the gift to",Emma,Derek,Tara,ABB,5,the museum,gift,18966,20893
+"After Derek and Alice left the cafe, Alice sent the phone to","After Derek and Jack left the cafe, Jack sent the phone to",Derek,Alice,Jack,ABB,3,the cafe,phone,20893,14862
+"When Emma and Paul went to the mall, Paul gave the pen to","When Emma and Zach went to the mall, Zach gave the pen to",Emma,Paul,Zach,ABB,0,the mall,pen,18966,3362
+"When Yara and Frank visited the school, Frank handed the map to","When Yara and Isla visited the school, Isla handed the map to",Yara,Frank,Isla,ABB,1,the school,map,575,5278
+"When Emma and Ella arrived at the museum, Ella passed the letter to","When Emma and Carol arrived at the museum, Carol passed the letter to",Emma,Ella,Carol,ABB,2,the museum,letter,18966,7122
+"When Kate and Olivia went to the theater, Kate gave the map to","When Clara and Olivia went to the theater, Clara gave the map to",Olivia,Kate,Clara,BAB,0,the theater,map,33911,16693
+"When Emma and David went to the mall, David gave the book to","When Emma and Olivia went to the mall, Olivia gave the book to",Emma,David,Olivia,ABB,0,the mall,book,18966,3271
+"While Bob and Ella were at the theater, Ella delivered the wallet to","While Bob and Quinn were at the theater, Quinn delivered the wallet to",Bob,Ella,Quinn,ABB,5,the theater,wallet,5811,7122
+"When Rose and Paul arrived at the restaurant, Rose passed the ticket to","When Zach and Paul arrived at the restaurant, Zach passed the ticket to",Paul,Rose,Zach,BAB,2,the restaurant,ticket,3362,8049
+"As Noah and Clara walked through the gym, Clara offered the gift to","As Noah and Paul walked through the gym, Paul offered the gift to",Noah,Clara,Paul,ABB,6,the gym,gift,18394,27443
+"While Sam and Derek were at the office, Derek delivered the trophy to","While Sam and Emma were at the office, Emma delivered the trophy to",Sam,Derek,Emma,ABB,5,the office,trophy,3409,20893
+"Once Derek and Mia were at the school, Derek brought the package to","Once Grace and Mia were at the school, Grace brought the package to",Mia,Derek,Grace,BAB,4,the school,package,32189,20893
+"When Sam and Brian visited the office, Brian handed the key to","When Sam and Fred visited the office, Fred handed the key to",Sam,Brian,Fred,ABB,1,the office,key,3409,8403
+"After Paul and Isla left the market, Isla sent the bag to","After Paul and Iris left the market, Iris sent the bag to",Paul,Isla,Iris,ABB,3,the market,bag,3362,1148
+"While Alice and Quinn were at the office, Quinn delivered the book to","While Alice and Xander were at the office, Xander delivered the book to",Alice,Quinn,Xander,ABB,5,the office,book,14862,16109
+"As Clara and Gina walked through the museum, Gina offered the gift to","As Clara and Jack walked through the museum, Jack offered the gift to",Clara,Gina,Jack,ABB,6,the museum,gift,27443,43002
+"Once Rose and Noah were at the park, Rose brought the wallet to","Once Emma and Noah were at the park, Emma brought the wallet to",Noah,Rose,Emma,BAB,4,the park,wallet,18394,8049
+"As Olivia and Grace walked through the hospital, Grace offered the bag to","As Olivia and Wendy walked through the hospital, Wendy offered the bag to",Olivia,Grace,Wendy,ABB,6,the hospital,bag,33911,16156
+"While Victor and Emma were at the gym, Victor delivered the map to","While Rose and Emma were at the gym, Rose delivered the map to",Emma,Victor,Rose,BAB,5,the gym,map,18966,12622
+"When Fred and Brian visited the museum, Brian handed the card to","When Fred and Liam visited the museum, Liam handed the card to",Fred,Brian,Liam,ABB,1,the museum,card,8559,8403
+"As Frank and Henry walked through the school, Frank offered the key to","As Kate and Henry walked through the school, Kate offered the key to",Henry,Frank,Kate,BAB,6,the school,key,8616,5278
+"While Frank and Emma were at the cafe, Frank delivered the card to","While Sam and Emma were at the cafe, Sam delivered the card to",Emma,Frank,Sam,BAB,5,the cafe,card,18966,5278
+"As Amy and Ella walked through the restaurant, Ella offered the bag to","As Amy and Mia walked through the restaurant, Mia offered the bag to",Amy,Ella,Mia,ABB,6,the restaurant,bag,14235,7122
+"Once Ella and Henry were at the library, Ella brought the phone to","Once Noah and Henry were at the library, Noah brought the phone to",Henry,Ella,Noah,BAB,4,the library,phone,8616,7122
+"While Sam and David were at the beach, David delivered the package to","While Sam and Frank were at the beach, Frank delivered the package to",Sam,David,Frank,ABB,5,the beach,package,3409,3271
+"When Brian and Victor visited the theater, Brian handed the note to","When Derek and Victor visited the theater, Derek handed the note to",Victor,Brian,Derek,BAB,1,the theater,note,12622,8403
+"After Wendy and Quinn left the park, Wendy sent the bag to","After Bob and Quinn left the park, Bob sent the bag to",Quinn,Wendy,Bob,BAB,3,the park,bag,16109,28314
+"When Tara and David went to the store, Tara gave the jacket to","When Liam and David went to the store, Liam gave the jacket to",David,Tara,Liam,BAB,0,the store,jacket,3271,37723
+"When Isla and Victor went to the mall, Victor gave the key to","When Isla and Bob went to the mall, Bob gave the key to",Isla,Victor,Bob,ABB,0,the mall,key,1148,12622
+"When Kate and Noah went to the market, Kate gave the map to","When Sam and Noah went to the market, Sam gave the map to",Noah,Kate,Sam,BAB,0,the market,map,18394,16693
+"Once Harry and Derek were at the office, Derek brought the trophy to","Once Harry and David were at the office, David brought the trophy to",Harry,Derek,David,ABB,4,the office,trophy,5850,20893
+"When Harry and Rose arrived at the station, Harry passed the pen to","When Emma and Rose arrived at the station, Emma passed the pen to",Rose,Harry,Emma,BAB,2,the station,pen,8049,5850
+"After Rose and Isla left the museum, Isla sent the map to","After Rose and Ella left the museum, Ella sent the map to",Rose,Isla,Ella,ABB,3,the museum,map,8049,1148
+"After Uma and Ella left the gym, Ella sent the letter to","After Uma and Harry left the gym, Harry sent the letter to",Uma,Ella,Harry,ABB,3,the gym,letter,471,7122
+"When Derek and Harry visited the mall, Harry handed the map to","When Derek and Wendy visited the mall, Wendy handed the map to",Derek,Harry,Wendy,ABB,1,the mall,map,20893,5850
+"When Harry and Emma arrived at the mall, Harry passed the bag to","When Alice and Emma arrived at the mall, Alice passed the bag to",Emma,Harry,Alice,BAB,2,the mall,bag,18966,5850
+"When Mia and Amy visited the school, Mia handed the wallet to","When Harry and Amy visited the school, Harry handed the wallet to",Amy,Mia,Harry,BAB,1,the school,wallet,14235,32189
+"When Jack and Yara went to the school, Jack gave the trophy to","When David and Yara went to the school, David gave the trophy to",Yara,Jack,David,BAB,0,the school,trophy,575,3619
+"Once Jack and Victor were at the school, Victor brought the letter to","Once Jack and Frank were at the school, Frank brought the letter to",Jack,Victor,Frank,ABB,4,the school,letter,3619,12622
+"As Ella and Emma walked through the park, Emma offered the gift to","As Ella and Frank walked through the park, Frank offered the gift to",Ella,Emma,Frank,ABB,6,the park,gift,7122,18966
+"When Derek and Xander arrived at the beach, Derek passed the book to","When Fred and Xander arrived at the beach, Fred passed the book to",Xander,Derek,Fred,BAB,2,the beach,book,46122,20893
+"When Mia and Isla went to the mall, Mia gave the bag to","When Xander and Isla went to the mall, Xander gave the bag to",Isla,Mia,Xander,BAB,0,the mall,bag,1148,32189
+"When Kate and Olivia visited the school, Kate handed the package to","When Grace and Olivia visited the school, Grace handed the package to",Olivia,Kate,Grace,BAB,1,the school,package,33911,16693
+"While Kate and Isla were at the restaurant, Kate delivered the key to","While Uma and Isla were at the restaurant, Uma delivered the key to",Isla,Kate,Uma,BAB,5,the restaurant,key,1148,16693
+"As Carol and Emma walked through the theater, Emma offered the pen to","As Carol and Mia walked through the theater, Mia offered the pen to",Carol,Emma,Mia,ABB,6,the theater,pen,5074,18966
+"When Brian and Uma went to the cafe, Brian gave the wallet to","When Henry and Uma went to the cafe, Henry gave the wallet to",Uma,Brian,Henry,BAB,0,the cafe,wallet,471,8403
+"When Xander and Ella arrived at the museum, Ella passed the jacket to","When Xander and Harry arrived at the museum, Harry passed the jacket to",Xander,Ella,Harry,ABB,2,the museum,jacket,46122,7122
+"When Harry and Iris visited the restaurant, Iris handed the package to","When Harry and Yara visited the restaurant, Yara handed the package to",Harry,Iris,Yara,ABB,1,the restaurant,package,5850,34230
+"After Alice and Quinn left the station, Alice sent the trophy to","After Victor and Quinn left the station, Victor sent the trophy to",Quinn,Alice,Victor,BAB,3,the station,trophy,16109,14862
+"While Emma and Iris were at the park, Iris delivered the ticket to","While Emma and Uma were at the park, Uma delivered the ticket to",Emma,Iris,Uma,ABB,5,the park,ticket,18966,34230
+"Once Noah and Gina were at the gym, Noah brought the note to","Once Jack and Gina were at the gym, Jack brought the note to",Gina,Noah,Jack,BAB,4,the gym,note,43002,18394
+"After Paul and Kate left the store, Kate sent the letter to","After Paul and Liam left the store, Liam sent the letter to",Paul,Kate,Liam,ABB,3,the store,letter,3362,16693
+"When Xander and Zach went to the school, Xander gave the package to","When Gina and Zach went to the school, Gina gave the package to",Zach,Xander,Gina,BAB,0,the school,package,18825,46122
+"After Yara and Isla left the theater, Isla sent the jacket to","After Yara and Victor left the theater, Victor sent the jacket to",Yara,Isla,Victor,ABB,3,the theater,jacket,575,1148
+"When Ella and Noah visited the beach, Ella handed the package to","When Emma and Noah visited the beach, Emma handed the package to",Noah,Ella,Emma,BAB,1,the beach,package,18394,7122
+"Once Yara and Carol were at the school, Yara brought the card to","Once Zach and Carol were at the school, Zach brought the card to",Carol,Yara,Zach,BAB,4,the school,card,5074,575
+"When Jack and David went to the school, Jack gave the bag to","When Grace and David went to the school, Grace gave the bag to",David,Jack,Grace,BAB,0,the school,bag,3271,3619
+"When Kate and Fred visited the restaurant, Kate handed the wallet to","When Xander and Fred visited the restaurant, Xander handed the wallet to",Fred,Kate,Xander,BAB,1,the restaurant,wallet,8559,16693
+"After Paul and Carol left the school, Carol sent the pen to","After Paul and Frank left the school, Frank sent the pen to",Paul,Carol,Frank,ABB,3,the school,pen,3362,5074
+"While Rose and Alice were at the museum, Alice delivered the bag to","While Rose and Kate were at the museum, Kate delivered the bag to",Rose,Alice,Kate,ABB,5,the museum,bag,8049,14862
+"When Olivia and Emma went to the office, Emma gave the card to","When Olivia and Jack went to the office, Jack gave the card to",Olivia,Emma,Jack,ABB,0,the office,card,33911,18966
+"As Clara and Liam walked through the school, Liam offered the map to","As Clara and Frank walked through the school, Frank offered the map to",Clara,Liam,Frank,ABB,6,the school,map,27443,31684
+"After Frank and Clara left the gym, Frank sent the gift to","After Fred and Clara left the gym, Fred sent the gift to",Clara,Frank,Fred,BAB,3,the gym,gift,27443,5278
+"After Emma and Uma left the hospital, Emma sent the note to","After Frank and Uma left the hospital, Frank sent the note to",Uma,Emma,Frank,BAB,3,the hospital,note,471,18966
+"When Uma and Yara arrived at the market, Yara passed the card to","When Uma and Harry arrived at the market, Harry passed the card to",Uma,Yara,Harry,ABB,2,the market,card,471,575
+"As Henry and Jack walked through the gym, Henry offered the gift to","As Harry and Jack walked through the gym, Harry offered the gift to",Jack,Henry,Harry,BAB,6,the gym,gift,3619,8616
+"When Fred and Paul went to the office, Fred gave the ticket to","When Yara and Paul went to the office, Yara gave the ticket to",Paul,Fred,Yara,BAB,0,the office,ticket,3362,8559
+"After Sam and Liam left the library, Sam sent the jacket to","After Grace and Liam left the library, Grace sent the jacket to",Liam,Sam,Grace,BAB,3,the library,jacket,31684,3409
+"While Bob and Ella were at the library, Bob delivered the pen to","While Brian and Ella were at the library, Brian delivered the pen to",Ella,Bob,Brian,BAB,5,the library,pen,7122,5811
+"When Iris and Mia visited the park, Iris handed the letter to","When Grace and Mia visited the park, Grace handed the letter to",Mia,Iris,Grace,BAB,1,the park,letter,32189,34230
+"As Amy and Yara walked through the mall, Yara offered the wallet to","As Amy and Bob walked through the mall, Bob offered the wallet to",Amy,Yara,Bob,ABB,6,the mall,wallet,14235,575
+"When Fred and Grace arrived at the station, Fred passed the gift to","When Jack and Grace arrived at the station, Jack passed the gift to",Grace,Fred,Jack,BAB,2,the station,gift,16156,8559
+"While Liam and Quinn were at the park, Liam delivered the package to","While Victor and Quinn were at the park, Victor delivered the package to",Quinn,Liam,Victor,BAB,5,the park,package,16109,31684
+"While Henry and Noah were at the restaurant, Noah delivered the wallet to","While Henry and Derek were at the restaurant, Derek delivered the wallet to",Henry,Noah,Derek,ABB,5,the restaurant,wallet,8616,18394
+"While Victor and Harry were at the library, Victor delivered the bag to","While Brian and Harry were at the library, Brian delivered the bag to",Harry,Victor,Brian,BAB,5,the library,bag,5850,12622
+"As Tara and Quinn walked through the station, Tara offered the note to","As Wendy and Quinn walked through the station, Wendy offered the note to",Quinn,Tara,Wendy,BAB,6,the station,note,16109,37723
+"When Bob and Jack visited the market, Jack handed the phone to","When Bob and Paul visited the market, Paul handed the phone to",Bob,Jack,Paul,ABB,1,the market,phone,5811,3619
+"While Victor and Mia were at the hospital, Victor delivered the phone to","While Olivia and Mia were at the hospital, Olivia delivered the phone to",Mia,Victor,Olivia,BAB,5,the hospital,phone,32189,12622
+"When Ella and Paul visited the park, Paul handed the gift to","When Ella and Amy visited the park, Amy handed the gift to",Ella,Paul,Amy,ABB,1,the park,gift,7122,3362
+"After Brian and Grace left the gym, Brian sent the phone to","After Paul and Grace left the gym, Paul sent the phone to",Grace,Brian,Paul,BAB,3,the gym,phone,16156,8403
+"While Xander and Fred were at the theater, Xander delivered the book to","While Derek and Fred were at the theater, Derek delivered the book to",Fred,Xander,Derek,BAB,5,the theater,book,8559,46122
+"Once Ella and Iris were at the store, Iris brought the trophy to","Once Ella and Clara were at the store, Clara brought the trophy to",Ella,Iris,Clara,ABB,4,the store,trophy,7122,34230
+"When Xander and Mia went to the school, Mia gave the package to","When Xander and Emma went to the school, Emma gave the package to",Xander,Mia,Emma,ABB,0,the school,package,46122,32189
+"When Derek and Clara visited the cafe, Derek handed the key to","When Quinn and Clara visited the cafe, Quinn handed the key to",Clara,Derek,Quinn,BAB,1,the cafe,key,27443,20893
+"After Paul and Alice left the office, Alice sent the ticket to","After Paul and Quinn left the office, Quinn sent the ticket to",Paul,Alice,Quinn,ABB,3,the office,ticket,3362,14862
+"As Paul and Grace walked through the school, Grace offered the pen to","As Paul and Tara walked through the school, Tara offered the pen to",Paul,Grace,Tara,ABB,6,the school,pen,3362,16156
+"Once Paul and Kate were at the store, Kate brought the card to","Once Paul and Tara were at the store, Tara brought the card to",Paul,Kate,Tara,ABB,4,the store,card,3362,16693
+"Once Liam and Tara were at the cafe, Tara brought the book to","Once Liam and Zach were at the cafe, Zach brought the book to",Liam,Tara,Zach,ABB,4,the cafe,book,31684,37723
+"As Kate and Ella walked through the museum, Kate offered the pen to","As Olivia and Ella walked through the museum, Olivia offered the pen to",Ella,Kate,Olivia,BAB,6,the museum,pen,7122,16693
+"When Victor and Clara arrived at the gym, Victor passed the card to","When Quinn and Clara arrived at the gym, Quinn passed the card to",Clara,Victor,Quinn,BAB,2,the gym,card,27443,12622
+"When Noah and David went to the station, David gave the bag to","When Noah and Isla went to the station, Isla gave the bag to",Noah,David,Isla,ABB,0,the station,bag,18394,3271
+"When Wendy and Tara visited the beach, Tara handed the jacket to","When Wendy and Zach visited the beach, Zach handed the jacket to",Wendy,Tara,Zach,ABB,1,the beach,jacket,28314,37723
+"While Brian and Iris were at the gym, Iris delivered the wallet to","While Brian and Quinn were at the gym, Quinn delivered the wallet to",Brian,Iris,Quinn,ABB,5,the gym,wallet,8403,34230
+"Once Quinn and Carol were at the park, Carol brought the trophy to","Once Quinn and Derek were at the park, Derek brought the trophy to",Quinn,Carol,Derek,ABB,4,the park,trophy,16109,5074
+"When Alice and Xander went to the store, Alice gave the book to","When Jack and Xander went to the store, Jack gave the book to",Xander,Alice,Jack,BAB,0,the store,book,46122,14862
+"After David and Alice left the station, David sent the note to","After Yara and Alice left the station, Yara sent the note to",Alice,David,Yara,BAB,3,the station,note,14862,3271
+"Once Grace and Iris were at the mall, Iris brought the letter to","Once Grace and Alice were at the mall, Alice brought the letter to",Grace,Iris,Alice,ABB,4,the mall,letter,16156,34230
+"When Quinn and Tara went to the museum, Quinn gave the map to","When Liam and Tara went to the museum, Liam gave the map to",Tara,Quinn,Liam,BAB,0,the museum,map,37723,16109
+"Once Ella and David were at the office, David brought the card to","Once Ella and Iris were at the office, Iris brought the card to",Ella,David,Iris,ABB,4,the office,card,7122,3271
+"As Grace and Yara walked through the cafe, Grace offered the pen to","As Ella and Yara walked through the cafe, Ella offered the pen to",Yara,Grace,Ella,BAB,6,the cafe,pen,575,16156
+"After Sam and Gina left the cafe, Gina sent the ticket to","After Sam and Rose left the cafe, Rose sent the ticket to",Sam,Gina,Rose,ABB,3,the cafe,ticket,3409,43002
+"Once Rose and Sam were at the school, Sam brought the card to","Once Rose and Henry were at the school, Henry brought the card to",Rose,Sam,Henry,ABB,4,the school,card,8049,3409
+"As Kate and Uma walked through the library, Uma offered the ticket to","As Kate and Mia walked through the library, Mia offered the ticket to",Kate,Uma,Mia,ABB,6,the library,ticket,16693,471
+"When Quinn and Frank went to the park, Quinn gave the package to","When Emma and Frank went to the park, Emma gave the package to",Frank,Quinn,Emma,BAB,0,the park,package,5278,16109
+"Once Zach and Tara were at the cafe, Tara brought the card to","Once Zach and Victor were at the cafe, Victor brought the card to",Zach,Tara,Victor,ABB,4,the cafe,card,18825,37723
+"When Kate and Brian went to the gym, Kate gave the package to","When David and Brian went to the gym, David gave the package to",Brian,Kate,David,BAB,0,the gym,package,8403,16693
+"When Olivia and Amy visited the museum, Olivia handed the trophy to","When Uma and Amy visited the museum, Uma handed the trophy to",Amy,Olivia,Uma,BAB,1,the museum,trophy,14235,33911
+"When Zach and Clara arrived at the store, Zach passed the note to","When Brian and Clara arrived at the store, Brian passed the note to",Clara,Zach,Brian,BAB,2,the store,note,27443,18825
+"When Liam and Quinn went to the beach, Quinn gave the note to","When Liam and Carol went to the beach, Carol gave the note to",Liam,Quinn,Carol,ABB,0,the beach,note,31684,16109
+"When Derek and Jack visited the office, Jack handed the jacket to","When Derek and Quinn visited the office, Quinn handed the jacket to",Derek,Jack,Quinn,ABB,1,the office,jacket,20893,3619
+"Once Derek and Xander were at the school, Xander brought the phone to","Once Derek and David were at the school, David brought the phone to",Derek,Xander,David,ABB,4,the school,phone,20893,46122
+"While Alice and Victor were at the restaurant, Victor delivered the letter to","While Alice and Iris were at the restaurant, Iris delivered the letter to",Alice,Victor,Iris,ABB,5,the restaurant,letter,14862,12622
+"When Olivia and Amy arrived at the store, Amy passed the card to","When Olivia and Tara arrived at the store, Tara passed the card to",Olivia,Amy,Tara,ABB,2,the store,card,33911,14235
+"Once Ella and Paul were at the library, Paul brought the note to","Once Ella and Derek were at the library, Derek brought the note to",Ella,Paul,Derek,ABB,4,the library,note,7122,3362
+"After Rose and Harry left the cafe, Rose sent the trophy to","After Iris and Harry left the cafe, Iris sent the trophy to",Harry,Rose,Iris,BAB,3,the cafe,trophy,5850,8049
+"After Brian and Fred left the gym, Fred sent the note to","After Brian and Frank left the gym, Frank sent the note to",Brian,Fred,Frank,ABB,3,the gym,note,8403,8559
+"As Rose and Jack walked through the gym, Jack offered the gift to","As Rose and Noah walked through the gym, Noah offered the gift to",Rose,Jack,Noah,ABB,6,the gym,gift,8049,3619
+"After Wendy and Yara left the library, Wendy sent the key to","After Grace and Yara left the library, Grace sent the key to",Yara,Wendy,Grace,BAB,3,the library,key,575,28314
+"As Sam and Tara walked through the library, Tara offered the ticket to","As Sam and Fred walked through the library, Fred offered the ticket to",Sam,Tara,Fred,ABB,6,the library,ticket,3409,37723
+"While Zach and Harry were at the station, Zach delivered the phone to","While Bob and Harry were at the station, Bob delivered the phone to",Harry,Zach,Bob,BAB,5,the station,phone,5850,18825
+"After Amy and Kate left the gym, Amy sent the card to","After Fred and Kate left the gym, Fred sent the card to",Kate,Amy,Fred,BAB,3,the gym,card,16693,14235
+"As Frank and Tara walked through the mall, Frank offered the ticket to","As Sam and Tara walked through the mall, Sam offered the ticket to",Tara,Frank,Sam,BAB,6,the mall,ticket,37723,5278
+"After Quinn and Isla left the gym, Isla sent the phone to","After Quinn and Henry left the gym, Henry sent the phone to",Quinn,Isla,Henry,ABB,3,the gym,phone,16109,1148
+"While Xander and Zach were at the restaurant, Zach delivered the package to","While Xander and Uma were at the restaurant, Uma delivered the package to",Xander,Zach,Uma,ABB,5,the restaurant,package,46122,18825
+"After Clara and Mia left the store, Clara sent the jacket to","After Brian and Mia left the store, Brian sent the jacket to",Mia,Clara,Brian,BAB,3,the store,jacket,32189,27443
+"As Quinn and Sam walked through the store, Quinn offered the jacket to","As Jack and Sam walked through the store, Jack offered the jacket to",Sam,Quinn,Jack,BAB,6,the store,jacket,3409,16109
+"Once Yara and Frank were at the hospital, Frank brought the letter to","Once Yara and Paul were at the hospital, Paul brought the letter to",Yara,Frank,Paul,ABB,4,the hospital,letter,575,5278
+"When Gina and Amy went to the park, Amy gave the bag to","When Gina and Grace went to the park, Grace gave the bag to",Gina,Amy,Grace,ABB,0,the park,bag,43002,14235
+"As Jack and Ella walked through the park, Jack offered the package to","As Xander and Ella walked through the park, Xander offered the package to",Ella,Jack,Xander,BAB,6,the park,package,7122,3619
+"When Rose and Frank arrived at the school, Rose passed the note to","When Zach and Frank arrived at the school, Zach passed the note to",Frank,Rose,Zach,BAB,2,the school,note,5278,8049
+"When Olivia and Yara went to the museum, Olivia gave the phone to","When Quinn and Yara went to the museum, Quinn gave the phone to",Yara,Olivia,Quinn,BAB,0,the museum,phone,575,33911
+"As Xander and Kate walked through the cafe, Kate offered the letter to","As Xander and Henry walked through the cafe, Henry offered the letter to",Xander,Kate,Henry,ABB,6,the cafe,letter,46122,16693
+"As Mia and Henry walked through the school, Henry offered the note to","As Mia and Carol walked through the school, Carol offered the note to",Mia,Henry,Carol,ABB,6,the school,note,32189,8616
+"When David and Gina visited the theater, David handed the card to","When Liam and Gina visited the theater, Liam handed the card to",Gina,David,Liam,BAB,1,the theater,card,43002,3271
+"Once Zach and Iris were at the beach, Zach brought the book to","Once Emma and Iris were at the beach, Emma brought the book to",Iris,Zach,Emma,BAB,4,the beach,book,34230,18825
+"When Harry and Carol visited the mall, Carol handed the map to","When Harry and Olivia visited the mall, Olivia handed the map to",Harry,Carol,Olivia,ABB,1,the mall,map,5850,5074
+"Once Uma and Bob were at the library, Bob brought the wallet to","Once Uma and Noah were at the library, Noah brought the wallet to",Uma,Bob,Noah,ABB,4,the library,wallet,471,5811
+"When Clara and Brian went to the park, Brian gave the trophy to","When Clara and Alice went to the park, Alice gave the trophy to",Clara,Brian,Alice,ABB,0,the park,trophy,27443,8403
+"After Bob and Wendy left the mall, Bob sent the ticket to","After Iris and Wendy left the mall, Iris sent the ticket to",Wendy,Bob,Iris,BAB,3,the mall,ticket,28314,5811
+"When Fred and Kate visited the beach, Fred handed the note to","When Frank and Kate visited the beach, Frank handed the note to",Kate,Fred,Frank,BAB,1,the beach,note,16693,8559
+"Once Olivia and Sam were at the gym, Olivia brought the package to","Once Alice and Sam were at the gym, Alice brought the package to",Sam,Olivia,Alice,BAB,4,the gym,package,3409,33911
+"When Ella and Harry arrived at the library, Harry passed the pen to","When Ella and Clara arrived at the library, Clara passed the pen to",Ella,Harry,Clara,ABB,2,the library,pen,7122,5850
+"As Clara and Noah walked through the station, Clara offered the gift to","As Sam and Noah walked through the station, Sam offered the gift to",Noah,Clara,Sam,BAB,6,the station,gift,18394,27443
+"After Zach and Xander left the store, Xander sent the pen to","After Zach and Carol left the store, Carol sent the pen to",Zach,Xander,Carol,ABB,3,the store,pen,18825,46122
+"When Bob and Rose arrived at the station, Rose passed the wallet to","When Bob and Liam arrived at the station, Liam passed the wallet to",Bob,Rose,Liam,ABB,2,the station,wallet,5811,8049
+"While Olivia and Iris were at the restaurant, Olivia delivered the wallet to","While Grace and Iris were at the restaurant, Grace delivered the wallet to",Iris,Olivia,Grace,BAB,5,the restaurant,wallet,34230,33911
+"After Emma and Liam left the theater, Liam sent the pen to","After Emma and Fred left the theater, Fred sent the pen to",Emma,Liam,Fred,ABB,3,the theater,pen,18966,31684
+"When Henry and Quinn visited the beach, Quinn handed the key to","When Henry and Clara visited the beach, Clara handed the key to",Henry,Quinn,Clara,ABB,1,the beach,key,8616,16109
+"When Tara and Paul visited the mall, Paul handed the pen to","When Tara and David visited the mall, David handed the pen to",Tara,Paul,David,ABB,1,the mall,pen,37723,3362
+"When Sam and Grace visited the gym, Sam handed the ticket to","When Emma and Grace visited the gym, Emma handed the ticket to",Grace,Sam,Emma,BAB,1,the gym,ticket,16156,3409
+"While Yara and Amy were at the station, Amy delivered the card to","While Yara and Isla were at the station, Isla delivered the card to",Yara,Amy,Isla,ABB,5,the station,card,575,14235
+"Once Sam and Uma were at the school, Sam brought the note to","Once Rose and Uma were at the school, Rose brought the note to",Uma,Sam,Rose,BAB,4,the school,note,471,3409
+"When Amy and Isla visited the store, Amy handed the jacket to","When Quinn and Isla visited the store, Quinn handed the jacket to",Isla,Amy,Quinn,BAB,1,the store,jacket,1148,14235
+"As Mia and Liam walked through the theater, Liam offered the phone to","As Mia and Jack walked through the theater, Jack offered the phone to",Mia,Liam,Jack,ABB,6,the theater,phone,32189,31684
+"When Isla and Derek went to the office, Derek gave the card to","When Isla and Amy went to the office, Amy gave the card to",Isla,Derek,Amy,ABB,0,the office,card,1148,20893
+"When Brian and Liam went to the station, Brian gave the pen to","When Zach and Liam went to the station, Zach gave the pen to",Liam,Brian,Zach,BAB,0,the station,pen,31684,8403
+"After Alice and Uma left the beach, Alice sent the gift to","After Noah and Uma left the beach, Noah sent the gift to",Uma,Alice,Noah,BAB,3,the beach,gift,471,14862
+"Once Grace and Kate were at the museum, Grace brought the wallet to","Once Noah and Kate were at the museum, Noah brought the wallet to",Kate,Grace,Noah,BAB,4,the museum,wallet,16693,16156
+"When Alice and Carol went to the market, Alice gave the bag to","When Paul and Carol went to the market, Paul gave the bag to",Carol,Alice,Paul,BAB,0,the market,bag,5074,14862
+"After Noah and Xander left the store, Xander sent the pen to","After Noah and Uma left the store, Uma sent the pen to",Noah,Xander,Uma,ABB,3,the store,pen,18394,46122
+"When Uma and Clara arrived at the store, Uma passed the wallet to","When Emma and Clara arrived at the store, Emma passed the wallet to",Clara,Uma,Emma,BAB,2,the store,wallet,27443,471
+"When Henry and Iris went to the cafe, Henry gave the wallet to","When Alice and Iris went to the cafe, Alice gave the wallet to",Iris,Henry,Alice,BAB,0,the cafe,wallet,34230,8616
+"Once Derek and Paul were at the market, Derek brought the wallet to","Once Xander and Paul were at the market, Xander brought the wallet to",Paul,Derek,Xander,BAB,4,the market,wallet,3362,20893
+"When Clara and Harry visited the office, Harry handed the gift to","When Clara and Henry visited the office, Henry handed the gift to",Clara,Harry,Henry,ABB,1,the office,gift,27443,5850
+"Once Derek and Isla were at the gym, Isla brought the phone to","Once Derek and Victor were at the gym, Victor brought the phone to",Derek,Isla,Victor,ABB,4,the gym,phone,20893,1148
+"Once Quinn and Henry were at the school, Quinn brought the bag to","Once Fred and Henry were at the school, Fred brought the bag to",Henry,Quinn,Fred,BAB,4,the school,bag,8616,16109
+"Once Rose and Victor were at the station, Victor brought the pen to","Once Rose and Tara were at the station, Tara brought the pen to",Rose,Victor,Tara,ABB,4,the station,pen,8049,12622
+"When Henry and Frank visited the park, Henry handed the wallet to","When Fred and Frank visited the park, Fred handed the wallet to",Frank,Henry,Fred,BAB,1,the park,wallet,5278,8616
+"As Alice and Yara walked through the theater, Yara offered the ticket to","As Alice and Quinn walked through the theater, Quinn offered the ticket to",Alice,Yara,Quinn,ABB,6,the theater,ticket,14862,575
+"Once Zach and Clara were at the office, Clara brought the wallet to","Once Zach and Olivia were at the office, Olivia brought the wallet to",Zach,Clara,Olivia,ABB,4,the office,wallet,18825,27443
+"When Iris and Kate went to the mall, Iris gave the pen to","When Gina and Kate went to the mall, Gina gave the pen to",Kate,Iris,Gina,BAB,0,the mall,pen,16693,34230
+"When Quinn and Sam arrived at the market, Quinn passed the book to","When Isla and Sam arrived at the market, Isla passed the book to",Sam,Quinn,Isla,BAB,2,the market,book,3409,16109
+"After Frank and Carol left the museum, Carol sent the card to","After Frank and Zach left the museum, Zach sent the card to",Frank,Carol,Zach,ABB,3,the museum,card,5278,5074
+"After Derek and Clara left the park, Derek sent the card to","After Uma and Clara left the park, Uma sent the card to",Clara,Derek,Uma,BAB,3,the park,card,27443,20893
+"When Gina and Xander arrived at the restaurant, Xander passed the letter to","When Gina and Bob arrived at the restaurant, Bob passed the letter to",Gina,Xander,Bob,ABB,2,the restaurant,letter,43002,46122
+"As Paul and Clara walked through the station, Clara offered the wallet to","As Paul and Sam walked through the station, Sam offered the wallet to",Paul,Clara,Sam,ABB,6,the station,wallet,3362,27443
+"While Zach and Uma were at the restaurant, Uma delivered the wallet to","While Zach and Bob were at the restaurant, Bob delivered the wallet to",Zach,Uma,Bob,ABB,5,the restaurant,wallet,18825,471
+"When Grace and David went to the station, Grace gave the gift to","When Bob and David went to the station, Bob gave the gift to",David,Grace,Bob,BAB,0,the station,gift,3271,16156
+"As Quinn and Ella walked through the park, Ella offered the note to","As Quinn and Henry walked through the park, Henry offered the note to",Quinn,Ella,Henry,ABB,6,the park,note,16109,7122
+"When Mia and Xander went to the school, Xander gave the trophy to","When Mia and Brian went to the school, Brian gave the trophy to",Mia,Xander,Brian,ABB,0,the school,trophy,32189,46122
+"After Isla and Fred left the cafe, Fred sent the book to","After Isla and Tara left the cafe, Tara sent the book to",Isla,Fred,Tara,ABB,3,the cafe,book,1148,8559
+"Once Tara and Fred were at the cafe, Tara brought the pen to","Once Quinn and Fred were at the cafe, Quinn brought the pen to",Fred,Tara,Quinn,BAB,4,the cafe,pen,8559,37723
+"Once Fred and Brian were at the cafe, Brian brought the gift to","Once Fred and Victor were at the cafe, Victor brought the gift to",Fred,Brian,Victor,ABB,4,the cafe,gift,8559,8403
+"Once Clara and Xander were at the library, Xander brought the card to","Once Clara and Emma were at the library, Emma brought the card to",Clara,Xander,Emma,ABB,4,the library,card,27443,46122
+"Once Mia and Jack were at the restaurant, Mia brought the letter to","Once Fred and Jack were at the restaurant, Fred brought the letter to",Jack,Mia,Fred,BAB,4,the restaurant,letter,3619,32189
+"As Xander and Fred walked through the store, Fred offered the package to","As Xander and Clara walked through the store, Clara offered the package to",Xander,Fred,Clara,ABB,6,the store,package,46122,8559
+"After Kate and Alice left the station, Alice sent the pen to","After Kate and Amy left the station, Amy sent the pen to",Kate,Alice,Amy,ABB,3,the station,pen,16693,14862
+"When Tara and Henry visited the museum, Henry handed the phone to","When Tara and David visited the museum, David handed the phone to",Tara,Henry,David,ABB,1,the museum,phone,37723,8616
+"While Ella and Mia were at the beach, Mia delivered the ticket to","While Ella and Xander were at the beach, Xander delivered the ticket to",Ella,Mia,Xander,ABB,5,the beach,ticket,7122,32189
+"While Isla and Henry were at the station, Isla delivered the pen to","While Alice and Henry were at the station, Alice delivered the pen to",Henry,Isla,Alice,BAB,5,the station,pen,8616,1148
+"When Yara and Iris visited the market, Yara handed the phone to","When Brian and Iris visited the market, Brian handed the phone to",Iris,Yara,Brian,BAB,1,the market,phone,34230,575
+"When Emma and Zach visited the gym, Emma handed the package to","When Frank and Zach visited the gym, Frank handed the package to",Zach,Emma,Frank,BAB,1,the gym,package,18825,18966
+"When Amy and Victor arrived at the cafe, Victor passed the book to","When Amy and Gina arrived at the cafe, Gina passed the book to",Amy,Victor,Gina,ABB,2,the cafe,book,14235,12622
+"When Fred and Bob arrived at the mall, Bob passed the map to","When Fred and Henry arrived at the mall, Henry passed the map to",Fred,Bob,Henry,ABB,2,the mall,map,8559,5811
+"After Olivia and Bob left the gym, Bob sent the key to","After Olivia and Mia left the gym, Mia sent the key to",Olivia,Bob,Mia,ABB,3,the gym,key,33911,5811
+"As Sam and Isla walked through the store, Sam offered the card to","As Brian and Isla walked through the store, Brian offered the card to",Isla,Sam,Brian,BAB,6,the store,card,1148,3409
+"Once Iris and Grace were at the station, Iris brought the note to","Once Henry and Grace were at the station, Henry brought the note to",Grace,Iris,Henry,BAB,4,the station,note,16156,34230
+"After Frank and Sam left the beach, Frank sent the ticket to","After Noah and Sam left the beach, Noah sent the ticket to",Sam,Frank,Noah,BAB,3,the beach,ticket,3409,5278
+"When Isla and David went to the cafe, David gave the map to","When Isla and Harry went to the cafe, Harry gave the map to",Isla,David,Harry,ABB,0,the cafe,map,1148,3271
+"Once Carol and Uma were at the museum, Uma brought the map to","Once Carol and Tara were at the museum, Tara brought the map to",Carol,Uma,Tara,ABB,4,the museum,map,5074,471
+"When Grace and Victor went to the gym, Victor gave the card to","When Grace and Iris went to the gym, Iris gave the card to",Grace,Victor,Iris,ABB,0,the gym,card,16156,12622
+"When Isla and Iris went to the store, Iris gave the card to","When Isla and Rose went to the store, Rose gave the card to",Isla,Iris,Rose,ABB,0,the store,card,1148,34230
+"Once David and Noah were at the restaurant, David brought the pen to","Once Wendy and Noah were at the restaurant, Wendy brought the pen to",Noah,David,Wendy,BAB,4,the restaurant,pen,18394,3271
+"Once Isla and Sam were at the cafe, Sam brought the jacket to","Once Isla and Bob were at the cafe, Bob brought the jacket to",Isla,Sam,Bob,ABB,4,the cafe,jacket,1148,3409
+"After Bob and Mia left the office, Mia sent the ticket to","After Bob and Isla left the office, Isla sent the ticket to",Bob,Mia,Isla,ABB,3,the office,ticket,5811,32189
+"When Noah and Rose visited the library, Noah handed the bag to","When Jack and Rose visited the library, Jack handed the bag to",Rose,Noah,Jack,BAB,1,the library,bag,8049,18394
+"When Xander and Ella went to the park, Xander gave the wallet to","When Clara and Ella went to the park, Clara gave the wallet to",Ella,Xander,Clara,BAB,0,the park,wallet,7122,46122
+"While David and Fred were at the restaurant, David delivered the gift to","While Jack and Fred were at the restaurant, Jack delivered the gift to",Fred,David,Jack,BAB,5,the restaurant,gift,8559,3271
+"Once Fred and Grace were at the office, Fred brought the wallet to","Once Mia and Grace were at the office, Mia brought the wallet to",Grace,Fred,Mia,BAB,4,the office,wallet,16156,8559
+"When Uma and Iris visited the restaurant, Uma handed the gift to","When Henry and Iris visited the restaurant, Henry handed the gift to",Iris,Uma,Henry,BAB,1,the restaurant,gift,34230,471
+"While Gina and Tara were at the mall, Tara delivered the key to","While Gina and Henry were at the mall, Henry delivered the key to",Gina,Tara,Henry,ABB,5,the mall,key,43002,37723
+"Once Brian and David were at the restaurant, David brought the bag to","Once Brian and Sam were at the restaurant, Sam brought the bag to",Brian,David,Sam,ABB,4,the restaurant,bag,8403,3271
+"When Yara and Jack went to the beach, Jack gave the jacket to","When Yara and Paul went to the beach, Paul gave the jacket to",Yara,Jack,Paul,ABB,0,the beach,jacket,575,3619
+"When Olivia and Clara went to the museum, Clara gave the book to","When Olivia and Wendy went to the museum, Wendy gave the book to",Olivia,Clara,Wendy,ABB,0,the museum,book,33911,27443
+"When Bob and Frank visited the cafe, Frank handed the ticket to","When Bob and Brian visited the cafe, Brian handed the ticket to",Bob,Frank,Brian,ABB,1,the cafe,ticket,5811,5278
+"When Uma and Xander visited the store, Uma handed the bag to","When Brian and Xander visited the store, Brian handed the bag to",Xander,Uma,Brian,BAB,1,the store,bag,46122,471
+"When Alice and Bob visited the school, Alice handed the letter to","When Ella and Bob visited the school, Ella handed the letter to",Bob,Alice,Ella,BAB,1,the school,letter,5811,14862
+"When Brian and Amy visited the library, Brian handed the jacket to","When Zach and Amy visited the library, Zach handed the jacket to",Amy,Brian,Zach,BAB,1,the library,jacket,14235,8403
+"When Bob and Frank visited the hospital, Frank handed the pen to","When Bob and Noah visited the hospital, Noah handed the pen to",Bob,Frank,Noah,ABB,1,the hospital,pen,5811,5278
+"While Victor and Frank were at the library, Frank delivered the book to","While Victor and Gina were at the library, Gina delivered the book to",Victor,Frank,Gina,ABB,5,the library,book,12622,5278
+"When Noah and Sam went to the gym, Noah gave the map to","When Isla and Sam went to the gym, Isla gave the map to",Sam,Noah,Isla,BAB,0,the gym,map,3409,18394
+"After Henry and Iris left the theater, Henry sent the jacket to","After Olivia and Iris left the theater, Olivia sent the jacket to",Iris,Henry,Olivia,BAB,3,the theater,jacket,34230,8616
+"After Paul and Fred left the restaurant, Paul sent the map to","After Uma and Fred left the restaurant, Uma sent the map to",Fred,Paul,Uma,BAB,3,the restaurant,map,8559,3362
+"When Emma and Brian went to the market, Emma gave the jacket to","When Jack and Brian went to the market, Jack gave the jacket to",Brian,Emma,Jack,BAB,0,the market,jacket,8403,18966
+"As Rose and Clara walked through the market, Clara offered the pen to","As Rose and Paul walked through the market, Paul offered the pen to",Rose,Clara,Paul,ABB,6,the market,pen,8049,27443
+"While Victor and Liam were at the market, Liam delivered the phone to","While Victor and Derek were at the market, Derek delivered the phone to",Victor,Liam,Derek,ABB,5,the market,phone,12622,31684
+"Once Grace and Isla were at the museum, Isla brought the book to","Once Grace and Frank were at the museum, Frank brought the book to",Grace,Isla,Frank,ABB,4,the museum,book,16156,1148
+"After Xander and Olivia left the library, Olivia sent the ticket to","After Xander and Iris left the library, Iris sent the ticket to",Xander,Olivia,Iris,ABB,3,the library,ticket,46122,33911
+"While Henry and Grace were at the hospital, Henry delivered the book to","While Olivia and Grace were at the hospital, Olivia delivered the book to",Grace,Henry,Olivia,BAB,5,the hospital,book,16156,8616
+"When Isla and Tara went to the school, Tara gave the map to","When Isla and Harry went to the school, Harry gave the map to",Isla,Tara,Harry,ABB,0,the school,map,1148,37723
+"As Iris and Olivia walked through the store, Olivia offered the key to","As Iris and Alice walked through the store, Alice offered the key to",Iris,Olivia,Alice,ABB,6,the store,key,34230,33911
+"When Carol and Sam went to the theater, Sam gave the package to","When Carol and Mia went to the theater, Mia gave the package to",Carol,Sam,Mia,ABB,0,the theater,package,5074,3409
+"When Tara and Frank went to the hospital, Frank gave the wallet to","When Tara and Paul went to the hospital, Paul gave the wallet to",Tara,Frank,Paul,ABB,0,the hospital,wallet,37723,5278
+"When Iris and Amy went to the station, Amy gave the gift to","When Iris and Harry went to the station, Harry gave the gift to",Iris,Amy,Harry,ABB,0,the station,gift,34230,14235
+"When Clara and Rose visited the park, Rose handed the note to","When Clara and Henry visited the park, Henry handed the note to",Clara,Rose,Henry,ABB,1,the park,note,27443,8049
+"Once Carol and Jack were at the store, Carol brought the wallet to","Once Uma and Jack were at the store, Uma brought the wallet to",Jack,Carol,Uma,BAB,4,the store,wallet,3619,5074
+"When Yara and Paul visited the station, Yara handed the book to","When Clara and Paul visited the station, Clara handed the book to",Paul,Yara,Clara,BAB,1,the station,book,3362,575
+"When Emma and Paul arrived at the theater, Emma passed the gift to","When Wendy and Paul arrived at the theater, Wendy passed the gift to",Paul,Emma,Wendy,BAB,2,the theater,gift,3362,18966
+"When Alice and Wendy visited the office, Alice handed the map to","When Fred and Wendy visited the office, Fred handed the map to",Wendy,Alice,Fred,BAB,1,the office,map,28314,14862
+"When Zach and Brian arrived at the park, Brian passed the note to","When Zach and Gina arrived at the park, Gina passed the note to",Zach,Brian,Gina,ABB,2,the park,note,18825,8403
+"While Wendy and David were at the hospital, Wendy delivered the wallet to","While Jack and David were at the hospital, Jack delivered the wallet to",David,Wendy,Jack,BAB,5,the hospital,wallet,3271,28314
+"When Mia and Derek arrived at the cafe, Derek passed the wallet to","When Mia and Wendy arrived at the cafe, Wendy passed the wallet to",Mia,Derek,Wendy,ABB,2,the cafe,wallet,32189,20893
+"As Ella and Henry walked through the school, Ella offered the pen to","As David and Henry walked through the school, David offered the pen to",Henry,Ella,David,BAB,6,the school,pen,8616,7122
+"While Emma and Rose were at the hospital, Rose delivered the note to","While Emma and Wendy were at the hospital, Wendy delivered the note to",Emma,Rose,Wendy,ABB,5,the hospital,note,18966,8049
+"When Olivia and Paul arrived at the cafe, Olivia passed the bag to","When Brian and Paul arrived at the cafe, Brian passed the bag to",Paul,Olivia,Brian,BAB,2,the cafe,bag,3362,33911
+"After Emma and Zach left the library, Emma sent the package to","After Isla and Zach left the library, Isla sent the package to",Zach,Emma,Isla,BAB,3,the library,package,18825,18966
+"While Fred and Henry were at the beach, Henry delivered the wallet to","While Fred and Bob were at the beach, Bob delivered the wallet to",Fred,Henry,Bob,ABB,5,the beach,wallet,8559,8616
+"After Tara and Henry left the market, Tara sent the trophy to","After Zach and Henry left the market, Zach sent the trophy to",Henry,Tara,Zach,BAB,3,the market,trophy,8616,37723
+"After Olivia and Carol left the station, Olivia sent the trophy to","After Harry and Carol left the station, Harry sent the trophy to",Carol,Olivia,Harry,BAB,3,the station,trophy,5074,33911
+"After Brian and Alice left the gym, Brian sent the map to","After Harry and Alice left the gym, Harry sent the map to",Alice,Brian,Harry,BAB,3,the gym,map,14862,8403
+"When David and Victor arrived at the park, Victor passed the card to","When David and Emma arrived at the park, Emma passed the card to",David,Victor,Emma,ABB,2,the park,card,3271,12622
+"As Bob and Carol walked through the store, Carol offered the key to","As Bob and Uma walked through the store, Uma offered the key to",Bob,Carol,Uma,ABB,6,the store,key,5811,5074
+"When Victor and Noah arrived at the theater, Victor passed the wallet to","When Amy and Noah arrived at the theater, Amy passed the wallet to",Noah,Victor,Amy,BAB,2,the theater,wallet,18394,12622
+"When Ella and Paul arrived at the cafe, Paul passed the jacket to","When Ella and Olivia arrived at the cafe, Olivia passed the jacket to",Ella,Paul,Olivia,ABB,2,the cafe,jacket,7122,3362
+"While Wendy and Uma were at the station, Wendy delivered the bag to","While Bob and Uma were at the station, Bob delivered the bag to",Uma,Wendy,Bob,BAB,5,the station,bag,471,28314
+"When Yara and Gina went to the beach, Yara gave the map to","When Liam and Gina went to the beach, Liam gave the map to",Gina,Yara,Liam,BAB,0,the beach,map,43002,575
+"While Clara and Rose were at the hospital, Clara delivered the letter to","While Iris and Rose were at the hospital, Iris delivered the letter to",Rose,Clara,Iris,BAB,5,the hospital,letter,8049,27443
+"When Gina and Grace visited the market, Grace handed the gift to","When Gina and Uma visited the market, Uma handed the gift to",Gina,Grace,Uma,ABB,1,the market,gift,43002,16156
+"While Iris and Frank were at the gym, Frank delivered the book to","While Iris and Gina were at the gym, Gina delivered the book to",Iris,Frank,Gina,ABB,5,the gym,book,34230,5278
+"When Iris and Brian arrived at the market, Brian passed the package to","When Iris and Liam arrived at the market, Liam passed the package to",Iris,Brian,Liam,ABB,2,the market,package,34230,8403
+"When Victor and Grace went to the hospital, Grace gave the trophy to","When Victor and Clara went to the hospital, Clara gave the trophy to",Victor,Grace,Clara,ABB,0,the hospital,trophy,12622,16156
+"As Victor and Rose walked through the gym, Rose offered the note to","As Victor and Henry walked through the gym, Henry offered the note to",Victor,Rose,Henry,ABB,6,the gym,note,12622,8049
+"Once Harry and Yara were at the school, Harry brought the map to","Once Amy and Yara were at the school, Amy brought the map to",Yara,Harry,Amy,BAB,4,the school,map,575,5850
+"When Uma and Wendy visited the theater, Wendy handed the bag to","When Uma and Zach visited the theater, Zach handed the bag to",Uma,Wendy,Zach,ABB,1,the theater,bag,471,28314
+"When Gina and Quinn arrived at the mall, Quinn passed the gift to","When Gina and Iris arrived at the mall, Iris passed the gift to",Gina,Quinn,Iris,ABB,2,the mall,gift,43002,16109
+"When Henry and Derek visited the museum, Derek handed the phone to","When Henry and Tara visited the museum, Tara handed the phone to",Henry,Derek,Tara,ABB,1,the museum,phone,8616,20893
+"Once Iris and Sam were at the hospital, Iris brought the gift to","Once Derek and Sam were at the hospital, Derek brought the gift to",Sam,Iris,Derek,BAB,4,the hospital,gift,3409,34230
+"As Paul and Yara walked through the theater, Paul offered the wallet to","As Gina and Yara walked through the theater, Gina offered the wallet to",Yara,Paul,Gina,BAB,6,the theater,wallet,575,3362
+"Once Rose and Paul were at the gym, Rose brought the bag to","Once Ella and Paul were at the gym, Ella brought the bag to",Paul,Rose,Ella,BAB,4,the gym,bag,3362,8049
+"While Victor and Uma were at the mall, Uma delivered the key to","While Victor and Henry were at the mall, Henry delivered the key to",Victor,Uma,Henry,ABB,5,the mall,key,12622,471
+"When Rose and Mia arrived at the library, Mia passed the jacket to","When Rose and Henry arrived at the library, Henry passed the jacket to",Rose,Mia,Henry,ABB,2,the library,jacket,8049,32189
+"After Paul and Clara left the park, Paul sent the wallet to","After Grace and Clara left the park, Grace sent the wallet to",Clara,Paul,Grace,BAB,3,the park,wallet,27443,3362
+"After Iris and Liam left the school, Iris sent the pen to","After Grace and Liam left the school, Grace sent the pen to",Liam,Iris,Grace,BAB,3,the school,pen,31684,34230
+"When Gina and Kate visited the school, Kate handed the pen to","When Gina and Jack visited the school, Jack handed the pen to",Gina,Kate,Jack,ABB,1,the school,pen,43002,16693
+"When David and Iris arrived at the office, Iris passed the map to","When David and Gina arrived at the office, Gina passed the map to",David,Iris,Gina,ABB,2,the office,map,3271,34230
+"As Rose and Uma walked through the mall, Uma offered the gift to","As Rose and Paul walked through the mall, Paul offered the gift to",Rose,Uma,Paul,ABB,6,the mall,gift,8049,471
+"When Emma and Gina arrived at the school, Emma passed the package to","When Grace and Gina arrived at the school, Grace passed the package to",Gina,Emma,Grace,BAB,2,the school,package,43002,18966
+"When Xander and Emma went to the cafe, Emma gave the card to","When Xander and Henry went to the cafe, Henry gave the card to",Xander,Emma,Henry,ABB,0,the cafe,card,46122,18966
+"While Xander and Carol were at the store, Xander delivered the letter to","While Paul and Carol were at the store, Paul delivered the letter to",Carol,Xander,Paul,BAB,5,the store,letter,5074,46122
+"When David and Jack arrived at the mall, David passed the letter to","When Kate and Jack arrived at the mall, Kate passed the letter to",Jack,David,Kate,BAB,2,the mall,letter,3619,3271
+"When Zach and Gina visited the museum, Gina handed the gift to","When Zach and Xander visited the museum, Xander handed the gift to",Zach,Gina,Xander,ABB,1,the museum,gift,18825,43002
+"While Wendy and Sam were at the school, Wendy delivered the letter to","While Iris and Sam were at the school, Iris delivered the letter to",Sam,Wendy,Iris,BAB,5,the school,letter,3409,28314
+"When Harry and Iris visited the office, Harry handed the trophy to","When Bob and Iris visited the office, Bob handed the trophy to",Iris,Harry,Bob,BAB,1,the office,trophy,34230,5850
+"Once Noah and Rose were at the school, Rose brought the letter to","Once Noah and Emma were at the school, Emma brought the letter to",Noah,Rose,Emma,ABB,4,the school,letter,18394,8049
+"Once Frank and Alice were at the hospital, Frank brought the package to","Once Tara and Alice were at the hospital, Tara brought the package to",Alice,Frank,Tara,BAB,4,the hospital,package,14862,5278
+"While Amy and Fred were at the museum, Fred delivered the map to","While Amy and Sam were at the museum, Sam delivered the map to",Amy,Fred,Sam,ABB,5,the museum,map,14235,8559
+"While Zach and Amy were at the store, Zach delivered the pen to","While Yara and Amy were at the store, Yara delivered the pen to",Amy,Zach,Yara,BAB,5,the store,pen,14235,18825
+"When Alice and Tara arrived at the theater, Tara passed the key to","When Alice and Clara arrived at the theater, Clara passed the key to",Alice,Tara,Clara,ABB,2,the theater,key,14862,37723
+"While Fred and Iris were at the theater, Fred delivered the book to","While Victor and Iris were at the theater, Victor delivered the book to",Iris,Fred,Victor,BAB,5,the theater,book,34230,8559
+"Once Paul and Clara were at the beach, Clara brought the letter to","Once Paul and Harry were at the beach, Harry brought the letter to",Paul,Clara,Harry,ABB,4,the beach,letter,3362,27443
+"As Rose and Tara walked through the station, Rose offered the phone to","As Fred and Tara walked through the station, Fred offered the phone to",Tara,Rose,Fred,BAB,6,the station,phone,37723,8049
+"As Iris and Clara walked through the cafe, Iris offered the wallet to","As Frank and Clara walked through the cafe, Frank offered the wallet to",Clara,Iris,Frank,BAB,6,the cafe,wallet,27443,34230
+"When David and Grace arrived at the station, Grace passed the ticket to","When David and Amy arrived at the station, Amy passed the ticket to",David,Grace,Amy,ABB,2,the station,ticket,3271,16156
+"As Iris and Olivia walked through the theater, Iris offered the map to","As Zach and Olivia walked through the theater, Zach offered the map to",Olivia,Iris,Zach,BAB,6,the theater,map,33911,34230
+"When Zach and Yara went to the market, Zach gave the ticket to","When Paul and Yara went to the market, Paul gave the ticket to",Yara,Zach,Paul,BAB,0,the market,ticket,575,18825
+"When Fred and Harry went to the office, Harry gave the note to","When Fred and Tara went to the office, Tara gave the note to",Fred,Harry,Tara,ABB,0,the office,note,8559,5850
+"While Derek and Liam were at the hospital, Derek delivered the ticket to","While Henry and Liam were at the hospital, Henry delivered the ticket to",Liam,Derek,Henry,BAB,5,the hospital,ticket,31684,20893
+"When Ella and Noah went to the library, Noah gave the note to","When Ella and Zach went to the library, Zach gave the note to",Ella,Noah,Zach,ABB,0,the library,note,7122,18394
+"When Zach and Xander arrived at the restaurant, Zach passed the bag to","When Grace and Xander arrived at the restaurant, Grace passed the bag to",Xander,Zach,Grace,BAB,2,the restaurant,bag,46122,18825
+"When Frank and Victor went to the restaurant, Frank gave the wallet to","When Jack and Victor went to the restaurant, Jack gave the wallet to",Victor,Frank,Jack,BAB,0,the restaurant,wallet,12622,5278
+"After Derek and Iris left the market, Iris sent the pen to","After Derek and Gina left the market, Gina sent the pen to",Derek,Iris,Gina,ABB,3,the market,pen,20893,34230
+"As Alice and Uma walked through the station, Alice offered the pen to","As Harry and Uma walked through the station, Harry offered the pen to",Uma,Alice,Harry,BAB,6,the station,pen,471,14862
+"As Quinn and Gina walked through the theater, Quinn offered the pen to","As Isla and Gina walked through the theater, Isla offered the pen to",Gina,Quinn,Isla,BAB,6,the theater,pen,43002,16109
+"While Fred and Derek were at the theater, Derek delivered the bag to","While Fred and Kate were at the theater, Kate delivered the bag to",Fred,Derek,Kate,ABB,5,the theater,bag,8559,20893
+"Once Rose and Iris were at the hospital, Iris brought the gift to","Once Rose and Tara were at the hospital, Tara brought the gift to",Rose,Iris,Tara,ABB,4,the hospital,gift,8049,34230
+"When Kate and Isla went to the beach, Isla gave the bag to","When Kate and Harry went to the beach, Harry gave the bag to",Kate,Isla,Harry,ABB,0,the beach,bag,16693,1148
+"When Yara and Jack arrived at the park, Jack passed the gift to","When Yara and Uma arrived at the park, Uma passed the gift to",Yara,Jack,Uma,ABB,2,the park,gift,575,3619
+"While David and Grace were at the office, Grace delivered the key to","While David and Noah were at the office, Noah delivered the key to",David,Grace,Noah,ABB,5,the office,key,3271,16156
+"When Wendy and Paul visited the school, Wendy handed the trophy to","When Uma and Paul visited the school, Uma handed the trophy to",Paul,Wendy,Uma,BAB,1,the school,trophy,3362,28314
+"After Sam and Iris left the school, Iris sent the note to","After Sam and Mia left the school, Mia sent the note to",Sam,Iris,Mia,ABB,3,the school,note,3409,34230
+"After David and Victor left the school, David sent the book to","After Kate and Victor left the school, Kate sent the book to",Victor,David,Kate,BAB,3,the school,book,12622,3271
+"When Fred and Emma visited the library, Emma handed the wallet to","When Fred and David visited the library, David handed the wallet to",Fred,Emma,David,ABB,1,the library,wallet,8559,18966
+"While Paul and Olivia were at the cafe, Olivia delivered the map to","While Paul and Tara were at the cafe, Tara delivered the map to",Paul,Olivia,Tara,ABB,5,the cafe,map,3362,33911
+"When Liam and Isla arrived at the office, Liam passed the ticket to","When Xander and Isla arrived at the office, Xander passed the ticket to",Isla,Liam,Xander,BAB,2,the office,ticket,1148,31684
+"When Wendy and Noah visited the beach, Wendy handed the letter to","When Brian and Noah visited the beach, Brian handed the letter to",Noah,Wendy,Brian,BAB,1,the beach,letter,18394,28314
+"When Henry and Jack visited the library, Henry handed the package to","When Clara and Jack visited the library, Clara handed the package to",Jack,Henry,Clara,BAB,1,the library,package,3619,8616
+"When Zach and Uma arrived at the office, Zach passed the gift to","When Clara and Uma arrived at the office, Clara passed the gift to",Uma,Zach,Clara,BAB,2,the office,gift,471,18825
+"When Alice and Rose visited the hospital, Rose handed the key to","When Alice and Jack visited the hospital, Jack handed the key to",Alice,Rose,Jack,ABB,1,the hospital,key,14862,8049
+"After Harry and Emma left the mall, Harry sent the package to","After Quinn and Emma left the mall, Quinn sent the package to",Emma,Harry,Quinn,BAB,3,the mall,package,18966,5850
+"As Fred and Kate walked through the station, Fred offered the jacket to","As Iris and Kate walked through the station, Iris offered the jacket to",Kate,Fred,Iris,BAB,6,the station,jacket,16693,8559
+"Once Quinn and Gina were at the mall, Gina brought the gift to","Once Quinn and Liam were at the mall, Liam brought the gift to",Quinn,Gina,Liam,ABB,4,the mall,gift,16109,43002
+"When Fred and Clara arrived at the mall, Fred passed the phone to","When Carol and Clara arrived at the mall, Carol passed the phone to",Clara,Fred,Carol,BAB,2,the mall,phone,27443,8559
+"While Ella and Wendy were at the station, Ella delivered the trophy to","While Amy and Wendy were at the station, Amy delivered the trophy to",Wendy,Ella,Amy,BAB,5,the station,trophy,28314,7122
+"While Yara and Liam were at the station, Yara delivered the key to","While Tara and Liam were at the station, Tara delivered the key to",Liam,Yara,Tara,BAB,5,the station,key,31684,575
+"When Sam and Isla went to the market, Isla gave the bag to","When Sam and Kate went to the market, Kate gave the bag to",Sam,Isla,Kate,ABB,0,the market,bag,3409,1148
+"While Frank and Tara were at the theater, Tara delivered the bag to","While Frank and Yara were at the theater, Yara delivered the bag to",Frank,Tara,Yara,ABB,5,the theater,bag,5278,37723
+"While David and Henry were at the library, Henry delivered the wallet to","While David and Jack were at the library, Jack delivered the wallet to",David,Henry,Jack,ABB,5,the library,wallet,3271,8616
+"When Noah and Carol visited the park, Noah handed the jacket to","When Uma and Carol visited the park, Uma handed the jacket to",Carol,Noah,Uma,BAB,1,the park,jacket,5074,18394
+"After Zach and Henry left the cafe, Zach sent the wallet to","After Noah and Henry left the cafe, Noah sent the wallet to",Henry,Zach,Noah,BAB,3,the cafe,wallet,8616,18825
+"After Frank and Gina left the beach, Gina sent the card to","After Frank and Yara left the beach, Yara sent the card to",Frank,Gina,Yara,ABB,3,the beach,card,5278,43002
+"Once Paul and Brian were at the park, Brian brought the note to","Once Paul and Zach were at the park, Zach brought the note to",Paul,Brian,Zach,ABB,4,the park,note,3362,8403
+"After Amy and Fred left the gym, Fred sent the phone to","After Amy and Grace left the gym, Grace sent the phone to",Amy,Fred,Grace,ABB,3,the gym,phone,14235,8559
+"When Rose and Zach arrived at the museum, Zach passed the ticket to","When Rose and Frank arrived at the museum, Frank passed the ticket to",Rose,Zach,Frank,ABB,2,the museum,ticket,8049,18825
+"As Amy and Tara walked through the park, Tara offered the bag to","As Amy and Ella walked through the park, Ella offered the bag to",Amy,Tara,Ella,ABB,6,the park,bag,14235,37723
+"As Isla and Amy walked through the gym, Isla offered the jacket to","As Carol and Amy walked through the gym, Carol offered the jacket to",Amy,Isla,Carol,BAB,6,the gym,jacket,14235,1148
+"After Sam and Derek left the store, Sam sent the gift to","After Quinn and Derek left the store, Quinn sent the gift to",Derek,Sam,Quinn,BAB,3,the store,gift,20893,3409
+"When Clara and Emma arrived at the beach, Emma passed the letter to","When Clara and Frank arrived at the beach, Frank passed the letter to",Clara,Emma,Frank,ABB,2,the beach,letter,27443,18966
+"While Bob and Henry were at the park, Bob delivered the phone to","While Victor and Henry were at the park, Victor delivered the phone to",Henry,Bob,Victor,BAB,5,the park,phone,8616,5811
+"When Iris and Liam went to the school, Iris gave the ticket to","When Sam and Liam went to the school, Sam gave the ticket to",Liam,Iris,Sam,BAB,0,the school,ticket,31684,34230
+"When Tara and Victor arrived at the theater, Victor passed the letter to","When Tara and Olivia arrived at the theater, Olivia passed the letter to",Tara,Victor,Olivia,ABB,2,the theater,letter,37723,12622
+"As Brian and Rose walked through the gym, Brian offered the ticket to","As Yara and Rose walked through the gym, Yara offered the ticket to",Rose,Brian,Yara,BAB,6,the gym,ticket,8049,8403
+"When Jack and Isla went to the restaurant, Jack gave the gift to","When Rose and Isla went to the restaurant, Rose gave the gift to",Isla,Jack,Rose,BAB,0,the restaurant,gift,1148,3619
+"Once Rose and Uma were at the gym, Rose brought the gift to","Once Emma and Uma were at the gym, Emma brought the gift to",Uma,Rose,Emma,BAB,4,the gym,gift,471,8049
+"As Victor and Frank walked through the gym, Frank offered the gift to","As Victor and Clara walked through the gym, Clara offered the gift to",Victor,Frank,Clara,ABB,6,the gym,gift,12622,5278
+"While Carol and Zach were at the office, Carol delivered the book to","While Victor and Zach were at the office, Victor delivered the book to",Zach,Carol,Victor,BAB,5,the office,book,18825,5074
+"After Harry and Yara left the store, Harry sent the map to","After Tara and Yara left the store, Tara sent the map to",Yara,Harry,Tara,BAB,3,the store,map,575,5850
+"When David and Xander went to the school, Xander gave the map to","When David and Sam went to the school, Sam gave the map to",David,Xander,Sam,ABB,0,the school,map,3271,46122
+"When Victor and Jack went to the restaurant, Jack gave the trophy to","When Victor and Iris went to the restaurant, Iris gave the trophy to",Victor,Jack,Iris,ABB,0,the restaurant,trophy,12622,3619
+"After Kate and Clara left the gym, Clara sent the phone to","After Kate and Carol left the gym, Carol sent the phone to",Kate,Clara,Carol,ABB,3,the gym,phone,16693,27443
+"When Ella and Jack went to the office, Ella gave the wallet to","When Wendy and Jack went to the office, Wendy gave the wallet to",Jack,Ella,Wendy,BAB,0,the office,wallet,3619,7122
+"When Mia and Zach went to the station, Mia gave the jacket to","When Harry and Zach went to the station, Harry gave the jacket to",Zach,Mia,Harry,BAB,0,the station,jacket,18825,32189
+"Once Harry and Xander were at the hospital, Xander brought the card to","Once Harry and Emma were at the hospital, Emma brought the card to",Harry,Xander,Emma,ABB,4,the hospital,card,5850,46122
+"As Wendy and Sam walked through the school, Sam offered the note to","As Wendy and Bob walked through the school, Bob offered the note to",Wendy,Sam,Bob,ABB,6,the school,note,28314,3409
+"Once Uma and Tara were at the market, Uma brought the book to","Once Frank and Tara were at the market, Frank brought the book to",Tara,Uma,Frank,BAB,4,the market,book,37723,471
+"After Wendy and Iris left the hospital, Wendy sent the book to","After Sam and Iris left the hospital, Sam sent the book to",Iris,Wendy,Sam,BAB,3,the hospital,book,34230,28314
+"When Quinn and Emma arrived at the park, Quinn passed the pen to","When Olivia and Emma arrived at the park, Olivia passed the pen to",Emma,Quinn,Olivia,BAB,2,the park,pen,18966,16109
+"When Jack and Gina went to the market, Jack gave the gift to","When Wendy and Gina went to the market, Wendy gave the gift to",Gina,Jack,Wendy,BAB,0,the market,gift,43002,3619
+"After Victor and Ella left the library, Ella sent the pen to","After Victor and Harry left the library, Harry sent the pen to",Victor,Ella,Harry,ABB,3,the library,pen,12622,7122
+"When Alice and Zach visited the museum, Alice handed the card to","When Quinn and Zach visited the museum, Quinn handed the card to",Zach,Alice,Quinn,BAB,1,the museum,card,18825,14862
+"After Brian and Emma left the beach, Emma sent the ticket to","After Brian and Yara left the beach, Yara sent the ticket to",Brian,Emma,Yara,ABB,3,the beach,ticket,8403,18966
+"After Sam and Paul left the mall, Sam sent the card to","After Fred and Paul left the mall, Fred sent the card to",Paul,Sam,Fred,BAB,3,the mall,card,3362,3409
+"While Olivia and Quinn were at the hospital, Olivia delivered the card to","While Gina and Quinn were at the hospital, Gina delivered the card to",Quinn,Olivia,Gina,BAB,5,the hospital,card,16109,33911
+"After Isla and Amy left the school, Amy sent the gift to","After Isla and Jack left the school, Jack sent the gift to",Isla,Amy,Jack,ABB,3,the school,gift,1148,14235
+"When Derek and Jack visited the station, Jack handed the card to","When Derek and Brian visited the station, Brian handed the card to",Derek,Jack,Brian,ABB,1,the station,card,20893,3619
+"Once Sam and Yara were at the school, Yara brought the bag to","Once Sam and Derek were at the school, Derek brought the bag to",Sam,Yara,Derek,ABB,4,the school,bag,3409,575
+"Once Emma and Iris were at the school, Iris brought the pen to","Once Emma and Rose were at the school, Rose brought the pen to",Emma,Iris,Rose,ABB,4,the school,pen,18966,34230
+"Once Ella and Clara were at the hospital, Ella brought the trophy to","Once Zach and Clara were at the hospital, Zach brought the trophy to",Clara,Ella,Zach,BAB,4,the hospital,trophy,27443,7122
+"When Carol and Derek arrived at the restaurant, Derek passed the bag to","When Carol and Frank arrived at the restaurant, Frank passed the bag to",Carol,Derek,Frank,ABB,2,the restaurant,bag,5074,20893
+"When Carol and Ella arrived at the museum, Carol passed the letter to","When Liam and Ella arrived at the museum, Liam passed the letter to",Ella,Carol,Liam,BAB,2,the museum,letter,7122,5074
+"When Bob and Frank visited the museum, Frank handed the note to","When Bob and Harry visited the museum, Harry handed the note to",Bob,Frank,Harry,ABB,1,the museum,note,5811,5278
+"While Yara and Xander were at the store, Xander delivered the bag to","While Yara and Quinn were at the store, Quinn delivered the bag to",Yara,Xander,Quinn,ABB,5,the store,bag,575,46122
+"While Yara and Harry were at the museum, Harry delivered the note to","While Yara and Uma were at the museum, Uma delivered the note to",Yara,Harry,Uma,ABB,5,the museum,note,575,5850
+"When Isla and Mia arrived at the museum, Mia passed the phone to","When Isla and David arrived at the museum, David passed the phone to",Isla,Mia,David,ABB,2,the museum,phone,1148,32189
+"When Isla and Yara arrived at the cafe, Yara passed the package to","When Isla and Derek arrived at the cafe, Derek passed the package to",Isla,Yara,Derek,ABB,2,the cafe,package,1148,575
+"As Jack and Isla walked through the gym, Isla offered the pen to","As Jack and Carol walked through the gym, Carol offered the pen to",Jack,Isla,Carol,ABB,6,the gym,pen,3619,1148
+"While Quinn and Ella were at the cafe, Ella delivered the bag to","While Quinn and Sam were at the cafe, Sam delivered the bag to",Quinn,Ella,Sam,ABB,5,the cafe,bag,16109,7122
+"Once Kate and Gina were at the hospital, Kate brought the note to","Once Amy and Gina were at the hospital, Amy brought the note to",Gina,Kate,Amy,BAB,4,the hospital,note,43002,16693
+"Once Harry and Gina were at the library, Harry brought the phone to","Once Olivia and Gina were at the library, Olivia brought the phone to",Gina,Harry,Olivia,BAB,4,the library,phone,43002,5850
+"After Gina and Kate left the library, Gina sent the letter to","After Iris and Kate left the library, Iris sent the letter to",Kate,Gina,Iris,BAB,3,the library,letter,16693,43002
+"When Carol and Clara arrived at the beach, Clara passed the ticket to","When Carol and Mia arrived at the beach, Mia passed the ticket to",Carol,Clara,Mia,ABB,2,the beach,ticket,5074,27443
+"When Uma and Zach went to the office, Zach gave the trophy to","When Uma and Rose went to the office, Rose gave the trophy to",Uma,Zach,Rose,ABB,0,the office,trophy,471,18825
+"As Xander and Amy walked through the hospital, Amy offered the wallet to","As Xander and Ella walked through the hospital, Ella offered the wallet to",Xander,Amy,Ella,ABB,6,the hospital,wallet,46122,14235
+"While Mia and Tara were at the school, Tara delivered the bag to","While Mia and Zach were at the school, Zach delivered the bag to",Mia,Tara,Zach,ABB,5,the school,bag,32189,37723
+"While Harry and Tara were at the store, Tara delivered the book to","While Harry and Derek were at the store, Derek delivered the book to",Harry,Tara,Derek,ABB,5,the store,book,5850,37723
+"Once Jack and Frank were at the museum, Jack brought the gift to","Once Ella and Frank were at the museum, Ella brought the gift to",Frank,Jack,Ella,BAB,4,the museum,gift,5278,3619
+"As Henry and Zach walked through the store, Zach offered the phone to","As Henry and Gina walked through the store, Gina offered the phone to",Henry,Zach,Gina,ABB,6,the store,phone,8616,18825
+"When Brian and Amy went to the school, Brian gave the card to","When Zach and Amy went to the school, Zach gave the card to",Amy,Brian,Zach,BAB,0,the school,card,14235,8403
+"As Grace and Brian walked through the park, Brian offered the bag to","As Grace and Olivia walked through the park, Olivia offered the bag to",Grace,Brian,Olivia,ABB,6,the park,bag,16156,8403
+"When Ella and Jack visited the museum, Ella handed the ticket to","When Alice and Jack visited the museum, Alice handed the ticket to",Jack,Ella,Alice,BAB,1,the museum,ticket,3619,7122
+"When Henry and Rose arrived at the theater, Henry passed the note to","When Bob and Rose arrived at the theater, Bob passed the note to",Rose,Henry,Bob,BAB,2,the theater,note,8049,8616
+"As Derek and Frank walked through the park, Derek offered the wallet to","As Wendy and Frank walked through the park, Wendy offered the wallet to",Frank,Derek,Wendy,BAB,6,the park,wallet,5278,20893
+"After Xander and Yara left the store, Xander sent the key to","After Liam and Yara left the store, Liam sent the key to",Yara,Xander,Liam,BAB,3,the store,key,575,46122
+"When Rose and Isla visited the mall, Isla handed the map to","When Rose and Carol visited the mall, Carol handed the map to",Rose,Isla,Carol,ABB,1,the mall,map,8049,1148
+"Once Kate and Sam were at the market, Kate brought the trophy to","Once Carol and Sam were at the market, Carol brought the trophy to",Sam,Kate,Carol,BAB,4,the market,trophy,3409,16693
+"When Victor and Wendy arrived at the restaurant, Wendy passed the key to","When Victor and Derek arrived at the restaurant, Derek passed the key to",Victor,Wendy,Derek,ABB,2,the restaurant,key,12622,28314
+"When Brian and Liam went to the theater, Liam gave the pen to","When Brian and Yara went to the theater, Yara gave the pen to",Brian,Liam,Yara,ABB,0,the theater,pen,8403,31684
+"After Zach and Xander left the library, Zach sent the pen to","After Rose and Xander left the library, Rose sent the pen to",Xander,Zach,Rose,BAB,3,the library,pen,46122,18825
+"After Frank and Zach left the office, Zach sent the package to","After Frank and Gina left the office, Gina sent the package to",Frank,Zach,Gina,ABB,3,the office,package,5278,18825
+"Once Carol and Emma were at the park, Carol brought the key to","Once Wendy and Emma were at the park, Wendy brought the key to",Emma,Carol,Wendy,BAB,4,the park,key,18966,5074
+"When Olivia and Bob went to the restaurant, Olivia gave the package to","When Sam and Bob went to the restaurant, Sam gave the package to",Bob,Olivia,Sam,BAB,0,the restaurant,package,5811,33911
+"When Noah and Brian visited the museum, Brian handed the bag to","When Noah and Clara visited the museum, Clara handed the bag to",Noah,Brian,Clara,ABB,1,the museum,bag,18394,8403
+"When Yara and Quinn went to the theater, Yara gave the jacket to","When Alice and Quinn went to the theater, Alice gave the jacket to",Quinn,Yara,Alice,BAB,0,the theater,jacket,16109,575
+"After Gina and Emma left the market, Emma sent the book to","After Gina and Tara left the market, Tara sent the book to",Gina,Emma,Tara,ABB,3,the market,book,43002,18966
+"When Tara and Gina visited the gym, Gina handed the wallet to","When Tara and Mia visited the gym, Mia handed the wallet to",Tara,Gina,Mia,ABB,1,the gym,wallet,37723,43002
+"While Isla and Yara were at the station, Yara delivered the trophy to","While Isla and Uma were at the station, Uma delivered the trophy to",Isla,Yara,Uma,ABB,5,the station,trophy,1148,575
+"While Clara and Kate were at the office, Clara delivered the phone to","While Wendy and Kate were at the office, Wendy delivered the phone to",Kate,Clara,Wendy,BAB,5,the office,phone,16693,27443
+"Once Wendy and Tara were at the office, Wendy brought the wallet to","Once Ella and Tara were at the office, Ella brought the wallet to",Tara,Wendy,Ella,BAB,4,the office,wallet,37723,28314
+"While Grace and Clara were at the restaurant, Clara delivered the trophy to","While Grace and Kate were at the restaurant, Kate delivered the trophy to",Grace,Clara,Kate,ABB,5,the restaurant,trophy,16156,27443
+"When David and Mia went to the market, David gave the book to","When Paul and Mia went to the market, Paul gave the book to",Mia,David,Paul,BAB,0,the market,book,32189,3271
+"After Xander and Sam left the theater, Sam sent the bag to","After Xander and Yara left the theater, Yara sent the bag to",Xander,Sam,Yara,ABB,3,the theater,bag,46122,3409
+"While Liam and Isla were at the museum, Liam delivered the bag to","While Yara and Isla were at the museum, Yara delivered the bag to",Isla,Liam,Yara,BAB,5,the museum,bag,1148,31684
+"Once Isla and Bob were at the office, Bob brought the jacket to","Once Isla and Gina were at the office, Gina brought the jacket to",Isla,Bob,Gina,ABB,4,the office,jacket,1148,5811
+"When Gina and Mia visited the library, Mia handed the bag to","When Gina and Isla visited the library, Isla handed the bag to",Gina,Mia,Isla,ABB,1,the library,bag,43002,32189
+"When Mia and Tara went to the cafe, Mia gave the phone to","When Xander and Tara went to the cafe, Xander gave the phone to",Tara,Mia,Xander,BAB,0,the cafe,phone,37723,32189
+"When Carol and Liam arrived at the theater, Carol passed the phone to","When Sam and Liam arrived at the theater, Sam passed the phone to",Liam,Carol,Sam,BAB,2,the theater,phone,31684,5074
+"When Quinn and Harry arrived at the library, Quinn passed the jacket to","When Kate and Harry arrived at the library, Kate passed the jacket to",Harry,Quinn,Kate,BAB,2,the library,jacket,5850,16109
+"When Paul and Ella went to the museum, Paul gave the trophy to","When Tara and Ella went to the museum, Tara gave the trophy to",Ella,Paul,Tara,BAB,0,the museum,trophy,7122,3362
+"When Xander and Uma visited the hospital, Xander handed the key to","When Quinn and Uma visited the hospital, Quinn handed the key to",Uma,Xander,Quinn,BAB,1,the hospital,key,471,46122
+"As Zach and Frank walked through the school, Frank offered the map to","As Zach and Victor walked through the school, Victor offered the map to",Zach,Frank,Victor,ABB,6,the school,map,18825,5278
+"When Yara and Zach went to the beach, Zach gave the jacket to","When Yara and Mia went to the beach, Mia gave the jacket to",Yara,Zach,Mia,ABB,0,the beach,jacket,575,18825
+"After Tara and Paul left the restaurant, Tara sent the bag to","After Carol and Paul left the restaurant, Carol sent the bag to",Paul,Tara,Carol,BAB,3,the restaurant,bag,3362,37723
+"While Carol and Wendy were at the office, Wendy delivered the phone to","While Carol and Noah were at the office, Noah delivered the phone to",Carol,Wendy,Noah,ABB,5,the office,phone,5074,28314
+"When Zach and Clara arrived at the library, Clara passed the ticket to","When Zach and Yara arrived at the library, Yara passed the ticket to",Zach,Clara,Yara,ABB,2,the library,ticket,18825,27443
+"Once Ella and Fred were at the mall, Ella brought the letter to","Once Alice and Fred were at the mall, Alice brought the letter to",Fred,Ella,Alice,BAB,4,the mall,letter,8559,7122
+"After Amy and Olivia left the market, Olivia sent the trophy to","After Amy and Harry left the market, Harry sent the trophy to",Amy,Olivia,Harry,ABB,3,the market,trophy,14235,33911
+"As Victor and Mia walked through the museum, Victor offered the book to","As Grace and Mia walked through the museum, Grace offered the book to",Mia,Victor,Grace,BAB,6,the museum,book,32189,12622
+"When Wendy and Ella arrived at the cafe, Wendy passed the letter to","When Gina and Ella arrived at the cafe, Gina passed the letter to",Ella,Wendy,Gina,BAB,2,the cafe,letter,7122,28314
+"Once Olivia and Alice were at the theater, Olivia brought the key to","Once Quinn and Alice were at the theater, Quinn brought the key to",Alice,Olivia,Quinn,BAB,4,the theater,key,14862,33911
+"While Emma and Wendy were at the school, Wendy delivered the phone to","While Emma and Paul were at the school, Paul delivered the phone to",Emma,Wendy,Paul,ABB,5,the school,phone,18966,28314
+"Once Harry and Alice were at the store, Harry brought the note to","Once Henry and Alice were at the store, Henry brought the note to",Alice,Harry,Henry,BAB,4,the store,note,14862,5850
+"As Liam and Mia walked through the hospital, Mia offered the trophy to","As Liam and Iris walked through the hospital, Iris offered the trophy to",Liam,Mia,Iris,ABB,6,the hospital,trophy,31684,32189
+"After Amy and Rose left the park, Amy sent the phone to","After Yara and Rose left the park, Yara sent the phone to",Rose,Amy,Yara,BAB,3,the park,phone,8049,14235
+"While David and Uma were at the restaurant, David delivered the package to","While Alice and Uma were at the restaurant, Alice delivered the package to",Uma,David,Alice,BAB,5,the restaurant,package,471,3271
+"As Zach and Xander walked through the museum, Xander offered the book to","As Zach and Frank walked through the museum, Frank offered the book to",Zach,Xander,Frank,ABB,6,the museum,book,18825,46122
+"As Ella and Fred walked through the store, Fred offered the gift to","As Ella and Clara walked through the store, Clara offered the gift to",Ella,Fred,Clara,ABB,6,the store,gift,7122,8559
+"While Zach and Frank were at the restaurant, Zach delivered the jacket to","While Gina and Frank were at the restaurant, Gina delivered the jacket to",Frank,Zach,Gina,BAB,5,the restaurant,jacket,5278,18825
+"When Amy and Sam visited the gym, Sam handed the package to","When Amy and Jack visited the gym, Jack handed the package to",Amy,Sam,Jack,ABB,1,the gym,package,14235,3409
+"After Henry and Bob left the hospital, Bob sent the note to","After Henry and Liam left the hospital, Liam sent the note to",Henry,Bob,Liam,ABB,3,the hospital,note,8616,5811
+"While Liam and Iris were at the theater, Iris delivered the ticket to","While Liam and Emma were at the theater, Emma delivered the ticket to",Liam,Iris,Emma,ABB,5,the theater,ticket,31684,34230
+"When Bob and Paul went to the park, Paul gave the pen to","When Bob and Noah went to the park, Noah gave the pen to",Bob,Paul,Noah,ABB,0,the park,pen,5811,3362
+"When Amy and Iris arrived at the cafe, Amy passed the jacket to","When Gina and Iris arrived at the cafe, Gina passed the jacket to",Iris,Amy,Gina,BAB,2,the cafe,jacket,34230,14235
+"After Victor and Iris left the market, Victor sent the bag to","After Ella and Iris left the market, Ella sent the bag to",Iris,Victor,Ella,BAB,3,the market,bag,34230,12622
+"Once Brian and Wendy were at the store, Wendy brought the trophy to","Once Brian and Emma were at the store, Emma brought the trophy to",Brian,Wendy,Emma,ABB,4,the store,trophy,8403,28314
+"Once Victor and Olivia were at the station, Victor brought the jacket to","Once Harry and Olivia were at the station, Harry brought the jacket to",Olivia,Victor,Harry,BAB,4,the station,jacket,33911,12622
+"Once Xander and Liam were at the museum, Xander brought the note to","Once Jack and Liam were at the museum, Jack brought the note to",Liam,Xander,Jack,BAB,4,the museum,note,31684,46122
+"When Olivia and Ella arrived at the beach, Olivia passed the trophy to","When Frank and Ella arrived at the beach, Frank passed the trophy to",Ella,Olivia,Frank,BAB,2,the beach,trophy,7122,33911
+"While Gina and Ella were at the park, Ella delivered the key to","While Gina and Kate were at the park, Kate delivered the key to",Gina,Ella,Kate,ABB,5,the park,key,43002,7122
+"When Rose and Harry went to the cafe, Harry gave the package to","When Rose and Sam went to the cafe, Sam gave the package to",Rose,Harry,Sam,ABB,0,the cafe,package,8049,5850
+"Once Mia and Xander were at the theater, Mia brought the key to","Once Sam and Xander were at the theater, Sam brought the key to",Xander,Mia,Sam,BAB,4,the theater,key,46122,32189
+"Once Liam and Iris were at the mall, Iris brought the map to","Once Liam and Brian were at the mall, Brian brought the map to",Liam,Iris,Brian,ABB,4,the mall,map,31684,34230
+"When Quinn and Mia went to the hospital, Mia gave the package to","When Quinn and Brian went to the hospital, Brian gave the package to",Quinn,Mia,Brian,ABB,0,the hospital,package,16109,32189
+"Once Clara and Gina were at the store, Gina brought the jacket to","Once Clara and Olivia were at the store, Olivia brought the jacket to",Clara,Gina,Olivia,ABB,4,the store,jacket,27443,43002
+"While Iris and Harry were at the school, Harry delivered the note to","While Iris and Frank were at the school, Frank delivered the note to",Iris,Harry,Frank,ABB,5,the school,note,34230,5850
+"When Clara and Harry went to the station, Clara gave the bag to","When Alice and Harry went to the station, Alice gave the bag to",Harry,Clara,Alice,BAB,0,the station,bag,5850,27443
+"As Frank and Fred walked through the hospital, Fred offered the wallet to","As Frank and Emma walked through the hospital, Emma offered the wallet to",Frank,Fred,Emma,ABB,6,the hospital,wallet,5278,8559
+"Once Alice and Paul were at the theater, Alice brought the jacket to","Once Carol and Paul were at the theater, Carol brought the jacket to",Paul,Alice,Carol,BAB,4,the theater,jacket,3362,14862
+"When Sam and Henry went to the gym, Henry gave the letter to","When Sam and Zach went to the gym, Zach gave the letter to",Sam,Henry,Zach,ABB,0,the gym,letter,3409,8616
+"Once Victor and Noah were at the market, Noah brought the key to","Once Victor and Quinn were at the market, Quinn brought the key to",Victor,Noah,Quinn,ABB,4,the market,key,12622,18394
+"When Ella and Harry went to the school, Ella gave the bag to","When Alice and Harry went to the school, Alice gave the bag to",Harry,Ella,Alice,BAB,0,the school,bag,5850,7122
+"Once Xander and Victor were at the restaurant, Xander brought the ticket to","Once Quinn and Victor were at the restaurant, Quinn brought the ticket to",Victor,Xander,Quinn,BAB,4,the restaurant,ticket,12622,46122
+"As Brian and Grace walked through the library, Grace offered the card to","As Brian and Xander walked through the library, Xander offered the card to",Brian,Grace,Xander,ABB,6,the library,card,8403,16156
+"When Carol and Victor went to the store, Carol gave the letter to","When Frank and Victor went to the store, Frank gave the letter to",Victor,Carol,Frank,BAB,0,the store,letter,12622,5074
+"When Rose and Clara visited the park, Clara handed the book to","When Rose and Paul visited the park, Paul handed the book to",Rose,Clara,Paul,ABB,1,the park,book,8049,27443
+"As Harry and Grace walked through the station, Harry offered the key to","As Rose and Grace walked through the station, Rose offered the key to",Grace,Harry,Rose,BAB,6,the station,key,16156,5850
+"When Victor and Carol went to the store, Carol gave the phone to","When Victor and Bob went to the store, Bob gave the phone to",Victor,Carol,Bob,ABB,0,the store,phone,12622,5074
+"When David and Uma visited the beach, David handed the jacket to","When Bob and Uma visited the beach, Bob handed the jacket to",Uma,David,Bob,BAB,1,the beach,jacket,471,3271
+"When Quinn and Bob visited the school, Bob handed the map to","When Quinn and Frank visited the school, Frank handed the map to",Quinn,Bob,Frank,ABB,1,the school,map,16109,5811
+"As Victor and Derek walked through the store, Victor offered the map to","As Xander and Derek walked through the store, Xander offered the map to",Derek,Victor,Xander,BAB,6,the store,map,20893,12622
+"While Paul and Iris were at the station, Paul delivered the jacket to","While Quinn and Iris were at the station, Quinn delivered the jacket to",Iris,Paul,Quinn,BAB,5,the station,jacket,34230,3362
+"Once Uma and Wendy were at the hospital, Wendy brought the key to","Once Uma and Emma were at the hospital, Emma brought the key to",Uma,Wendy,Emma,ABB,4,the hospital,key,471,28314
+"When Sam and Carol arrived at the restaurant, Sam passed the gift to","When Bob and Carol arrived at the restaurant, Bob passed the gift to",Carol,Sam,Bob,BAB,2,the restaurant,gift,5074,3409
+"Once Gina and Fred were at the park, Gina brought the key to","Once Henry and Fred were at the park, Henry brought the key to",Fred,Gina,Henry,BAB,4,the park,key,8559,43002
+"After David and Frank left the school, Frank sent the note to","After David and Rose left the school, Rose sent the note to",David,Frank,Rose,ABB,3,the school,note,3271,5278
+"After Brian and Wendy left the cafe, Wendy sent the jacket to","After Brian and Amy left the cafe, Amy sent the jacket to",Brian,Wendy,Amy,ABB,3,the cafe,jacket,8403,28314
+"Once Harry and Bob were at the theater, Harry brought the card to","Once Xander and Bob were at the theater, Xander brought the card to",Bob,Harry,Xander,BAB,4,the theater,card,5811,5850
+"When Noah and Quinn arrived at the school, Noah passed the card to","When Derek and Quinn arrived at the school, Derek passed the card to",Quinn,Noah,Derek,BAB,2,the school,card,16109,18394
+"When Ella and Fred went to the hospital, Fred gave the card to","When Ella and Bob went to the hospital, Bob gave the card to",Ella,Fred,Bob,ABB,0,the hospital,card,7122,8559
+"As Frank and Isla walked through the office, Frank offered the phone to","As Grace and Isla walked through the office, Grace offered the phone to",Isla,Frank,Grace,BAB,6,the office,phone,1148,5278
+"When Sam and Olivia visited the school, Olivia handed the package to","When Sam and Wendy visited the school, Wendy handed the package to",Sam,Olivia,Wendy,ABB,1,the school,package,3409,33911
+"Once Fred and Isla were at the park, Isla brought the package to","Once Fred and Carol were at the park, Carol brought the package to",Fred,Isla,Carol,ABB,4,the park,package,8559,1148
+"As Gina and Victor walked through the theater, Victor offered the package to","As Gina and Frank walked through the theater, Frank offered the package to",Gina,Victor,Frank,ABB,6,the theater,package,43002,12622
+"While David and Sam were at the market, David delivered the ticket to","While Liam and Sam were at the market, Liam delivered the ticket to",Sam,David,Liam,BAB,5,the market,ticket,3409,3271
+"Once Grace and Tara were at the office, Grace brought the note to","Once Noah and Tara were at the office, Noah brought the note to",Tara,Grace,Noah,BAB,4,the office,note,37723,16156
+"When Yara and Kate arrived at the restaurant, Kate passed the key to","When Yara and Iris arrived at the restaurant, Iris passed the key to",Yara,Kate,Iris,ABB,2,the restaurant,key,575,16693
+"As Mia and Sam walked through the theater, Sam offered the book to","As Mia and Wendy walked through the theater, Wendy offered the book to",Mia,Sam,Wendy,ABB,6,the theater,book,32189,3409
+"As Ella and Uma walked through the hospital, Ella offered the trophy to","As Derek and Uma walked through the hospital, Derek offered the trophy to",Uma,Ella,Derek,BAB,6,the hospital,trophy,471,7122
+"When Harry and Noah arrived at the market, Harry passed the gift to","When Ella and Noah arrived at the market, Ella passed the gift to",Noah,Harry,Ella,BAB,2,the market,gift,18394,5850
+"When Quinn and Ella visited the restaurant, Ella handed the card to","When Quinn and Mia visited the restaurant, Mia handed the card to",Quinn,Ella,Mia,ABB,1,the restaurant,card,16109,7122
+"When Mia and Alice arrived at the office, Mia passed the book to","When Harry and Alice arrived at the office, Harry passed the book to",Alice,Mia,Harry,BAB,2,the office,book,14862,32189
+"When Quinn and Ella visited the cafe, Ella handed the card to","When Quinn and Noah visited the cafe, Noah handed the card to",Quinn,Ella,Noah,ABB,1,the cafe,card,16109,7122
+"As Henry and Sam walked through the library, Sam offered the key to","As Henry and Frank walked through the library, Frank offered the key to",Henry,Sam,Frank,ABB,6,the library,key,8616,3409
+"After Olivia and Iris left the park, Iris sent the wallet to","After Olivia and Gina left the park, Gina sent the wallet to",Olivia,Iris,Gina,ABB,3,the park,wallet,33911,34230
+"When Derek and Iris went to the mall, Iris gave the note to","When Derek and Isla went to the mall, Isla gave the note to",Derek,Iris,Isla,ABB,0,the mall,note,20893,34230
+"When Kate and Jack visited the beach, Kate handed the map to","When Liam and Jack visited the beach, Liam handed the map to",Jack,Kate,Liam,BAB,1,the beach,map,3619,16693
+"When Uma and Gina arrived at the library, Uma passed the book to","When Yara and Gina arrived at the library, Yara passed the book to",Gina,Uma,Yara,BAB,2,the library,book,43002,471
+"When Ella and Emma went to the theater, Ella gave the note to","When David and Emma went to the theater, David gave the note to",Emma,Ella,David,BAB,0,the theater,note,18966,7122
+"When Rose and Isla visited the cafe, Rose handed the gift to","When Amy and Isla visited the cafe, Amy handed the gift to",Isla,Rose,Amy,BAB,1,the cafe,gift,1148,8049
+"As Yara and Frank walked through the school, Frank offered the pen to","As Yara and Sam walked through the school, Sam offered the pen to",Yara,Frank,Sam,ABB,6,the school,pen,575,5278
+"While Ella and David were at the library, David delivered the gift to","While Ella and Alice were at the library, Alice delivered the gift to",Ella,David,Alice,ABB,5,the library,gift,7122,3271
+"When Harry and Uma visited the school, Uma handed the jacket to","When Harry and Quinn visited the school, Quinn handed the jacket to",Harry,Uma,Quinn,ABB,1,the school,jacket,5850,471
+"After Gina and Jack left the park, Jack sent the wallet to","After Gina and David left the park, David sent the wallet to",Gina,Jack,David,ABB,3,the park,wallet,43002,3619
+"When Liam and Brian visited the mall, Liam handed the letter to","When Wendy and Brian visited the mall, Wendy handed the letter to",Brian,Liam,Wendy,BAB,1,the mall,letter,8403,31684
+"Once Tara and Clara were at the gym, Clara brought the jacket to","Once Tara and Carol were at the gym, Carol brought the jacket to",Tara,Clara,Carol,ABB,4,the gym,jacket,37723,27443
+"When Gina and Isla went to the school, Isla gave the bag to","When Gina and Harry went to the school, Harry gave the bag to",Gina,Isla,Harry,ABB,0,the school,bag,43002,1148
+"When Tara and Grace arrived at the park, Grace passed the trophy to","When Tara and Iris arrived at the park, Iris passed the trophy to",Tara,Grace,Iris,ABB,2,the park,trophy,37723,16156
+"After Derek and Henry left the mall, Henry sent the jacket to","After Derek and Jack left the mall, Jack sent the jacket to",Derek,Henry,Jack,ABB,3,the mall,jacket,20893,8616
+"After Carol and Brian left the mall, Brian sent the gift to","After Carol and Bob left the mall, Bob sent the gift to",Carol,Brian,Bob,ABB,3,the mall,gift,5074,8403
+"When Harry and Paul arrived at the school, Harry passed the jacket to","When Rose and Paul arrived at the school, Rose passed the jacket to",Paul,Harry,Rose,BAB,2,the school,jacket,3362,5850
+"When Clara and Amy visited the park, Clara handed the pen to","When Fred and Amy visited the park, Fred handed the pen to",Amy,Clara,Fred,BAB,1,the park,pen,14235,27443
+"While Grace and Clara were at the school, Grace delivered the card to","While Olivia and Clara were at the school, Olivia delivered the card to",Clara,Grace,Olivia,BAB,5,the school,card,27443,16156
+"After Jack and Amy left the hospital, Amy sent the wallet to","After Jack and Noah left the hospital, Noah sent the wallet to",Jack,Amy,Noah,ABB,3,the hospital,wallet,3619,14235
+"Once Isla and Quinn were at the museum, Quinn brought the bag to","Once Isla and Brian were at the museum, Brian brought the bag to",Isla,Quinn,Brian,ABB,4,the museum,bag,1148,16109
+"When Sam and Ella arrived at the library, Ella passed the book to","When Sam and Clara arrived at the library, Clara passed the book to",Sam,Ella,Clara,ABB,2,the library,book,3409,7122
+"As Bob and Isla walked through the station, Bob offered the bag to","As Yara and Isla walked through the station, Yara offered the bag to",Isla,Bob,Yara,BAB,6,the station,bag,1148,5811
+"As Ella and Brian walked through the mall, Ella offered the trophy to","As Gina and Brian walked through the mall, Gina offered the trophy to",Brian,Ella,Gina,BAB,6,the mall,trophy,8403,7122
+"As Jack and Derek walked through the station, Jack offered the letter to","As Uma and Derek walked through the station, Uma offered the letter to",Derek,Jack,Uma,BAB,6,the station,letter,20893,3619
+"After Derek and Xander left the cafe, Xander sent the gift to","After Derek and Frank left the cafe, Frank sent the gift to",Derek,Xander,Frank,ABB,3,the cafe,gift,20893,46122
+"When Rose and Clara visited the gym, Rose handed the book to","When Fred and Clara visited the gym, Fred handed the book to",Clara,Rose,Fred,BAB,1,the gym,book,27443,8049
+"As Rose and Fred walked through the restaurant, Rose offered the bag to","As Uma and Fred walked through the restaurant, Uma offered the bag to",Fred,Rose,Uma,BAB,6,the restaurant,bag,8559,8049
+"When Xander and Harry arrived at the cafe, Harry passed the letter to","When Xander and Gina arrived at the cafe, Gina passed the letter to",Xander,Harry,Gina,ABB,2,the cafe,letter,46122,5850
+"After Iris and Carol left the park, Carol sent the gift to","After Iris and Tara left the park, Tara sent the gift to",Iris,Carol,Tara,ABB,3,the park,gift,34230,5074
+"When Gina and Rose visited the theater, Gina handed the wallet to","When Grace and Rose visited the theater, Grace handed the wallet to",Rose,Gina,Grace,BAB,1,the theater,wallet,8049,43002
+"Once Ella and Bob were at the office, Bob brought the phone to","Once Ella and Uma were at the office, Uma brought the phone to",Ella,Bob,Uma,ABB,4,the office,phone,7122,5811
+"When Fred and Mia visited the cafe, Mia handed the gift to","When Fred and Henry visited the cafe, Henry handed the gift to",Fred,Mia,Henry,ABB,1,the cafe,gift,8559,32189
+"When Isla and Rose went to the restaurant, Rose gave the note to","When Isla and Victor went to the restaurant, Victor gave the note to",Isla,Rose,Victor,ABB,0,the restaurant,note,1148,8049
+"When Zach and Emma visited the beach, Emma handed the package to","When Zach and Tara visited the beach, Tara handed the package to",Zach,Emma,Tara,ABB,1,the beach,package,18825,18966
+"Once Yara and Paul were at the school, Paul brought the phone to","Once Yara and Fred were at the school, Fred brought the phone to",Yara,Paul,Fred,ABB,4,the school,phone,575,3362
+"While Tara and Alice were at the park, Tara delivered the phone to","While Amy and Alice were at the park, Amy delivered the phone to",Alice,Tara,Amy,BAB,5,the park,phone,14862,37723
+"While Rose and Sam were at the market, Rose delivered the jacket to","While Iris and Sam were at the market, Iris delivered the jacket to",Sam,Rose,Iris,BAB,5,the market,jacket,3409,8049
+"When Kate and Uma arrived at the hospital, Uma passed the trophy to","When Kate and Olivia arrived at the hospital, Olivia passed the trophy to",Kate,Uma,Olivia,ABB,2,the hospital,trophy,16693,471
+"When Olivia and Uma visited the cafe, Uma handed the book to","When Olivia and David visited the cafe, David handed the book to",Olivia,Uma,David,ABB,1,the cafe,book,33911,471
+"When Clara and Olivia visited the restaurant, Olivia handed the wallet to","When Clara and Isla visited the restaurant, Isla handed the wallet to",Clara,Olivia,Isla,ABB,1,the restaurant,wallet,27443,33911
+"When Iris and Wendy went to the market, Iris gave the jacket to","When Quinn and Wendy went to the market, Quinn gave the jacket to",Wendy,Iris,Quinn,BAB,0,the market,jacket,28314,34230
+"Once Kate and Rose were at the library, Kate brought the ticket to","Once Emma and Rose were at the library, Emma brought the ticket to",Rose,Kate,Emma,BAB,4,the library,ticket,8049,16693
+"While Olivia and Noah were at the museum, Olivia delivered the card to","While Rose and Noah were at the museum, Rose delivered the card to",Noah,Olivia,Rose,BAB,5,the museum,card,18394,33911
+"When Xander and Frank visited the park, Xander handed the note to","When Victor and Frank visited the park, Victor handed the note to",Frank,Xander,Victor,BAB,1,the park,note,5278,46122
+"When Mia and Xander arrived at the cafe, Mia passed the ticket to","When Rose and Xander arrived at the cafe, Rose passed the ticket to",Xander,Mia,Rose,BAB,2,the cafe,ticket,46122,32189
+"Once Ella and Emma were at the park, Ella brought the map to","Once Mia and Emma were at the park, Mia brought the map to",Emma,Ella,Mia,BAB,4,the park,map,18966,7122
+"As Olivia and Clara walked through the beach, Olivia offered the card to","As Xander and Clara walked through the beach, Xander offered the card to",Clara,Olivia,Xander,BAB,6,the beach,card,27443,33911
+"When Olivia and David visited the hospital, David handed the phone to","When Olivia and Ella visited the hospital, Ella handed the phone to",Olivia,David,Ella,ABB,1,the hospital,phone,33911,3271
+"While Quinn and Iris were at the school, Iris delivered the book to","While Quinn and Grace were at the school, Grace delivered the book to",Quinn,Iris,Grace,ABB,5,the school,book,16109,34230
+"When Brian and Uma arrived at the library, Uma passed the phone to","When Brian and Quinn arrived at the library, Quinn passed the phone to",Brian,Uma,Quinn,ABB,2,the library,phone,8403,471
+"When Alice and Frank visited the museum, Frank handed the ticket to","When Alice and Paul visited the museum, Paul handed the ticket to",Alice,Frank,Paul,ABB,1,the museum,ticket,14862,5278
+"When Noah and Ella arrived at the mall, Ella passed the book to","When Noah and Victor arrived at the mall, Victor passed the book to",Noah,Ella,Victor,ABB,2,the mall,book,18394,7122
+"When Clara and Tara arrived at the beach, Tara passed the pen to","When Clara and Brian arrived at the beach, Brian passed the pen to",Clara,Tara,Brian,ABB,2,the beach,pen,27443,37723
+"While Clara and Rose were at the beach, Clara delivered the card to","While Xander and Rose were at the beach, Xander delivered the card to",Rose,Clara,Xander,BAB,5,the beach,card,8049,27443
+"While Noah and Mia were at the theater, Mia delivered the ticket to","While Noah and Henry were at the theater, Henry delivered the ticket to",Noah,Mia,Henry,ABB,5,the theater,ticket,18394,32189
+"When Quinn and Alice arrived at the park, Quinn passed the note to","When Paul and Alice arrived at the park, Paul passed the note to",Alice,Quinn,Paul,BAB,2,the park,note,14862,16109
+"After Paul and Zach left the park, Zach sent the jacket to","After Paul and Tara left the park, Tara sent the jacket to",Paul,Zach,Tara,ABB,3,the park,jacket,3362,18825
+"As Amy and Frank walked through the mall, Frank offered the gift to","As Amy and Olivia walked through the mall, Olivia offered the gift to",Amy,Frank,Olivia,ABB,6,the mall,gift,14235,5278
+"When Derek and David arrived at the school, Derek passed the gift to","When Emma and David arrived at the school, Emma passed the gift to",David,Derek,Emma,BAB,2,the school,gift,3271,20893
+"While Kate and Derek were at the mall, Derek delivered the jacket to","While Kate and Alice were at the mall, Alice delivered the jacket to",Kate,Derek,Alice,ABB,5,the mall,jacket,16693,20893
+"While Harry and Iris were at the gym, Harry delivered the wallet to","While Isla and Iris were at the gym, Isla delivered the wallet to",Iris,Harry,Isla,BAB,5,the gym,wallet,34230,5850
+"When Isla and Mia visited the store, Isla handed the trophy to","When Paul and Mia visited the store, Paul handed the trophy to",Mia,Isla,Paul,BAB,1,the store,trophy,32189,1148
+"When Sam and Frank visited the school, Frank handed the card to","When Sam and Quinn visited the school, Quinn handed the card to",Sam,Frank,Quinn,ABB,1,the school,card,3409,5278
+"While Sam and Clara were at the market, Sam delivered the package to","While Isla and Clara were at the market, Isla delivered the package to",Clara,Sam,Isla,BAB,5,the market,package,27443,3409
+"When Amy and Liam visited the park, Liam handed the pen to","When Amy and Kate visited the park, Kate handed the pen to",Amy,Liam,Kate,ABB,1,the park,pen,14235,31684
+"When Emma and Kate arrived at the office, Emma passed the bag to","When Fred and Kate arrived at the office, Fred passed the bag to",Kate,Emma,Fred,BAB,2,the office,bag,16693,18966
+"When Xander and Victor visited the beach, Victor handed the card to","When Xander and Jack visited the beach, Jack handed the card to",Xander,Victor,Jack,ABB,1,the beach,card,46122,12622
+"Once Derek and Isla were at the museum, Isla brought the map to","Once Derek and Brian were at the museum, Brian brought the map to",Derek,Isla,Brian,ABB,4,the museum,map,20893,1148
+"After Fred and Frank left the theater, Frank sent the book to","After Fred and Gina left the theater, Gina sent the book to",Fred,Frank,Gina,ABB,3,the theater,book,8559,5278
+"As Mia and Brian walked through the beach, Mia offered the key to","As Jack and Brian walked through the beach, Jack offered the key to",Brian,Mia,Jack,BAB,6,the beach,key,8403,32189
+"When Bob and Isla arrived at the office, Isla passed the phone to","When Bob and David arrived at the office, David passed the phone to",Bob,Isla,David,ABB,2,the office,phone,5811,1148
+"When Tara and Olivia visited the store, Olivia handed the book to","When Tara and Mia visited the store, Mia handed the book to",Tara,Olivia,Mia,ABB,1,the store,book,37723,33911
+"As Yara and Carol walked through the hospital, Yara offered the pen to","As Quinn and Carol walked through the hospital, Quinn offered the pen to",Carol,Yara,Quinn,BAB,6,the hospital,pen,5074,575
+"While Emma and Kate were at the hospital, Emma delivered the note to","While Tara and Kate were at the hospital, Tara delivered the note to",Kate,Emma,Tara,BAB,5,the hospital,note,16693,18966
+"Once Rose and Frank were at the office, Rose brought the key to","Once Iris and Frank were at the office, Iris brought the key to",Frank,Rose,Iris,BAB,4,the office,key,5278,8049
+"When Frank and Harry arrived at the beach, Frank passed the letter to","When Grace and Harry arrived at the beach, Grace passed the letter to",Harry,Frank,Grace,BAB,2,the beach,letter,5850,5278
+"When Uma and Olivia arrived at the hospital, Uma passed the card to","When Amy and Olivia arrived at the hospital, Amy passed the card to",Olivia,Uma,Amy,BAB,2,the hospital,card,33911,471
+"As Grace and Yara walked through the market, Yara offered the package to","As Grace and Carol walked through the market, Carol offered the package to",Grace,Yara,Carol,ABB,6,the market,package,16156,575
+"When Tara and Victor went to the library, Victor gave the map to","When Tara and Wendy went to the library, Wendy gave the map to",Tara,Victor,Wendy,ABB,0,the library,map,37723,12622
+"When Uma and Frank visited the library, Frank handed the wallet to","When Uma and David visited the library, David handed the wallet to",Uma,Frank,David,ABB,1,the library,wallet,471,5278
+"As David and Iris walked through the museum, David offered the ticket to","As Harry and Iris walked through the museum, Harry offered the ticket to",Iris,David,Harry,BAB,6,the museum,ticket,34230,3271
+"After Henry and Victor left the store, Henry sent the letter to","After Carol and Victor left the store, Carol sent the letter to",Victor,Henry,Carol,BAB,3,the store,letter,12622,8616
+"As Amy and Jack walked through the office, Amy offered the gift to","As Clara and Jack walked through the office, Clara offered the gift to",Jack,Amy,Clara,BAB,6,the office,gift,3619,14235
+"When Mia and Yara went to the office, Yara gave the note to","When Mia and Ella went to the office, Ella gave the note to",Mia,Yara,Ella,ABB,0,the office,note,32189,575
+"When Alice and David arrived at the office, Alice passed the wallet to","When Clara and David arrived at the office, Clara passed the wallet to",David,Alice,Clara,BAB,2,the office,wallet,3271,14862
+"After Victor and Emma left the library, Victor sent the jacket to","After Kate and Emma left the library, Kate sent the jacket to",Emma,Victor,Kate,BAB,3,the library,jacket,18966,12622
+"When Sam and Carol arrived at the beach, Carol passed the pen to","When Sam and Alice arrived at the beach, Alice passed the pen to",Sam,Carol,Alice,ABB,2,the beach,pen,3409,5074
+"Once Henry and Yara were at the station, Henry brought the key to","Once Quinn and Yara were at the station, Quinn brought the key to",Yara,Henry,Quinn,BAB,4,the station,key,575,8616
+"Once Rose and Alice were at the station, Alice brought the ticket to","Once Rose and David were at the station, David brought the ticket to",Rose,Alice,David,ABB,4,the station,ticket,8049,14862
+"Once Jack and Iris were at the beach, Jack brought the book to","Once Emma and Iris were at the beach, Emma brought the book to",Iris,Jack,Emma,BAB,4,the beach,book,34230,3619
+"When Grace and Iris visited the museum, Iris handed the ticket to","When Grace and Frank visited the museum, Frank handed the ticket to",Grace,Iris,Frank,ABB,1,the museum,ticket,16156,34230
+"When Emma and Quinn arrived at the museum, Emma passed the note to","When Olivia and Quinn arrived at the museum, Olivia passed the note to",Quinn,Emma,Olivia,BAB,2,the museum,note,16109,18966
+"Once Paul and Amy were at the theater, Amy brought the package to","Once Paul and Fred were at the theater, Fred brought the package to",Paul,Amy,Fred,ABB,4,the theater,package,3362,14235
+"When Harry and Quinn arrived at the station, Harry passed the note to","When Mia and Quinn arrived at the station, Mia passed the note to",Quinn,Harry,Mia,BAB,2,the station,note,16109,5850
+"As Gina and Kate walked through the market, Gina offered the map to","As Ella and Kate walked through the market, Ella offered the map to",Kate,Gina,Ella,BAB,6,the market,map,16693,43002
+"Once Kate and Wendy were at the school, Kate brought the phone to","Once Carol and Wendy were at the school, Carol brought the phone to",Wendy,Kate,Carol,BAB,4,the school,phone,28314,16693
+"When Iris and Jack arrived at the museum, Iris passed the pen to","When Mia and Jack arrived at the museum, Mia passed the pen to",Jack,Iris,Mia,BAB,2,the museum,pen,3619,34230
+"After Tara and Sam left the theater, Sam sent the pen to","After Tara and Noah left the theater, Noah sent the pen to",Tara,Sam,Noah,ABB,3,the theater,pen,37723,3409
+"When Wendy and Jack went to the library, Jack gave the key to","When Wendy and Paul went to the library, Paul gave the key to",Wendy,Jack,Paul,ABB,0,the library,key,28314,3619
+"When Derek and Quinn went to the station, Quinn gave the bag to","When Derek and Liam went to the station, Liam gave the bag to",Derek,Quinn,Liam,ABB,0,the station,bag,20893,16109
+"When Grace and Carol went to the park, Grace gave the trophy to","When Derek and Carol went to the park, Derek gave the trophy to",Carol,Grace,Derek,BAB,0,the park,trophy,5074,16156
+"After Yara and Frank left the school, Yara sent the letter to","After Sam and Frank left the school, Sam sent the letter to",Frank,Yara,Sam,BAB,3,the school,letter,5278,575
+"When Fred and Tara went to the theater, Fred gave the jacket to","When Wendy and Tara went to the theater, Wendy gave the jacket to",Tara,Fred,Wendy,BAB,0,the theater,jacket,37723,8559
+"When Clara and Fred arrived at the hospital, Fred passed the note to","When Clara and Olivia arrived at the hospital, Olivia passed the note to",Clara,Fred,Olivia,ABB,2,the hospital,note,27443,8559
+"When Gina and Tara arrived at the museum, Tara passed the jacket to","When Gina and Amy arrived at the museum, Amy passed the jacket to",Gina,Tara,Amy,ABB,2,the museum,jacket,43002,37723
+"Once Fred and Bob were at the beach, Bob brought the bag to","Once Fred and Xander were at the beach, Xander brought the bag to",Fred,Bob,Xander,ABB,4,the beach,bag,8559,5811
+"While Sam and Olivia were at the office, Olivia delivered the key to","While Sam and Zach were at the office, Zach delivered the key to",Sam,Olivia,Zach,ABB,5,the office,key,3409,33911
+"When Frank and Kate visited the hospital, Kate handed the gift to","When Frank and Paul visited the hospital, Paul handed the gift to",Frank,Kate,Paul,ABB,1,the hospital,gift,5278,16693
+"As Liam and Carol walked through the market, Carol offered the letter to","As Liam and Zach walked through the market, Zach offered the letter to",Liam,Carol,Zach,ABB,6,the market,letter,31684,5074
+"Once Derek and Sam were at the hospital, Sam brought the note to","Once Derek and Yara were at the hospital, Yara brought the note to",Derek,Sam,Yara,ABB,4,the hospital,note,20893,3409
+"When Liam and Brian went to the gym, Brian gave the phone to","When Liam and Fred went to the gym, Fred gave the phone to",Liam,Brian,Fred,ABB,0,the gym,phone,31684,8403
+"When Alice and Isla visited the school, Alice handed the phone to","When Emma and Isla visited the school, Emma handed the phone to",Isla,Alice,Emma,BAB,1,the school,phone,1148,14862
+"After Paul and Ella left the museum, Ella sent the trophy to","After Paul and Emma left the museum, Emma sent the trophy to",Paul,Ella,Emma,ABB,3,the museum,trophy,3362,7122
+"As Olivia and Henry walked through the gym, Olivia offered the jacket to","As Amy and Henry walked through the gym, Amy offered the jacket to",Henry,Olivia,Amy,BAB,6,the gym,jacket,8616,33911
+"While Tara and Emma were at the cafe, Tara delivered the package to","While Brian and Emma were at the cafe, Brian delivered the package to",Emma,Tara,Brian,BAB,5,the cafe,package,18966,37723
+"While Harry and Sam were at the park, Harry delivered the book to","While Xander and Sam were at the park, Xander delivered the book to",Sam,Harry,Xander,BAB,5,the park,book,3409,5850
+"As Derek and Grace walked through the cafe, Grace offered the bag to","As Derek and Ella walked through the cafe, Ella offered the bag to",Derek,Grace,Ella,ABB,6,the cafe,bag,20893,16156
+"After Isla and Carol left the mall, Carol sent the map to","After Isla and Liam left the mall, Liam sent the map to",Isla,Carol,Liam,ABB,3,the mall,map,1148,5074
+"After Rose and Uma left the mall, Rose sent the map to","After Harry and Uma left the mall, Harry sent the map to",Uma,Rose,Harry,BAB,3,the mall,map,471,8049
+"As David and Gina walked through the library, Gina offered the gift to","As David and Frank walked through the library, Frank offered the gift to",David,Gina,Frank,ABB,6,the library,gift,3271,43002
+"When Jack and Rose went to the library, Rose gave the wallet to","When Jack and Emma went to the library, Emma gave the wallet to",Jack,Rose,Emma,ABB,0,the library,wallet,3619,8049
+"As Isla and Mia walked through the restaurant, Isla offered the bag to","As Liam and Mia walked through the restaurant, Liam offered the bag to",Mia,Isla,Liam,BAB,6,the restaurant,bag,32189,1148
+"Once Grace and Zach were at the school, Grace brought the map to","Once Alice and Zach were at the school, Alice brought the map to",Zach,Grace,Alice,BAB,4,the school,map,18825,16156
+"When Victor and Zach went to the store, Victor gave the gift to","When Brian and Zach went to the store, Brian gave the gift to",Zach,Victor,Brian,BAB,0,the store,gift,18825,12622
+"Once Xander and Yara were at the library, Yara brought the phone to","Once Xander and Carol were at the library, Carol brought the phone to",Xander,Yara,Carol,ABB,4,the library,phone,46122,575
+"When Ella and Sam visited the restaurant, Sam handed the jacket to","When Ella and Carol visited the restaurant, Carol handed the jacket to",Ella,Sam,Carol,ABB,1,the restaurant,jacket,7122,3409
+"When Bob and Sam visited the hospital, Bob handed the pen to","When Tara and Sam visited the hospital, Tara handed the pen to",Sam,Bob,Tara,BAB,1,the hospital,pen,3409,5811
+"While Paul and Iris were at the gym, Paul delivered the map to","While Jack and Iris were at the gym, Jack delivered the map to",Iris,Paul,Jack,BAB,5,the gym,map,34230,3362
+"When Fred and Xander arrived at the theater, Xander passed the gift to","When Fred and Harry arrived at the theater, Harry passed the gift to",Fred,Xander,Harry,ABB,2,the theater,gift,8559,46122
+"When Grace and Paul visited the hospital, Paul handed the ticket to","When Grace and Mia visited the hospital, Mia handed the ticket to",Grace,Paul,Mia,ABB,1,the hospital,ticket,16156,3362
+"While Henry and Noah were at the museum, Henry delivered the bag to","While Paul and Noah were at the museum, Paul delivered the bag to",Noah,Henry,Paul,BAB,5,the museum,bag,18394,8616
+"While Paul and Amy were at the school, Amy delivered the gift to","While Paul and Liam were at the school, Liam delivered the gift to",Paul,Amy,Liam,ABB,5,the school,gift,3362,14235
+"After Uma and Paul left the library, Paul sent the phone to","After Uma and Quinn left the library, Quinn sent the phone to",Uma,Paul,Quinn,ABB,3,the library,phone,471,3362
+"When Fred and Uma arrived at the hospital, Uma passed the trophy to","When Fred and Ella arrived at the hospital, Ella passed the trophy to",Fred,Uma,Ella,ABB,2,the hospital,trophy,8559,471
+"When Carol and Fred went to the office, Carol gave the pen to","When Frank and Fred went to the office, Frank gave the pen to",Fred,Carol,Frank,BAB,0,the office,pen,8559,5074
+"While Iris and Mia were at the library, Iris delivered the trophy to","While Victor and Mia were at the library, Victor delivered the trophy to",Mia,Iris,Victor,BAB,5,the library,trophy,32189,34230
+"When Rose and Derek visited the gym, Derek handed the bag to","When Rose and Xander visited the gym, Xander handed the bag to",Rose,Derek,Xander,ABB,1,the gym,bag,8049,20893
+"When Iris and Brian arrived at the restaurant, Iris passed the map to","When Paul and Brian arrived at the restaurant, Paul passed the map to",Brian,Iris,Paul,BAB,2,the restaurant,map,8403,34230
+"Once Frank and Emma were at the beach, Frank brought the trophy to","Once Victor and Emma were at the beach, Victor brought the trophy to",Emma,Frank,Victor,BAB,4,the beach,trophy,18966,5278
+"When Amy and Ella went to the library, Amy gave the jacket to","When Kate and Ella went to the library, Kate gave the jacket to",Ella,Amy,Kate,BAB,0,the library,jacket,7122,14235
+"While Ella and Zach were at the park, Zach delivered the ticket to","While Ella and Brian were at the park, Brian delivered the ticket to",Ella,Zach,Brian,ABB,5,the park,ticket,7122,18825
+"Once Henry and Carol were at the museum, Carol brought the phone to","Once Henry and Wendy were at the museum, Wendy brought the phone to",Henry,Carol,Wendy,ABB,4,the museum,phone,8616,5074
+"Once Quinn and Alice were at the park, Alice brought the book to","Once Quinn and Noah were at the park, Noah brought the book to",Quinn,Alice,Noah,ABB,4,the park,book,16109,14862
+"When Jack and Tara visited the theater, Tara handed the card to","When Jack and Yara visited the theater, Yara handed the card to",Jack,Tara,Yara,ABB,1,the theater,card,3619,37723
+"Once Quinn and Noah were at the school, Noah brought the book to","Once Quinn and Amy were at the school, Amy brought the book to",Quinn,Noah,Amy,ABB,4,the school,book,16109,18394
+"As Tara and Kate walked through the gym, Kate offered the card to","As Tara and Liam walked through the gym, Liam offered the card to",Tara,Kate,Liam,ABB,6,the gym,card,37723,16693
+"When Alice and Derek went to the hospital, Derek gave the package to","When Alice and Grace went to the hospital, Grace gave the package to",Alice,Derek,Grace,ABB,0,the hospital,package,14862,20893
+"When Yara and Mia went to the station, Mia gave the note to","When Yara and Quinn went to the station, Quinn gave the note to",Yara,Mia,Quinn,ABB,0,the station,note,575,32189
+"While Tara and Olivia were at the office, Olivia delivered the jacket to","While Tara and Sam were at the office, Sam delivered the jacket to",Tara,Olivia,Sam,ABB,5,the office,jacket,37723,33911
+"Once Grace and Amy were at the office, Grace brought the package to","Once Quinn and Amy were at the office, Quinn brought the package to",Amy,Grace,Quinn,BAB,4,the office,package,14235,16156
+"While Jack and Ella were at the school, Jack delivered the phone to","While Noah and Ella were at the school, Noah delivered the phone to",Ella,Jack,Noah,BAB,5,the school,phone,7122,3619
+"When Noah and Quinn visited the cafe, Noah handed the package to","When Olivia and Quinn visited the cafe, Olivia handed the package to",Quinn,Noah,Olivia,BAB,1,the cafe,package,16109,18394
+"When Bob and Grace visited the store, Bob handed the phone to","When Yara and Grace visited the store, Yara handed the phone to",Grace,Bob,Yara,BAB,1,the store,phone,16156,5811
+"When Yara and Frank visited the office, Yara handed the jacket to","When Tara and Frank visited the office, Tara handed the jacket to",Frank,Yara,Tara,BAB,1,the office,jacket,5278,575
+"Once Bob and Amy were at the gym, Bob brought the phone to","Once Olivia and Amy were at the gym, Olivia brought the phone to",Amy,Bob,Olivia,BAB,4,the gym,phone,14235,5811
+"Once Harry and Uma were at the cafe, Uma brought the jacket to","Once Harry and Clara were at the cafe, Clara brought the jacket to",Harry,Uma,Clara,ABB,4,the cafe,jacket,5850,471
+"Once Ella and Frank were at the hospital, Ella brought the map to","Once Iris and Frank were at the hospital, Iris brought the map to",Frank,Ella,Iris,BAB,4,the hospital,map,5278,7122
+"When Derek and Victor visited the museum, Derek handed the note to","When Emma and Victor visited the museum, Emma handed the note to",Victor,Derek,Emma,BAB,1,the museum,note,12622,20893
+"While Paul and Clara were at the mall, Paul delivered the bag to","While Carol and Clara were at the mall, Carol delivered the bag to",Clara,Paul,Carol,BAB,5,the mall,bag,27443,3362
+"Once Quinn and Paul were at the beach, Paul brought the package to","Once Quinn and Fred were at the beach, Fred brought the package to",Quinn,Paul,Fred,ABB,4,the beach,package,16109,3362
+"As Mia and Gina walked through the park, Gina offered the key to","As Mia and Iris walked through the park, Iris offered the key to",Mia,Gina,Iris,ABB,6,the park,key,32189,43002
+"When Frank and Uma went to the restaurant, Uma gave the note to","When Frank and Yara went to the restaurant, Yara gave the note to",Frank,Uma,Yara,ABB,0,the restaurant,note,5278,471
+"When Olivia and Fred arrived at the gym, Olivia passed the package to","When Emma and Fred arrived at the gym, Emma passed the package to",Fred,Olivia,Emma,BAB,2,the gym,package,8559,33911
+"After Tara and Carol left the station, Tara sent the card to","After Sam and Carol left the station, Sam sent the card to",Carol,Tara,Sam,BAB,3,the station,card,5074,37723
+"Once Rose and Wendy were at the office, Rose brought the ticket to","Once Olivia and Wendy were at the office, Olivia brought the ticket to",Wendy,Rose,Olivia,BAB,4,the office,ticket,28314,8049
+"Once Clara and Quinn were at the market, Clara brought the wallet to","Once Yara and Quinn were at the market, Yara brought the wallet to",Quinn,Clara,Yara,BAB,4,the market,wallet,16109,27443
+"When Mia and Henry went to the school, Henry gave the package to","When Mia and Derek went to the school, Derek gave the package to",Mia,Henry,Derek,ABB,0,the school,package,32189,8616
+"When Yara and Iris arrived at the hospital, Yara passed the phone to","When Amy and Iris arrived at the hospital, Amy passed the phone to",Iris,Yara,Amy,BAB,2,the hospital,phone,34230,575
+"Once Sam and Mia were at the cafe, Mia brought the phone to","Once Sam and Liam were at the cafe, Liam brought the phone to",Sam,Mia,Liam,ABB,4,the cafe,phone,3409,32189
+"When Harry and Uma visited the hospital, Harry handed the gift to","When Olivia and Uma visited the hospital, Olivia handed the gift to",Uma,Harry,Olivia,BAB,1,the hospital,gift,471,5850
+"When Alice and Grace visited the library, Grace handed the wallet to","When Alice and Brian visited the library, Brian handed the wallet to",Alice,Grace,Brian,ABB,1,the library,wallet,14862,16156
+"When Brian and Noah visited the hospital, Brian handed the map to","When Grace and Noah visited the hospital, Grace handed the map to",Noah,Brian,Grace,BAB,1,the hospital,map,18394,8403
+"While Victor and Kate were at the beach, Victor delivered the pen to","While Amy and Kate were at the beach, Amy delivered the pen to",Kate,Victor,Amy,BAB,5,the beach,pen,16693,12622
+"While Derek and Zach were at the park, Zach delivered the bag to","While Derek and Amy were at the park, Amy delivered the bag to",Derek,Zach,Amy,ABB,5,the park,bag,20893,18825
+"After Gina and Henry left the park, Henry sent the key to","After Gina and Wendy left the park, Wendy sent the key to",Gina,Henry,Wendy,ABB,3,the park,key,43002,8616
+"Once Fred and Emma were at the gym, Fred brought the book to","Once Derek and Emma were at the gym, Derek brought the book to",Emma,Fred,Derek,BAB,4,the gym,book,18966,8559
+"As Gina and Uma walked through the station, Gina offered the ticket to","As Fred and Uma walked through the station, Fred offered the ticket to",Uma,Gina,Fred,BAB,6,the station,ticket,471,43002
+"After Clara and Uma left the park, Uma sent the ticket to","After Clara and Jack left the park, Jack sent the ticket to",Clara,Uma,Jack,ABB,3,the park,ticket,27443,471
+"When Sam and Olivia visited the restaurant, Olivia handed the book to","When Sam and Xander visited the restaurant, Xander handed the book to",Sam,Olivia,Xander,ABB,1,the restaurant,book,3409,33911
+"After Clara and Frank left the station, Frank sent the bag to","After Clara and Carol left the station, Carol sent the bag to",Clara,Frank,Carol,ABB,3,the station,bag,27443,5278
+"When Sam and Yara visited the cafe, Yara handed the trophy to","When Sam and Amy visited the cafe, Amy handed the trophy to",Sam,Yara,Amy,ABB,1,the cafe,trophy,3409,575
+"When Brian and Liam went to the hospital, Liam gave the letter to","When Brian and Grace went to the hospital, Grace gave the letter to",Brian,Liam,Grace,ABB,0,the hospital,letter,8403,31684
+"When Fred and Noah visited the station, Noah handed the trophy to","When Fred and Isla visited the station, Isla handed the trophy to",Fred,Noah,Isla,ABB,1,the station,trophy,8559,18394
+"As Henry and Derek walked through the market, Derek offered the phone to","As Henry and Iris walked through the market, Iris offered the phone to",Henry,Derek,Iris,ABB,6,the market,phone,8616,20893
+"Once Tara and Zach were at the hospital, Zach brought the ticket to","Once Tara and Rose were at the hospital, Rose brought the ticket to",Tara,Zach,Rose,ABB,4,the hospital,ticket,37723,18825
+"While Gina and Zach were at the station, Gina delivered the card to","While Sam and Zach were at the station, Sam delivered the card to",Zach,Gina,Sam,BAB,5,the station,card,18825,43002
+"When Clara and Sam visited the hospital, Clara handed the map to","When Iris and Sam visited the hospital, Iris handed the map to",Sam,Clara,Iris,BAB,1,the hospital,map,3409,27443
+"After Brian and Henry left the park, Brian sent the package to","After Iris and Henry left the park, Iris sent the package to",Henry,Brian,Iris,BAB,3,the park,package,8616,8403
+"When Paul and Kate visited the hospital, Paul handed the letter to","When Harry and Kate visited the hospital, Harry handed the letter to",Kate,Paul,Harry,BAB,1,the hospital,letter,16693,3362
+"While Brian and Olivia were at the park, Brian delivered the book to","While Frank and Olivia were at the park, Frank delivered the book to",Olivia,Brian,Frank,BAB,5,the park,book,33911,8403
+"While Yara and Sam were at the cafe, Sam delivered the phone to","While Yara and Quinn were at the cafe, Quinn delivered the phone to",Yara,Sam,Quinn,ABB,5,the cafe,phone,575,3409
+"When Fred and Xander visited the cafe, Fred handed the ticket to","When Clara and Xander visited the cafe, Clara handed the ticket to",Xander,Fred,Clara,BAB,1,the cafe,ticket,46122,8559
+"While Clara and Henry were at the beach, Clara delivered the card to","While Derek and Henry were at the beach, Derek delivered the card to",Henry,Clara,Derek,BAB,5,the beach,card,8616,27443
+"While Harry and Quinn were at the station, Quinn delivered the gift to","While Harry and Alice were at the station, Alice delivered the gift to",Harry,Quinn,Alice,ABB,5,the station,gift,5850,16109
+"When Derek and Ella went to the school, Derek gave the bag to","When Carol and Ella went to the school, Carol gave the bag to",Ella,Derek,Carol,BAB,0,the school,bag,7122,20893
+"While Victor and Clara were at the beach, Victor delivered the letter to","While Tara and Clara were at the beach, Tara delivered the letter to",Clara,Victor,Tara,BAB,5,the beach,letter,27443,12622
+"When Paul and Uma visited the restaurant, Uma handed the book to","When Paul and Bob visited the restaurant, Bob handed the book to",Paul,Uma,Bob,ABB,1,the restaurant,book,3362,471
+"As Harry and Brian walked through the restaurant, Brian offered the package to","As Harry and Henry walked through the restaurant, Henry offered the package to",Harry,Brian,Henry,ABB,6,the restaurant,package,5850,8403
+"When Frank and Yara arrived at the cafe, Yara passed the bag to","When Frank and Grace arrived at the cafe, Grace passed the bag to",Frank,Yara,Grace,ABB,2,the cafe,bag,5278,575
+"As Derek and Emma walked through the mall, Emma offered the ticket to","As Derek and Henry walked through the mall, Henry offered the ticket to",Derek,Emma,Henry,ABB,6,the mall,ticket,20893,18966
+"When Olivia and Henry arrived at the park, Henry passed the jacket to","When Olivia and Mia arrived at the park, Mia passed the jacket to",Olivia,Henry,Mia,ABB,2,the park,jacket,33911,8616
+"When Zach and Yara arrived at the gym, Zach passed the map to","When Henry and Yara arrived at the gym, Henry passed the map to",Yara,Zach,Henry,BAB,2,the gym,map,575,18825
+"After Uma and Noah left the mall, Noah sent the trophy to","After Uma and Fred left the mall, Fred sent the trophy to",Uma,Noah,Fred,ABB,3,the mall,trophy,471,18394
+"As Victor and Alice walked through the station, Victor offered the jacket to","As Yara and Alice walked through the station, Yara offered the jacket to",Alice,Victor,Yara,BAB,6,the station,jacket,14862,12622
+"When Iris and Yara visited the library, Yara handed the map to","When Iris and Jack visited the library, Jack handed the map to",Iris,Yara,Jack,ABB,1,the library,map,34230,575
+"Once Victor and Bob were at the office, Bob brought the book to","Once Victor and Olivia were at the office, Olivia brought the book to",Victor,Bob,Olivia,ABB,4,the office,book,12622,5811
+"When Liam and Fred arrived at the museum, Liam passed the package to","When Gina and Fred arrived at the museum, Gina passed the package to",Fred,Liam,Gina,BAB,2,the museum,package,8559,31684
+"When Henry and Bob visited the office, Bob handed the letter to","When Henry and Rose visited the office, Rose handed the letter to",Henry,Bob,Rose,ABB,1,the office,letter,8616,5811
+"As Harry and Fred walked through the hospital, Fred offered the ticket to","As Harry and Iris walked through the hospital, Iris offered the ticket to",Harry,Fred,Iris,ABB,6,the hospital,ticket,5850,8559
+"When Olivia and Jack arrived at the hospital, Jack passed the trophy to","When Olivia and Bob arrived at the hospital, Bob passed the trophy to",Olivia,Jack,Bob,ABB,2,the hospital,trophy,33911,3619
+"After Kate and Iris left the library, Iris sent the trophy to","After Kate and Isla left the library, Isla sent the trophy to",Kate,Iris,Isla,ABB,3,the library,trophy,16693,34230
+"After Wendy and David left the beach, David sent the trophy to","After Wendy and Sam left the beach, Sam sent the trophy to",Wendy,David,Sam,ABB,3,the beach,trophy,28314,3271
+"When Olivia and Gina went to the museum, Gina gave the map to","When Olivia and Wendy went to the museum, Wendy gave the map to",Olivia,Gina,Wendy,ABB,0,the museum,map,33911,43002
+"Once Wendy and Victor were at the restaurant, Wendy brought the trophy to","Once Clara and Victor were at the restaurant, Clara brought the trophy to",Victor,Wendy,Clara,BAB,4,the restaurant,trophy,12622,28314
+"As Noah and Carol walked through the gym, Noah offered the note to","As Harry and Carol walked through the gym, Harry offered the note to",Carol,Noah,Harry,BAB,6,the gym,note,5074,18394
+"When Harry and Carol visited the theater, Harry handed the ticket to","When Brian and Carol visited the theater, Brian handed the ticket to",Carol,Harry,Brian,BAB,1,the theater,ticket,5074,5850
+"After Henry and Mia left the gym, Mia sent the note to","After Henry and Bob left the gym, Bob sent the note to",Henry,Mia,Bob,ABB,3,the gym,note,8616,32189
+"When Fred and Amy went to the station, Amy gave the bag to","When Fred and Rose went to the station, Rose gave the bag to",Fred,Amy,Rose,ABB,0,the station,bag,8559,14235
+"After Zach and Isla left the cafe, Zach sent the package to","After Noah and Isla left the cafe, Noah sent the package to",Isla,Zach,Noah,BAB,3,the cafe,package,1148,18825
+"As Brian and Wendy walked through the library, Brian offered the package to","As Uma and Wendy walked through the library, Uma offered the package to",Wendy,Brian,Uma,BAB,6,the library,package,28314,8403
+"As Henry and Rose walked through the museum, Rose offered the map to","As Henry and Olivia walked through the museum, Olivia offered the map to",Henry,Rose,Olivia,ABB,6,the museum,map,8616,8049
+"Once Wendy and Paul were at the store, Wendy brought the phone to","Once Zach and Paul were at the store, Zach brought the phone to",Paul,Wendy,Zach,BAB,4,the store,phone,3362,28314
+"When David and Emma arrived at the hospital, Emma passed the wallet to","When David and Zach arrived at the hospital, Zach passed the wallet to",David,Emma,Zach,ABB,2,the hospital,wallet,3271,18966
+"When Bob and Zach visited the station, Bob handed the letter to","When Olivia and Zach visited the station, Olivia handed the letter to",Zach,Bob,Olivia,BAB,1,the station,letter,18825,5811
+"While Grace and Quinn were at the beach, Grace delivered the ticket to","While Mia and Quinn were at the beach, Mia delivered the ticket to",Quinn,Grace,Mia,BAB,5,the beach,ticket,16109,16156
+"When Uma and Paul visited the school, Paul handed the card to","When Uma and Tara visited the school, Tara handed the card to",Uma,Paul,Tara,ABB,1,the school,card,471,3362
+"After Bob and Olivia left the store, Bob sent the bag to","After Harry and Olivia left the store, Harry sent the bag to",Olivia,Bob,Harry,BAB,3,the store,bag,33911,5811
+"Once Derek and Olivia were at the theater, Derek brought the pen to","Once Victor and Olivia were at the theater, Victor brought the pen to",Olivia,Derek,Victor,BAB,4,the theater,pen,33911,20893
+"While Harry and Clara were at the office, Clara delivered the jacket to","While Harry and Henry were at the office, Henry delivered the jacket to",Harry,Clara,Henry,ABB,5,the office,jacket,5850,27443
+"After Xander and Victor left the beach, Victor sent the key to","After Xander and Henry left the beach, Henry sent the key to",Xander,Victor,Henry,ABB,3,the beach,key,46122,12622
+"As Kate and Bob walked through the beach, Bob offered the phone to","As Kate and Jack walked through the beach, Jack offered the phone to",Kate,Bob,Jack,ABB,6,the beach,phone,16693,5811
+"When Bob and Amy went to the library, Bob gave the pen to","When Paul and Amy went to the library, Paul gave the pen to",Amy,Bob,Paul,BAB,0,the library,pen,14235,5811
+"When Isla and Ella went to the theater, Ella gave the phone to","When Isla and Quinn went to the theater, Quinn gave the phone to",Isla,Ella,Quinn,ABB,0,the theater,phone,1148,7122
+"When Noah and Victor arrived at the cafe, Victor passed the jacket to","When Noah and Jack arrived at the cafe, Jack passed the jacket to",Noah,Victor,Jack,ABB,2,the cafe,jacket,18394,12622
+"When Paul and Noah visited the hospital, Noah handed the bag to","When Paul and Zach visited the hospital, Zach handed the bag to",Paul,Noah,Zach,ABB,1,the hospital,bag,3362,18394
+"Once Derek and Xander were at the park, Derek brought the card to","Once Frank and Xander were at the park, Frank brought the card to",Xander,Derek,Frank,BAB,4,the park,card,46122,20893
+"As Clara and Frank walked through the theater, Clara offered the package to","As Henry and Frank walked through the theater, Henry offered the package to",Frank,Clara,Henry,BAB,6,the theater,package,5278,27443
+"As Bob and Rose walked through the theater, Rose offered the letter to","As Bob and Carol walked through the theater, Carol offered the letter to",Bob,Rose,Carol,ABB,6,the theater,letter,5811,8049
+"After Noah and Frank left the park, Noah sent the gift to","After Kate and Frank left the park, Kate sent the gift to",Frank,Noah,Kate,BAB,3,the park,gift,5278,18394
+"When Derek and Iris went to the restaurant, Iris gave the note to","When Derek and Frank went to the restaurant, Frank gave the note to",Derek,Iris,Frank,ABB,0,the restaurant,note,20893,34230
+"After Clara and Olivia left the market, Clara sent the wallet to","After Xander and Olivia left the market, Xander sent the wallet to",Olivia,Clara,Xander,BAB,3,the market,wallet,33911,27443
+"After Grace and Liam left the gym, Liam sent the trophy to","After Grace and Iris left the gym, Iris sent the trophy to",Grace,Liam,Iris,ABB,3,the gym,trophy,16156,31684
+"As Tara and Iris walked through the mall, Tara offered the trophy to","As Kate and Iris walked through the mall, Kate offered the trophy to",Iris,Tara,Kate,BAB,6,the mall,trophy,34230,37723
+"When Yara and Jack went to the library, Jack gave the card to","When Yara and Fred went to the library, Fred gave the card to",Yara,Jack,Fred,ABB,0,the library,card,575,3619
+"When Sam and Mia visited the school, Sam handed the gift to","When Clara and Mia visited the school, Clara handed the gift to",Mia,Sam,Clara,BAB,1,the school,gift,32189,3409
+"After Rose and Iris left the mall, Iris sent the jacket to","After Rose and Sam left the mall, Sam sent the jacket to",Rose,Iris,Sam,ABB,3,the mall,jacket,8049,34230
+"When Yara and Ella arrived at the restaurant, Ella passed the wallet to","When Yara and Alice arrived at the restaurant, Alice passed the wallet to",Yara,Ella,Alice,ABB,2,the restaurant,wallet,575,7122
+"When Carol and Clara visited the station, Clara handed the book to","When Carol and David visited the station, David handed the book to",Carol,Clara,David,ABB,1,the station,book,5074,27443
+"Once Amy and Isla were at the store, Amy brought the map to","Once Olivia and Isla were at the store, Olivia brought the map to",Isla,Amy,Olivia,BAB,4,the store,map,1148,14235
+"When Bob and Iris arrived at the restaurant, Bob passed the trophy to","When Fred and Iris arrived at the restaurant, Fred passed the trophy to",Iris,Bob,Fred,BAB,2,the restaurant,trophy,34230,5811
+"Once Amy and Alice were at the station, Alice brought the key to","Once Amy and Bob were at the station, Bob brought the key to",Amy,Alice,Bob,ABB,4,the station,key,14235,14862
+"When Harry and Alice went to the museum, Harry gave the letter to","When Amy and Alice went to the museum, Amy gave the letter to",Alice,Harry,Amy,BAB,0,the museum,letter,14862,5850
+"When Gina and Derek arrived at the market, Derek passed the book to","When Gina and Fred arrived at the market, Fred passed the book to",Gina,Derek,Fred,ABB,2,the market,book,43002,20893
+"After Paul and David left the park, Paul sent the ticket to","After Frank and David left the park, Frank sent the ticket to",David,Paul,Frank,BAB,3,the park,ticket,3271,3362
+"As Kate and Iris walked through the school, Kate offered the ticket to","As Brian and Iris walked through the school, Brian offered the ticket to",Iris,Kate,Brian,BAB,6,the school,ticket,34230,16693
+"When Yara and Ella arrived at the library, Yara passed the phone to","When Tara and Ella arrived at the library, Tara passed the phone to",Ella,Yara,Tara,BAB,2,the library,phone,7122,575
+"After Olivia and Fred left the market, Fred sent the book to","After Olivia and Rose left the market, Rose sent the book to",Olivia,Fred,Rose,ABB,3,the market,book,33911,8559
+"As Derek and Zach walked through the museum, Derek offered the jacket to","As Rose and Zach walked through the museum, Rose offered the jacket to",Zach,Derek,Rose,BAB,6,the museum,jacket,18825,20893
+"Once Uma and Xander were at the cafe, Uma brought the key to","Once Fred and Xander were at the cafe, Fred brought the key to",Xander,Uma,Fred,BAB,4,the cafe,key,46122,471
+"After Quinn and Brian left the beach, Quinn sent the bag to","After Isla and Brian left the beach, Isla sent the bag to",Brian,Quinn,Isla,BAB,3,the beach,bag,8403,16109
+"Once Clara and Ella were at the museum, Clara brought the wallet to","Once Liam and Ella were at the museum, Liam brought the wallet to",Ella,Clara,Liam,BAB,4,the museum,wallet,7122,27443
+"When Carol and Isla arrived at the museum, Carol passed the map to","When Gina and Isla arrived at the museum, Gina passed the map to",Isla,Carol,Gina,BAB,2,the museum,map,1148,5074
+"While Carol and Uma were at the mall, Uma delivered the wallet to","While Carol and Ella were at the mall, Ella delivered the wallet to",Carol,Uma,Ella,ABB,5,the mall,wallet,5074,471
+"As Olivia and Uma walked through the theater, Olivia offered the key to","As Bob and Uma walked through the theater, Bob offered the key to",Uma,Olivia,Bob,BAB,6,the theater,key,471,33911
+"When Ella and Liam went to the beach, Ella gave the gift to","When Emma and Liam went to the beach, Emma gave the gift to",Liam,Ella,Emma,BAB,0,the beach,gift,31684,7122
+"When Fred and Clara arrived at the office, Clara passed the wallet to","When Fred and Amy arrived at the office, Amy passed the wallet to",Fred,Clara,Amy,ABB,2,the office,wallet,8559,27443
+"When Paul and Tara went to the museum, Paul gave the pen to","When Grace and Tara went to the museum, Grace gave the pen to",Tara,Paul,Grace,BAB,0,the museum,pen,37723,3362
+"When Amy and Clara visited the cafe, Amy handed the book to","When Kate and Clara visited the cafe, Kate handed the book to",Clara,Amy,Kate,BAB,1,the cafe,book,27443,14235
+"As Derek and Quinn walked through the market, Quinn offered the trophy to","As Derek and Alice walked through the market, Alice offered the trophy to",Derek,Quinn,Alice,ABB,6,the market,trophy,20893,16109
+"Once Kate and Alice were at the park, Kate brought the note to","Once Rose and Alice were at the park, Rose brought the note to",Alice,Kate,Rose,BAB,4,the park,note,14862,16693
+"When Sam and Carol arrived at the mall, Carol passed the ticket to","When Sam and Frank arrived at the mall, Frank passed the ticket to",Sam,Carol,Frank,ABB,2,the mall,ticket,3409,5074
+"When Noah and Isla went to the station, Noah gave the map to","When Brian and Isla went to the station, Brian gave the map to",Isla,Noah,Brian,BAB,0,the station,map,1148,18394
+"As Brian and Grace walked through the school, Grace offered the phone to","As Brian and Henry walked through the school, Henry offered the phone to",Brian,Grace,Henry,ABB,6,the school,phone,8403,16156
+"When Wendy and Fred visited the mall, Wendy handed the trophy to","When Mia and Fred visited the mall, Mia handed the trophy to",Fred,Wendy,Mia,BAB,1,the mall,trophy,8559,28314
+"When Yara and Jack went to the museum, Jack gave the note to","When Yara and Noah went to the museum, Noah gave the note to",Yara,Jack,Noah,ABB,0,the museum,note,575,3619
+"As Ella and Clara walked through the office, Clara offered the map to","As Ella and Quinn walked through the office, Quinn offered the map to",Ella,Clara,Quinn,ABB,6,the office,map,7122,27443
+"Once Liam and Derek were at the beach, Liam brought the gift to","Once Tara and Derek were at the beach, Tara brought the gift to",Derek,Liam,Tara,BAB,4,the beach,gift,20893,31684
+"When Xander and Isla went to the museum, Isla gave the key to","When Xander and Wendy went to the museum, Wendy gave the key to",Xander,Isla,Wendy,ABB,0,the museum,key,46122,1148
+"Once Wendy and Uma were at the hospital, Uma brought the gift to","Once Wendy and Brian were at the hospital, Brian brought the gift to",Wendy,Uma,Brian,ABB,4,the hospital,gift,28314,471
+"When Jack and Sam went to the beach, Sam gave the bag to","When Jack and Brian went to the beach, Brian gave the bag to",Jack,Sam,Brian,ABB,0,the beach,bag,3619,3409
+"While Bob and Emma were at the store, Bob delivered the map to","While Gina and Emma were at the store, Gina delivered the map to",Emma,Bob,Gina,BAB,5,the store,map,18966,5811
+"As Quinn and Noah walked through the school, Quinn offered the gift to","As Ella and Noah walked through the school, Ella offered the gift to",Noah,Quinn,Ella,BAB,6,the school,gift,18394,16109
+"When Gina and Grace arrived at the park, Gina passed the wallet to","When Henry and Grace arrived at the park, Henry passed the wallet to",Grace,Gina,Henry,BAB,2,the park,wallet,16156,43002
+"While David and Grace were at the gym, Grace delivered the wallet to","While David and Zach were at the gym, Zach delivered the wallet to",David,Grace,Zach,ABB,5,the gym,wallet,3271,16156
+"As Sam and Isla walked through the market, Sam offered the pen to","As Kate and Isla walked through the market, Kate offered the pen to",Isla,Sam,Kate,BAB,6,the market,pen,1148,3409
+"Once Clara and Tara were at the store, Tara brought the bag to","Once Clara and Rose were at the store, Rose brought the bag to",Clara,Tara,Rose,ABB,4,the store,bag,27443,37723
+"When Zach and Brian went to the museum, Zach gave the phone to","When Fred and Brian went to the museum, Fred gave the phone to",Brian,Zach,Fred,BAB,0,the museum,phone,8403,18825
+"When Mia and Quinn visited the school, Mia handed the wallet to","When Henry and Quinn visited the school, Henry handed the wallet to",Quinn,Mia,Henry,BAB,1,the school,wallet,16109,32189
+"When Paul and Xander visited the market, Xander handed the map to","When Paul and Sam visited the market, Sam handed the map to",Paul,Xander,Sam,ABB,1,the market,map,3362,46122
+"After Olivia and Wendy left the theater, Olivia sent the trophy to","After Tara and Wendy left the theater, Tara sent the trophy to",Wendy,Olivia,Tara,BAB,3,the theater,trophy,28314,33911
+"When Quinn and Rose visited the beach, Quinn handed the map to","When Iris and Rose visited the beach, Iris handed the map to",Rose,Quinn,Iris,BAB,1,the beach,map,8049,16109
+"Once Gina and Iris were at the gym, Iris brought the letter to","Once Gina and Uma were at the gym, Uma brought the letter to",Gina,Iris,Uma,ABB,4,the gym,letter,43002,34230
+"While Noah and Wendy were at the cafe, Noah delivered the card to","While Amy and Wendy were at the cafe, Amy delivered the card to",Wendy,Noah,Amy,BAB,5,the cafe,card,28314,18394
+"While David and Derek were at the store, Derek delivered the note to","While David and Tara were at the store, Tara delivered the note to",David,Derek,Tara,ABB,5,the store,note,3271,20893
+"When Brian and Paul visited the library, Brian handed the wallet to","When Yara and Paul visited the library, Yara handed the wallet to",Paul,Brian,Yara,BAB,1,the library,wallet,3362,8403
+"While Alice and Carol were at the school, Alice delivered the letter to","While Iris and Carol were at the school, Iris delivered the letter to",Carol,Alice,Iris,BAB,5,the school,letter,5074,14862
+"As Iris and Tara walked through the cafe, Iris offered the wallet to","As Yara and Tara walked through the cafe, Yara offered the wallet to",Tara,Iris,Yara,BAB,6,the cafe,wallet,37723,34230
+"When Ella and Sam went to the cafe, Sam gave the gift to","When Ella and Isla went to the cafe, Isla gave the gift to",Ella,Sam,Isla,ABB,0,the cafe,gift,7122,3409
+"When Grace and Jack arrived at the beach, Jack passed the package to","When Grace and Rose arrived at the beach, Rose passed the package to",Grace,Jack,Rose,ABB,2,the beach,package,16156,3619
+"When Liam and Uma visited the school, Liam handed the pen to","When Wendy and Uma visited the school, Wendy handed the pen to",Uma,Liam,Wendy,BAB,1,the school,pen,471,31684
+"When Xander and Victor visited the theater, Xander handed the pen to","When Sam and Victor visited the theater, Sam handed the pen to",Victor,Xander,Sam,BAB,1,the theater,pen,12622,46122
+"When Ella and Rose went to the school, Rose gave the trophy to","When Ella and Carol went to the school, Carol gave the trophy to",Ella,Rose,Carol,ABB,0,the school,trophy,7122,8049
+"While Alice and Harry were at the station, Harry delivered the jacket to","While Alice and Isla were at the station, Isla delivered the jacket to",Alice,Harry,Isla,ABB,5,the station,jacket,14862,5850
+"When Fred and Tara visited the school, Fred handed the pen to","When Grace and Tara visited the school, Grace handed the pen to",Tara,Fred,Grace,BAB,1,the school,pen,37723,8559
+"When Emma and Grace arrived at the gym, Emma passed the gift to","When Gina and Grace arrived at the gym, Gina passed the gift to",Grace,Emma,Gina,BAB,2,the gym,gift,16156,18966
+"After Uma and Ella left the gym, Uma sent the key to","After Liam and Ella left the gym, Liam sent the key to",Ella,Uma,Liam,BAB,3,the gym,key,7122,471
+"When Amy and Mia arrived at the school, Amy passed the key to","When Isla and Mia arrived at the school, Isla passed the key to",Mia,Amy,Isla,BAB,2,the school,key,32189,14235
+"When Quinn and Yara went to the school, Yara gave the package to","When Quinn and Xander went to the school, Xander gave the package to",Quinn,Yara,Xander,ABB,0,the school,package,16109,575
+"After Isla and Paul left the museum, Paul sent the key to","After Isla and Kate left the museum, Kate sent the key to",Isla,Paul,Kate,ABB,3,the museum,key,1148,3362
+"When Victor and Amy arrived at the library, Amy passed the wallet to","When Victor and Paul arrived at the library, Paul passed the wallet to",Victor,Amy,Paul,ABB,2,the library,wallet,12622,14235
+"After Zach and Brian left the store, Zach sent the book to","After Ella and Brian left the store, Ella sent the book to",Brian,Zach,Ella,BAB,3,the store,book,8403,18825
+"When Noah and Wendy arrived at the market, Noah passed the key to","When Clara and Wendy arrived at the market, Clara passed the key to",Wendy,Noah,Clara,BAB,2,the market,key,28314,18394
+"When Liam and Henry visited the store, Henry handed the bag to","When Liam and Bob visited the store, Bob handed the bag to",Liam,Henry,Bob,ABB,1,the store,bag,31684,8616
+"When Zach and Gina went to the store, Gina gave the letter to","When Zach and Carol went to the store, Carol gave the letter to",Zach,Gina,Carol,ABB,0,the store,letter,18825,43002
+"As David and Ella walked through the hospital, Ella offered the letter to","As David and Gina walked through the hospital, Gina offered the letter to",David,Ella,Gina,ABB,6,the hospital,letter,3271,7122
+"While Uma and Brian were at the school, Brian delivered the note to","While Uma and Zach were at the school, Zach delivered the note to",Uma,Brian,Zach,ABB,5,the school,note,471,8403
+"After Zach and Carol left the cafe, Zach sent the key to","After Emma and Carol left the cafe, Emma sent the key to",Carol,Zach,Emma,BAB,3,the cafe,key,5074,18825
+"While David and Paul were at the gym, David delivered the phone to","While Zach and Paul were at the gym, Zach delivered the phone to",Paul,David,Zach,BAB,5,the gym,phone,3362,3271
+"When Isla and Ella arrived at the mall, Isla passed the pen to","When Fred and Ella arrived at the mall, Fred passed the pen to",Ella,Isla,Fred,BAB,2,the mall,pen,7122,1148
+"After Gina and Yara left the school, Gina sent the ticket to","After Fred and Yara left the school, Fred sent the ticket to",Yara,Gina,Fred,BAB,3,the school,ticket,575,43002
+"When Yara and Victor arrived at the museum, Yara passed the map to","When Clara and Victor arrived at the museum, Clara passed the map to",Victor,Yara,Clara,BAB,2,the museum,map,12622,575
+"When Jack and Fred arrived at the store, Jack passed the note to","When David and Fred arrived at the store, David passed the note to",Fred,Jack,David,BAB,2,the store,note,8559,3619
+"When Paul and David visited the school, David handed the package to","When Paul and Harry visited the school, Harry handed the package to",Paul,David,Harry,ABB,1,the school,package,3362,3271
+"When Ella and Isla arrived at the museum, Ella passed the package to","When Jack and Isla arrived at the museum, Jack passed the package to",Isla,Ella,Jack,BAB,2,the museum,package,1148,7122
+"As Liam and Carol walked through the beach, Liam offered the package to","As Uma and Carol walked through the beach, Uma offered the package to",Carol,Liam,Uma,BAB,6,the beach,package,5074,31684
+"When Quinn and Alice went to the mall, Quinn gave the book to","When Noah and Alice went to the mall, Noah gave the book to",Alice,Quinn,Noah,BAB,0,the mall,book,14862,16109
+"When Tara and Jack went to the hospital, Tara gave the map to","When Alice and Jack went to the hospital, Alice gave the map to",Jack,Tara,Alice,BAB,0,the hospital,map,3619,37723
+"When Clara and Emma visited the restaurant, Emma handed the bag to","When Clara and Sam visited the restaurant, Sam handed the bag to",Clara,Emma,Sam,ABB,1,the restaurant,bag,27443,18966
+"Once Yara and Paul were at the library, Paul brought the package to","Once Yara and Fred were at the library, Fred brought the package to",Yara,Paul,Fred,ABB,4,the library,package,575,3362
+"When Fred and Jack visited the museum, Jack handed the key to","When Fred and Emma visited the museum, Emma handed the key to",Fred,Jack,Emma,ABB,1,the museum,key,8559,3619
+"While Yara and Victor were at the library, Victor delivered the map to","While Yara and Zach were at the library, Zach delivered the map to",Yara,Victor,Zach,ABB,5,the library,map,575,12622
+"When Iris and Frank arrived at the station, Frank passed the note to","When Iris and Sam arrived at the station, Sam passed the note to",Iris,Frank,Sam,ABB,2,the station,note,34230,5278
+"As Brian and Noah walked through the station, Noah offered the jacket to","As Brian and Isla walked through the station, Isla offered the jacket to",Brian,Noah,Isla,ABB,6,the station,jacket,8403,18394
+"Once Liam and Ella were at the hospital, Liam brought the ticket to","Once Xander and Ella were at the hospital, Xander brought the ticket to",Ella,Liam,Xander,BAB,4,the hospital,ticket,7122,31684
+"As Paul and Yara walked through the theater, Yara offered the note to","As Paul and Olivia walked through the theater, Olivia offered the note to",Paul,Yara,Olivia,ABB,6,the theater,note,3362,575
+"Once Victor and Rose were at the office, Rose brought the gift to","Once Victor and Alice were at the office, Alice brought the gift to",Victor,Rose,Alice,ABB,4,the office,gift,12622,8049
+"While Brian and Derek were at the school, Brian delivered the card to","While Harry and Derek were at the school, Harry delivered the card to",Derek,Brian,Harry,BAB,5,the school,card,20893,8403
+"Once Noah and Zach were at the restaurant, Noah brought the card to","Once Carol and Zach were at the restaurant, Carol brought the card to",Zach,Noah,Carol,BAB,4,the restaurant,card,18825,18394
+"When Emma and Clara went to the school, Clara gave the card to","When Emma and Grace went to the school, Grace gave the card to",Emma,Clara,Grace,ABB,0,the school,card,18966,27443
+"When Jack and Brian went to the restaurant, Brian gave the bag to","When Jack and Iris went to the restaurant, Iris gave the bag to",Jack,Brian,Iris,ABB,0,the restaurant,bag,3619,8403
+"When Iris and Grace visited the gym, Iris handed the card to","When Fred and Grace visited the gym, Fred handed the card to",Grace,Iris,Fred,BAB,1,the gym,card,16156,34230
+"After Liam and Isla left the restaurant, Liam sent the letter to","After Kate and Isla left the restaurant, Kate sent the letter to",Isla,Liam,Kate,BAB,3,the restaurant,letter,1148,31684
+"When Gina and Brian visited the station, Brian handed the map to","When Gina and Clara visited the station, Clara handed the map to",Gina,Brian,Clara,ABB,1,the station,map,43002,8403
+"As Derek and Uma walked through the mall, Uma offered the note to","As Derek and Victor walked through the mall, Victor offered the note to",Derek,Uma,Victor,ABB,6,the mall,note,20893,471
+"While Clara and Brian were at the market, Brian delivered the bag to","While Clara and Kate were at the market, Kate delivered the bag to",Clara,Brian,Kate,ABB,5,the market,bag,27443,8403
+"While Liam and Iris were at the beach, Liam delivered the note to","While Alice and Iris were at the beach, Alice delivered the note to",Iris,Liam,Alice,BAB,5,the beach,note,34230,31684
+"Once Noah and Paul were at the market, Paul brought the card to","Once Noah and Frank were at the market, Frank brought the card to",Noah,Paul,Frank,ABB,4,the market,card,18394,3362
+"Once Clara and Carol were at the museum, Carol brought the key to","Once Clara and Wendy were at the museum, Wendy brought the key to",Clara,Carol,Wendy,ABB,4,the museum,key,27443,5074
+"As Jack and Emma walked through the theater, Emma offered the gift to","As Jack and Sam walked through the theater, Sam offered the gift to",Jack,Emma,Sam,ABB,6,the theater,gift,3619,18966
+"As Iris and Olivia walked through the museum, Iris offered the bag to","As Mia and Olivia walked through the museum, Mia offered the bag to",Olivia,Iris,Mia,BAB,6,the museum,bag,33911,34230
+"When Tara and Sam went to the market, Sam gave the jacket to","When Tara and Clara went to the market, Clara gave the jacket to",Tara,Sam,Clara,ABB,0,the market,jacket,37723,3409
+"When Frank and Rose arrived at the park, Frank passed the bag to","When Xander and Rose arrived at the park, Xander passed the bag to",Rose,Frank,Xander,BAB,2,the park,bag,8049,5278
+"When Alice and Olivia arrived at the cafe, Alice passed the phone to","When Victor and Olivia arrived at the cafe, Victor passed the phone to",Olivia,Alice,Victor,BAB,2,the cafe,phone,33911,14862
+"As Jack and Quinn walked through the museum, Jack offered the gift to","As Brian and Quinn walked through the museum, Brian offered the gift to",Quinn,Jack,Brian,BAB,6,the museum,gift,16109,3619
+"As Clara and Mia walked through the museum, Clara offered the jacket to","As Noah and Mia walked through the museum, Noah offered the jacket to",Mia,Clara,Noah,BAB,6,the museum,jacket,32189,27443
+"Once Uma and Liam were at the store, Uma brought the map to","Once Clara and Liam were at the store, Clara brought the map to",Liam,Uma,Clara,BAB,4,the store,map,31684,471
+"When Wendy and Xander visited the office, Xander handed the card to","When Wendy and Brian visited the office, Brian handed the card to",Wendy,Xander,Brian,ABB,1,the office,card,28314,46122
+"Once Rose and Iris were at the station, Iris brought the pen to","Once Rose and Grace were at the station, Grace brought the pen to",Rose,Iris,Grace,ABB,4,the station,pen,8049,34230
+"When Sam and Isla arrived at the school, Sam passed the trophy to","When Jack and Isla arrived at the school, Jack passed the trophy to",Isla,Sam,Jack,BAB,2,the school,trophy,1148,3409
+"As David and Amy walked through the school, David offered the letter to","As Rose and Amy walked through the school, Rose offered the letter to",Amy,David,Rose,BAB,6,the school,letter,14235,3271
+"While Fred and Kate were at the beach, Fred delivered the bag to","While Frank and Kate were at the beach, Frank delivered the bag to",Kate,Fred,Frank,BAB,5,the beach,bag,16693,8559
+"When Sam and Frank visited the park, Sam handed the book to","When Ella and Frank visited the park, Ella handed the book to",Frank,Sam,Ella,BAB,1,the park,book,5278,3409
+"As David and Frank walked through the restaurant, Frank offered the book to","As David and Brian walked through the restaurant, Brian offered the book to",David,Frank,Brian,ABB,6,the restaurant,book,3271,5278
+"When Olivia and Paul arrived at the library, Olivia passed the gift to","When Wendy and Paul arrived at the library, Wendy passed the gift to",Paul,Olivia,Wendy,BAB,2,the library,gift,3362,33911
+"While Grace and Frank were at the restaurant, Frank delivered the key to","While Grace and Uma were at the restaurant, Uma delivered the key to",Grace,Frank,Uma,ABB,5,the restaurant,key,16156,5278
+"When Grace and Gina visited the school, Gina handed the ticket to","When Grace and Noah visited the school, Noah handed the ticket to",Grace,Gina,Noah,ABB,1,the school,ticket,16156,43002
+"When David and Ella arrived at the museum, David passed the letter to","When Frank and Ella arrived at the museum, Frank passed the letter to",Ella,David,Frank,BAB,2,the museum,letter,7122,3271
+"After Gina and Uma left the beach, Gina sent the trophy to","After Yara and Uma left the beach, Yara sent the trophy to",Uma,Gina,Yara,BAB,3,the beach,trophy,471,43002
+"When Mia and Xander went to the museum, Xander gave the card to","When Mia and Sam went to the museum, Sam gave the card to",Mia,Xander,Sam,ABB,0,the museum,card,32189,46122

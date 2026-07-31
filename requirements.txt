@@ -1,23 +1,22 @@
 # ============================================================
 # CircuitScope: Mechanistic Interpretability Research Project
-# Requirements File
+# Requirements File (Pinned for Exact Reproducibility)
 # Python 3.11+
 # ============================================================
 
 # ── Core Deep Learning ──────────────────────────────────────
-torch>=2.2.0
-torchvision>=0.17.0
+torch==2.12.1
 
 # ── TransformerLens (mechanistic interpretability) ──────────
-transformer_lens>=1.19.0
+transformer_lens==3.6.0
 
 # ── Scientific Python Stack ─────────────────────────────────
-numpy>=1.26.0
-pandas>=2.2.0
-scipy>=1.12.0
+numpy==2.5.1
+pandas==3.0.3
+scipy==1.18.0
 
 # ── Visualization & Web App ─────────────────────────────────
-plotly>=5.20.0
+plotly==6.9.0
 matplotlib>=3.8.0
 kaleido>=0.2.1          # Plotly static image export
 streamlit>=1.32.0       # Interactive Web Application Dashboard

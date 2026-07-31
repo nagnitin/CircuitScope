@@ -1,0 +1,11 @@
+{
+  "n_samples": 150,
+  "ioi_clean_ld": 3.2294,
+  "ioi_corrupted_ld": 3.1614,
+  "pronoun_clean_ld": 3.2893,
+  "pronoun_corrupted_ld": 7.1765,
+  "name_mover_same_task_recovery": -0.2117,
+  "name_mover_cross_recovery": -0.0597,
+  "neutral_cross_recovery": -0.0219,
+  "causal_transfer_verdict": "NO_TRANSFER"
+}

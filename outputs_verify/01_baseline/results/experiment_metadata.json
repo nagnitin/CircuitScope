@@ -1,0 +1,94 @@
+{
+  "experiment": "IOI Baseline",
+  "timestamp": "2026-07-31T11:18:02.769839",
+  "config": {
+    "seed": 42,
+    "model": {
+      "name": "gpt2",
+      "device": "auto",
+      "dtype": "float32",
+      "cache_dir": null
+    },
+    "dataset": {
+      "n_prompts": 1000,
+      "templates": [
+        "ABB",
+        "BAB"
+      ],
+      "corruption": {
+        "type": "name_swap"
+      },
+      "min_names": 30
+    },
+    "evaluation": {
+      "batch_size": 32,
+      "top_k": 5
+    },
+    "paths": {
+      "outputs_dir": "outputs_verify",
+      "figures_dir": "outputs_verify/01_baseline/figures",
+      "results_dir": "outputs_verify/01_baseline/results",
+      "logs_dir": "outputs_verify/logs",
+      "results_csv": "outputs_verify/results/ioi_results.csv",
+      "dataset_csv": "outputs_verify/results/ioi_dataset.csv"
+    },
+    "plotting": {
+      "theme": "plotly_dark",
+      "width": 900,
+      "height": 550,
+      "color_correct": "#00C9A7",
+      "color_incorrect": "#FF6B6B",
+      "color_logit_diff": "#845EC2",
+      "color_confidence": "#FFC75F",
+      "export_formats": [
+        "html",
+        "png"
+      ]
+    },
+    "logging": {
+      "level": "INFO",
+      "console": true,
+      "file": true
+    }
+  },
+  "reproducibility": {
+    "torch_version": "2.12.1+cpu",
+    "numpy_version": "2.5.1",
+    "cuda_available": false,
+    "cuda_version": null,
+    "cudnn_deterministic": true,
+    "use_deterministic_algorithms": true,
+    "python_hash_seed": "42"
+  },
+  "tokenizer_info": {
+    "vocab_size": 50257,
+    "bos_token": "<|endoftext|>",
+    "bos_token_id": 50256,
+    "eos_token": "<|endoftext|>",
+    "pad_token_id": 50256,
+    "prepend_bos": true
+  },
+  "results": {
+    "n_prompts": 1000.0,
+    "accuracy": 0.966,
+    "mean_logit_diff": 3.1293242469999996,
+    "std_logit_diff": 1.793722860714772,
+    "median_logit_diff": 3.1109895,
+    "min_logit_diff": -4.26443,
+    "max_logit_diff": 9.359873,
+    "mean_prob_io": 0.36171992123,
+    "mean_prob_s": 0.02210312484,
+    "mean_rank_io": 1.75,
+    "median_rank_io": 1.0,
+    "accuracy_abb": 0.956,
+    "mean_logit_diff_abb": 2.633011206,
+    "accuracy_bab": 0.976,
+    "mean_logit_diff_bab": 3.625637288
+  },
+  "timing": {
+    "model_load_seconds": 5.28,
+    "dataset_gen_seconds": 0.24,
+    "eval_seconds": 19.72,
+    "total_seconds": 45.04
+  }
+}

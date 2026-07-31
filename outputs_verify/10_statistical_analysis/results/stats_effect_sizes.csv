@@ -1,0 +1,4 @@
+group,n_heads,mean_importance,cohens_d,effect_category,permutation_p,ci_lower,ci_upper
+Name Mover / Helper,14,0.150117,4.897581,large,0.0,0.107686,0.197597
+Suppressor,5,-0.175408,-7.412465,large,1.0,-0.251157,-0.102334
+Late layers (9-11) vs. Early (0-4),36,-0.011936,-0.274186,small,0.885,-0.269066,0.084979
