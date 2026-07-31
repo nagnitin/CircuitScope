@@ -8,6 +8,16 @@ To run:
     streamlit run app.py
 """
 
+# ── MUST be set BEFORE any tqdm/transformers/transformer_lens imports ──
+import os
+os.environ["TQDM_DISABLE"] = "1"
+os.environ["DISABLE_TQDM"] = "1"
+os.environ["HF_HUB_DISABLE_SYMLINKS_WARNING"] = "1"
+os.environ["HF_HUB_ENABLE_HF_TRANSFER"] = "0"
+os.environ["TRANSFORMERS_NO_ADVISORY_WARNINGS"] = "1"
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+# ─────────────────────────────────────────────────────────────────────
+
 import sys
 from pathlib import Path
 import streamlit as st
