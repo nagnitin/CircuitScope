@@ -1,0 +1,19 @@
+{
+  "n_samples": 150,
+  "random_seed": 42,
+  "ioi_clean_ld": 3.2294,
+  "ioi_corrupted_ld": 3.1614,
+  "pronoun_clean_ld": 3.2893,
+  "pronoun_corrupted_ld": 7.1765,
+  "exp11_single_head_cross_recovery": -0.0597,
+  "group_a_name_mover_same_task_recovery": -1.0038,
+  "group_a_name_mover_cross_recovery": -1.1225,
+  "group_a_pronoun_to_ioi_recovery": -2.2425,
+  "group_a_ioi_to_pronoun_recovery": -0.0026,
+  "group_b_nm_si_same_task_recovery": -1.9491,
+  "group_b_nm_si_cross_recovery": -1.0947,
+  "group_b_pronoun_to_ioi_recovery": -2.2747,
+  "group_b_ioi_to_pronoun_recovery": 0.0854,
+  "causal_transfer_verdict": "NO_TRANSFER_EVEN_AT_GROUP_LEVEL",
+  "transfer_threshold_used": 0.05
+}
