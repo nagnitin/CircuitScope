@@ -1,0 +1,1862 @@
+{
+  "timestamp": "2026-08-10T22:26:39.303401",
+  "model": "Qwen2.5-0.5B",
+  "vocab_size": 151936,
+  "languages": {
+    "english": {
+      "n_prompts": 25,
+      "mean_tokens_per_prompt": 14.84,
+      "token_inflation_factor": 1.0,
+      "mean_fraction_byte_level": 0.0,
+      "byte_level_fallback_detected": false,
+      "n_unique_names": 34,
+      "n_single_token_names": 31,
+      "n_multi_token_names": 3,
+      "unique_space_prefix_first_token_ids": 34,
+      "unique_raw_name_first_token_ids": 33,
+      "proxy_token_collapse_detected": false,
+      "sample_tokenizations": [
+        {
+          "prompt": "When David and Henry visited the restaurant, Henry handed the letter to",
+          "token_count": 14,
+          "token_strings": [
+            "<|endoftext|>",
+            "When",
+            " David",
+            " and",
+            " Henry",
+            " visited",
+            " the",
+            " restaurant",
+            ",",
+            " Henry",
+            " handed",
+            " the",
+            " letter",
+            " to"
+          ],
+          "n_byte_level": 0,
+          "fraction_byte_level": 0.0
+        },
+        {
+          "prompt": "While Bob and Kate were at the gym, Bob delivered the map to",
+          "token_count": 15,
+          "token_strings": [
+            "<|endoftext|>",
+            "While",
+            " Bob",
+            " and",
+            " Kate",
+            " were",
+            " at",
+            " the",
+            " gym",
+            ",",
+            " Bob",
+            " delivered",
+            " the",
+            " map",
+            " to"
+          ],
+          "n_byte_level": 0,
+          "fraction_byte_level": 0.0
+        }
+      ],
+      "name_details": {
+        "Victor": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            32312
+          ],
+          "strs_space": [
+            " Victor"
+          ],
+          "first_token_space": 32312,
+          "first_token_raw": 36125,
+          "is_multi_token": false
+        },
+        "Henry": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            17599
+          ],
+          "strs_space": [
+            " Henry"
+          ],
+          "first_token_space": 17599,
+          "first_token_raw": 63363,
+          "is_multi_token": false
+        },
+        "Frank": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            9270
+          ],
+          "strs_space": [
+            " Frank"
+          ],
+          "first_token_space": 9270,
+          "first_token_raw": 37326,
+          "is_multi_token": false
+        },
+        "Harry": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            13928
+          ],
+          "strs_space": [
+            " Harry"
+          ],
+          "first_token_space": 13928,
+          "first_token_raw": 41298,
+          "is_multi_token": false
+        },
+        "Grace": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            31071
+          ],
+          "strs_space": [
+            " Grace"
+          ],
+          "first_token_space": 31071,
+          "first_token_raw": 86543,
+          "is_multi_token": false
+        },
+        "Kate": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            29201
+          ],
+          "strs_space": [
+            " Kate"
+          ],
+          "first_token_space": 29201,
+          "first_token_raw": 79369,
+          "is_multi_token": false
+        },
+        "Iris": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            65721
+          ],
+          "strs_space": [
+            " Iris"
+          ],
+          "first_token_space": 65721,
+          "first_token_raw": 40,
+          "is_multi_token": false
+        },
+        "Quinn": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            40523
+          ],
+          "strs_space": [
+            " Quinn"
+          ],
+          "first_token_space": 40523,
+          "first_token_raw": 2183,
+          "is_multi_token": false
+        },
+        "Bob": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            14261
+          ],
+          "strs_space": [
+            " Bob"
+          ],
+          "first_token_space": 14261,
+          "first_token_raw": 32388,
+          "is_multi_token": false
+        },
+        "Mia": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            60597
+          ],
+          "strs_space": [
+            " Mia"
+          ],
+          "first_token_space": 60597,
+          "first_token_raw": 44,
+          "is_multi_token": false
+        },
+        "Wendy": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            54576
+          ],
+          "strs_space": [
+            " Wendy"
+          ],
+          "first_token_space": 54576,
+          "first_token_raw": 54,
+          "is_multi_token": false
+        },
+        "Noah": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            41984
+          ],
+          "strs_space": [
+            " Noah"
+          ],
+          "first_token_space": 41984,
+          "first_token_raw": 2753,
+          "is_multi_token": false
+        },
+        "Jack": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            7607
+          ],
+          "strs_space": [
+            " Jack"
+          ],
+          "first_token_space": 7607,
+          "first_token_raw": 32631,
+          "is_multi_token": false
+        },
+        "Brian": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            17083
+          ],
+          "strs_space": [
+            " Brian"
+          ],
+          "first_token_space": 17083,
+          "first_token_raw": 50088,
+          "is_multi_token": false
+        },
+        "Isla": {
+          "n_tokens_space": 2,
+          "ids_space": [
+            2160,
+            4260
+          ],
+          "strs_space": [
+            " Is",
+            "la"
+          ],
+          "first_token_space": 2160,
+          "first_token_raw": 40,
+          "is_multi_token": true
+        },
+        "Paul": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            6898
+          ],
+          "strs_space": [
+            " Paul"
+          ],
+          "first_token_space": 6898,
+          "first_token_raw": 25300,
+          "is_multi_token": false
+        },
+        "Xander": {
+          "n_tokens_space": 2,
+          "ids_space": [
+            1599,
+            8199
+          ],
+          "strs_space": [
+            " X",
+            "ander"
+          ],
+          "first_token_space": 1599,
+          "first_token_raw": 55,
+          "is_multi_token": true
+        },
+        "Emma": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            34935
+          ],
+          "strs_space": [
+            " Emma"
+          ],
+          "first_token_space": 34935,
+          "first_token_raw": 89074,
+          "is_multi_token": false
+        },
+        "Fred": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            27488
+          ],
+          "strs_space": [
+            " Fred"
+          ],
+          "first_token_space": 27488,
+          "first_token_raw": 74596,
+          "is_multi_token": false
+        },
+        "Ella": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            77796
+          ],
+          "strs_space": [
+            " Ella"
+          ],
+          "first_token_space": 77796,
+          "first_token_raw": 36,
+          "is_multi_token": false
+        },
+        "Alice": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            29405
+          ],
+          "strs_space": [
+            " Alice"
+          ],
+          "first_token_space": 29405,
+          "first_token_raw": 61686,
+          "is_multi_token": false
+        },
+        "David": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            6798
+          ],
+          "strs_space": [
+            " David"
+          ],
+          "first_token_space": 6798,
+          "first_token_raw": 22286,
+          "is_multi_token": false
+        },
+        "Uma": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            85768
+          ],
+          "strs_space": [
+            " Uma"
+          ],
+          "first_token_space": 85768,
+          "first_token_raw": 52,
+          "is_multi_token": false
+        },
+        "Gina": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            76212
+          ],
+          "strs_space": [
+            " Gina"
+          ],
+          "first_token_space": 76212,
+          "first_token_raw": 38,
+          "is_multi_token": false
+        },
+        "Liam": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            60642
+          ],
+          "strs_space": [
+            " Liam"
+          ],
+          "first_token_space": 60642,
+          "first_token_raw": 43,
+          "is_multi_token": false
+        },
+        "Yara": {
+          "n_tokens_space": 2,
+          "ids_space": [
+            809,
+            5059
+          ],
+          "strs_space": [
+            " Y",
+            "ara"
+          ],
+          "first_token_space": 809,
+          "first_token_raw": 56,
+          "is_multi_token": true
+        },
+        "Zach": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            38215
+          ],
+          "strs_space": [
+            " Zach"
+          ],
+          "first_token_space": 38215,
+          "first_token_raw": 57,
+          "is_multi_token": false
+        },
+        "Sam": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            8224
+          ],
+          "strs_space": [
+            " Sam"
+          ],
+          "first_token_space": 8224,
+          "first_token_raw": 23950,
+          "is_multi_token": false
+        },
+        "Derek": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            42323
+          ],
+          "strs_space": [
+            " Derek"
+          ],
+          "first_token_space": 42323,
+          "first_token_raw": 35,
+          "is_multi_token": false
+        },
+        "Carol": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            10252
+          ],
+          "strs_space": [
+            " Carol"
+          ],
+          "first_token_space": 10252,
+          "first_token_raw": 93272,
+          "is_multi_token": false
+        },
+        "Tara": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            69697
+          ],
+          "strs_space": [
+            " Tara"
+          ],
+          "first_token_space": 69697,
+          "first_token_raw": 51,
+          "is_multi_token": false
+        },
+        "Clara": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            50557
+          ],
+          "strs_space": [
+            " Clara"
+          ],
+          "first_token_space": 50557,
+          "first_token_raw": 5066,
+          "is_multi_token": false
+        },
+        "Rose": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            15964
+          ],
+          "strs_space": [
+            " Rose"
+          ],
+          "first_token_space": 15964,
+          "first_token_raw": 57424,
+          "is_multi_token": false
+        },
+        "Olivia": {
+          "n_tokens_space": 1,
+          "ids_space": [
+            59287
+          ],
+          "strs_space": [
+            " Olivia"
+          ],
+          "first_token_space": 59287,
+          "first_token_raw": 42719,
+          "is_multi_token": false
+        }
+      }
+    },
+    "hindi": {
+      "n_prompts": 25,
+      "mean_tokens_per_prompt": 27.64,
+      "token_inflation_factor": 1.86,
+      "mean_fraction_byte_level": 0.9634,
+      "byte_level_fallback_detected": true,
+      "n_unique_names": 20,
+      "n_single_token_names": 0,
+      "n_multi_token_names": 20,
+      "unique_space_prefix_first_token_ids": 5,
+      "unique_raw_name_first_token_ids": 12,
+      "proxy_token_collapse_detected": true,
+      "sample_tokenizations": [
+        {
+          "prompt": "जब राम और गीता पार्क गए",
+          "token_count": 23,
+          "token_strings": [
+            "<|endoftext|>",
+            "ज",
+            "ब",
+            " �",
+            "�",
+            "ा�",
+            "�",
+            " �",
+            "�",
+            "र",
+            " �",
+            "�",
+            "ी",
+            "त",
+            "ा"
+          ],
+          "n_byte_level": 22,
+          "fraction_byte_level": 0.9565
+        },
+        {
+          "prompt": "जब सीता और रवि दुकान पहुंचे",
+          "token_count": 26,
+          "token_strings": [
+            "<|endoftext|>",
+            "ज",
+            "ब",
+            " स",
+            "ी",
+            "त",
+            "ा",
+            " �",
+            "�",
+            "र",
+            " �",
+            "�",
+            "व",
+            "ि",
+            " �"
+          ],
+          "n_byte_level": 25,
+          "fraction_byte_level": 0.9615
+        }
+      ],
+      "name_details": {
+        "पूजा": {
+          "n_tokens_space": 5,
+          "ids_space": [
+            83636,
+            12619,
+            224,
+            146114,
+            23868
+          ],
+          "strs_space": [
+            " प",
+            "�",
+            "�",
+            "ज",
+            "ा"
+          ],
+          "first_token_space": 83636,
+          "first_token_raw": 86162,
+          "is_multi_token": true
+        },
+        "रवि": {
+          "n_tokens_space": 4,
+          "ids_space": [
+            14925,
+            108,
+            145535,
+            38851
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "व",
+            "ि"
+          ],
+          "first_token_space": 14925,
+          "first_token_raw": 44179,
+          "is_multi_token": true
+        },
+        "अजय": {
+          "n_tokens_space": 4,
+          "ids_space": [
+            14925,
+            227,
+            146114,
+            145420
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "ज",
+            "य"
+          ],
+          "first_token_space": 14925,
+          "first_token_raw": 146378,
+          "is_multi_token": true
+        },
+        "श्याम": {
+          "n_tokens_space": 6,
+          "ids_space": [
+            14925,
+            114,
+            30484,
+            107,
+            31411,
+            106
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "्�",
+            "�",
+            "ा�",
+            "�"
+          ],
+          "first_token_space": 14925,
+          "first_token_raw": 145966,
+          "is_multi_token": true
+        },
+        "सुनीता": {
+          "n_tokens_space": 6,
+          "ids_space": [
+            68158,
+            72653,
+            60096,
+            43647,
+            79238,
+            23868
+          ],
+          "strs_space": [
+            " स",
+            "ु",
+            "न",
+            "ी",
+            "त",
+            "ा"
+          ],
+          "first_token_space": 68158,
+          "first_token_raw": 78368,
+          "is_multi_token": true
+        },
+        "कमल": {
+          "n_tokens_space": 3,
+          "ids_space": [
+            47809,
+            87244,
+            91811
+          ],
+          "strs_space": [
+            " क",
+            "म",
+            "ल"
+          ],
+          "first_token_space": 47809,
+          "first_token_raw": 64704,
+          "is_multi_token": true
+        },
+        "विजय": {
+          "n_tokens_space": 5,
+          "ids_space": [
+            14925,
+            113,
+            42311,
+            250,
+            145420
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "ि�",
+            "�",
+            "य"
+          ],
+          "first_token_space": 14925,
+          "first_token_raw": 145535,
+          "is_multi_token": true
+        },
+        "सुरेश": {
+          "n_tokens_space": 5,
+          "ids_space": [
+            68158,
+            72653,
+            44179,
+            54784,
+            114
+          ],
+          "strs_space": [
+            " स",
+            "ु",
+            "र",
+            "े�",
+            "�"
+          ],
+          "first_token_space": 68158,
+          "first_token_raw": 78368,
+          "is_multi_token": true
+        },
+        "अर्जुन": {
+          "n_tokens_space": 7,
+          "ids_space": [
+            14925,
+            227,
+            44179,
+            30484,
+            250,
+            72653,
+            60096
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "र",
+            "्�",
+            "�",
+            "ु",
+            "न"
+          ],
+          "first_token_space": 14925,
+          "first_token_raw": 146378,
+          "is_multi_token": true
+        },
+        "मोहन": {
+          "n_tokens_space": 4,
+          "ids_space": [
+            91217,
+            54575,
+            93948,
+            60096
+          ],
+          "strs_space": [
+            " म",
+            "ो",
+            "ह",
+            "न"
+          ],
+          "first_token_space": 91217,
+          "first_token_raw": 87244,
+          "is_multi_token": true
+        },
+        "अनिल": {
+          "n_tokens_space": 5,
+          "ids_space": [
+            14925,
+            227,
+            60096,
+            42311,
+            110
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "न",
+            "ि�",
+            "�"
+          ],
+          "first_token_space": 14925,
+          "first_token_raw": 146378,
+          "is_multi_token": true
+        },
+        "मीना": {
+          "n_tokens_space": 4,
+          "ids_space": [
+            91217,
+            43647,
+            60096,
+            23868
+          ],
+          "strs_space": [
+            " म",
+            "ी",
+            "न",
+            "ा"
+          ],
+          "first_token_space": 91217,
+          "first_token_raw": 87244,
+          "is_multi_token": true
+        },
+        "सीता": {
+          "n_tokens_space": 4,
+          "ids_space": [
+            68158,
+            43647,
+            79238,
+            23868
+          ],
+          "strs_space": [
+            " स",
+            "ी",
+            "त",
+            "ा"
+          ],
+          "first_token_space": 68158,
+          "first_token_raw": 78368,
+          "is_multi_token": true
+        },
+        "रोहन": {
+          "n_tokens_space": 5,
+          "ids_space": [
+            14925,
+            108,
+            54575,
+            93948,
+            60096
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "ो",
+            "ह",
+            "न"
+          ],
+          "first_token_space": 14925,
+          "first_token_raw": 44179,
+          "is_multi_token": true
+        },
+        "गीता": {
+          "n_tokens_space": 5,
+          "ids_space": [
+            14925,
+            245,
+            43647,
+            79238,
+            23868
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "ी",
+            "त",
+            "ा"
+          ],
+          "first_token_space": 14925,
+          "first_token_raw": 145959,
+          "is_multi_token": true
+        },
+        "राम": {
+          "n_tokens_space": 4,
+          "ids_space": [
+            14925,
+            108,
+            31411,
+            106
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "ा�",
+            "�"
+          ],
+          "first_token_space": 14925,
+          "first_token_raw": 44179,
+          "is_multi_token": true
+        },
+        "देवी": {
+          "n_tokens_space": 5,
+          "ids_space": [
+            14925,
+            99,
+            54784,
+            113,
+            43647
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "े�",
+            "�",
+            "ी"
+          ],
+          "first_token_space": 14925,
+          "first_token_raw": 145256,
+          "is_multi_token": true
+        },
+        "ललिता": {
+          "n_tokens_space": 6,
+          "ids_space": [
+            14925,
+            110,
+            91811,
+            42311,
+            97,
+            23868
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "ल",
+            "ि�",
+            "�",
+            "ा"
+          ],
+          "first_token_space": 14925,
+          "first_token_raw": 91811,
+          "is_multi_token": true
+        },
+        "प्रिया": {
+          "n_tokens_space": 5,
+          "ids_space": [
+            83636,
+            85033,
+            42311,
+            107,
+            23868
+          ],
+          "strs_space": [
+            " प",
+            "्र",
+            "ि�",
+            "�",
+            "ा"
+          ],
+          "first_token_space": 83636,
+          "first_token_raw": 86162,
+          "is_multi_token": true
+        },
+        "नीता": {
+          "n_tokens_space": 5,
+          "ids_space": [
+            14925,
+            101,
+            43647,
+            79238,
+            23868
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "ी",
+            "त",
+            "ा"
+          ],
+          "first_token_space": 14925,
+          "first_token_raw": 60096,
+          "is_multi_token": true
+        }
+      }
+    },
+    "bengali": {
+      "n_prompts": 25,
+      "mean_tokens_per_prompt": 37.68,
+      "token_inflation_factor": 2.54,
+      "mean_fraction_byte_level": 0.9731,
+      "byte_level_fallback_detected": true,
+      "n_unique_names": 20,
+      "n_single_token_names": 0,
+      "n_multi_token_names": 20,
+      "unique_space_prefix_first_token_ids": 1,
+      "unique_raw_name_first_token_ids": 12,
+      "proxy_token_collapse_detected": true,
+      "sample_tokenizations": [
+        {
+          "prompt": "যখন রাম এবং গীতা পার্ক গেলেন",
+          "token_count": 31,
+          "token_strings": [
+            "<|endoftext|>",
+            "য",
+            "খ",
+            "ন",
+            " �",
+            "�",
+            "া�",
+            "�",
+            " �",
+            "�",
+            "ব",
+            "�",
+            "�",
+            " �",
+            "�"
+          ],
+          "n_byte_level": 30,
+          "fraction_byte_level": 0.9677
+        },
+        {
+          "prompt": "যখন সীতা এবং রবি দোকান পৌঁছালেন",
+          "token_count": 37,
+          "token_strings": [
+            "<|endoftext|>",
+            "য",
+            "খ",
+            "ন",
+            " �",
+            "�",
+            "�",
+            "�",
+            "ত",
+            "া",
+            " �",
+            "�",
+            "ব",
+            "�",
+            "�"
+          ],
+          "n_byte_level": 36,
+          "fraction_byte_level": 0.973
+        }
+      ],
+      "name_details": {
+        "গীতা": {
+          "n_tokens_space": 6,
+          "ids_space": [
+            35178,
+            245,
+            26927,
+            222,
+            147645,
+            41312
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "�",
+            "�",
+            "ত",
+            "া"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 148787,
+          "is_multi_token": true
+        },
+        "নীতা": {
+          "n_tokens_space": 6,
+          "ids_space": [
+            35178,
+            101,
+            26927,
+            222,
+            147645,
+            41312
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "�",
+            "�",
+            "ত",
+            "া"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 86548,
+          "is_multi_token": true
+        },
+        "সুরেশ": {
+          "n_tokens_space": 7,
+          "ids_space": [
+            35178,
+            116,
+            26927,
+            223,
+            72258,
+            58908,
+            148125
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "�",
+            "�",
+            "র",
+            "ে",
+            "শ"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 146711,
+          "is_multi_token": true
+        },
+        "অজয়": {
+          "n_tokens_space": 6,
+          "ids_space": [
+            35178,
+            227,
+            148204,
+            146834,
+            11125,
+            120
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "জ",
+            "য",
+            "�",
+            "�"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 147271,
+          "is_multi_token": true
+        },
+        "সুনীতা": {
+          "n_tokens_space": 9,
+          "ids_space": [
+            35178,
+            116,
+            26927,
+            223,
+            86548,
+            26927,
+            222,
+            147645,
+            41312
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "�",
+            "�",
+            "ন",
+            "�",
+            "�",
+            "ত",
+            "া"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 146711,
+          "is_multi_token": true
+        },
+        "অনিল": {
+          "n_tokens_space": 5,
+          "ids_space": [
+            35178,
+            227,
+            86548,
+            80178,
+            110
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "ন",
+            "ি�",
+            "�"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 147271,
+          "is_multi_token": true
+        },
+        "রাম": {
+          "n_tokens_space": 4,
+          "ids_space": [
+            35178,
+            108,
+            49128,
+            106
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "া�",
+            "�"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 72258,
+          "is_multi_token": true
+        },
+        "দেবী": {
+          "n_tokens_space": 6,
+          "ids_space": [
+            35178,
+            99,
+            58908,
+            146026,
+            26927,
+            222
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "ে",
+            "ব",
+            "�",
+            "�"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 148156,
+          "is_multi_token": true
+        },
+        "রবি": {
+          "n_tokens_space": 4,
+          "ids_space": [
+            35178,
+            108,
+            146026,
+            61356
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "ব",
+            "ি"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 72258,
+          "is_multi_token": true
+        },
+        "মোহন": {
+          "n_tokens_space": 6,
+          "ids_space": [
+            35178,
+            106,
+            26927,
+            233,
+            148291,
+            86548
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "�",
+            "�",
+            "হ",
+            "ন"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 146415,
+          "is_multi_token": true
+        },
+        "ললিতা": {
+          "n_tokens_space": 6,
+          "ids_space": [
+            35178,
+            110,
+            146227,
+            80178,
+            97,
+            41312
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "ল",
+            "ি�",
+            "�",
+            "া"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 146227,
+          "is_multi_token": true
+        },
+        "অর্জুন": {
+          "n_tokens_space": 8,
+          "ids_space": [
+            35178,
+            227,
+            72258,
+            52806,
+            250,
+            26927,
+            223,
+            86548
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "র",
+            "্�",
+            "�",
+            "�",
+            "�",
+            "ন"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 147271,
+          "is_multi_token": true
+        },
+        "পূজা": {
+          "n_tokens_space": 6,
+          "ids_space": [
+            35178,
+            103,
+            26927,
+            224,
+            148204,
+            41312
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "�",
+            "�",
+            "জ",
+            "া"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 146838,
+          "is_multi_token": true
+        },
+        "সীতা": {
+          "n_tokens_space": 6,
+          "ids_space": [
+            35178,
+            116,
+            26927,
+            222,
+            147645,
+            41312
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "�",
+            "�",
+            "ত",
+            "া"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 146711,
+          "is_multi_token": true
+        },
+        "শ্যাম": {
+          "n_tokens_space": 6,
+          "ids_space": [
+            35178,
+            114,
+            52806,
+            107,
+            49128,
+            106
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "্�",
+            "�",
+            "া�",
+            "�"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 148125,
+          "is_multi_token": true
+        },
+        "কমল": {
+          "n_tokens_space": 4,
+          "ids_space": [
+            35178,
+            243,
+            146415,
+            146227
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "ম",
+            "ল"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 146775,
+          "is_multi_token": true
+        },
+        "বিজয়": {
+          "n_tokens_space": 7,
+          "ids_space": [
+            35178,
+            105,
+            80178,
+            250,
+            146834,
+            11125,
+            120
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "ি�",
+            "�",
+            "য",
+            "�",
+            "�"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 146026,
+          "is_multi_token": true
+        },
+        "প্রিয়া": {
+          "n_tokens_space": 9,
+          "ids_space": [
+            35178,
+            103,
+            52806,
+            108,
+            80178,
+            107,
+            11125,
+            120,
+            41312
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "্�",
+            "�",
+            "ি�",
+            "�",
+            "�",
+            "�",
+            "া"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 146838,
+          "is_multi_token": true
+        },
+        "রোহান": {
+          "n_tokens_space": 7,
+          "ids_space": [
+            35178,
+            108,
+            26927,
+            233,
+            148291,
+            49128,
+            101
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "�",
+            "�",
+            "হ",
+            "া�",
+            "�"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 72258,
+          "is_multi_token": true
+        },
+        "মীনা": {
+          "n_tokens_space": 6,
+          "ids_space": [
+            35178,
+            106,
+            26927,
+            222,
+            86548,
+            41312
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "�",
+            "�",
+            "ন",
+            "া"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 146415,
+          "is_multi_token": true
+        }
+      }
+    },
+    "assamese": {
+      "n_prompts": 25,
+      "mean_tokens_per_prompt": 44.68,
+      "token_inflation_factor": 3.01,
+      "mean_fraction_byte_level": 0.9665,
+      "byte_level_fallback_detected": true,
+      "n_unique_names": 15,
+      "n_single_token_names": 0,
+      "n_multi_token_names": 15,
+      "unique_space_prefix_first_token_ids": 2,
+      "unique_raw_name_first_token_ids": 11,
+      "proxy_token_collapse_detected": true,
+      "sample_tokenizations": [
+        {
+          "prompt": "যেতিয়া ৰাম আৰু গীতা পাৰ্ক গৈছিল",
+          "token_count": 40,
+          "token_strings": [
+            "<|endoftext|>",
+            "য",
+            "ে",
+            "ত",
+            "ি�",
+            "�",
+            "�",
+            "�",
+            "া",
+            " ",
+            "�",
+            "�",
+            "া�",
+            "�",
+            " �"
+          ],
+          "n_byte_level": 38,
+          "fraction_byte_level": 0.95
+        },
+        {
+          "prompt": "যেতিয়া সীতা আৰু ৰবি দোকান পাইছিল",
+          "token_count": 40,
+          "token_strings": [
+            "<|endoftext|>",
+            "য",
+            "ে",
+            "ত",
+            "ি�",
+            "�",
+            "�",
+            "�",
+            "া",
+            " �",
+            "�",
+            "�",
+            "�",
+            "ত",
+            "া"
+          ],
+          "n_byte_level": 38,
+          "fraction_byte_level": 0.95
+        }
+      ],
+      "name_details": {
+        "গীতা": {
+          "n_tokens_space": 6,
+          "ids_space": [
+            35178,
+            245,
+            26927,
+            222,
+            147645,
+            41312
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "�",
+            "�",
+            "ত",
+            "া"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 148787,
+          "is_multi_token": true
+        },
+        "সীতা": {
+          "n_tokens_space": 6,
+          "ids_space": [
+            35178,
+            116,
+            26927,
+            222,
+            147645,
+            41312
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "�",
+            "�",
+            "ত",
+            "া"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 146711,
+          "is_multi_token": true
+        },
+        "অনিল": {
+          "n_tokens_space": 5,
+          "ids_space": [
+            35178,
+            227,
+            86548,
+            80178,
+            110
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "ন",
+            "ি�",
+            "�"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 147271,
+          "is_multi_token": true
+        },
+        "মোহন": {
+          "n_tokens_space": 6,
+          "ids_space": [
+            35178,
+            106,
+            26927,
+            233,
+            148291,
+            86548
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "�",
+            "�",
+            "হ",
+            "ন"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 146415,
+          "is_multi_token": true
+        },
+        "শ্যাম": {
+          "n_tokens_space": 6,
+          "ids_space": [
+            35178,
+            114,
+            52806,
+            107,
+            49128,
+            106
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "্�",
+            "�",
+            "া�",
+            "�"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 148125,
+          "is_multi_token": true
+        },
+        "ৰোহান": {
+          "n_tokens_space": 8,
+          "ids_space": [
+            220,
+            26927,
+            108,
+            26927,
+            233,
+            148291,
+            49128,
+            101
+          ],
+          "strs_space": [
+            " ",
+            "�",
+            "�",
+            "�",
+            "�",
+            "হ",
+            "া�",
+            "�"
+          ],
+          "first_token_space": 220,
+          "first_token_raw": 26927,
+          "is_multi_token": true
+        },
+        "নীতা": {
+          "n_tokens_space": 6,
+          "ids_space": [
+            35178,
+            101,
+            26927,
+            222,
+            147645,
+            41312
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "�",
+            "�",
+            "ত",
+            "া"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 86548,
+          "is_multi_token": true
+        },
+        "ৰবি": {
+          "n_tokens_space": 5,
+          "ids_space": [
+            220,
+            26927,
+            108,
+            146026,
+            61356
+          ],
+          "strs_space": [
+            " ",
+            "�",
+            "�",
+            "ব",
+            "ি"
+          ],
+          "first_token_space": 220,
+          "first_token_raw": 26927,
+          "is_multi_token": true
+        },
+        "দেৱী": {
+          "n_tokens_space": 7,
+          "ids_space": [
+            35178,
+            99,
+            58908,
+            26927,
+            109,
+            26927,
+            222
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "ে",
+            "�",
+            "�",
+            "�",
+            "�"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 148156,
+          "is_multi_token": true
+        },
+        "কমল": {
+          "n_tokens_space": 4,
+          "ids_space": [
+            35178,
+            243,
+            146415,
+            146227
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "ম",
+            "ল"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 146775,
+          "is_multi_token": true
+        },
+        "বিজয়": {
+          "n_tokens_space": 7,
+          "ids_space": [
+            35178,
+            105,
+            80178,
+            250,
+            146834,
+            11125,
+            120
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "ি�",
+            "�",
+            "য",
+            "�",
+            "�"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 146026,
+          "is_multi_token": true
+        },
+        "প্ৰিয়া": {
+          "n_tokens_space": 10,
+          "ids_space": [
+            35178,
+            103,
+            52595,
+            26927,
+            108,
+            80178,
+            107,
+            11125,
+            120,
+            41312
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "্",
+            "�",
+            "�",
+            "ি�",
+            "�",
+            "�",
+            "�",
+            "া"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 146838,
+          "is_multi_token": true
+        },
+        "ৰাম": {
+          "n_tokens_space": 5,
+          "ids_space": [
+            220,
+            26927,
+            108,
+            49128,
+            106
+          ],
+          "strs_space": [
+            " ",
+            "�",
+            "�",
+            "া�",
+            "�"
+          ],
+          "first_token_space": 220,
+          "first_token_raw": 26927,
+          "is_multi_token": true
+        },
+        "অৰ্জুন": {
+          "n_tokens_space": 9,
+          "ids_space": [
+            35178,
+            227,
+            26927,
+            108,
+            52806,
+            250,
+            26927,
+            223,
+            86548
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "�",
+            "�",
+            "্�",
+            "�",
+            "�",
+            "�",
+            "ন"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 147271,
+          "is_multi_token": true
+        },
+        "সুনীতা": {
+          "n_tokens_space": 9,
+          "ids_space": [
+            35178,
+            116,
+            26927,
+            223,
+            86548,
+            26927,
+            222,
+            147645,
+            41312
+          ],
+          "strs_space": [
+            " �",
+            "�",
+            "�",
+            "�",
+            "ন",
+            "�",
+            "�",
+            "ত",
+            "া"
+          ],
+          "first_token_space": 35178,
+          "first_token_raw": 146711,
+          "is_multi_token": true
+        }
+      }
+    }
+  }
+}
