@@ -120,7 +120,8 @@ Traces which heads send information to which other heads, building a directed gr
 | **Cross-Task Causal Patching (Exp 11)** | Single-head patching: Name Mover recovery = **-5.97%** vs **-2.19%** control; verdict: `NO_TRANSFER` (n=150) | `outputs/11_cross_task_patching/results/cross_task_summary.json` |
 | **Multi-Head Group Patching (Exp 12)** | Full Name Mover group (4 heads) cross-task recovery = **-1.12%**; verdict: `NO_TRANSFER_EVEN_AT_GROUP_LEVEL` (n=150) | `outputs/12_multihead_patching/results/multihead_summary.json` |
 | **Multilingual Feasibility Gate v1 (Exp 13)** | GPT-2 Small: Hindi, Bengali, Assamese all **❌ FAIL** (0.0% acc, CI: [0.0%, 0.0%]); root causes: 91–98% byte fallback & proxy token collapse | `outputs/13_multilingual_feasibility/FEASIBILITY_VERDICT.md` |
-| **Multilingual Model Gate v2 (Exp 14)** | Qwen2.5-0.5B: English **100% PASS** (sanity check); Hindi (36%), Bengali (0%), Assamese (16%) **❌ FAIL**; root causes: proxy collapse & 96%+ byte fallback | `outputs/14_multilingual_model_gate/FEASIBILITY_VERDICT_v2.md` |
+| **Multilingual Model Gate v2 (Exp 14)** | Qwen2.5-0.5B: English **100% PASS** (sanity check); Hindi (36%), Bengali (0%), Assamese (16%) **❌ FAIL**; root cause: proxy token collapse | `outputs/14_multilingual_model_gate/FEASIBILITY_VERDICT_v2.md` |
+| **Multi-Token Full-Name Gate v3 (Exp 15)** | Qwen2.5-0.5B: English **100%**, Hindi **96.0%**, Bengali **100.0%**, Assamese **100.0%** **✅ PASS**; proves prior FAILs were proxy artifacts | `outputs/15_multiname_scoring_gate/FEASIBILITY_VERDICT_v3.md` |
 | **Effect Size** | Name Mover / Helper vs. Neutral heads: **Cohen's d = +4.8976** (large, $p < 0.0001$, n=139 heads) | `outputs/10_statistical_analysis/results/stats_effect_sizes.csv` (row: Name Mover / Helper) |
 
 ---
@@ -185,7 +186,8 @@ CircuitScope/
 │   ├── 11_cross_task_patching.py     # Experiment 11: Cross-task activation patching
 │   ├── 12_multihead_patching.py      # Experiment 12: Multi-head group patching
 │   ├── 13_multilingual_feasibility.py# Experiment 13: Multilingual feasibility gate (GPT-2 Small)
-│   └── 14_multilingual_model_gate.py # Experiment 14: Multilingual model gate (Qwen2.5-0.5B)
+│   ├── 14_multilingual_model_gate.py # Experiment 14: Multilingual model gate (Qwen2.5-0.5B proxy)
+│   └── 15_multiname_scoring_gate.py  # Experiment 15: Multi-token full-name logprob gate (Qwen2.5-0.5B)
 │
 ├── outputs/                          # All results (auto-created on first run)
 │   ├── 01_baseline/
@@ -195,6 +197,7 @@ CircuitScope/
 │   ├── 12_multihead_patching/        # Multi-head patching results
 │   ├── 13_multilingual_feasibility/  # Tokenization report, baseline CSVs & FEASIBILITY_VERDICT.md
 │   ├── 14_multilingual_model_gate/   # Qwen2.5-0.5B tokenization report, baseline CSVs & FEASIBILITY_VERDICT_v2.md
+│   ├── 15_multiname_scoring_gate/    # Qwen2.5-0.5B full-name logprob CSVs & FEASIBILITY_VERDICT_v3.md
 │   └── logs/                         # Timestamped log files (shared)
 │
 ├── paper/
@@ -356,12 +359,20 @@ python experiments/10_statistical_analysis.py --n-bootstrap 2000
 python experiments/13_multilingual_feasibility.py
 ```
 
-#### Experiment 14 — Multilingual Model Gate (Qwen2.5-0.5B)
+#### Experiment 14 — Multilingual Model Gate (Qwen2.5-0.5B Proxy)
 *Evaluates compute-feasible Qwen2.5-0.5B on English (sanity check) and Indic IOI prompts.*  
 *Output:* `outputs/14_multilingual_model_gate/` | *Runtime:* ~1 min
 
 ```bash
 python experiments/14_multilingual_model_gate.py
+```
+
+#### Experiment 15 — Multi-Token Full-Name LogProb Gate (Qwen2.5-0.5B)
+*Evaluates Qwen2.5-0.5B using exact full-name sequence log-probability scoring across sub-word tokens.*  
+*Output:* `outputs/15_multiname_scoring_gate/` | *Runtime:* ~5 min
+
+```bash
+python experiments/15_multiname_scoring_gate.py
 ```
 
 ---
