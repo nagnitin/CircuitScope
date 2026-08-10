@@ -119,6 +119,7 @@ Traces which heads send information to which other heads, building a directed gr
 | **Novel Extension (Correlation)** | Pronoun vs. IOI head importance correlation: **r = 0.5750** ($p = 4.78 \times 10^{-14}$, n=144 heads) | `outputs/09_novel_extension/results/task_comparison.json` |
 | **Cross-Task Causal Patching (Exp 11)** | Single-head patching: Name Mover recovery = **-5.97%** vs **-2.19%** control; verdict: `NO_TRANSFER` (n=150) | `outputs/11_cross_task_patching/results/cross_task_summary.json` |
 | **Multi-Head Group Patching (Exp 12)** | Full Name Mover group (4 heads) cross-task recovery = **-1.12%**; verdict: `NO_TRANSFER_EVEN_AT_GROUP_LEVEL` (n=150) | `outputs/12_multihead_patching/results/multihead_summary.json` |
+| **Multilingual Feasibility Gate (Exp 13)** | Hindi, Bengali, Assamese all **❌ FAIL** (0.0% acc, CI: [0.0%, 0.0%]); root causes: 91–98% byte fallback & proxy token collapse | `outputs/13_multilingual_feasibility/FEASIBILITY_VERDICT.md` |
 | **Effect Size** | Name Mover / Helper vs. Neutral heads: **Cohen's d = +4.8976** (large, $p < 0.0001$, n=139 heads) | `outputs/10_statistical_analysis/results/stats_effect_sizes.csv` (row: Name Mover / Helper) |
 
 ---
@@ -149,7 +150,8 @@ CircuitScope/
 │   │   └── loader.py                 # Loads GPT-2 via TransformerLens
 │   ├── data/
 │   │   ├── ioi_dataset.py            # Generates 1,000 IOI prompt pairs
-│   │   └── pronoun_dataset.py        # Generates 500 pronoun resolution prompts
+│   │   ├── pronoun_dataset.py        # Generates 500 pronoun resolution prompts
+│   │   └── multilingual/             # Hindi, Bengali, Assamese prompt sets & translation notes
 │   ├── evaluation/
 │   │   └── metrics.py                # Logit diff, accuracy, rank metrics
 │   ├── analysis/
@@ -179,13 +181,17 @@ CircuitScope/
 │   ├── 08_circuit_validation.py      # Experiment 08: Necessity & sufficiency
 │   ├── 09_novel_extension.py         # Experiment 09: Pronoun resolution correlation
 │   ├── 10_statistical_analysis.py    # Experiment 10: Stats & effect sizes
-│   └── 11_cross_task_patching.py     # Experiment 11: Cross-task activation patching
+│   ├── 11_cross_task_patching.py     # Experiment 11: Cross-task activation patching
+│   ├── 12_multihead_patching.py      # Experiment 12: Multi-head group patching
+│   └── 13_multilingual_feasibility.py# Experiment 13: Multilingual feasibility gate (diagnostic)
 │
 ├── outputs/                          # All results (auto-created on first run)
 │   ├── 01_baseline/
 │   ├── 02_logit_lens/
 │   ├── 03_layer_ablation/ ...        # Each experiment gets its own folder
 │   ├── 11_cross_task_patching/       # Cross-task patching results & figures
+│   ├── 12_multihead_patching/        # Multi-head patching results
+│   ├── 13_multilingual_feasibility/  # Tokenization report, baseline CSVs & FEASIBILITY_VERDICT.md
 │   └── logs/                         # Timestamped log files (shared)
 │
 ├── paper/
@@ -337,6 +343,14 @@ python experiments/09_novel_extension.py --n-prompts 500
 
 ```bash
 python experiments/10_statistical_analysis.py --n-bootstrap 2000
+```
+
+#### Experiment 13 — Multilingual Feasibility Gate
+*Diagnostic test whether GPT-2 Small can perform IOI in Hindi, Bengali, and Assamese.*  
+*Output:* `outputs/13_multilingual_feasibility/` | *Runtime:* ~1 min
+
+```bash
+python experiments/13_multilingual_feasibility.py
 ```
 
 ---
